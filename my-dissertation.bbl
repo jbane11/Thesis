@@ -1,0 +1,119 @@
+\begin{thebibliography}{10}
+
+\bibitem{HallA}
+J.~Alcorn et~al.
+\newblock {Basic Instrumentation for Hall A at Jefferson Lab}.
+\newblock {\em Nucl. Instrum. Meth.}, A522:294--346, 2004.
+
+\bibitem{arri}
+John Arrington, Aji Daniel, Donal Day, Nadia Fomin, Dave Gaskell, and Patricia
+  Solvignon.
+\newblock {A detailed study of the nuclear dependence of the EMC effect and
+  short-range correlations}.
+\newblock {\em Phys. Rev.}, C86:065204, 2012.
+
+\bibitem{ajppt}
+A.~Daniel, J.~Arrington, and D.~Gaskell.
+\newblock {Measurements of the EMC effect in few-body nuclei at large x}.
+\newblock {\em AIP Conf. Proc.}, 1369:98--105, 2011.
+
+\bibitem{piler}
+J.~Edelmann, G.~Piller, Norbert Kaiser, and W.~Weise.
+\newblock Resonances and higher twist in polarized lepton nucleon scattering.
+\newblock {\em Nucl. Phys.}, A665:125--136, 2000.
+
+\bibitem{drift}
+K.G. Fissum et~al.
+\newblock Vertical drift chambers for the hall a high-resolution spectrometers
+  at jefferson lab.
+\newblock {\em Nuclear Instruments and Methods in Physics Research Section A:
+  Accelerators, Spectrometers, Detectors and Associated Equipment}, 474(2):108
+  -- 131, 2001.
+
+\bibitem{Flay}
+David~J. Flay.
+\newblock {\em Measurements of the Neutron Longitudinal Spin Asymmetry A1n and
+  Flavor Decomposition in the Valence Quark Region}.
+\newblock PhD thesis, Temple University, Philadelphia, PA, Aug 2014.
+
+\bibitem{DF}
+D.F. Geesaman, K~Saito, and A~Thomas.
+\newblock The nuclear emc effect.
+\newblock {\em Annual Review of Nuclear and Particle Science}, 45(1):337--390,
+  1995.
+
+\bibitem{gomez}
+J.~Gomez et~al.
+\newblock {Measurement of the A-dependence of deep inelastic electron
+  scattering}.
+\newblock {\em Phys. Rev.}, D49:4348--4372, 1994.
+
+\bibitem{CC}
+D.~Higinbotham.
+\newblock The emc effect still puzzles after 30 years - cern courier.
+\newblock \url{http://cerncourier.com/cws/article/cern/53091}, April 2013.
+\newblock (Visited on 01/04/2016).
+
+\bibitem{HighE}
+R~Hofstadter.
+\newblock Nuclear and nucleon scattering of high-energy electrons.
+\newblock {\em Annual Review of Nuclear Science}, 7(1):231--316, 1957.
+
+\bibitem{DISproton}
+Henry~W. Kendall.
+\newblock Deep inelastic scattering: Experiments on the proton and the
+  observation of scaling.
+\newblock {\em Rev. Mod. Phys.}, 63:597--614, Jul 1991.
+
+\bibitem{challenge}
+Simona Malace, David Gaskell, Douglas~W. Higinbotham, and Ian Cloet.
+\newblock {The Challenge of the EMC Effect: existing data and future
+  directions}.
+\newblock {\em Int. J. Mod. Phys.}, E23:1430013, 2014.
+
+\bibitem{Hof}
+R.~W. McAllister and R.~Hofstadter.
+\newblock Elastic scattering of 188-mev electrons from the proton and the alpha
+  particle.
+\newblock {\em Phys. Rev.}, 102:851--856, May 1956.
+
+\bibitem{Norton}
+P~R Norton.
+\newblock The emc effect.
+\newblock {\em Reports on Progress in Physics}, 66(8):1253, 2003.
+
+\bibitem{PnN}
+Bogdan Povh, Klaus Rith, Christoph Scholz, and Frank Zetsche.
+\newblock {\em Particles and Nuclei: An Introduction to the Physical Concepts}.
+\newblock Springer, 2009.
+
+\bibitem{BPM}
+Tom Powers, Lawrence Doolittle, Rok Ursic, and Jeffrey Wagner.
+\newblock Design, commissioning and operational results of wide dynamic range
+  bpm switched electrode electronics.
+\newblock {\em AIP Conference Proceedings}, 390(1):257--265, 1997.
+
+\bibitem{seeley}
+J.~Seely et~al.
+\newblock New measurements of the european muon collaboration effect in very
+  light nuclei.
+\newblock {\em Phys. Rev. Lett.}, 103:202301, Nov 2009.
+
+\bibitem{DISearly}
+Richard~E. Taylor.
+\newblock Deep inelastic scattering: The early years.
+\newblock {\em Rev. Mod. Phys.}, 63:573--595, Jul 1991.
+
+\bibitem{EPMet}
+Hall~A Tech.
+\newblock Ep method.
+\newblock \url{http://hallaweb.jlab.org/equipment/beam/energy/ep_web.html}.
+\newblock (Accessed on 06/28/2016).
+
+\bibitem{BPM2}
+Pengjia Zhu et~al.
+\newblock {Beam Position Reconstruction for the g2p Experiment in Hall A at
+  Jefferson Lab}.
+\newblock {\em Nucl. Instrum. Meth.}, A808:1--10, 2016.
+
+\end{thebibliography}
