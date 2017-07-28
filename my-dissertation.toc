@@ -28,9 +28,10 @@
 \contentsline {paragraph}{}{13}{section*.37}
 \contentsline {paragraph}{}{14}{section*.40}
 \contentsline {paragraph}{}{15}{section*.41}
+\contentsline {paragraph}{}{15}{section*.42}
 \contentsline {section}{\numberline {2.2}Target}{16}{section.2.2}
 \contentsline {section}{\numberline {2.3}High Resolution Spectrometers}{16}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Vertical Drift Chambers}{17}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.1}Vertical Drift Chambers}{18}{subsection.2.3.1}
 \contentsline {subsection}{\numberline {2.3.2}Scintillators}{19}{subsection.2.3.2}
 \contentsline {subsection}{\numberline {2.3.3}Cherenkov}{19}{subsection.2.3.3}
 \contentsline {subsection}{\numberline {2.3.4}Shower Calorimeter}{19}{subsection.2.3.4}
@@ -40,10 +41,10 @@
 \contentsline {section}{\numberline {2.5}DAQ - Data Acquisition System}{19}{section.2.5}
 \contentsline {section}{\numberline {2.6}Kinematic Settings}{19}{section.2.6}
 \contentsline {chapter}{\numberline {3}Calibration}{20}{chapter.3}
-\contentsline {paragraph}{}{20}{section*.44}
-\contentsline {section}{\numberline {3.1}Beam Line}{20}{section.3.1}
 \contentsline {paragraph}{}{20}{section*.45}
-\contentsline {paragraph}{}{21}{section*.47}
+\contentsline {section}{\numberline {3.1}Beam Line}{20}{section.3.1}
+\contentsline {paragraph}{}{20}{section*.46}
+\contentsline {paragraph}{}{21}{section*.48}
 \contentsline {chapter}{\numberline {4}Data Analysis}{23}{chapter.4}
 \contentsline {chapter}{\numberline {5}Results}{24}{chapter.5}
 \contentsline {chapter}{\numberline {6}Simulation}{25}{chapter.6}
@@ -51,4 +52,4 @@
 \contentsline {section}{\numberline {6.2}Transformation}{26}{section.6.2}
 \contentsline {section}{\numberline {6.3}Results}{28}{section.6.3}
 \contentsline {chapter}{\numberline {7}Conclusion}{31}{chapter.7}
-\contentsline {chapter}{Bibliography}{32}{section*.53}
+\contentsline {chapter}{Bibliography}{32}{section*.54}
