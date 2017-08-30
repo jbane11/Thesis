@@ -31,7 +31,7 @@
 \contentsline {paragraph}{}{15}{section*.42}
 \contentsline {section}{\numberline {2.2}Target}{16}{section.2.2}
 \contentsline {section}{\numberline {2.3}High Resolution Spectrometers}{16}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Vertical Drift Chambers}{18}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.1}Vertical Drift Chambers}{17}{subsection.2.3.1}
 \contentsline {subsection}{\numberline {2.3.2}Scintillators}{19}{subsection.2.3.2}
 \contentsline {subsection}{\numberline {2.3.3}Cherenkov}{19}{subsection.2.3.3}
 \contentsline {subsection}{\numberline {2.3.4}Shower Calorimeter}{19}{subsection.2.3.4}
