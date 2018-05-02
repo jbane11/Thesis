@@ -14,3 +14,14 @@ The style file: plain.bst
 A level-1 auxiliary file: back-matter/appendix-1.aux
 A level-1 auxiliary file: back-matter/vita.aux
 Database file #1: references/references-dissertation.bib
+I was expecting a `,' or a `}'---line 2 of file references/references-dissertation.bib
+ :   
+ :   author       = {Denard, J.-C. and Sahar, J.-C.},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--to sort, need author or key in BCM1
+Warning--empty author in BCM1
+Warning--empty title in BCM1
+Warning--empty booktitle in BCM1
+Warning--empty year in BCM1
+(There was 1 error message)

@@ -4,9 +4,9 @@
 \chapter{ Experimental Setup}
 
 \section{Thomas Jefferson Lab}
-\paragraph{}Thomas Jefferson Lab (Jlab) in Newport News, Virgina hosted the MARATHON experiment in the Fall of 2017. Jlab uses support from the U.S. Department of Energy(DOE) and the state of Virgina to complete the lab's mission of delivering productive research by exploring the atomic nucleus and its fundamental constituents, including precise tests of their interactions. Along with applying an advanced particle accelerator, particle detectors and other technologies to develop new basic research capabilities and to address the challenges of a modern society.
+\paragraph{}Thomas Jefferson Lab (Jlab) in Newport News, Virgina hosted the MARATHON experiment in the Fall of 2017 and Spring of 2018. Jlab uses support from the U.S. Department of Energy(DOE) and the state of Virgina to complete the lab's mission of delivering productive research by exploring the atomic nucleus and its fundamental constituents, including precise tests of their interactions. Along with applying an advanced particle accelerator, particle detectors and other technologies to develop new basic research capabilities and to address the challenges of a modern society.
 	\subsection{CEBAF}
-	\paragraph{}The Continuous Electron Beam Accelerator Facility (CEBAF) was recently upgraded to a 12 GeV accelerator, upgrading it to be able to supply a 11 GeV beam of continuous electrons of up to 200 $\mu$A of current. to three experimental halls (A,B,C) and 12 GeV to the recently constructed hall D. After being accelerated to 45 MeV by a polarized electron gun or a thermionic injector, the electrons are injected into the North linear accelerator (LINAC), shown in figure \ref{CEBAF}. The polarized gun can supply electrons with up to 80$\%$ polarization and the polarization direction can be controlled by a wien filter. To ensure the level of polarization, a 5 MeV Mott polarimeter may be used to measure the level of polarization\cite{HallA}.
+	\paragraph{}The Continuous Electron Beam Accelerator Facility (CEBAF) was recently upgraded to a 12 GeV accelerator, upgrading it to be able to supply a 11 GeV beam of continuous electrons of up to 200 $\mu$A of current to three experimental halls (A,B,C) and 12 GeV to the recently constructed hall D. After being accelerated to 45 MeV by a polarized electron gun or a thermionic injector, the electrons are injected into the North linear accelerator (LINAC), shown in figure \ref{CEBAF}. The polarized gun can supply electrons with up to 80$\%$ polarization and the polarization direction can be controlled by a wien filter. To ensure the level of polarization, a 5 MeV Mott polarimeter may be used to measure the level of polarization\cite{HallA}.
 	\paragraph{} The electrons are conveyed through two LINACs and two bending arcs per complete pass of the accelerator. Electrons traveling to Halls A, B, and C complete a maximum of four and a half revolutions around the accelerator. Electrons going to all D travel through the north LINAC for an extra boost. These particles receive approximately 2.2 GeV in energy for each cycle through the accelerator. The radio frequency (RF) cavities in each LINAC use an oscillating electromagnetic field to supply a force to accelerate the passing electrons. These Niobium RF cavities are cooled to 2 K in order to create conditions that allow the cavities to be superconducting \cite{HallA}.    
 	
 	\begin{figure}[h]
@@ -27,7 +27,7 @@
 	 
 	 \paragraph{}The experimental Hall A and the scientific equipment used were designed for detailed investigations of the internal structure of nuclei. Two high resolution spectrometers in Hall A use the inclusive (e,e$\prime$) and exclusive (e,e$\prime$ p) reactions to gain a greater understanding of the structure of the nucleus. Completing detailed studies with high resolution and extreme accuracy requires knowing the beam position, size, energy, current, direction, and polarization when the beam strikes the target. The instrumentation used in the precise measurement of these quantities in Hall A  are shown in figure \ref{BeamLine} \cite{HallA}.
 
-	 \paragraph{} A pair of Beam Position Monitors(BPMs) are used to measure the relative beam position without affecting the beam. The two Hall A BPMs are located at 7.524 m and 1.286 m away from the target. Using the standard difference-over-sum technique, the relative beam position is determined with an accuracy of 100 $\mu$m with a beam current of at least 1 $\mu$A \cite{HallA}. The BPMs' positional data is recorded in two ways. Every second of beam time, the beam position average over 0.3 seconds is logged into the Experimental Physics and Industrial Control System (EPICS) database. The BPMs also transmit data event-by-event to the CEBAF online Data Acquisition system(CODA).
+	 \paragraph{} A pair of Beam Position Monitors(BPM)s are used to measure the relative beam position without affecting the beam. The two Hall A BPMs are located at 7.524 m and 1.286 m away from the target. Using the standard difference-over-sum technique, the relative beam position is determined with an accuracy of 100 $\mu$m with a beam current of at least 1 $\mu$A \cite{HallA}. The BPMs' positional data is recorded in two ways. Every second of beam time, the beam position average over 0.3 seconds is logged into the Experimental Physics and Industrial Control System (EPICS) database. The BPMs also transmit data event-by-event to the CEBAF online Data Acquisition system(CODA).
 	 	 	 
  	 	\begin{figure}[H]
  	 		\centering
@@ -65,7 +65,19 @@
 	\label{arc}
 	p = k \frac{\int \vec{B} \cdot d\vec{l}}{\theta}.
 	\end{equation}	
-	In equation \ref{arc}, p is the momentum of the electrons, $\theta$ is the bend angle, and $\vec{B}$ is the magnetic field the electron experiences. Then using the momentum of the electron, the energy of the beam can be extracted. The error on the beam energy measurement is $\delta$ E/E $\approx$ 2 $* 10^{-4} $ \cite{EPMet, Flay}.  The MARATHON experiment used both methods to accurately determine the electron beam energy.  
+	In equation \ref{arc}, p is the momentum of the electrons, $\theta$ is the bend angle, and $\vec{B}$ is the magnetic field the electron experiences. Then using the momentum of the electron, the energy of the beam can be extracted. The error on the beam energy measurement is $\delta$ E/E $\approx$ 2 $* 10^{-4} $ \cite{EPMet, Flay}.  The MARATHON experiment used both methods to accurately determine the electron beam energy.
+	
+	\paragraph{} The main process of measuring the scattering yield for a calculation of a cross section looks at finding the ratio of the number of electrons scattered to the number of electrons sent. In order to accurately determine the number of electrons sent to scatter with our target system, Hall A use a highly accurate and non-invasive beam current monitor(BCM). The Hall A BCM has an absolute accuracy of 0.2 percent as long as the current is between 180 $\mu$A. The BCM used in Hall A consists of three main components: a Parametric Current Transformer (PCT) and two pill box cavities. Figure \ref{BCMpng} shows the components in the Hall A BCM.   
+	  
+	  	\begin{figure}[H]
+	  	 	 		\centering
+	  	 	 		\caption{Hall A Current Monitor components \cite{BCM1}. }
+	  	 	 		\label{BCMpng}
+	  	 	 		\includegraphics[width=10cm]{BCM1.png} 
+	  	\end{figure} 
+
+	\paragraph{}	
+	  
 \section{Target}
 
 \section{High Resolution Spectrometers}

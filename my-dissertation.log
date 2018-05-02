@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.11.4)  29 AUG 2017 12:00
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.11.4)  30 MAR 2018 13:19
 entering extended mode
 **my-dissertation.tex
 (C:\Users\Jason\Desktop\Theis\thesis\my-dissertation.tex
@@ -971,27 +971,27 @@ Chapter 1.
 
 
 
-] <images/feyman_e_p.png, id=332, 3027.05907pt x 1453.68094pt>
+] <images/feyman_e_p.png, id=336, 3027.05907pt x 1453.68094pt>
 File: images/feyman_e_p.png Graphic file (type png)
 
 <use images/feyman_e_p.png>
 Package pdftex.def Info: images/feyman_e_p.png used on input line 23.
 (pdftex.def)             Requested size: 284.52756pt x 136.63715pt.
  [2] [3 <C:/Users/Jason/Desktop/Theis/thesis/images/feyman_e_p.png>] [4] [5] <i
-mages/EMC.png, id=386, 491.58656pt x 441.14813pt>
+mages/EMC.png, id=390, 491.58656pt x 441.14813pt>
 File: images/EMC.png Graphic file (type png)
 
 <use images/EMC.png>
 Package pdftex.def Info: images/EMC.png used on input line 81.
 (pdftex.def)             Requested size: 284.52756pt x 255.34105pt.
  [6] [7 <C:/Users/Jason/Desktop/Theis/thesis/images/EMC.png>] <images/EMC3.png,
- id=412, 331.2375pt x 271.0125pt>
+ id=416, 331.2375pt x 271.0125pt>
 File: images/EMC3.png Graphic file (type png)
  <use images/EMC3.png>
 Package pdftex.def Info: images/EMC3.png used on input line 91.
 (pdftex.def)             Requested size: 284.52756pt x 232.80566pt.
 
-<images/EMC1.png, id=415, 542.025pt x 379.4175pt>
+<images/EMC1.png, id=419, 542.025pt x 379.4175pt>
 File: images/EMC1.png Graphic file (type png)
  <use images/EMC1.png>
 Package pdftex.def Info: images/EMC1.png used on input line 98.
@@ -1011,13 +1011,13 @@ Chapter 2.
 
 
 
-] <images/CEBAF.png, id=444, 697.8572pt x 470.50781pt>
+] <images/CEBAF.png, id=448, 697.8572pt x 470.50781pt>
 File: images/CEBAF.png Graphic file (type png)
 
 <use images/CEBAF.png>
 Package pdftex.def Info: images/CEBAF.png used on input line 16.
 (pdftex.def)             Requested size: 284.52756pt x 191.83253pt.
- <images/HallA_2.png, id=446, 870.25125pt x 582.67688pt>
+ <images/HallA_2.png, id=450, 870.25125pt x 582.67688pt>
 File: images/HallA_2.png Graphic file (type png)
 
 <use images/HallA_2.png>
@@ -1025,69 +1025,76 @@ Package pdftex.def Info: images/HallA_2.png used on input line 25.
 (pdftex.def)             Requested size: 398.33858pt x 266.70987pt.
  [11 <C:/Users/Jason/Desktop/Theis/thesis/images/CEBAF.png>] [12 <C:/Users/Jaso
 n/Desktop/Theis/thesis/images/HallA_2.png>]
-<images/BeamLine.png, id=464, 725.71124pt x 437.38406pt>
+<images/BeamLine.png, id=468, 725.71124pt x 437.38406pt>
 File: images/BeamLine.png Graphic file (type png)
 
 <use images/BeamLine.png>
 Package pdftex.def Info: images/BeamLine.png used on input line 36.
 (pdftex.def)             Requested size: 398.33858pt x 240.08144pt.
- <images/BPM.png, id=471, 387.69844pt x 311.66437pt>
+ <images/BPM.png, id=475, 387.69844pt x 311.66437pt>
 File: images/BPM.png Graphic file (type png)
 
 <use images/BPM.png>
 Package pdftex.def Info: images/BPM.png used on input line 44.
 (pdftex.def)             Requested size: 284.52756pt x 228.73053pt.
  [13 <C:/Users/Jason/Desktop/Theis/thesis/images/BeamLine.png>] <images/BPM_4.p
-ng, id=480, 478.78876pt x 411.03563pt>
+ng, id=484, 478.78876pt x 411.03563pt>
 File: images/BPM_4.png Graphic file (type png)
 
 <use images/BPM_4.png>
 Package pdftex.def Info: images/BPM_4.png used on input line 51.
 (pdftex.def)             Requested size: 284.52756pt x 244.26505pt.
  [14 <C:/Users/Jason/Desktop/Theis/thesis/images/BPM.png> <C:/Users/Jason/Deskt
-op/Theis/thesis/images/BPM_4.png>] [15] [16]
-<images/HRSs.png, id=510, 552.56438pt x 722.7pt>
+op/Theis/thesis/images/BPM_4.png>] [15]
+<images/BCM1.png, id=507, 638.385pt x 469.755pt>
+File: images/BCM1.png Graphic file (type png)
+ <use images/BCM1.png>
+Package pdftex.def Info: images/BCM1.png used on input line 76.
+(pdftex.def)             Requested size: 284.52756pt x 209.36646pt.
+ [16]
+[17 <C:/Users/Jason/Desktop/Theis/thesis/images/BCM1.png>]
+<images/HRSs.png, id=524, 552.56438pt x 722.7pt>
 File: images/HRSs.png Graphic file (type png)
  <use images/HRSs.png>
-Package pdftex.def Info: images/HRSs.png used on input line 77.
+Package pdftex.def Info: images/HRSs.png used on input line 88.
 (pdftex.def)             Requested size: 284.52756pt x 372.134pt.
-
-<images/VDC_profile_view.png, id=516, 663.22781pt x 585.68813pt>
+ [18 <C:/Users/Jason/Desktop/Theis/thesis/images/HRSs.png>]
+<images/VDC_profile_view.png, id=535, 663.22781pt x 585.68813pt>
 File: images/VDC_profile_view.png Graphic file (type png)
 
 <use images/VDC_profile_view.png>
-Package pdftex.def Info: images/VDC_profile_view.png used on input line 93.
+Package pdftex.def Info: images/VDC_profile_view.png used on input line 104.
 (pdftex.def)             Requested size: 284.52756pt x 251.26009pt.
-) [17] [18 <C:/Users/Jason/Desktop/Theis/thesis/images/HRSs.png>] [19 <C:/Users
-/Jason/Desktop/Theis/thesis/images/VDC_profile_view.png (PNG copy)>]
+) [19 <C:/Users/Jason/Desktop/Theis/thesis/images/VDC_profile_view.png (PNG cop
+y)>] [20]
 :<-
 :<+ DetectorCalibration.tex
 (C:\Users\Jason\Desktop\Theis\thesis\DetectorCalibration.tex
 Chapter 3.
-<images/harp.png, id=537, 964.35281pt x 255.95625pt>
+<images/harp.png, id=551, 964.35281pt x 255.95625pt>
 File: images/harp.png Graphic file (type png)
  <use images/harp.png>
 Package pdftex.def Info: images/harp.png used on input line 17.
 (pdftex.def)             Requested size: 398.33858pt x 105.72385pt.
 
-[20
+[21
 
 
 
 
-] <images/bulls.png, id=546, 487.06969pt x 359.84438pt>
+] <images/bulls.png, id=560, 487.06969pt x 359.84438pt>
 File: images/bulls.png Graphic file (type png)
 
 <use images/bulls.png>
 Package pdftex.def Info: images/bulls.png used on input line 48.
 (pdftex.def)             Requested size: 284.52756pt x 210.20886pt.
- [21 <C:/Users/Jason/Desktop/Theis/thesis/images/harp.png>]) [22 <C:/Users/Jaso
+ [22 <C:/Users/Jason/Desktop/Theis/thesis/images/harp.png>]) [23 <C:/Users/Jaso
 n/Desktop/Theis/thesis/images/bulls.png>]
 :<-
 :<+ DataAnalysis.tex
 (C:\Users\Jason\Desktop\Theis\thesis\DataAnalysis.tex
 Chapter 4.
-) [23
+) [24
 
 
 
@@ -1097,7 +1104,7 @@ Chapter 4.
 :<+ Results.tex
 (C:\Users\Jason\Desktop\Theis\thesis\Results.tex
 Chapter 5.
-) [24
+) [25
 
 
 
@@ -1107,77 +1114,77 @@ Chapter 5.
 :<+ Simulation.tex
 (C:\Users\Jason\Desktop\Theis\thesis\Simulation.tex
 Chapter 6.
-<images/Initial.png, id=568, 451.6875pt x 451.6875pt>
+<images/Initial.png, id=582, 451.6875pt x 451.6875pt>
 File: images/Initial.png Graphic file (type png)
  <use images/Initial.png>
 Package pdftex.def Info: images/Initial.png used on input line 7.
 (pdftex.def)             Requested size: 227.62204pt x 227.62827pt.
 
-[25
+[26
 
 
 
 
-] [26 <C:/Users/Jason/Desktop/Theis/thesis/images/Initial.png>]
+] [27 <C:/Users/Jason/Desktop/Theis/thesis/images/Initial.png>]
 File: images/Initial.png Graphic file (type png)
 
 <use images/Initial.png>
 Package pdftex.def Info: images/Initial.png used on input line 21.
 (pdftex.def)             Requested size: 184.9429pt x 184.94495pt.
 
-<images/RotatedbyLam.png, id=583, 602.25pt x 602.25pt>
+<images/RotatedbyLam.png, id=597, 602.25pt x 602.25pt>
 File: images/RotatedbyLam.png Graphic file (type png)
 
 <use images/RotatedbyLam.png>
 Package pdftex.def Info: images/RotatedbyLam.png used on input line 26.
 (pdftex.def)             Requested size: 184.9429pt x 184.94035pt.
 
-<images/boosted.png, id=584, 602.25pt x 602.25pt>
+<images/boosted.png, id=598, 602.25pt x 602.25pt>
 File: images/boosted.png Graphic file (type png)
  <use images/boosted.png>
 Package pdftex.def Info: images/boosted.png used on input line 31.
 (pdftex.def)             Requested size: 184.9429pt x 184.94035pt.
 
-<images/beforescattering.png, id=585, 602.25pt x 602.25pt>
+<images/beforescattering.png, id=599, 602.25pt x 602.25pt>
 File: images/beforescattering.png Graphic file (type png)
 
 <use images/beforescattering.png>
 Package pdftex.def Info: images/beforescattering.png used on input line 36.
 (pdftex.def)             Requested size: 184.9429pt x 184.94035pt.
 
-<images/afterscatter.png, id=588, 602.25pt x 602.25pt>
+<images/afterscatter.png, id=602, 602.25pt x 602.25pt>
 File: images/afterscatter.png Graphic file (type png)
 
 <use images/afterscatter.png>
 Package pdftex.def Info: images/afterscatter.png used on input line 47.
 (pdftex.def)             Requested size: 170.71652pt x 170.71487pt.
 
-<images/rotatedbydelta.png, id=589, 602.25pt x 602.25pt>
+<images/rotatedbydelta.png, id=603, 602.25pt x 602.25pt>
 File: images/rotatedbydelta.png Graphic file (type png)
 
 <use images/rotatedbydelta.png>
 Package pdftex.def Info: images/rotatedbydelta.png used on input line 52.
 (pdftex.def)             Requested size: 170.71652pt x 170.71487pt.
 
-<images/boostedback.png, id=590, 602.25pt x 602.25pt>
+<images/boostedback.png, id=604, 602.25pt x 602.25pt>
 File: images/boostedback.png Graphic file (type png)
 
 <use images/boostedback.png>
 Package pdftex.def Info: images/boostedback.png used on input line 57.
 (pdftex.def)             Requested size: 170.71652pt x 170.71487pt.
- <images/final.png, id=591, 602.25pt x 602.25pt>
+ <images/final.png, id=605, 602.25pt x 602.25pt>
 File: images/final.png Graphic file (type png)
 
 <use images/final.png>
 Package pdftex.def Info: images/final.png used on input line 62.
 (pdftex.def)             Requested size: 170.71652pt x 170.71487pt.
- [27 <C:/Users/Jason/Desktop/Theis/thesis/images/RotatedbyLam.png> <C:/Users/Ja
+ [28 <C:/Users/Jason/Desktop/Theis/thesis/images/RotatedbyLam.png> <C:/Users/Ja
 son/Desktop/Theis/thesis/images/boosted.png> <C:/Users/Jason/Desktop/Theis/thes
 is/images/beforescattering.png>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/Es_results.png, id=606, 861.2175pt x 685.05937pt>
+<images/Es_results.png, id=621, 861.2175pt x 685.05937pt>
 File: images/Es_results.png Graphic file (type png)
 
 <use images/Es_results.png>
@@ -1187,16 +1194,16 @@ Package pdftex.def Info: images/Es_results.png used on input line 76.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [28] [29 <C:/Users/Jason/Desktop/Theis/thesis/images/afterscatter.png> <C:/Us
+) [29] [30 <C:/Users/Jason/Desktop/Theis/thesis/images/afterscatter.png> <C:/Us
 ers/Jason/Desktop/Theis/thesis/images/rotatedbydelta.png> <C:/Users/Jason/Deskt
 op/Theis/thesis/images/boostedback.png> <C:/Users/Jason/Desktop/Theis/thesis/im
-ages/final.png>] [30 <C:/Users/Jason/Desktop/Theis/thesis/images/Es_results.png
+ages/final.png>] [31 <C:/Users/Jason/Desktop/Theis/thesis/images/Es_results.png
  (PNG copy)>]
 :<-
 :<+ Conclusion.tex
 (C:\Users\Jason\Desktop\Theis\thesis\Conclusion.tex
 Chapter 7.
-) [31
+) [32
 
 
 
@@ -1207,15 +1214,15 @@ Chapter 7.
 (C:\Users\Jason\Desktop\Theis\thesis\my-dissertation.bbl
 (C:\Users\Jason\Desktop\Theis\thesis\my-dissertation.brf)
 \tf@brf=\write9
- [32
+ [33
 
 
 
-] [33
+] [34
 
-] [34])
+] [35])
 :<-
-[35] [36]
+[36] [37]
 :<+ back-matter/appendix-1.tex
 (C:\Users\Jason\Desktop\Theis\thesis\back-matter/appendix-1.tex)
 :<-
@@ -1241,19 +1248,19 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 137.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 137.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 137.
 Package rerunfilecheck Info: File `my-dissertation.out' has not changed.
-(rerunfilecheck)             Checksum: 2EF015D9579ABBA5AC9289E0D99BE679;2440.
+(rerunfilecheck)             Checksum: AF915B74105DFFCB1A8387BCF526BCC3;2440.
 Package rerunfilecheck Info: File `my-dissertation.brf' has not changed.
-(rerunfilecheck)             Checksum: 465EC6B102F7724B989932D2B6D1F98F;2651.
+(rerunfilecheck)             Checksum: 844E737CD519F01340DC0656BB97DC15;2746.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 137.
  ) 
 Here is how much of TeX's memory you used:
- 19101 strings out of 493921
- 348370 string characters out of 3147282
- 416687 words of memory out of 3000000
- 21735 multiletter control sequences out of 15000+200000
+ 19117 strings out of 493921
+ 348569 string characters out of 3147282
+ 416781 words of memory out of 3000000
+ 21746 multiletter control sequences out of 15000+200000
  16383 words of font info for 64 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 56i,11n,56p,1891b,499s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 56i,11n,56p,1891b,503s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKT
@@ -1273,9 +1280,9 @@ fonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
 /cmtt12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/ms
 am10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm1
 0.pfb>
-Output written on my-dissertation.pdf (45 pages, 2648569 bytes).
+Output written on my-dissertation.pdf (46 pages, 2731287 bytes).
 PDF statistics:
- 806 PDF objects out of 1000 (max. 8388607)
- 179 named destinations out of 1000 (max. 500000)
- 443 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 822 PDF objects out of 1000 (max. 8388607)
+ 183 named destinations out of 1000 (max. 500000)
+ 448 words of extra memory for PDF output out of 10000 (max. 10000000)
 
