@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.11.4)  2 MAY 2018 10:41
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.11.4)  2 MAY 2018 13:57
 entering extended mode
 **my-dissertation.tex
 (C:\Users\Jason\Desktop\Theis\thesis\my-dissertation.tex
@@ -1046,20 +1046,20 @@ Package pdftex.def Info: images/BPM_4.png used on input line 51.
 (pdftex.def)             Requested size: 284.52756pt x 244.26505pt.
  [14 <C:/Users/Jason/Desktop/Theis/thesis/images/BPM.png> <C:/Users/Jason/Deskt
 op/Theis/thesis/images/BPM_4.png>] [15]
-<images/BCM1.png, id=507, 638.385pt x 469.755pt>
+<images/BCM1.png, id=508, 638.385pt x 469.755pt>
 File: images/BCM1.png Graphic file (type png)
  <use images/BCM1.png>
 Package pdftex.def Info: images/BCM1.png used on input line 76.
 (pdftex.def)             Requested size: 284.52756pt x 209.36646pt.
  [16]
 [17 <C:/Users/Jason/Desktop/Theis/thesis/images/BCM1.png>]
-<images/HRSs.png, id=525, 552.56438pt x 722.7pt>
+<images/HRSs.png, id=526, 552.56438pt x 722.7pt>
 File: images/HRSs.png Graphic file (type png)
  <use images/HRSs.png>
 Package pdftex.def Info: images/HRSs.png used on input line 89.
 (pdftex.def)             Requested size: 284.52756pt x 372.134pt.
  [18 <C:/Users/Jason/Desktop/Theis/thesis/images/HRSs.png>]
-<images/VDC_profile_view.png, id=536, 663.22781pt x 585.68813pt>
+<images/VDC_profile_view.png, id=537, 663.22781pt x 585.68813pt>
 File: images/VDC_profile_view.png Graphic file (type png)
 
 <use images/VDC_profile_view.png>
@@ -1071,7 +1071,7 @@ y)>] [20]
 :<+ DetectorCalibration.tex
 (C:\Users\Jason\Desktop\Theis\thesis\DetectorCalibration.tex
 Chapter 3.
-<images/harp.png, id=552, 964.35281pt x 255.95625pt>
+<images/harp.png, id=553, 964.35281pt x 255.95625pt>
 File: images/harp.png Graphic file (type png)
  <use images/harp.png>
 Package pdftex.def Info: images/harp.png used on input line 17.
@@ -1082,7 +1082,7 @@ Package pdftex.def Info: images/harp.png used on input line 17.
 
 
 
-] <images/bulls.png, id=561, 487.06969pt x 359.84438pt>
+] <images/bulls.png, id=562, 487.06969pt x 359.84438pt>
 File: images/bulls.png Graphic file (type png)
 
 <use images/bulls.png>
@@ -1114,7 +1114,7 @@ Chapter 5.
 :<+ Simulation.tex
 (C:\Users\Jason\Desktop\Theis\thesis\Simulation.tex
 Chapter 6.
-<images/Initial.png, id=583, 451.6875pt x 451.6875pt>
+<images/Initial.png, id=584, 451.6875pt x 451.6875pt>
 File: images/Initial.png Graphic file (type png)
  <use images/Initial.png>
 Package pdftex.def Info: images/Initial.png used on input line 7.
@@ -1132,47 +1132,47 @@ File: images/Initial.png Graphic file (type png)
 Package pdftex.def Info: images/Initial.png used on input line 21.
 (pdftex.def)             Requested size: 184.9429pt x 184.94495pt.
 
-<images/RotatedbyLam.png, id=598, 602.25pt x 602.25pt>
+<images/RotatedbyLam.png, id=599, 602.25pt x 602.25pt>
 File: images/RotatedbyLam.png Graphic file (type png)
 
 <use images/RotatedbyLam.png>
 Package pdftex.def Info: images/RotatedbyLam.png used on input line 26.
 (pdftex.def)             Requested size: 184.9429pt x 184.94035pt.
 
-<images/boosted.png, id=599, 602.25pt x 602.25pt>
+<images/boosted.png, id=600, 602.25pt x 602.25pt>
 File: images/boosted.png Graphic file (type png)
  <use images/boosted.png>
 Package pdftex.def Info: images/boosted.png used on input line 31.
 (pdftex.def)             Requested size: 184.9429pt x 184.94035pt.
 
-<images/beforescattering.png, id=600, 602.25pt x 602.25pt>
+<images/beforescattering.png, id=601, 602.25pt x 602.25pt>
 File: images/beforescattering.png Graphic file (type png)
 
 <use images/beforescattering.png>
 Package pdftex.def Info: images/beforescattering.png used on input line 36.
 (pdftex.def)             Requested size: 184.9429pt x 184.94035pt.
 
-<images/afterscatter.png, id=603, 602.25pt x 602.25pt>
+<images/afterscatter.png, id=604, 602.25pt x 602.25pt>
 File: images/afterscatter.png Graphic file (type png)
 
 <use images/afterscatter.png>
 Package pdftex.def Info: images/afterscatter.png used on input line 47.
 (pdftex.def)             Requested size: 170.71652pt x 170.71487pt.
 
-<images/rotatedbydelta.png, id=604, 602.25pt x 602.25pt>
+<images/rotatedbydelta.png, id=605, 602.25pt x 602.25pt>
 File: images/rotatedbydelta.png Graphic file (type png)
 
 <use images/rotatedbydelta.png>
 Package pdftex.def Info: images/rotatedbydelta.png used on input line 52.
 (pdftex.def)             Requested size: 170.71652pt x 170.71487pt.
 
-<images/boostedback.png, id=605, 602.25pt x 602.25pt>
+<images/boostedback.png, id=606, 602.25pt x 602.25pt>
 File: images/boostedback.png Graphic file (type png)
 
 <use images/boostedback.png>
 Package pdftex.def Info: images/boostedback.png used on input line 57.
 (pdftex.def)             Requested size: 170.71652pt x 170.71487pt.
- <images/final.png, id=606, 602.25pt x 602.25pt>
+ <images/final.png, id=607, 602.25pt x 602.25pt>
 File: images/final.png Graphic file (type png)
 
 <use images/final.png>
@@ -1184,7 +1184,7 @@ is/images/beforescattering.png>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/Es_results.png, id=622, 861.2175pt x 685.05937pt>
+<images/Es_results.png, id=623, 861.2175pt x 685.05937pt>
 File: images/Es_results.png Graphic file (type png)
 
 <use images/Es_results.png>
@@ -1249,8 +1249,14 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 137.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 137.
 Package rerunfilecheck Info: File `my-dissertation.out' has not changed.
 (rerunfilecheck)             Checksum: 4E5CC92CFE925CEEF4B77BC348978DA7;2440.
-Package rerunfilecheck Info: File `my-dissertation.brf' has not changed.
-(rerunfilecheck)             Checksum: 187A33C475CCE47D0BA45263464D4606;2746.
+
+
+Package rerunfilecheck Warning: File `my-dissertation.brf' has changed.
+(rerunfilecheck)                Rerun to get bibliographical references right.
+
+Package rerunfilecheck Info: Checksums for `my-dissertation.brf':
+(rerunfilecheck)             Before: 187A33C475CCE47D0BA45263464D4606;2746
+(rerunfilecheck)             After:  B326FD1EC0F77B5871FA0F4DA9D5F61D;2790.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 137.
  ) 
 Here is how much of TeX's memory you used:
@@ -1280,9 +1286,9 @@ fonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
 /cmtt12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/ms
 am10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm1
 0.pfb>
-Output written on my-dissertation.pdf (46 pages, 2731403 bytes).
+Output written on my-dissertation.pdf (46 pages, 2731921 bytes).
 PDF statistics:
- 823 PDF objects out of 1000 (max. 8388607)
+ 824 PDF objects out of 1000 (max. 8388607)
  184 named destinations out of 1000 (max. 500000)
  448 words of extra memory for PDF output out of 10000 (max. 10000000)
 
