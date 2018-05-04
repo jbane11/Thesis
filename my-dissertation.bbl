@@ -1,8 +1,5 @@
 \begin{thebibliography}{10}
 
-\bibitem{BCM1}
-
-
 \bibitem{HallA}
 J.~Alcorn et~al.
 \newblock {Basic Instrumentation for Hall A at Jefferson Lab}.
@@ -19,6 +16,11 @@ John Arrington, Aji Daniel, Donal Day, Nadia Fomin, Dave Gaskell, and Patricia
 A.~Daniel, J.~Arrington, and D.~Gaskell.
 \newblock {Measurements of the EMC effect in few-body nuclei at large x}.
 \newblock {\em AIP Conf. Proc.}, 1369:98--105, 2011.
+
+\bibitem{BCM1}
+J.~Denard and J.~Sahar.
+\newblock High accuracy beam current monitor system for cebaf's hall a.
+\newblock Chicago, 2001. Particle Accelerator Conference.
 
 \bibitem{piler}
 J.~Edelmann, G.~Piller, Norbert Kaiser, and W.~Weise.
