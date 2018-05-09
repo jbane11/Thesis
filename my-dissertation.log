@@ -1,19 +1,14 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.11.4)  4 MAY 2018 11:49
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2018.3.9)  9 MAY 2018 13:11
 entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
 **my-dissertation.tex
-(C:\Users\Jason\Desktop\Theis\thesis\my-dissertation.tex
+(./my-dissertation.tex
 LaTeX2e <2011/06/27>
-Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
-abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
-croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
-lician, german, german-x-2013-05-26, greek, gujarati, hindi, hungarian, iceland
-ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
- lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
-german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
-ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
-an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
-ishmax, welsh, loaded.
-(C:\Users\Jason\Desktop\Theis\thesis\utthesis.cls
+Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, lo
+aded.
+(./utthesis.cls
 utthesis.cls
 ver 1.0.0
 Created by Tony Saad
@@ -21,9 +16,9 @@ March 30, 2010
 Some parts and settings of this class are based on the template provided by Dav
 id L. Page.
 Document Class: utthesis 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\report.cls"
+(/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
 Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\size12.clo"
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
 File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -39,24 +34,24 @@ File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2013/01/14 v2.14 AMS math features
 \@mathmargin=\skip43
 
 For additional information on amsmath, use the `?' option.
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks14
 \ex@=\dimen103
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen104
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count88
@@ -97,7 +92,7 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\amscls\amsthm.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2004/08/06 v2.20
 \thm@style=\toks19
 \thm@bodyfont=\toks20
@@ -109,35 +104,35 @@ Package: amsthm 2004/08/06 v2.20
 \thm@headsep=\skip48
 \dth@everypar=\toks24
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\setspace\setspace.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks25
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty"
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
 Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 \Gm@cnth=\count100
@@ -152,18 +147,17 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layouthoffset=\dimen118
 \Gm@layoutvoffset=\dimen119
 \Gm@dimlist=\toks26
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
-("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
+)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty"
-Package: hobsub-hyperref 2012/04/25 v1.12 Bundle oberdiek, subset hyperref (HO)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
 
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty"
-Package: hobsub-generic 2012/04/25 v1.12 Bundle oberdiek, subset generic (HO)
-Package: hobsub 2012/04/25 v1.12 Construct package bundles (HO)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
@@ -192,7 +186,7 @@ Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
 )
 Package hobsub Info: Skipping package `hobsub' (already loaded).
 Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
-Package: hopatch 2011/06/24 v1.1 Wrapper for package hooks (HO)
+Package: hopatch 2012/05/28 v1.2 Wrapper for package hooks (HO)
 Package: xcolor-patch 2011/01/30 xcolor patch
 Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
 Package atveryend Info: \enddocument detected (standard20110627).
@@ -200,22 +194,22 @@ Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
 Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
 Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty
 Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
 \@linkdim=\dimen120
 \Hy@linkcounter=\count103
 \Hy@pagecounter=\count104
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 )
 \Hy@SavedSpaceFactor=\count105
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
 Package hyperref Info: Option `plainpages' set `false' on input line 4319.
@@ -229,19 +223,19 @@ Package hyperref Info: Backreferencing ON on input line 4461.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\backref.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/backref.sty
 Package: backref 2012/07/25 v1.38 Bibliographical back referencing
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 ))
 \c@Hy@tempcnt=\count106
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\url\url.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
-Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5041.
 \XeTeXLinkMargin=\dimen121
@@ -264,21 +258,21 @@ LaTeX Info: Redefining \pageref on input line 6369.
 
 Package hyperref Message: Driver: hpdftex.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
 \Fld@listcount=\count111
 \c@bookmark@seq@number=\count112
 \Hy@SectionHShift=\skip49
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\color.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 130.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 \Gread@gobject=\count113
 ))
@@ -292,13 +286,12 @@ Package hyperref Info: Option `pdffitwindow' set `true' on input line 149.
 Package hyperref Info: Option `pdfnewwindow' set `true' on input line 149.
 Package hyperref Info: Option `colorlinks' set `true' on input line 149.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\nomencl\nomencl.sty"
+(./nomencl.sty
 Package: nomencl 2005/09/22 v4.2 Nomenclature package (LN)
 \nomlabelwidth=\dimen124
 \nom@tempdim=\dimen125
 \nomitemsep=\skip50
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\float\float.sty"
+) (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count117
 \float@exts=\toks27
@@ -306,31 +299,31 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks28
 \@floatcapt=\box29
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\natbib\natbib.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip51
 \bibsep=\skip52
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count118
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
-File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 )
 \Gin@req@height=\dimen126
 \Gin@req@width=\dimen127
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 \fancy@headwidth=\skip53
 \f@ncyO@elh=\skip54
 \f@ncyO@erh=\skip55
@@ -340,22 +333,20 @@ Package graphics Info: Driver file: pdftex.def on input line 91.
 \f@ncyO@erf=\skip59
 \f@ncyO@olf=\skip60
 \f@ncyO@orf=\skip61
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\srcltx\srcltx.sty"
+) (./srcltx.sty
 Package: srcltx 2006/11/12 v1.6 Source specials for inverse search in DVI files
 
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
 \src@lastline=\count119
 \src@new@everypar=\toks29
 \src@new@output=\toks30
+) (./relsize.sty
+Package: relsize 2013/03/29 ver 4.1
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\ltxmisc\relsize.sty"
-Package: relsize 2003/07/04 ver 3.1
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\booktabs\booktabs.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \heavyrulewidth=\dimen128
 \lightrulewidth=\dimen129
@@ -375,12 +366,11 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \@lastruleclass=\count123
 \@thisrulewidth=\dimen140
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption.sty"
-Package: caption 2015/09/17 v3.3-111 Customizing captions (AR)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2013/02/03 v3.3-65 Customizing captions (AR)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption3.sty"
-Package: caption3 2015/09/20 v1.7-115 caption3 kernel (AR)
-Package caption3 Info: TeX engine: e-TeX on input line 57.
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2013/02/03 v1.5-62 caption3 kernel (AR)
 \captionmargin=\dimen141
 \captionmargin@=\dimen142
 \captionwidth=\dimen143
@@ -391,13 +381,13 @@ Package caption3 Info: TeX engine: e-TeX on input line 57.
 )
 
 Package caption Warning: Configuration file caption.cfg not found on input line
- 292.
+ 278.
 See the caption package documentation for explanation.
 
 \c@ContinuedFloat=\count124
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
-) ("C:\Program Files\MiKTeX 2.9\tex\latex\subfig\subfig.sty"
+) (/usr/share/texlive/texmf-dist/tex/latex/subfig/subfig.sty
 Package: subfig 2005/06/28 ver: 1.3 subfig package
 \c@KVtest=\count125
 \sf@farskip=\skip62
@@ -417,101 +407,96 @@ Package subfig Warning: Configuration file subfig.cfg not found on input line 2
 \c@lotdepth=\count131
 \sf@top=\skip65
 \sf@bottom=\skip66
-) ("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\frontendlayer\tikz.sty"
-("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgf.sty"
-("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\utilities\pgfrcs.sty"
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-common.tex"
+) (/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
 \pgfutil@everybye=\toks31
-\pgfutil@tempdima=\dimen149
-\pgfutil@tempdimb=\dimen150
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-common-lists.te
-x")) ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-latex.def"
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
 \pgfutil@abb=\box30
-("C:\Program Files\MiKTeX 2.9\tex\latex\ms\everyshi.sty"
+
+(/usr/share/texlive/texmf-dist/tex/latex/ms/everyshi.sty
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 ))
 Package srcltx Info: Expanded filename `pgfrcs.code.tex' to `pgfrcs.code.tex' o
 n input line 13.
 
 :<+ pgfrcs.code.tex
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfrcs.code.tex"
-Package: pgfrcs 2013/12/20 v3.0.0 (rcs-revision 1.28)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+Package: pgfrcs 2010/10/25 v2.10 (rcs-revision 1.24)
 )
 :<-
 )
-Package: pgf 2013/12/18 v3.0.0 (rcs-revision 1.14)
- ("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgfcore.sty"
-("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\systemlayer\pgfsys.sty"
+Package: pgf 2008/01/15 v2.10 (rcs-revision 1.12)
+ (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
 Package srcltx Info: Expanded filename `pgfsys.code.tex' to `pgfsys.code.tex' o
-n input line 16.
+n input line 12.
 
 :<+ pgfsys.code.tex
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsys.code.tex"
-Package: pgfsys 2013/11/30 v3.0.0 (rcs-revision 1.47)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2010/06/30 v2.10 (rcs-revision 1.37)
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfkeys.code.tex"
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
 \pgfkeys@pathtoks=\toks32
 \pgfkeys@temptoks=\toks33
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfkeysfiltered.code.te
-x"
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.t
+ex
 \pgfkeys@tmptoks=\toks34
 ))
-\pgf@x=\dimen151
-\pgf@y=\dimen152
-\pgf@xa=\dimen153
-\pgf@ya=\dimen154
-\pgf@xb=\dimen155
-\pgf@yb=\dimen156
-\pgf@xc=\dimen157
-\pgf@yc=\dimen158
+\pgf@x=\dimen149
+\pgf@y=\dimen150
+\pgf@xa=\dimen151
+\pgf@ya=\dimen152
+\pgf@xb=\dimen153
+\pgf@yb=\dimen154
+\pgf@xc=\dimen155
+\pgf@yc=\dimen156
 \w@pgf@writea=\write3
 \r@pgf@reada=\read1
 \c@pgf@counta=\count132
 \c@pgf@countb=\count133
 \c@pgf@countc=\count134
 \c@pgf@countd=\count135
-\t@pgf@toka=\toks35
-\t@pgf@tokb=\toks36
-\t@pgf@tokc=\toks37
- ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgf.cfg"
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
 )
-Driver file for pgf: pgfsys-pdftex.def
+Package pgfsys Info: Driver file for pgf: pgfsys-pdftex.def on input line 900.
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsys-pdftex.def"
-File: pgfsys-pdftex.def 2013/07/18  (rcs-revision 1.33)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2009/05/22  (rcs-revision 1.26)
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsys-common-pdf.def
-"
-File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.de
+f
+File: pgfsys-common-pdf.def 2008/05/19  (rcs-revision 1.10)
 )))
 :<-
 Package srcltx Info: Expanded filename `pgfsyssoftpath.code.tex' to `pgfsyssoft
-path.code.tex' on input line 17.
+path.code.tex' on input line 13.
 :<+ pgfsyssoftpath.code.tex
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsyssoftpath.code.t
-ex"
-File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
+tex
+File: pgfsyssoftpath.code.tex 2008/07/18  (rcs-revision 1.7)
 \pgfsyssoftpath@smallbuffer@items=\count136
 \pgfsyssoftpath@bigbuffer@items=\count137
 )
 :<-
 Package srcltx Info: Expanded filename `pgfsysprotocol.code.tex' to `pgfsysprot
-ocol.code.tex' on input line 18.
+ocol.code.tex' on input line 14.
 :<+ pgfsysprotocol.code.tex
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsysprotocol.code.t
-ex"
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
+tex
 File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
 )
 :<-
-) ("C:\Program Files\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
+) (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
@@ -530,176 +515,164 @@ Package srcltx Info: Expanded filename `pgfcore.code.tex' to `pgfcore.code.tex'
  on input line 17.
 
 :<+ pgfcore.code.tex
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcore.code.tex"
-Package: pgfcore 2010/04/11 v3.0.0 (rcs-revision 1.7)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2010/04/11 v2.10 (rcs-revision 1.7)
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmath.code.tex"
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathcalc.code.tex"
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathutil.code.tex")
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathparser.code.tex"
-\pgfmath@dimen=\dimen159
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen157
 \pgfmath@count=\count138
 \pgfmath@box=\box31
-\pgfmath@toks=\toks38
-\pgfmath@stack@operand=\toks39
-\pgfmath@stack@operation=\toks40
+\pgfmath@toks=\toks35
+\pgfmath@stack@operand=\toks36
+\pgfmath@stack@operation=\toks37
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.code.tex"
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.basic.code.
-tex")
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.trigonometr
-ic.code.tex")
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.random.code
-.tex")
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.comparison.
-code.tex")
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.base.code.t
-ex")
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.round.code.
-tex")
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.misc.code.t
-ex")
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.integerarit
-hmetics.code.tex")))
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfloat.code.tex"
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonomet
+ric.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.cod
+e.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.
+tex)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
 \c@pgfmathroundto@lastzeros=\count139
 ))
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepoints.code.tex
-"
-File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
-\pgf@picminx=\dimen160
-\pgf@picmaxx=\dimen161
-\pgf@picminy=\dimen162
-\pgf@picmaxy=\dimen163
-\pgf@pathminx=\dimen164
-\pgf@pathmaxx=\dimen165
-\pgf@pathminy=\dimen166
-\pgf@pathmaxy=\dimen167
-\pgf@xx=\dimen168
-\pgf@xy=\dimen169
-\pgf@yx=\dimen170
-\pgf@yy=\dimen171
-\pgf@zx=\dimen172
-\pgf@zy=\dimen173
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
+x
+File: pgfcorepoints.code.tex 2010/04/09  (rcs-revision 1.20)
+\pgf@picminx=\dimen158
+\pgf@picmaxx=\dimen159
+\pgf@picminy=\dimen160
+\pgf@picmaxy=\dimen161
+\pgf@pathminx=\dimen162
+\pgf@pathmaxx=\dimen163
+\pgf@pathminy=\dimen164
+\pgf@pathmaxy=\dimen165
+\pgf@xx=\dimen166
+\pgf@xy=\dimen167
+\pgf@yx=\dimen168
+\pgf@yy=\dimen169
+\pgf@zx=\dimen170
+\pgf@zy=\dimen171
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathconstruct.c
-ode.tex"
-File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
-\pgf@path@lastx=\dimen174
-\pgf@path@lasty=\dimen175
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.
+code.tex
+File: pgfcorepathconstruct.code.tex 2010/08/03  (rcs-revision 1.24)
+\pgf@path@lastx=\dimen172
+\pgf@path@lasty=\dimen173
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathusage.code.
-tex"
-File: pgfcorepathusage.code.tex 2013/12/13  (rcs-revision 1.23)
-\pgf@shorten@end@additional=\dimen176
-\pgf@shorten@start@additional=\dimen177
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code
+.tex
+File: pgfcorepathusage.code.tex 2008/04/22  (rcs-revision 1.12)
+\pgf@shorten@end@additional=\dimen174
+\pgf@shorten@start@additional=\dimen175
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorescopes.code.tex
-"
-File: pgfcorescopes.code.tex 2013/10/09  (rcs-revision 1.44)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
+x
+File: pgfcorescopes.code.tex 2010/09/08  (rcs-revision 1.34)
 \pgfpic=\box32
 \pgf@hbox=\box33
 \pgf@layerbox@main=\box34
 \pgf@picture@serial@count=\count140
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoregraphicstate.co
-de.tex"
-File: pgfcoregraphicstate.code.tex 2013/09/19  (rcs-revision 1.11)
-\pgflinewidth=\dimen178
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
+ode.tex
+File: pgfcoregraphicstate.code.tex 2008/04/22  (rcs-revision 1.9)
+\pgflinewidth=\dimen176
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoretransformations
-.code.tex"
-File: pgfcoretransformations.code.tex 2013/10/10  (rcs-revision 1.17)
-\pgf@pt@x=\dimen179
-\pgf@pt@y=\dimen180
-\pgf@pt@temp=\dimen181
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformation
+s.code.tex
+File: pgfcoretransformations.code.tex 2009/06/10  (rcs-revision 1.11)
+\pgf@pt@x=\dimen177
+\pgf@pt@y=\dimen178
+\pgf@pt@temp=\dimen179
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorequick.code.tex"
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreobjects.code.te
-x"
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.t
+ex
 File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathprocessing.
-code.tex"
-File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing
+.code.tex
+File: pgfcorepathprocessing.code.tex 2008/10/09  (rcs-revision 1.8)
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorearrows.code.tex
-"
-File: pgfcorearrows.code.tex 2013/11/07  (rcs-revision 1.40)
-\pgfarrowsep=\dimen182
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.te
+x
+File: pgfcorearrows.code.tex 2008/04/23  (rcs-revision 1.11)
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreshade.code.tex"
-File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
-\pgf@max=\dimen183
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2008/11/23  (rcs-revision 1.13)
+\pgf@max=\dimen180
 \pgf@sys@shading@range@num=\count141
-) ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreimage.code.te
-x"
-File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2010/03/25  (rcs-revision 1.16)
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreexternal.code.t
-ex"
-File: pgfcoreexternal.code.tex 2013/07/15  (rcs-revision 1.20)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
+tex
+File: pgfcoreexternal.code.tex 2010/09/01  (rcs-revision 1.17)
 \pgfexternal@startupbox=\box35
 ))
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorelayers.code.tex
-"
-File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
+x
+File: pgfcorelayers.code.tex 2010/08/27  (rcs-revision 1.2)
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoretransparency.co
-de.tex"
-File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.c
+ode.tex
+File: pgfcoretransparency.code.tex 2008/01/17  (rcs-revision 1.2)
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepatterns.code.t
-ex"
-File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.
+tex
+File: pgfcorepatterns.code.tex 2009/07/02  (rcs-revision 1.3)
 ))
 :<-
-) ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\modules\pgfmoduleshapes.code.te
-x"
-File: pgfmoduleshapes.code.tex 2013/10/31  (rcs-revision 1.34)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2010/09/09  (rcs-revision 1.13)
 \pgfnodeparttextbox=\box36
-) ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\modules\pgfmoduleplot.code.tex"
-File: pgfmoduleplot.code.tex 2013/07/31  (rcs-revision 1.12)
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2010/10/22  (rcs-revision 1.8)
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\compatibility\pgfcomp-version-0-65.
-sty"
-Package: pgfcomp-version-0-65 2007/07/03 v3.0.0 (rcs-revision 1.7)
-\pgf@nodesepstart=\dimen184
-\pgf@nodesepend=\dimen185
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65
+.sty
+Package: pgfcomp-version-0-65 2007/07/03 v2.10 (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen181
+\pgf@nodesepend=\dimen182
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\compatibility\pgfcomp-version-1-18.
-sty"
-Package: pgfcomp-version-1-18 2007/07/23 v3.0.0 (rcs-revision 1.1)
-)) ("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\utilities\pgffor.sty"
-("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\utilities\pgfkeys.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
+.sty
+Package: pgfcomp-version-1-18 2007/07/23 v2.10 (rcs-revision 1.1)
+)) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
 Package srcltx Info: Expanded filename `pgfkeys.code.tex' to `pgfkeys.code.tex'
  on input line 10.
 
 :<+ pgfkeys.code.tex
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfkeys.code.tex")
-:<-
-) ("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\math\pgfmath.sty"
-Package srcltx Info: Expanded filename `pgfmath.code.tex' to `pgfmath.code.tex'
- on input line 11.
-
-:<+ pgfmath.code.tex
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmath.code.tex")
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)
 :<-
 )
 Package srcltx Info: Expanded filename `pgffor.code.tex' to `pgffor.code.tex' o
-n input line 14.
+n input line 13.
 
 :<+ pgffor.code.tex
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgffor.code.tex"
-Package: pgffor 2013/12/13 v3.0.0 (rcs-revision 1.25)
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmath.code.tex")
-\pgffor@iter=\dimen186
-\pgffor@skip=\dimen187
-\pgffor@stack=\toks41
-\pgffor@toks=\toks42
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2010/03/23 v2.10 (rcs-revision 1.18)
+\pgffor@iter=\dimen183
+\pgffor@skip=\dimen184
+\pgffor@stack=\toks38
+\pgffor@toks=\toks39
 )
 :<-
 )
@@ -707,75 +680,69 @@ Package srcltx Info: Expanded filename `tikz.code.tex' to `tikz.code.tex' on in
 put line 13.
 
 :<+ tikz.code.tex
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\tikz.code.tex"
-Package: tikz 2013/12/13 v3.0.0 (rcs-revision 1.142)
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\libraries\pgflibraryplothandlers.
-code.tex"
-File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.0 (rcs-revision 1.20)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2010/10/13 v2.10 (rcs-revision 1.76)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
+.code.tex
+File: pgflibraryplothandlers.code.tex 2010/05/31 v2.10 (rcs-revision 1.15)
 \pgf@plot@mark@count=\count142
-\pgfplotmarksize=\dimen188
+\pgfplotmarksize=\dimen185
 )
-\tikz@lastx=\dimen189
-\tikz@lasty=\dimen190
-\tikz@lastxsaved=\dimen191
-\tikz@lastysaved=\dimen192
-\tikzleveldistance=\dimen193
-\tikzsiblingdistance=\dimen194
+\tikz@lastx=\dimen186
+\tikz@lasty=\dimen187
+\tikz@lastxsaved=\dimen188
+\tikz@lastysaved=\dimen189
+\tikzleveldistance=\dimen190
+\tikzsiblingdistance=\dimen191
 \tikz@figbox=\box37
-\tikz@figbox@bg=\box38
-\tikz@tempbox=\box39
-\tikz@tempbox@bg=\box40
+\tikz@tempbox=\box38
 \tikztreelevel=\count143
 \tikznumberofchildren=\count144
 \tikznumberofcurrentchild=\count145
 \tikz@fig@count=\count146
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\modules\pgfmodulematrix.code.tex"
-File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2010/08/24  (rcs-revision 1.4)
 \pgfmatrixcurrentrow=\count147
 \pgfmatrixcurrentcolumn=\count148
 \pgf@matrix@numberofcolumns=\count149
 )
 \tikz@expandcount=\count150
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikz
-librarytopaths.code.tex"
-File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.0 (rcs-revision 1.2)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2008/06/17 v2.10 (rcs-revision 1.2)
 ))
 :<-
-) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf.sty"
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf.sty
 Package: epstopdf 2010/02/09 v2.5 Conversion with epstopdf on the fly (HO)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
 Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
 )
 Package grfext Info: Graphics extension search list:
 (grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 452.
-))
-("C:\Program Files\MiKTeX 2.9\tex\latex\jknappen\mathrsfs.sty"
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+)))
+(/usr/share/texlive/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
 Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
 \symrsfs=\mathgroup6
 )
-(C:\Users\Jason\Desktop\Theis\thesis\my-dissertation.aux
-(C:\Users\Jason\Desktop\Theis\thesis\front-matter/dedication.aux)
-(C:\Users\Jason\Desktop\Theis\thesis\front-matter/acknowledgements.aux)
-(C:\Users\Jason\Desktop\Theis\thesis\front-matter/quote.aux)
-(C:\Users\Jason\Desktop\Theis\thesis\front-matter/abstract.aux)
-(C:\Users\Jason\Desktop\Theis\thesis\Introduction.aux)
-(C:\Users\Jason\Desktop\Theis\thesis\ExperimentalSetup.aux)
-(C:\Users\Jason\Desktop\Theis\thesis\DetectorCalibration.aux)
-(C:\Users\Jason\Desktop\Theis\thesis\DataAnalysis.aux)
-(C:\Users\Jason\Desktop\Theis\thesis\Results.aux)
-(C:\Users\Jason\Desktop\Theis\thesis\Simulation.aux)
-(C:\Users\Jason\Desktop\Theis\thesis\Conclusion.aux)
-(C:\Users\Jason\Desktop\Theis\thesis\back-matter/appendix-1.aux)
-(C:\Users\Jason\Desktop\Theis\thesis\back-matter/vita.aux))
+(./my-dissertation.aux (./front-matter/dedication.aux)
+(./front-matter/acknowledgements.aux) (./front-matter/quote.aux)
+(./front-matter/abstract.aux) (./Introduction.aux) (./ExperimentalSetup.aux))
+\openout1 = `my-dissertation.aux'.
+
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 66.
 LaTeX Font Info:    ... okay on input line 66.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 66.
@@ -825,13 +792,13 @@ LaTeX Font Info:    ... okay on input line 66.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\AtBeginShipoutBox=\box41
+\AtBeginShipoutBox=\box39
 Package backref Info: ** backref set up for natbib ** on input line 66.
 Package hyperref Info: Link coloring ON on input line 66.
-("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count151
@@ -840,23 +807,24 @@ LaTeX Info: Redefining \ref on input line 66.
 LaTeX Info: Redefining \pageref on input line 66.
 LaTeX Info: Redefining \nameref on input line 66.
 
-(C:\Users\Jason\Desktop\Theis\thesis\my-dissertation.out)
-(C:\Users\Jason\Desktop\Theis\thesis\my-dissertation.out)
+(./my-dissertation.out) (./my-dissertation.out)
 \@outlinefile=\write4
+\openout4 = `my-dissertation.out'.
 
-("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count152
-\scratchdimen=\dimen195
-\scratchbox=\box42
+\scratchdimen=\dimen192
+\scratchbox=\box40
 \nofMPsegments=\count153
 \nofMParguments=\count154
-\everyMPshowfont=\toks43
+\everyMPshowfont=\toks40
 \MPscratchCnt=\count155
-\MPscratchDim=\dimen196
+\MPscratchDim=\dimen193
 \MPnumerator=\count156
 \makeMPintoPDFobject=\count157
-\everyMPtoPDFconversion=\toks44
+\everyMPtoPDFconversion=\toks41
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
@@ -864,22 +832,22 @@ Package caption Info: End \AtBeginDocument code.
  ABD: EveryShipout initializing macros
 LaTeX Font Info:    Try loading font information for U+msa on input line 69.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 69.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Try loading font information for U+rsfs on input line 69.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\jknappen\ursfs.fd"
+(/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 ) [1
 Non-PDF special ignored!
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
+{/usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 Underfull \hbox (badness 10000) in paragraph at lines 70--70
 
  []
@@ -896,7 +864,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 70--70
 
 ]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 79.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+ (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
@@ -906,92 +874,223 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 
 ]
 :<+ front-matter/dedication.tex
-(C:\Users\Jason\Desktop\Theis\thesis\front-matter/dedication.tex)
+\openout2 = `front-matter/dedication.aux'.
+
+(./front-matter/dedication.tex)
 :<-
 :<+ front-matter/acknowledgements.tex
-(C:\Users\Jason\Desktop\Theis\thesis\front-matter/acknowledgements.tex)
+\openout2 = `front-matter/acknowledgements.aux'.
+
+(./front-matter/acknowledgements.tex)
 :<-
 :<+ front-matter/quote.tex
-(C:\Users\Jason\Desktop\Theis\thesis\front-matter/quote.tex)
+\openout2 = `front-matter/quote.aux'.
+
+(./front-matter/quote.tex)
 :<-
 :<+ front-matter/abstract.tex
-(C:\Users\Jason\Desktop\Theis\thesis\front-matter/abstract.tex)
+\openout2 = `front-matter/abstract.aux'.
+
+(./front-matter/abstract.tex)
 :<-
-(C:\Users\Jason\Desktop\Theis\thesis\my-dissertation.toc [3
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-])
+(./my-dissertation.toc)
 \tf@toc=\write5
- [4]
-(C:\Users\Jason\Desktop\Theis\thesis\my-dissertation.lot)
+\openout5 = `my-dissertation.toc'.
+
+ [3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+] (./my-dissertation.lot)
 \tf@lot=\write6
- [5
+\openout6 = `my-dissertation.lot'.
+
+ [4
+
+
+
+] (./my-dissertation.lof)
+\tf@lof=\write7
+\openout7 = `my-dissertation.lof'.
+
+\@nomenclaturefile=\write8
+\openout8 = `my-dissertation.nlo'.
+
+Writing nomenclature file my-dissertation.nlo
+[5
 
 
 
 ]
-(C:\Users\Jason\Desktop\Theis\thesis\my-dissertation.lof [6
-
-
-
-])
-\tf@lof=\write7
-\@nomenclaturefile=\write8
-
-Writing nomenclature file my-dissertation.nlo
-[7]
 No file my-dissertation.nls.
 :<+ Introduction.tex
-(C:\Users\Jason\Desktop\Theis\thesis\Introduction.tex
+\openout2 = `Introduction.aux'.
+
+(./Introduction.tex
 Chapter 1.
+
+Package natbib Warning: Citation `PnN' on page 1 undefined on input line 9.
+
+
+Package natbib Warning: Citation `Flay' on page 1 undefined on input line 9.
+
+
+Package natbib Warning: Citation `Hof' on page 1 undefined on input line 9.
+
+
+Package natbib Warning: Citation `seeley' on page 1 undefined on input line 9.
+
+
+Package natbib Warning: Citation `CC' on page 1 undefined on input line 9.
+
+
+Package natbib Warning: Citation `PnN' on page 1 undefined on input line 9.
+
 [1
 
 
 
 
 
-] <images/feyman_e_p.png, id=336, 3027.05907pt x 1453.68094pt>
+]
+
+Package natbib Warning: Citation `Flay' on page 2 undefined on input line 22.
+
+
+Package natbib Warning: Citation `Flay' on page 2 undefined on input line 22.
+
+<images/feyman_e_p.png, id=139, 3027.05907pt x 1453.68094pt>
 File: images/feyman_e_p.png Graphic file (type png)
 
 <use images/feyman_e_p.png>
 Package pdftex.def Info: images/feyman_e_p.png used on input line 23.
 (pdftex.def)             Requested size: 284.52756pt x 136.63715pt.
- [2] [3 <C:/Users/Jason/Desktop/Theis/thesis/images/feyman_e_p.png>] [4] [5] <i
-mages/EMC.png, id=390, 491.58656pt x 441.14813pt>
-File: images/EMC.png Graphic file (type png)
+ [2] [3 <./images/feyman_e_p.png>]
 
-<use images/EMC.png>
+Package natbib Warning: Citation `PnN' on page 4 undefined on input line 42.
+
+
+./Introduction.tex:44: LaTeX Error: Command \bfseries invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.44 ...{q}c|^4} cos^2 (\theta/2) \cite{HighE,PnN}
+                                                  .
+Please use the math alphabet \mathbf instead of the \bfseries command. 
+
+
+Package natbib Warning: Citation `HighE' on page 4 undefined on input line 44.
+
+
+./Introduction.tex:44: LaTeX Error: Command \bfseries invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.44 ...{q}c|^4} cos^2 (\theta/2) \cite{HighE,PnN}
+                                                  .
+Please use the math alphabet \mathbf instead of the \bfseries command. 
+
+
+Package natbib Warning: Citation `PnN' on page 4 undefined on input line 44.
+
+
+Package natbib Warning: Citation `PnN' on page 4 undefined on input line 47.
+
+
+Package natbib Warning: Citation `PnN' on page 4 undefined on input line 47.
+
+[4]
+
+Package natbib Warning: Citation `PnN' on page 5 undefined on input line 53.
+
+[5]
+
+Package natbib Warning: Citation `DISearly' on page 6 undefined on input line 6
+7.
+
+
+Package natbib Warning: Citation `DISproton' on page 6 undefined on input line 
+68.
+
+
+Package natbib Warning: Citation `challenge' on page 6 undefined on input line 
+72.
+
+
+Package natbib Warning: Citation `CC' on page 6 undefined on input line 79.
+
+
+Package natbib Warning: Citation `CC' on page 6 undefined on input line 79.
+
+<images/EMC.png, id=181, 491.58656pt x 441.14813pt>
+File: images/EMC.png Graphic file (type png)
+ <use images/EMC.png>
 Package pdftex.def Info: images/EMC.png used on input line 81.
 (pdftex.def)             Requested size: 284.52756pt x 255.34105pt.
- [6] [7 <C:/Users/Jason/Desktop/Theis/thesis/images/EMC.png>] <images/EMC3.png,
- id=416, 331.2375pt x 271.0125pt>
+
+[6]
+
+Package natbib Warning: Citation `Norton' on page 7 undefined on input line 84.
+
+
+
+Package natbib Warning: Citation `piler' on page 7 undefined on input line 84.
+
+
+Package natbib Warning: Citation `arri' on page 7 undefined on input line 84.
+
+
+Package natbib Warning: Citation `DF' on page 7 undefined on input line 84.
+
+
+Package natbib Warning: Citation `gomez' on page 7 undefined on input line 84.
+
+[7 <./images/EMC.png>]
+
+Package natbib Warning: Citation `Norton' on page 8 undefined on input line 88.
+
+
+
+Package natbib Warning: Citation `Norton' on page 8 undefined on input line 88.
+
+
+<images/EMC3.png, id=201, 331.2375pt x 271.0125pt>
 File: images/EMC3.png Graphic file (type png)
  <use images/EMC3.png>
 Package pdftex.def Info: images/EMC3.png used on input line 91.
 (pdftex.def)             Requested size: 284.52756pt x 232.80566pt.
 
-<images/EMC1.png, id=419, 542.025pt x 379.4175pt>
+
+Package natbib Warning: Citation `CC' on page 8 undefined on input line 96.
+
+
+Package natbib Warning: Citation `CC' on page 8 undefined on input line 96.
+
+<images/EMC1.png, id=202, 542.025pt x 379.4175pt>
 File: images/EMC1.png Graphic file (type png)
  <use images/EMC1.png>
 Package pdftex.def Info: images/EMC1.png used on input line 98.
@@ -1000,109 +1099,259 @@ Package pdftex.def Info: images/EMC1.png used on input line 98.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[8 <C:/Users/Jason/Desktop/Theis/thesis/images/EMC3.png>]) [9 <C:/Users/Jason/D
-esktop/Theis/thesis/images/EMC1.png>]
+
+Package natbib Warning: Citation `seeley' on page 8 undefined on input line 102
+.
+
+
+Package natbib Warning: Citation `ajppt' on page 8 undefined on input line 102.
+
+
+
+Package natbib Warning: Citation `seeley' on page 8 undefined on input line 102
+.
+
+[8 <./images/EMC3.png>]) [9 <./images/EMC1.png>]
 :<-
 :<+ ExperimentalSetup.tex
-(C:\Users\Jason\Desktop\Theis\thesis\ExperimentalSetup.tex
+\openout2 = `ExperimentalSetup.aux'.
+
+(./ExperimentalSetup.tex
 Chapter 2.
+
+Package natbib Warning: Citation `HallA' on page 10 undefined on input line 9.
+
 [10
 
 
 
 
-] <images/CEBAF.png, id=448, 697.8572pt x 470.50781pt>
-File: images/CEBAF.png Graphic file (type png)
+]
 
-<use images/CEBAF.png>
+Package natbib Warning: Citation `HallA' on page 11 undefined on input line 10.
+
+
+<images/CEBAF.png, id=221, 697.8572pt x 470.50781pt>
+File: images/CEBAF.png Graphic file (type png)
+ <use images/CEBAF.png>
 Package pdftex.def Info: images/CEBAF.png used on input line 16.
 (pdftex.def)             Requested size: 284.52756pt x 191.83253pt.
- <images/HallA_2.png, id=450, 870.25125pt x 582.67688pt>
+
+<images/HallA_2.png, id=223, 870.25125pt x 582.67688pt>
 File: images/HallA_2.png Graphic file (type png)
 
 <use images/HallA_2.png>
 Package pdftex.def Info: images/HallA_2.png used on input line 25.
 (pdftex.def)             Requested size: 398.33858pt x 266.70987pt.
- [11 <C:/Users/Jason/Desktop/Theis/thesis/images/CEBAF.png>] [12 <C:/Users/Jaso
-n/Desktop/Theis/thesis/images/HallA_2.png>]
-<images/BeamLine.png, id=468, 725.71124pt x 437.38406pt>
+ [11 <./images/CEBAF.png>]
+
+Package natbib Warning: Citation `HallA' on page 12 undefined on input line 28.
+
+
+
+Package natbib Warning: Citation `HallA' on page 12 undefined on input line 30.
+
+
+[12 <./images/HallA_2.png>]
+
+Package natbib Warning: Citation `HallA' on page 13 undefined on input line 34.
+
+
+
+Package natbib Warning: Citation `HallA' on page 13 undefined on input line 34.
+
+
+<images/BeamLine.png, id=240, 725.71124pt x 437.38406pt>
 File: images/BeamLine.png Graphic file (type png)
 
 <use images/BeamLine.png>
 Package pdftex.def Info: images/BeamLine.png used on input line 36.
 (pdftex.def)             Requested size: 398.33858pt x 240.08144pt.
- <images/BPM.png, id=475, 387.69844pt x 311.66437pt>
-File: images/BPM.png Graphic file (type png)
 
-<use images/BPM.png>
+
+Package natbib Warning: Citation `BPM' on page 13 undefined on input line 39.
+
+
+Package natbib Warning: Citation `BPM2' on page 13 undefined on input line 39.
+
+
+Package natbib Warning: Citation `BPM2' on page 13 undefined on input line 42.
+
+
+Package natbib Warning: Citation `BPM2' on page 13 undefined on input line 42.
+
+<images/BPM.png, id=243, 387.69844pt x 311.66437pt>
+File: images/BPM.png Graphic file (type png)
+ <use images/BPM.png>
 Package pdftex.def Info: images/BPM.png used on input line 44.
 (pdftex.def)             Requested size: 284.52756pt x 228.73053pt.
- [13 <C:/Users/Jason/Desktop/Theis/thesis/images/BeamLine.png>] <images/BPM_4.p
-ng, id=484, 478.78876pt x 411.03563pt>
-File: images/BPM_4.png Graphic file (type png)
 
-<use images/BPM_4.png>
+[13 <./images/BeamLine.png>]
+
+Package natbib Warning: Citation `BPM2' on page 14 undefined on input line 49.
+
+
+Package natbib Warning: Citation `BPM2' on page 14 undefined on input line 49.
+
+<images/BPM_4.png, id=251, 478.78876pt x 411.03563pt>
+File: images/BPM_4.png Graphic file (type png)
+ <use images/BPM_4.png>
 Package pdftex.def Info: images/BPM_4.png used on input line 51.
 (pdftex.def)             Requested size: 284.52756pt x 244.26505pt.
- [14 <C:/Users/Jason/Desktop/Theis/thesis/images/BPM.png> <C:/Users/Jason/Deskt
-op/Theis/thesis/images/BPM_4.png>] [15]
-<images/BCM1.png, id=506, 638.385pt x 469.755pt>
-File: images/BCM1.png Graphic file (type png)
- <use images/BCM1.png>
-Package pdftex.def Info: images/BCM1.png used on input line 74.
-(pdftex.def)             Requested size: 284.52756pt x 209.36646pt.
- [16 <C:/Users/Jason/Desktop/Theis/thesis/images/BCM1.png>] [17]
-<images/HRSs.png, id=525, 552.56438pt x 722.7pt>
+
+
+Package natbib Warning: Citation `BPM2' on page 14 undefined on input line 55.
+
+[14 <./images/BPM.png> <./images/BPM_4.png>]
+
+LaTeX Warning: Reference `EP' on page 15 undefined on input line 58.
+
+[15]
+
+Package natbib Warning: Citation `Flay' on page 16 undefined on input line 63.
+
+
+LaTeX Warning: Reference `arc' on page 16 undefined on input line 68.
+
+
+Package natbib Warning: Citation `EPMet' on page 16 undefined on input line 68.
+
+
+
+Package natbib Warning: Citation `Flay' on page 16 undefined on input line 68.
+
+
+Package natbib Warning: Citation `BCM1' on page 16 undefined on input line 72.
+
+
+Package natbib Warning: Citation `BCM1' on page 16 undefined on input line 72.
+
+
+LaTeX Warning: File `BCM1.png' not found on input line 74.
+
+
+./ExperimentalSetup.tex:74: Package pdftex.def Error: File `BCM1.png' not found
+.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.74 ...	 		\includegraphics[width=10cm]{BCM1.png}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[16]
+
+LaTeX Warning: Reference `BCMpng' on page 17 undefined on input line 77.
+
+
+Package natbib Warning: Citation `BCM1' on page 17 undefined on input line 77.
+
+[17]
+
+LaTeX Warning: Reference `hrsss' on page 18 undefined on input line 82.
+
+
+Package natbib Warning: Citation `HallA' on page 18 undefined on input line 82.
+
+
+<images/HRSs.png, id=278, 552.56438pt x 722.7pt>
 File: images/HRSs.png Graphic file (type png)
  <use images/HRSs.png>
 Package pdftex.def Info: images/HRSs.png used on input line 87.
 (pdftex.def)             Requested size: 284.52756pt x 372.134pt.
- [18 <C:/Users/Jason/Desktop/Theis/thesis/images/HRSs.png>]
-<images/VDC_profile_view.png, id=536, 663.22781pt x 585.68813pt>
+
+
+Package natbib Warning: Citation `HallA' on page 18 undefined on input line 90.
+
+
+
+Package natbib Warning: Citation `HallA' on page 18 undefined on input line 90.
+
+
+
+LaTeX Warning: Reference `VDC_profile' on page 18 undefined on input line 95.
+
+
+Package natbib Warning: Citation `drift' on page 18 undefined on input line 95.
+
+
+[18] [19 <./images/HRSs.png>]
+
+Package natbib Warning: Citation `drift' on page 20 undefined on input line 97.
+
+
+<images/VDC_profile_view.png, id=293, 663.22781pt x 585.68813pt>
 File: images/VDC_profile_view.png Graphic file (type png)
 
 <use images/VDC_profile_view.png>
 Package pdftex.def Info: images/VDC_profile_view.png used on input line 103.
 (pdftex.def)             Requested size: 284.52756pt x 251.26009pt.
-) [19 <C:/Users/Jason/Desktop/Theis/thesis/images/VDC_profile_view.png (PNG cop
-y)>] [20]
+
+
+Package natbib Warning: Citation `drift' on page 20 undefined on input line 106
+.
+
+
+Package natbib Warning: Citation `drift' on page 20 undefined on input line 106
+.
+
+) [20 <./images/VDC_profile_view.png (PNG copy)>] [21]
 :<-
 :<+ DetectorCalibration.tex
-(C:\Users\Jason\Desktop\Theis\thesis\DetectorCalibration.tex
+\openout2 = `DetectorCalibration.aux'.
+
+(./DetectorCalibration.tex
 Chapter 3.
-<images/harp.png, id=552, 964.35281pt x 255.95625pt>
+
+LaTeX Warning: Reference `harp' on page 22 undefined on input line 12.
+
+
+Package natbib Warning: Citation `BPM' on page 22 undefined on input line 12.
+
+
+Package natbib Warning: Citation `BPM2' on page 22 undefined on input line 12.
+
+
+Package natbib Warning: Citation `BPM2' on page 22 undefined on input line 15.
+
+
+Package natbib Warning: Citation `BPM2' on page 22 undefined on input line 15.
+
+<images/harp.png, id=312, 964.35281pt x 255.95625pt>
 File: images/harp.png Graphic file (type png)
  <use images/harp.png>
 Package pdftex.def Info: images/harp.png used on input line 17.
 (pdftex.def)             Requested size: 398.33858pt x 105.72385pt.
 
-[21
-
-
-
-
-] <images/bulls.png, id=561, 487.06969pt x 359.84438pt>
-File: images/bulls.png Graphic file (type png)
-
-<use images/bulls.png>
-Package pdftex.def Info: images/bulls.png used on input line 48.
-(pdftex.def)             Requested size: 284.52756pt x 210.20886pt.
- [22 <C:/Users/Jason/Desktop/Theis/thesis/images/harp.png>]) [23 <C:/Users/Jaso
-n/Desktop/Theis/thesis/images/bulls.png>]
-:<-
-:<+ DataAnalysis.tex
-(C:\Users\Jason\Desktop\Theis\thesis\DataAnalysis.tex
-Chapter 4.
-) [24
+[22
 
 
 
 
 ]
+
+LaTeX Warning: Reference `bulls' on page 23 undefined on input line 20.
+
+
+LaTeX Warning: Reference `BPM_eq' on page 23 undefined on input line 20.
+
+<images/bulls.png, id=321, 487.06969pt x 359.84438pt>
+File: images/bulls.png Graphic file (type png)
+ <use images/bulls.png>
+Package pdftex.def Info: images/bulls.png used on input line 48.
+(pdftex.def)             Requested size: 284.52756pt x 210.20886pt.
+
+[23 <./images/harp.png>]) [24 <./images/bulls.png>]
 :<-
-:<+ Results.tex
-(C:\Users\Jason\Desktop\Theis\thesis\Results.tex
-Chapter 5.
+:<+ DataAnalysis.tex
+\openout2 = `DataAnalysis.aux'.
+
+(./DataAnalysis.tex
+Chapter 4.
 ) [25
 
 
@@ -1110,80 +1359,130 @@ Chapter 5.
 
 ]
 :<-
+:<+ Results.tex
+\openout2 = `Results.aux'.
+
+(./Results.tex
+Chapter 5.
+) [26
+
+
+
+
+]
+:<-
 :<+ Simulation.tex
-(C:\Users\Jason\Desktop\Theis\thesis\Simulation.tex
+\openout2 = `Simulation.aux'.
+
+(./Simulation.tex
 Chapter 6.
-<images/Initial.png, id=583, 451.6875pt x 451.6875pt>
+
+Package natbib Warning: Citation `gomez' on page 27 undefined on input line 2.
+
+
+LaTeX Warning: Reference `example' on page 27 undefined on input line 3.
+
+<images/Initial.png, id=345, 451.6875pt x 451.6875pt>
 File: images/Initial.png Graphic file (type png)
  <use images/Initial.png>
 Package pdftex.def Info: images/Initial.png used on input line 7.
 (pdftex.def)             Requested size: 227.62204pt x 227.62827pt.
 
-[26
+[27
 
 
 
 
-] [27 <C:/Users/Jason/Desktop/Theis/thesis/images/Initial.png>]
+]
+
+LaTeX Warning: Reference `boom' on page 28 undefined on input line 11.
+
+
+LaTeX Warning: Reference `LAM' on page 28 undefined on input line 14.
+
+
+LaTeX Warning: Reference `boost' on page 28 undefined on input line 14.
+
+
+LaTeX Warning: Reference `delta' on page 28 undefined on input line 14.
+
+[28 <./images/Initial.png>]
 File: images/Initial.png Graphic file (type png)
-
-<use images/Initial.png>
+ <use images/Initial.png>
 Package pdftex.def Info: images/Initial.png used on input line 21.
 (pdftex.def)             Requested size: 184.9429pt x 184.94495pt.
 
-<images/RotatedbyLam.png, id=598, 602.25pt x 602.25pt>
+<images/RotatedbyLam.png, id=359, 602.25pt x 602.25pt>
 File: images/RotatedbyLam.png Graphic file (type png)
 
 <use images/RotatedbyLam.png>
 Package pdftex.def Info: images/RotatedbyLam.png used on input line 26.
 (pdftex.def)             Requested size: 184.9429pt x 184.94035pt.
 
-<images/boosted.png, id=599, 602.25pt x 602.25pt>
+<images/boosted.png, id=360, 602.25pt x 602.25pt>
 File: images/boosted.png Graphic file (type png)
  <use images/boosted.png>
 Package pdftex.def Info: images/boosted.png used on input line 31.
 (pdftex.def)             Requested size: 184.9429pt x 184.94035pt.
 
-<images/beforescattering.png, id=600, 602.25pt x 602.25pt>
+<images/beforescattering.png, id=361, 602.25pt x 602.25pt>
 File: images/beforescattering.png Graphic file (type png)
 
 <use images/beforescattering.png>
 Package pdftex.def Info: images/beforescattering.png used on input line 36.
 (pdftex.def)             Requested size: 184.9429pt x 184.94035pt.
 
-<images/afterscatter.png, id=603, 602.25pt x 602.25pt>
+
+LaTeX Warning: Reference `delta2' on page 29 undefined on input line 42.
+
+
+LaTeX Warning: Reference `transform2' on page 29 undefined on input line 42.
+
+<images/afterscatter.png, id=362, 602.25pt x 602.25pt>
 File: images/afterscatter.png Graphic file (type png)
 
 <use images/afterscatter.png>
 Package pdftex.def Info: images/afterscatter.png used on input line 47.
 (pdftex.def)             Requested size: 170.71652pt x 170.71487pt.
 
-<images/rotatedbydelta.png, id=604, 602.25pt x 602.25pt>
-File: images/rotatedbydelta.png Graphic file (type png)
 
-<use images/rotatedbydelta.png>
-Package pdftex.def Info: images/rotatedbydelta.png used on input line 52.
-(pdftex.def)             Requested size: 170.71652pt x 170.71487pt.
+LaTeX Warning: File `rotatedbydelta.png' not found on input line 52.
 
-<images/boostedback.png, id=605, 602.25pt x 602.25pt>
+
+./Simulation.tex:52: Package pdftex.def Error: File `rotatedbydelta.png' not fo
+und.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.52     \label{delta2}}
+                        
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<images/boostedback.png, id=363, 602.25pt x 602.25pt>
 File: images/boostedback.png Graphic file (type png)
 
 <use images/boostedback.png>
 Package pdftex.def Info: images/boostedback.png used on input line 57.
 (pdftex.def)             Requested size: 170.71652pt x 170.71487pt.
- <images/final.png, id=606, 602.25pt x 602.25pt>
+ <images/final.png, id=364, 602.25pt x 602.25pt>
 File: images/final.png Graphic file (type png)
 
 <use images/final.png>
 Package pdftex.def Info: images/final.png used on input line 62.
 (pdftex.def)             Requested size: 170.71652pt x 170.71487pt.
- [28 <C:/Users/Jason/Desktop/Theis/thesis/images/RotatedbyLam.png> <C:/Users/Ja
-son/Desktop/Theis/thesis/images/boosted.png> <C:/Users/Jason/Desktop/Theis/thes
-is/images/beforescattering.png>]
+ [29 <./images/RotatedbyLam.png> <./images/boosted.png> <./images/beforescatter
+ing.png>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/Es_results.png, id=622, 861.2175pt x 685.05937pt>
+
+LaTeX Warning: Reference `ES_res' on page 30 undefined on input line 70.
+
+<images/Es_results.png, id=379, 861.2175pt x 685.05937pt>
 File: images/Es_results.png Graphic file (type png)
 
 <use images/Es_results.png>
@@ -1193,16 +1492,15 @@ Package pdftex.def Info: images/Es_results.png used on input line 76.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [29] [30 <C:/Users/Jason/Desktop/Theis/thesis/images/afterscatter.png> <C:/Us
-ers/Jason/Desktop/Theis/thesis/images/rotatedbydelta.png> <C:/Users/Jason/Deskt
-op/Theis/thesis/images/boostedback.png> <C:/Users/Jason/Desktop/Theis/thesis/im
-ages/final.png>] [31 <C:/Users/Jason/Desktop/Theis/thesis/images/Es_results.png
- (PNG copy)>]
+) [30] [31 <./images/afterscatter.png> <./images/boostedback.png> <./images/fin
+al.png>] [32 <./images/Es_results.png (PNG copy)>]
 :<-
 :<+ Conclusion.tex
-(C:\Users\Jason\Desktop\Theis\thesis\Conclusion.tex
+\openout2 = `Conclusion.aux'.
+
+(./Conclusion.tex
 Chapter 7.
-) [32
+) [33
 
 
 
@@ -1210,78 +1508,126 @@ Chapter 7.
 ]
 :<-
 :<+ my-dissertation.bbl
-(C:\Users\Jason\Desktop\Theis\thesis\my-dissertation.bbl
-(C:\Users\Jason\Desktop\Theis\thesis\my-dissertation.brf)
+(./my-dissertation.bbl (./my-dissertation.brf)
 \tf@brf=\write9
- [33
+\openout9 = `my-dissertation.brf'.
+
+ [34
 
 
 
-] [34
+] [35
 
-] [35])
+]
+Underfull \hbox (badness 1331) in paragraph at lines 100--100
+[]\OT1/cmr/m/n/12 Tom Pow-ers, Lawrence Doolit-tle, Rok Ur-sic, and Jef-frey Wa
+g-ner.  De-sign,
+ []
+
+[36])
 :<-
-[36] [37]
+[37] [38]
 :<+ back-matter/appendix-1.tex
-(C:\Users\Jason\Desktop\Theis\thesis\back-matter/appendix-1.tex)
+\openout2 = `back-matter/appendix-1.aux'.
+
+(./back-matter/appendix-1.tex)
 :<-
 :<+ back-matter/vita.tex
-(C:\Users\Jason\Desktop\Theis\thesis\back-matter/vita.tex)
+\openout2 = `back-matter/vita.aux'.
+
+(./back-matter/vita.tex)
 :<-
+
+Package natbib Warning: There were undefined citations.
+
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 137.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 137.
-(C:\Users\Jason\Desktop\Theis\thesis\my-dissertation.aux
-(C:\Users\Jason\Desktop\Theis\thesis\front-matter/dedication.aux)
-(C:\Users\Jason\Desktop\Theis\thesis\front-matter/acknowledgements.aux)
-(C:\Users\Jason\Desktop\Theis\thesis\front-matter/quote.aux)
-(C:\Users\Jason\Desktop\Theis\thesis\front-matter/abstract.aux)
-(C:\Users\Jason\Desktop\Theis\thesis\Introduction.aux)
-(C:\Users\Jason\Desktop\Theis\thesis\ExperimentalSetup.aux)
-(C:\Users\Jason\Desktop\Theis\thesis\DetectorCalibration.aux)
-(C:\Users\Jason\Desktop\Theis\thesis\DataAnalysis.aux)
-(C:\Users\Jason\Desktop\Theis\thesis\Results.aux)
-(C:\Users\Jason\Desktop\Theis\thesis\Simulation.aux)
-(C:\Users\Jason\Desktop\Theis\thesis\Conclusion.aux)
-(C:\Users\Jason\Desktop\Theis\thesis\back-matter/appendix-1.aux)
-(C:\Users\Jason\Desktop\Theis\thesis\back-matter/vita.aux))
+(./my-dissertation.aux (./front-matter/dedication.aux)
+(./front-matter/acknowledgements.aux) (./front-matter/quote.aux)
+(./front-matter/abstract.aux) (./Introduction.aux) (./ExperimentalSetup.aux)
+(./DetectorCalibration.aux) (./DataAnalysis.aux) (./Results.aux)
+(./Simulation.aux) (./Conclusion.aux)
+
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
+
+(./back-matter/appendix-1.aux) (./back-matter/vita.aux)
+
+./my-dissertation.aux:58: Package natbib Error: Bibliography not compatible wit
+h author-year citations.
+(natbib)                Press <return> to continue in numerical citation style.
+
+
+See the natbib package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.58 ...mand\NAT@force@numbers{}\NAT@force@numbers
+                                                  
+Check the bibliography entries for non-compliant syntax,
+or select author-year BibTeX style, e.g. plainnat
+
+)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 137.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 137.
-Package rerunfilecheck Info: File `my-dissertation.out' has not changed.
-(rerunfilecheck)             Checksum: AF915B74105DFFCB1A8387BCF526BCC3;2440.
-Package rerunfilecheck Info: File `my-dissertation.brf' has not changed.
-(rerunfilecheck)             Checksum: F2395177DDFCEB4BF65BC957D45C49E1;2790.
+
+
+Package rerunfilecheck Warning: File `my-dissertation.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `my-dissertation.out':
+(rerunfilecheck)             Before: EFF83B52E515DD2E82DAE93DA5259AF0;1064
+(rerunfilecheck)             After:  163B40CB91544456D4CBD32D515DFF80;2400.
+
+Package rerunfilecheck Warning: File `my-dissertation.brf' has changed.
+(rerunfilecheck)                Rerun to get bibliographical references right.
+
+Package rerunfilecheck Info: Checksums for `my-dissertation.brf':
+(rerunfilecheck)             Before: 081B37A4E1C9D4F1F673D220C1763E19;2728
+(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 137.
  ) 
 Here is how much of TeX's memory you used:
- 19117 strings out of 493921
- 348569 string characters out of 3147282
- 416781 words of memory out of 3000000
- 21746 multiletter control sequences out of 15000+200000
+ 17528 strings out of 495063
+ 301550 string characters out of 3182202
+ 374027 words of memory out of 3000000
+ 20080 multiletter control sequences out of 15000+200000
  16383 words of font info for 64 fonts, out of 3000000 for 9000
- 841 hyphenation exceptions out of 8191
- 56i,11n,56p,1891b,499s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
-/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmmib10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextr
-a/cmmib8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.
-pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/P
-rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
-fonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmtt12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/ms
-am10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm1
-0.pfb>
-Output written on my-dissertation.pdf (46 pages, 2732190 bytes).
+ 14 hyphenation exceptions out of 8191
+ 57i,11n,57p,1891b,483s stack positions out of 5000i,500n,10000p,200000b,50000s
+pdfTeX warning (dest): name{page.vi} has been referenced but does not exist, 
+replaced by a fixed one
+
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cmextra/cmmib8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+r17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on my-dissertation.pdf (45 pages, 2557248 bytes).
 PDF statistics:
- 824 PDF objects out of 1000 (max. 8388607)
+ 613 PDF objects out of 1000 (max. 8388607)
+ 509 compressed objects within 6 object streams
  183 named destinations out of 1000 (max. 500000)
- 448 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 270 words of extra memory for PDF output out of 10000 (max. 10000000)
 

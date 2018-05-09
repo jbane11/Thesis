@@ -1,5 +1,5 @@
-\contentsline {chapter}{List of Tables}{v}{section*.9}
-\contentsline {chapter}{List of Figures}{vi}{section*.11}
+\contentsline {chapter}{List of Tables}{iv}{section*.9}
+\contentsline {chapter}{List of Figures}{v}{section*.11}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
 \contentsline {paragraph}{}{1}{section*.14}
 \contentsline {paragraph}{}{1}{section*.15}
@@ -30,27 +30,27 @@
 \contentsline {paragraph}{}{15}{section*.41}
 \contentsline {paragraph}{}{15}{section*.42}
 \contentsline {paragraph}{}{17}{section*.44}
-\contentsline {section}{\numberline {2.2}Target}{17}{section.2.2}
-\contentsline {section}{\numberline {2.3}High Resolution Spectrometers}{17}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Vertical Drift Chambers}{19}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Scintillators}{20}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}Cherenkov}{20}{subsection.2.3.3}
-\contentsline {subsection}{\numberline {2.3.4}Shower Calorimeter}{20}{subsection.2.3.4}
-\contentsline {subsection}{\numberline {2.3.5}Pion Rejector}{20}{subsection.2.3.5}
-\contentsline {subsection}{\numberline {2.3.6}FPP Chambers}{20}{subsection.2.3.6}
-\contentsline {section}{\numberline {2.4}Trigger Setup}{20}{section.2.4}
-\contentsline {section}{\numberline {2.5}DAQ - Data Acquisition System}{20}{section.2.5}
-\contentsline {section}{\numberline {2.6}Kinematic Settings}{20}{section.2.6}
-\contentsline {chapter}{\numberline {3}Calibration}{21}{chapter.3}
-\contentsline {paragraph}{}{21}{section*.47}
-\contentsline {section}{\numberline {3.1}Beam Line}{21}{section.3.1}
-\contentsline {paragraph}{}{21}{section*.48}
-\contentsline {paragraph}{}{22}{section*.50}
-\contentsline {chapter}{\numberline {4}Data Analysis}{24}{chapter.4}
-\contentsline {chapter}{\numberline {5}Results}{25}{chapter.5}
-\contentsline {chapter}{\numberline {6}Simulation}{26}{chapter.6}
-\contentsline {section}{\numberline {6.1}Investigation}{26}{section.6.1}
-\contentsline {section}{\numberline {6.2}Transformation}{27}{section.6.2}
-\contentsline {section}{\numberline {6.3}Results}{29}{section.6.3}
-\contentsline {chapter}{\numberline {7}Conclusion}{32}{chapter.7}
-\contentsline {chapter}{Bibliography}{33}{section*.56}
+\contentsline {section}{\numberline {2.2}Target}{18}{section.2.2}
+\contentsline {section}{\numberline {2.3}High Resolution Spectrometers}{18}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Vertical Drift Chambers}{20}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Scintillators}{21}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Cherenkov}{21}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.4}Shower Calorimeter}{21}{subsection.2.3.4}
+\contentsline {subsection}{\numberline {2.3.5}Pion Rejector}{21}{subsection.2.3.5}
+\contentsline {subsection}{\numberline {2.3.6}FPP Chambers}{21}{subsection.2.3.6}
+\contentsline {section}{\numberline {2.4}Trigger Setup}{21}{section.2.4}
+\contentsline {section}{\numberline {2.5}DAQ - Data Acquisition System}{21}{section.2.5}
+\contentsline {section}{\numberline {2.6}Kinematic Settings}{21}{section.2.6}
+\contentsline {chapter}{\numberline {3}Calibration}{22}{chapter.3}
+\contentsline {paragraph}{}{22}{section*.47}
+\contentsline {section}{\numberline {3.1}Beam Line}{22}{section.3.1}
+\contentsline {paragraph}{}{22}{section*.48}
+\contentsline {paragraph}{}{23}{section*.50}
+\contentsline {chapter}{\numberline {4}Data Analysis}{25}{chapter.4}
+\contentsline {chapter}{\numberline {5}Results}{26}{chapter.5}
+\contentsline {chapter}{\numberline {6}Simulation}{27}{chapter.6}
+\contentsline {section}{\numberline {6.1}Investigation}{27}{section.6.1}
+\contentsline {section}{\numberline {6.2}Transformation}{28}{section.6.2}
+\contentsline {section}{\numberline {6.3}Results}{30}{section.6.3}
+\contentsline {chapter}{\numberline {7}Conclusion}{33}{chapter.7}
+\contentsline {chapter}{Bibliography}{34}{section*.56}

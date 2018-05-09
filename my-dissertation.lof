@@ -9,25 +9,25 @@
 \contentsline {figure}{\numberline {2.3}{\ignorespaces A schematic layout of the beam line in Hall. \cite {HallA} \relax }}{13}{figure.caption.36}
 \contentsline {figure}{\numberline {2.4}{\ignorespaces BPM design diagram, from JLab instrumentation group. Beam direction is from left to right \cite {BPM2}. \relax }}{14}{figure.caption.38}
 \contentsline {figure}{\numberline {2.5}{\ignorespaces BPM design diagram, looking down the beam line\cite {BPM2}. \relax }}{14}{figure.caption.39}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Hall A Current Monitor components \cite {BCM1}. \relax }}{16}{figure.caption.43}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces A view of both the left(top) and right(bottom) detector stacks inside the left and right HRS \cite {HallA}. \relax }}{18}{figure.caption.45}
-\contentsline {figure}{\numberline {2.8}{\ignorespaces A sketch of the two VDC planes in the HRSs with a particle traveling through the detector at 45$^\circ $.\cite {drift}. \relax }}{19}{figure.caption.46}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Hall A Current Monitor components \cite {BCM1}. \relax }}{17}{figure.caption.43}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces A view of both the left(top) and right(bottom) detector stacks inside the left and right HRS \cite {HallA}. \relax }}{19}{figure.caption.45}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces A sketch of the two VDC planes in the HRSs with a particle traveling through the detector at 45$^\circ $.\cite {drift}. \relax }}{20}{figure.caption.46}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces A schematic layout of a harp fork \cite {BPM2} \relax }}{22}{figure.caption.49}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces The X and Y position for a Bulls eye scan for BPM calibration. \relax }}{23}{figure.caption.51}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces A schematic layout of a harp fork \cite {BPM2} \relax }}{23}{figure.caption.49}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces The X and Y position for a Bulls eye scan for BPM calibration. \relax }}{24}{figure.caption.51}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Example of the electron beam(red) with a energy of 2.5 GeV and the proton(blue) with angle of 45$^\circ $ in respect to the electron and with a momentum of 0.5 GeV/c.\relax }}{27}{figure.caption.52}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Vector representations of the momentum for the incoming electron(red) and target proton(blue) with units of GeV for each phase of their transformations before scattering.\relax }}{28}{figure.caption.53}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Initial Vectors}}}{28}{subfigure.2.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Rotated by Lambda}}}{28}{subfigure.2.2}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Boosted}}}{28}{subfigure.2.3}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Before being scattered}}}{28}{subfigure.2.4}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Vector representations of the momentum for the incoming electron(red) and target proton(blue) with units of GeV for each phase of their transformations after scattering).\relax }}{30}{figure.caption.54}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {After scattering}}}{30}{subfigure.3.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Rotate back by $\delta $}}}{30}{subfigure.3.2}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Boosted}}}{30}{subfigure.3.3}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Final vectors}}}{30}{subfigure.3.4}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Simulation results for fixed momentum protons. Three runs with unique proton momentum. \relax }}{31}{figure.caption.55}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Example of the electron beam(red) with a energy of 2.5 GeV and the proton(blue) with angle of 45$^\circ $ in respect to the electron and with a momentum of 0.5 GeV/c.\relax }}{28}{figure.caption.52}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Vector representations of the momentum for the incoming electron(red) and target proton(blue) with units of GeV for each phase of their transformations before scattering.\relax }}{29}{figure.caption.53}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Initial Vectors}}}{29}{subfigure.2.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Rotated by Lambda}}}{29}{subfigure.2.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Boosted}}}{29}{subfigure.2.3}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Before being scattered}}}{29}{subfigure.2.4}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Vector representations of the momentum for the incoming electron(red) and target proton(blue) with units of GeV for each phase of their transformations after scattering).\relax }}{31}{figure.caption.54}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {After scattering}}}{31}{subfigure.3.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Rotate back by $\delta $}}}{31}{subfigure.3.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Boosted}}}{31}{subfigure.3.3}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Final vectors}}}{31}{subfigure.3.4}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Simulation results for fixed momentum protons. Three runs with unique proton momentum. \relax }}{32}{figure.caption.55}
 \addvspace {10\p@ }
