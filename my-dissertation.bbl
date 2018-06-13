@@ -59,6 +59,10 @@ D.~Higinbotham.
 \newblock \url{http://cerncourier.com/cws/article/cern/53091}, April 2013.
 \newblock (Visited on 01/04/2016).
 
+\bibitem{DHimages}
+Doug Higinbotham.
+\newblock Target images, December 2017.
+
 \bibitem{HighE}
 R~Hofstadter.
 \newblock Nuclear and nucleon scattering of high-energy electrons.
@@ -81,6 +85,11 @@ R.~W. McAllister and R.~Hofstadter.
 \newblock Elastic scattering of 188-mev electrons from the proton and the alpha
   particle.
 \newblock {\em Phys. Rev.}, 102:851--856, May 1956.
+
+\bibitem{HATT_eng}
+David Meekings.
+\newblock Hall a tritium target.
+\newblock \notype, Thomas Jefferson Lab, Virginia, engineering Report, 2017.
 
 \bibitem{Norton}
 P~R Norton.

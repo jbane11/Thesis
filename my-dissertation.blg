@@ -1,4 +1,6 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: my-dissertation.aux
+This is BibTeX, Version 0.99d (TeX Live 2013)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: my-dissertation.aux
 A level-1 auxiliary file: front-matter/dedication.aux
 A level-1 auxiliary file: front-matter/acknowledgements.aux
 A level-1 auxiliary file: front-matter/quote.aux
@@ -15,4 +17,45 @@ A level-1 auxiliary file: back-matter/appendix-1.aux
 A level-1 auxiliary file: back-matter/vita.aux
 Database file #1: references/references-dissertation.bib
 Warning--empty booktitle in BCM1
+You've used 23 entries,
+            2118 wiz_defined-function locations,
+            672 strings with 7707 characters,
+and the built_in function-call counts, 6949 in all, are:
+= -- 680
+> -- 315
+< -- 0
++ -- 128
+- -- 102
+* -- 480
+:= -- 1210
+add.period$ -- 71
+call.type$ -- 23
+change.case$ -- 114
+chr.to.int$ -- 0
+cite$ -- 24
+duplicate$ -- 239
+empty$ -- 558
+format.name$ -- 102
+if$ -- 1430
+int.to.chr$ -- 0
+int.to.str$ -- 23
+missing$ -- 19
+newline$ -- 119
+num.names$ -- 46
+pop$ -- 104
+preamble$ -- 1
+purify$ -- 92
+quote$ -- 0
+skip$ -- 164
+stack$ -- 0
+substring$ -- 451
+swap$ -- 21
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 90
+warning$ -- 1
+while$ -- 65
+width$ -- 25
+write$ -- 252
 (There was 1 warning)

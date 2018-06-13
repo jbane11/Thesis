@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2018.3.9)  9 MAY 2018 13:11
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2018.3.9)  13 JUN 2018 10:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -740,23 +740,26 @@ Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
 )
 (./my-dissertation.aux (./front-matter/dedication.aux)
 (./front-matter/acknowledgements.aux) (./front-matter/quote.aux)
-(./front-matter/abstract.aux) (./Introduction.aux) (./ExperimentalSetup.aux))
+(./front-matter/abstract.aux) (./Introduction.aux) (./ExperimentalSetup.aux)
+(./DetectorCalibration.aux) (./DataAnalysis.aux) (./Results.aux)
+(./Simulation.aux) (./Conclusion.aux) (./back-matter/appendix-1.aux)
+(./back-matter/vita.aux))
 \openout1 = `my-dissertation.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
 
 *geometry* detected driver: dvips
 *geometry* verbose mode - [ preamble ] result:
@@ -793,8 +796,8 @@ LaTeX Font Info:    ... okay on input line 66.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \AtBeginShipoutBox=\box39
-Package backref Info: ** backref set up for natbib ** on input line 66.
-Package hyperref Info: Link coloring ON on input line 66.
+Package backref Info: ** backref set up for natbib ** on input line 67.
+Package hyperref Info: Link coloring ON on input line 67.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
@@ -803,9 +806,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count151
 )
-LaTeX Info: Redefining \ref on input line 66.
-LaTeX Info: Redefining \pageref on input line 66.
-LaTeX Info: Redefining \nameref on input line 66.
+LaTeX Info: Redefining \ref on input line 67.
+LaTeX Info: Redefining \pageref on input line 67.
+LaTeX Info: Redefining \nameref on input line 67.
 
 (./my-dissertation.out) (./my-dissertation.out)
 \@outlinefile=\write4
@@ -830,17 +833,17 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
  ABD: EveryShipout initializing macros
-LaTeX Font Info:    Try loading font information for U+msa on input line 69.
+LaTeX Font Info:    Try loading font information for U+msa on input line 70.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 69.
+LaTeX Font Info:    Try loading font information for U+msb on input line 70.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 69.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 70.
 
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
@@ -848,12 +851,12 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 Non-PDF special ignored!
 
 {/usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 70--70
+Underfull \hbox (badness 10000) in paragraph at lines 71--71
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 70--70
+Underfull \hbox (badness 10000) in paragraph at lines 71--71
 
  []
 
@@ -863,12 +866,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 70--70
 
 
 ]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 79.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 80.
  (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 79.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 80.
  [2
 
 
@@ -893,223 +896,97 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 
 (./front-matter/abstract.tex)
 :<-
-(./my-dissertation.toc)
+(./my-dissertation.toc [3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+])
 \tf@toc=\write5
 \openout5 = `my-dissertation.toc'.
 
- [3
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-] (./my-dissertation.lot)
+ [4] (./my-dissertation.lot)
 \tf@lot=\write6
 \openout6 = `my-dissertation.lot'.
 
- [4
+ [5
 
 
 
-] (./my-dissertation.lof)
+]
+(./my-dissertation.lof [6
+
+
+
+])
 \tf@lof=\write7
 \openout7 = `my-dissertation.lof'.
 
 \@nomenclaturefile=\write8
 \openout8 = `my-dissertation.nlo'.
 
+
 Writing nomenclature file my-dissertation.nlo
-[5
-
-
-
-]
+[7]
 No file my-dissertation.nls.
 :<+ Introduction.tex
 \openout2 = `Introduction.aux'.
 
 (./Introduction.tex
 Chapter 1.
-
-Package natbib Warning: Citation `PnN' on page 1 undefined on input line 9.
-
-
-Package natbib Warning: Citation `Flay' on page 1 undefined on input line 9.
-
-
-Package natbib Warning: Citation `Hof' on page 1 undefined on input line 9.
-
-
-Package natbib Warning: Citation `seeley' on page 1 undefined on input line 9.
-
-
-Package natbib Warning: Citation `CC' on page 1 undefined on input line 9.
-
-
-Package natbib Warning: Citation `PnN' on page 1 undefined on input line 9.
-
 [1
 
 
 
 
 
-]
-
-Package natbib Warning: Citation `Flay' on page 2 undefined on input line 22.
-
-
-Package natbib Warning: Citation `Flay' on page 2 undefined on input line 22.
-
-<images/feyman_e_p.png, id=139, 3027.05907pt x 1453.68094pt>
+] <images/feyman_e_p.png, id=346, 3027.05907pt x 1453.68094pt>
 File: images/feyman_e_p.png Graphic file (type png)
 
 <use images/feyman_e_p.png>
 Package pdftex.def Info: images/feyman_e_p.png used on input line 23.
 (pdftex.def)             Requested size: 284.52756pt x 136.63715pt.
- [2] [3 <./images/feyman_e_p.png>]
-
-Package natbib Warning: Citation `PnN' on page 4 undefined on input line 42.
-
-
-./Introduction.tex:44: LaTeX Error: Command \bfseries invalid in math mode.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 ...{q}c|^4} cos^2 (\theta/2) \cite{HighE,PnN}
-                                                  .
-Please use the math alphabet \mathbf instead of the \bfseries command. 
-
-
-Package natbib Warning: Citation `HighE' on page 4 undefined on input line 44.
-
-
-./Introduction.tex:44: LaTeX Error: Command \bfseries invalid in math mode.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 ...{q}c|^4} cos^2 (\theta/2) \cite{HighE,PnN}
-                                                  .
-Please use the math alphabet \mathbf instead of the \bfseries command. 
-
-
-Package natbib Warning: Citation `PnN' on page 4 undefined on input line 44.
-
-
-Package natbib Warning: Citation `PnN' on page 4 undefined on input line 47.
-
-
-Package natbib Warning: Citation `PnN' on page 4 undefined on input line 47.
-
-[4]
-
-Package natbib Warning: Citation `PnN' on page 5 undefined on input line 53.
-
-[5]
-
-Package natbib Warning: Citation `DISearly' on page 6 undefined on input line 6
-7.
-
-
-Package natbib Warning: Citation `DISproton' on page 6 undefined on input line 
-68.
-
-
-Package natbib Warning: Citation `challenge' on page 6 undefined on input line 
-72.
-
-
-Package natbib Warning: Citation `CC' on page 6 undefined on input line 79.
-
-
-Package natbib Warning: Citation `CC' on page 6 undefined on input line 79.
-
-<images/EMC.png, id=181, 491.58656pt x 441.14813pt>
+ [2] [3 <./images/feyman_e_p.png>] [4] [5]
+<images/EMC.png, id=400, 491.58656pt x 441.14813pt>
 File: images/EMC.png Graphic file (type png)
  <use images/EMC.png>
 Package pdftex.def Info: images/EMC.png used on input line 81.
 (pdftex.def)             Requested size: 284.52756pt x 255.34105pt.
 
-[6]
-
-Package natbib Warning: Citation `Norton' on page 7 undefined on input line 84.
-
-
-
-Package natbib Warning: Citation `piler' on page 7 undefined on input line 84.
-
-
-Package natbib Warning: Citation `arri' on page 7 undefined on input line 84.
-
-
-Package natbib Warning: Citation `DF' on page 7 undefined on input line 84.
-
-
-Package natbib Warning: Citation `gomez' on page 7 undefined on input line 84.
-
-[7 <./images/EMC.png>]
-
-Package natbib Warning: Citation `Norton' on page 8 undefined on input line 88.
-
-
-
-Package natbib Warning: Citation `Norton' on page 8 undefined on input line 88.
-
-
-<images/EMC3.png, id=201, 331.2375pt x 271.0125pt>
+[6] [7 <./images/EMC.png>] <images/EMC3.png, id=426, 331.2375pt x 271.0125pt>
 File: images/EMC3.png Graphic file (type png)
- <use images/EMC3.png>
+
+<use images/EMC3.png>
 Package pdftex.def Info: images/EMC3.png used on input line 91.
 (pdftex.def)             Requested size: 284.52756pt x 232.80566pt.
-
-
-Package natbib Warning: Citation `CC' on page 8 undefined on input line 96.
-
-
-Package natbib Warning: Citation `CC' on page 8 undefined on input line 96.
-
-<images/EMC1.png, id=202, 542.025pt x 379.4175pt>
+ <images/EMC1.png, id=429, 542.025pt x 379.4175pt>
 File: images/EMC1.png Graphic file (type png)
- <use images/EMC1.png>
+
+<use images/EMC1.png>
 Package pdftex.def Info: images/EMC1.png used on input line 98.
 (pdftex.def)             Requested size: 284.52756pt x 199.17401pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Package natbib Warning: Citation `seeley' on page 8 undefined on input line 102
-.
-
-
-Package natbib Warning: Citation `ajppt' on page 8 undefined on input line 102.
-
-
-
-Package natbib Warning: Citation `seeley' on page 8 undefined on input line 102
-.
 
 [8 <./images/EMC3.png>]) [9 <./images/EMC1.png>]
 :<-
@@ -1118,241 +995,108 @@ Package natbib Warning: Citation `seeley' on page 8 undefined on input line 102
 
 (./ExperimentalSetup.tex
 Chapter 2.
-
-Package natbib Warning: Citation `HallA' on page 10 undefined on input line 9.
-
 [10
 
 
 
 
-]
-
-Package natbib Warning: Citation `HallA' on page 11 undefined on input line 10.
-
-
-<images/CEBAF.png, id=221, 697.8572pt x 470.50781pt>
+] <images/CEBAF.png, id=459, 697.8572pt x 470.50781pt>
 File: images/CEBAF.png Graphic file (type png)
- <use images/CEBAF.png>
+
+<use images/CEBAF.png>
 Package pdftex.def Info: images/CEBAF.png used on input line 16.
 (pdftex.def)             Requested size: 284.52756pt x 191.83253pt.
-
-<images/HallA_2.png, id=223, 870.25125pt x 582.67688pt>
+ <images/HallA_2.png, id=461, 870.25125pt x 582.67688pt>
 File: images/HallA_2.png Graphic file (type png)
 
 <use images/HallA_2.png>
 Package pdftex.def Info: images/HallA_2.png used on input line 25.
 (pdftex.def)             Requested size: 398.33858pt x 266.70987pt.
- [11 <./images/CEBAF.png>]
-
-Package natbib Warning: Citation `HallA' on page 12 undefined on input line 28.
-
-
-
-Package natbib Warning: Citation `HallA' on page 12 undefined on input line 30.
-
-
-[12 <./images/HallA_2.png>]
-
-Package natbib Warning: Citation `HallA' on page 13 undefined on input line 34.
-
-
-
-Package natbib Warning: Citation `HallA' on page 13 undefined on input line 34.
-
-
-<images/BeamLine.png, id=240, 725.71124pt x 437.38406pt>
+ [11 <./images/CEBAF.png>] [12 <./images/HallA_2.png>]
+<images/BeamLine.png, id=479, 725.71124pt x 437.38406pt>
 File: images/BeamLine.png Graphic file (type png)
 
 <use images/BeamLine.png>
 Package pdftex.def Info: images/BeamLine.png used on input line 36.
 (pdftex.def)             Requested size: 398.33858pt x 240.08144pt.
-
-
-Package natbib Warning: Citation `BPM' on page 13 undefined on input line 39.
-
-
-Package natbib Warning: Citation `BPM2' on page 13 undefined on input line 39.
-
-
-Package natbib Warning: Citation `BPM2' on page 13 undefined on input line 42.
-
-
-Package natbib Warning: Citation `BPM2' on page 13 undefined on input line 42.
-
-<images/BPM.png, id=243, 387.69844pt x 311.66437pt>
+ <images/BPM.png, id=486, 387.69844pt x 311.66437pt>
 File: images/BPM.png Graphic file (type png)
- <use images/BPM.png>
+
+<use images/BPM.png>
 Package pdftex.def Info: images/BPM.png used on input line 44.
 (pdftex.def)             Requested size: 284.52756pt x 228.73053pt.
-
-[13 <./images/BeamLine.png>]
-
-Package natbib Warning: Citation `BPM2' on page 14 undefined on input line 49.
-
-
-Package natbib Warning: Citation `BPM2' on page 14 undefined on input line 49.
-
-<images/BPM_4.png, id=251, 478.78876pt x 411.03563pt>
+ [13 <./images/BeamLine.png>]
+<images/BPM_4.png, id=495, 478.78876pt x 411.03563pt>
 File: images/BPM_4.png Graphic file (type png)
  <use images/BPM_4.png>
 Package pdftex.def Info: images/BPM_4.png used on input line 51.
 (pdftex.def)             Requested size: 284.52756pt x 244.26505pt.
 
+[14 <./images/BPM.png> <./images/BPM_4.png>] [15]
+<images/BCM1.png, id=517, 638.385pt x 469.755pt>
+File: images/BCM1.png Graphic file (type png)
+ <use images/BCM1.png>
+Package pdftex.def Info: images/BCM1.png used on input line 74.
+(pdftex.def)             Requested size: 284.52756pt x 209.36646pt.
+ [16 <./images/BCM1.png>] <images/HATT.jpg, id=531, 3035.34pt x 4047.12pt>
+File: images/HATT.jpg Graphic file (type jpg)
 
-Package natbib Warning: Citation `BPM2' on page 14 undefined on input line 55.
+<use images/HATT.jpg>
+Package pdftex.def Info: images/HATT.jpg used on input line 83.
+(pdftex.def)             Requested size: 227.62204pt x 303.45915pt.
+ [17] [18 <./images/HATT.jpg>]
+<images/HATT_Ladder.JPG, id=546, 1237.62375pt x 928.46875pt>
+File: images/HATT_Ladder.JPG Graphic file (type jpg)
 
-[14 <./images/BPM.png> <./images/BPM_4.png>]
-
-LaTeX Warning: Reference `EP' on page 15 undefined on input line 58.
-
-[15]
-
-Package natbib Warning: Citation `Flay' on page 16 undefined on input line 63.
-
-
-LaTeX Warning: Reference `arc' on page 16 undefined on input line 68.
-
-
-Package natbib Warning: Citation `EPMet' on page 16 undefined on input line 68.
-
-
-
-Package natbib Warning: Citation `Flay' on page 16 undefined on input line 68.
-
-
-Package natbib Warning: Citation `BCM1' on page 16 undefined on input line 72.
-
-
-Package natbib Warning: Citation `BCM1' on page 16 undefined on input line 72.
-
-
-LaTeX Warning: File `BCM1.png' not found on input line 74.
-
-
-./ExperimentalSetup.tex:74: Package pdftex.def Error: File `BCM1.png' not found
-.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.74 ...	 		\includegraphics[width=10cm]{BCM1.png}
-                                                  
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[16]
-
-LaTeX Warning: Reference `BCMpng' on page 17 undefined on input line 77.
-
-
-Package natbib Warning: Citation `BCM1' on page 17 undefined on input line 77.
-
-[17]
-
-LaTeX Warning: Reference `hrsss' on page 18 undefined on input line 82.
-
-
-Package natbib Warning: Citation `HallA' on page 18 undefined on input line 82.
-
-
-<images/HRSs.png, id=278, 552.56438pt x 722.7pt>
+<use images/HATT_Ladder.JPG>
+Package pdftex.def Info: images/HATT_Ladder.JPG used on input line 93.
+(pdftex.def)             Requested size: 284.52756pt x 213.44415pt.
+ [19 <./images/HATT_Ladder.JPG>]
+<images/HRSs.png, id=555, 552.56438pt x 722.7pt>
 File: images/HRSs.png Graphic file (type png)
  <use images/HRSs.png>
-Package pdftex.def Info: images/HRSs.png used on input line 87.
+Package pdftex.def Info: images/HRSs.png used on input line 107.
 (pdftex.def)             Requested size: 284.52756pt x 372.134pt.
 
-
-Package natbib Warning: Citation `HallA' on page 18 undefined on input line 90.
-
-
-
-Package natbib Warning: Citation `HallA' on page 18 undefined on input line 90.
-
-
-
-LaTeX Warning: Reference `VDC_profile' on page 18 undefined on input line 95.
-
-
-Package natbib Warning: Citation `drift' on page 18 undefined on input line 95.
-
-
-[18] [19 <./images/HRSs.png>]
-
-Package natbib Warning: Citation `drift' on page 20 undefined on input line 97.
-
-
-<images/VDC_profile_view.png, id=293, 663.22781pt x 585.68813pt>
+<images/VDC_profile_view.png, id=561, 663.22781pt x 585.68813pt>
 File: images/VDC_profile_view.png Graphic file (type png)
 
 <use images/VDC_profile_view.png>
-Package pdftex.def Info: images/VDC_profile_view.png used on input line 103.
+Package pdftex.def Info: images/VDC_profile_view.png used on input line 123.
 (pdftex.def)             Requested size: 284.52756pt x 251.26009pt.
+) [20] [21 <./images/HRSs.png>] [22 <./images/VDC_profile_view.png (PNG copy)>]
 
-
-Package natbib Warning: Citation `drift' on page 20 undefined on input line 106
-.
-
-
-Package natbib Warning: Citation `drift' on page 20 undefined on input line 106
-.
-
-) [20 <./images/VDC_profile_view.png (PNG copy)>] [21]
 :<-
 :<+ DetectorCalibration.tex
 \openout2 = `DetectorCalibration.aux'.
 
 (./DetectorCalibration.tex
 Chapter 3.
-
-LaTeX Warning: Reference `harp' on page 22 undefined on input line 12.
-
-
-Package natbib Warning: Citation `BPM' on page 22 undefined on input line 12.
-
-
-Package natbib Warning: Citation `BPM2' on page 22 undefined on input line 12.
-
-
-Package natbib Warning: Citation `BPM2' on page 22 undefined on input line 15.
-
-
-Package natbib Warning: Citation `BPM2' on page 22 undefined on input line 15.
-
-<images/harp.png, id=312, 964.35281pt x 255.95625pt>
+<images/harp.png, id=584, 964.35281pt x 255.95625pt>
 File: images/harp.png Graphic file (type png)
  <use images/harp.png>
 Package pdftex.def Info: images/harp.png used on input line 17.
 (pdftex.def)             Requested size: 398.33858pt x 105.72385pt.
 
-[22
+[23
 
 
 
 
-]
-
-LaTeX Warning: Reference `bulls' on page 23 undefined on input line 20.
-
-
-LaTeX Warning: Reference `BPM_eq' on page 23 undefined on input line 20.
-
-<images/bulls.png, id=321, 487.06969pt x 359.84438pt>
+] <images/bulls.png, id=593, 487.06969pt x 359.84438pt>
 File: images/bulls.png Graphic file (type png)
- <use images/bulls.png>
+
+<use images/bulls.png>
 Package pdftex.def Info: images/bulls.png used on input line 48.
 (pdftex.def)             Requested size: 284.52756pt x 210.20886pt.
-
-[23 <./images/harp.png>]) [24 <./images/bulls.png>]
+ [24 <./images/harp.png>]) [25 <./images/bulls.png>]
 :<-
 :<+ DataAnalysis.tex
 \openout2 = `DataAnalysis.aux'.
 
 (./DataAnalysis.tex
 Chapter 4.
-) [25
+) [26
 
 
 
@@ -1364,7 +1108,7 @@ Chapter 4.
 
 (./Results.tex
 Chapter 5.
-) [26
+) [27
 
 
 
@@ -1376,69 +1120,44 @@ Chapter 5.
 
 (./Simulation.tex
 Chapter 6.
-
-Package natbib Warning: Citation `gomez' on page 27 undefined on input line 2.
-
-
-LaTeX Warning: Reference `example' on page 27 undefined on input line 3.
-
-<images/Initial.png, id=345, 451.6875pt x 451.6875pt>
+<images/Initial.png, id=614, 451.6875pt x 451.6875pt>
 File: images/Initial.png Graphic file (type png)
  <use images/Initial.png>
 Package pdftex.def Info: images/Initial.png used on input line 7.
 (pdftex.def)             Requested size: 227.62204pt x 227.62827pt.
 
-[27
+[28
 
 
 
 
-]
-
-LaTeX Warning: Reference `boom' on page 28 undefined on input line 11.
-
-
-LaTeX Warning: Reference `LAM' on page 28 undefined on input line 14.
-
-
-LaTeX Warning: Reference `boost' on page 28 undefined on input line 14.
-
-
-LaTeX Warning: Reference `delta' on page 28 undefined on input line 14.
-
-[28 <./images/Initial.png>]
+] [29 <./images/Initial.png>]
 File: images/Initial.png Graphic file (type png)
  <use images/Initial.png>
 Package pdftex.def Info: images/Initial.png used on input line 21.
 (pdftex.def)             Requested size: 184.9429pt x 184.94495pt.
 
-<images/RotatedbyLam.png, id=359, 602.25pt x 602.25pt>
+<images/RotatedbyLam.png, id=630, 602.25pt x 602.25pt>
 File: images/RotatedbyLam.png Graphic file (type png)
 
 <use images/RotatedbyLam.png>
 Package pdftex.def Info: images/RotatedbyLam.png used on input line 26.
 (pdftex.def)             Requested size: 184.9429pt x 184.94035pt.
 
-<images/boosted.png, id=360, 602.25pt x 602.25pt>
+<images/boosted.png, id=631, 602.25pt x 602.25pt>
 File: images/boosted.png Graphic file (type png)
  <use images/boosted.png>
 Package pdftex.def Info: images/boosted.png used on input line 31.
 (pdftex.def)             Requested size: 184.9429pt x 184.94035pt.
 
-<images/beforescattering.png, id=361, 602.25pt x 602.25pt>
+<images/beforescattering.png, id=632, 602.25pt x 602.25pt>
 File: images/beforescattering.png Graphic file (type png)
 
 <use images/beforescattering.png>
 Package pdftex.def Info: images/beforescattering.png used on input line 36.
 (pdftex.def)             Requested size: 184.9429pt x 184.94035pt.
 
-
-LaTeX Warning: Reference `delta2' on page 29 undefined on input line 42.
-
-
-LaTeX Warning: Reference `transform2' on page 29 undefined on input line 42.
-
-<images/afterscatter.png, id=362, 602.25pt x 602.25pt>
+<images/afterscatter.png, id=635, 602.25pt x 602.25pt>
 File: images/afterscatter.png Graphic file (type png)
 
 <use images/afterscatter.png>
@@ -1462,27 +1181,24 @@ Using draft setting for this image.
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-<images/boostedback.png, id=363, 602.25pt x 602.25pt>
+<images/boostedback.png, id=636, 602.25pt x 602.25pt>
 File: images/boostedback.png Graphic file (type png)
 
 <use images/boostedback.png>
 Package pdftex.def Info: images/boostedback.png used on input line 57.
 (pdftex.def)             Requested size: 170.71652pt x 170.71487pt.
- <images/final.png, id=364, 602.25pt x 602.25pt>
+ <images/final.png, id=637, 602.25pt x 602.25pt>
 File: images/final.png Graphic file (type png)
 
 <use images/final.png>
 Package pdftex.def Info: images/final.png used on input line 62.
 (pdftex.def)             Requested size: 170.71652pt x 170.71487pt.
- [29 <./images/RotatedbyLam.png> <./images/boosted.png> <./images/beforescatter
+ [30 <./images/RotatedbyLam.png> <./images/boosted.png> <./images/beforescatter
 ing.png>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-LaTeX Warning: Reference `ES_res' on page 30 undefined on input line 70.
-
-<images/Es_results.png, id=379, 861.2175pt x 685.05937pt>
+<images/Es_results.png, id=652, 861.2175pt x 685.05937pt>
 File: images/Es_results.png Graphic file (type png)
 
 <use images/Es_results.png>
@@ -1492,15 +1208,15 @@ Package pdftex.def Info: images/Es_results.png used on input line 76.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [30] [31 <./images/afterscatter.png> <./images/boostedback.png> <./images/fin
-al.png>] [32 <./images/Es_results.png (PNG copy)>]
+) [31] [32 <./images/afterscatter.png> <./images/boostedback.png> <./images/fin
+al.png>] [33 <./images/Es_results.png (PNG copy)>]
 :<-
 :<+ Conclusion.tex
 \openout2 = `Conclusion.aux'.
 
 (./Conclusion.tex
 Chapter 7.
-) [33
+) [34
 
 
 
@@ -1512,21 +1228,27 @@ Chapter 7.
 \tf@brf=\write9
 \openout9 = `my-dissertation.brf'.
 
- [34
+ [35
 
 
 
-] [35
+] [36
 
 ]
-Underfull \hbox (badness 1331) in paragraph at lines 100--100
-[]\OT1/cmr/m/n/12 Tom Pow-ers, Lawrence Doolit-tle, Rok Ur-sic, and Jef-frey Wa
-g-ner.  De-sign,
- []
+./my-dissertation.bbl:93: Undefined control sequence.
+<argument> ...a tritium target. \newblock \notype 
+                                                  , Thomas Jefferson Lab, Vi...
+l.93 
+     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-[36])
+[37])
 :<-
-[37] [38]
+[38] [39]
 :<+ back-matter/appendix-1.tex
 \openout2 = `back-matter/appendix-1.aux'.
 
@@ -1537,97 +1259,53 @@ g-ner.  De-sign,
 
 (./back-matter/vita.tex)
 :<-
-
-Package natbib Warning: There were undefined citations.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 137.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 137.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 138.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 138.
 (./my-dissertation.aux (./front-matter/dedication.aux)
 (./front-matter/acknowledgements.aux) (./front-matter/quote.aux)
 (./front-matter/abstract.aux) (./Introduction.aux) (./ExperimentalSetup.aux)
 (./DetectorCalibration.aux) (./DataAnalysis.aux) (./Results.aux)
-(./Simulation.aux) (./Conclusion.aux)
-
-Package natbib Warning: Citation(s) may have changed.
-(natbib)                Rerun to get citations correct.
-
-(./back-matter/appendix-1.aux) (./back-matter/vita.aux)
-
-./my-dissertation.aux:58: Package natbib Error: Bibliography not compatible wit
-h author-year citations.
-(natbib)                Press <return> to continue in numerical citation style.
-
-
-See the natbib package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.58 ...mand\NAT@force@numbers{}\NAT@force@numbers
-                                                  
-Check the bibliography entries for non-compliant syntax,
-or select author-year BibTeX style, e.g. plainnat
-
-)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 137.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 137.
-
-
-Package rerunfilecheck Warning: File `my-dissertation.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `my-dissertation.out':
-(rerunfilecheck)             Before: EFF83B52E515DD2E82DAE93DA5259AF0;1064
-(rerunfilecheck)             After:  163B40CB91544456D4CBD32D515DFF80;2400.
-
-Package rerunfilecheck Warning: File `my-dissertation.brf' has changed.
-(rerunfilecheck)                Rerun to get bibliographical references right.
-
-Package rerunfilecheck Info: Checksums for `my-dissertation.brf':
-(rerunfilecheck)             Before: 081B37A4E1C9D4F1F673D220C1763E19;2728
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 137.
+(./Simulation.aux) (./Conclusion.aux) (./back-matter/appendix-1.aux)
+(./back-matter/vita.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 138.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 138.
+Package rerunfilecheck Info: File `my-dissertation.out' has not changed.
+(rerunfilecheck)             Checksum: 8EDD68B34A8B62478E22C1C8855B9DBD;2400.
+Package rerunfilecheck Info: File `my-dissertation.brf' has not changed.
+(rerunfilecheck)             Checksum: 836177D7ED0135D30C6D22D300760ECF;2976.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 138.
  ) 
 Here is how much of TeX's memory you used:
- 17528 strings out of 495063
- 301550 string characters out of 3182202
- 374027 words of memory out of 3000000
- 20080 multiletter control sequences out of 15000+200000
+ 17609 strings out of 495063
+ 302816 string characters out of 3182202
+ 382127 words of memory out of 3000000
+ 20136 multiletter control sequences out of 15000+200000
  16383 words of font info for 64 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 57i,11n,57p,1891b,483s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{page.vi} has been referenced but does not exist, 
-replaced by a fixed one
-
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/cmextra/cmmib8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-r17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on my-dissertation.pdf (45 pages, 2557248 bytes).
+ 57i,11n,57p,1891b,501s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cmextra/cmmib8.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on my-dissertation.pdf (48 pages, 4428827 bytes).
 PDF statistics:
- 613 PDF objects out of 1000 (max. 8388607)
- 509 compressed objects within 6 object streams
- 183 named destinations out of 1000 (max. 500000)
- 270 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 864 PDF objects out of 1000 (max. 8388607)
+ 738 compressed objects within 8 object streams
+ 190 named destinations out of 1000 (max. 500000)
+ 453 words of extra memory for PDF output out of 10000 (max. 10000000)
 

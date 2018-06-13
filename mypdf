@@ -1,0 +1,4 @@
+pdflatex -interaction nonstopmode -file-line-error my-dissertation.tex
+bibtex my-dissertation.aux
+pdflatex -interaction nonstopmode -file-line-error my-dissertation.tex
+pdflatex -interaction nonstopmode -file-line-error my-dissertation.tex
