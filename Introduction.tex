@@ -59,36 +59,41 @@ E^\prime =\frac{E}{1+\frac{E}{Mc^2}(1-cos\theta)}
 
 \subsection{Deep inelastic scattering}
 \paragraph{}The first generation of electron scattering experiments achieving a significantly large  $|\boldsymbol{q}|$ used a linear accelerator with a 25 GeV maximum beam energy, and following generations increased the total interaction energy to substantially higher thresholds. At these high incident beam energies, individual resonances cannot be separated in the invariant mass spectrum above 2.5 GeV. Observations made into this convoluted invariant mass spectrum has shown that many strongly interacting particles are produced, known as hadrons. Scattering interactions that generate these hadrons are considered to be inelastic. 
-\paragraph{}Inelastic scattering events contain the possibility of conceiving additional resultants and increase the complexity of a scattering interaction. Inelastic scattering events occur when the wavelength of the virtual photon is comparable to the radius of the struck nucleon or when $Q^2R^2 \lesssim 1$\cite{PnN}. Increasing the amount of transferred momentum so that $Q^2R^2 \gtrsim 1$, will increase the resolution of the probe to a level that allows for the interacting with the charge constituents within the nucleon. When the scattering event probes the fundamental elements of a nucleon, the scattering process is titled deep inelastic scattering(DIS). Due to the increase in complexity, an additional degree of freedom has to be introduced into the scattering cross section formalism. Modifying the Rosenbluth formula to include the inelastic scattering structure functions $F_1(Q^2,\nu)$ and $F_2(Q^2,\nu)$ evolves the Rosenbluth formula to contain the needed complexity of an inelastic event. These modifications are shown in equation \ref{ISCS}. The $F_1$ and $F_2$ structure functions provide the details for describing the internal composition of the nucleon \cite{PnN}. 
+\paragraph{}Inelastic scattering events contain the possibility of conceiving additional resultants causing an increase in the complexity of a scattering interaction. In order to create an inelastic event, the wavelength of the virtual photon has to be comparable to the radius of the struck nucleon. Increasing the amount of transferred momentum so that $Q^2R^2 \gtrsim 1$, will increase the resolution of the probe to a level that allows for the interaction to be with the charge constituents within the nucleon. When the scattering event probes the fundamental elements of a nucleon, the scattering process is titled deep inelastic scattering(DIS). Due to the increase in complexity, an additional degree of freedom has to be introduced into the scattering cross section formalism. Modifying the Rosenbluth formula to include the inelastic scattering structure functions $F_1(Q^2,\nu)$ and $F_2(Q^2,\nu)$ evolves the Rosenbluth formula to contain the needed complexity of an inelastic event. These modifications are shown in equation \ref{ISCS}. The $F_1$ and $F_2$ structure functions provide the details for describing the internal composition of the nucleon \cite{PnN}. 
 \begin{equation}
 \label{ISCS}
 \frac{d^2\sigma}{d\Omega dE^\prime}=\bigg(\frac{d\sigma}{d\Omega}\bigg)_{Mott} \bigg\lbrack \frac{F_2(Q^2,\nu)}{\nu} + \frac{2F_1(Q^2,\nu)}{M}tan^2\frac{\theta}{2} \bigg \rbrack.
 \end{equation}  
-\paragraph{}In the case of DIS off of a proton, the electron probe is used to explore the exclusive internal structure of the proton. In 1969, Feynman assumed the internal make up of the proton was that of point-like partons \cite{Briskin_thesis,DISproton}. This assumption is known as the parton model. As part of this model, the impulse approximation makes an assumption that the duration of the interaction between the mediating photon and parton is short enough allowing for the interaction between individual partons to be neglected.  Thus in DIS interaction the partons can be described as free, and they would not interact with each other. Under this understanding, a electron-nucleon DIS interaction   would characterize the properties and motions of the partons that make up the struck nucleon\cite{DISproton}. The characteristics, the motions and properties, of the partons are formalized into a parton distribution function $f_i(x_B)$.
-$x_B$, the Bjorken scaling variable is a dimensionless quantity that measures the inelastically of a scattering process and is defined as: $x := \frac{Q^2}{2M\nu}$.
+\paragraph{}In the case of DIS off of a proton, the electron probe is used to explore the exclusive internal structure of the proton. In 1969, Feynman assumed the internal make up of the proton was that of point-like partons \cite{Briskin_thesis,DISproton}. This assumption is known as the parton model. As part of this model, the impulse approximation makes an assumption that the duration of the interaction between the mediating photon and parton is short enough allowing for the interaction between individual partons to be neglected. Thus in a DIS interaction the partons can be described as free, so their interactions would be minimal. Under this understanding, a electron-nucleon DIS interaction would characterize the properties and motions of the partons that make up the struck nucleon\cite{DISproton}. The characteristics, the motions and properties, of the partons are formalized into a parton distribution function $f_i(x_B)$. The Bjorken scaling variable ,$(X_B)$ or $x$, is a dimensionless quantity that measures the inelastically of a scattering process and is defined as: $x := \frac{Q^2}{2M\nu}$. The parton distribution functions can be used to relate the $F_1$ and $F_2$ structure functions used in equation \ref{ISCS}. 
+\begin{align}
+F_2(x) &= x \Sigma_i e^2_i f_i(x)\\
+F_1(x) &= \frac{1}{2x} F_2(x)
+\end{align}
+
 
 \begin{equation}
 \label{F2q}
 F_2(x) = x1 \cdot \Sigma_f z^2_f ( q_f(x) + \bar{q}_f(x))
  \cite{PnN}
 \end{equation}
+\ref{F2_HERA_fig}
 
-\begin{multicols}{2}
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=5cm]{F2_HERA.pdf} 
+%\begin{multicols}{2}
+\begin{figure}[]
+%	\hspace*{-20pt}
+	\includegraphics[width=8cm]{F2_HERA.pdf} 
 	\caption{ Measurement of the proton structure function $F_2(x, Q^2)$ \cite{F2_HERA}.}
 	\label{F2_HERA_fig}
 \end{figure} 
-\columnbreak
+%\columnbreak
 
-\begin{figure}[h]
-
-	\includegraphics[width=5cm]{q2indy.pdf} 
+\begin{figure}[]
+%	\vspace*{-30pt}
+	\includegraphics[width=7.5cm]{q2indy.pdf} 
 	\caption{ Electron-proton scattering: measured corss-sections normalized to the Mott cross-section as functions of $Q^2$ at different values of invariant mass W\cite{Q2indy}.}
 	\label{q2indy_fig}
 \end{figure} 
-\end{multicols}
+%\end{multicols}
 
 	\cite{DISearly}
 	\cite{DISproton}
