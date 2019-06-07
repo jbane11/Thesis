@@ -79,7 +79,9 @@
 \section{Target}
 \paragraph{} The Hall A Tritium Target(HATT) system was used for the Tritium run group of experiments. The HATT target chamber was repurposed from a previously used cryo-target chamber in order to reduce the financial cost of designing a new target chamber. The refurbishing of the cryo-target chamber consisted of adding in new safety features to prevent and mitigate a tritium leak.  A 4 inch long collimator with an inner diameter of 0.4 inch was added inside of the target chamber but upstream of the target ladder to prevent the beam from striking the thin side wall of the aluminum cell. In case of a tritium leak in the target chamber, an exhaust system was installed to control the amount of tritium exposed to the Hall.\cite{HATT_eng}  Figure \ref{HATT} shows the HATT system with the target ladder in the home position and the scattering windows removed. 
 \begin{figure}
+	\centering
 	\caption{Target Images}
+	\hspace*{-20pt}
 	\subfloat[A image of the HATT. \cite{DHimages}]{{\includegraphics[width=6cm]{HATT.jpg} }}
 	\quad
 	\subfloat[Image of the Hall A Tritium Target Ladder. \cite{DHimages}]{{\includegraphics[width=12cm]{HATT_Ladder.JPG} }}
@@ -89,20 +91,17 @@
 \end{figure}
 A picture of the HATT ladder installed in the HATT system is shown if figure \ref{HATT}. The ladder contains both gaseous cells and solid targets. The MARATHON experiment had five gas cells. The top four of the gas cells were filled with tritium, deuterium, hydrogen, and $^3$helium, from top to bottom respectively. Due to safety restricts the tritium cell was not installed until the HATT system could be closed. The bottom most cell was left empty, to complete end cap subtractions. The lower half of the target ladder contains the solid targets used during the MARATHON experiment. Listed from top to bottom, the solid targets used were a pair of thick aluminum foils, carbon multifoil, single carbon foil, and a carbon foil with a 2mm diameter hole. The thick Al foils were used to aid the target window background subtraction. The multifoil target also know has the optics target was used to calibrate the z-axis  reconstruction of the optics matrix. The single carbon foil and carbon hole were used to calibrate the BPMs and rasters and to determine the off set of the central line of the detector. 
 
-
-
-\section{High Resolution Spectrometers}
-Electrons that successfully scatter from the target may end up in either of the two HRSs(High Resolution Spectrometers). The HRSs were designed to detect charged particles with a high degree of precision. 
-In order to achieve a high level of resolution in momentum and angle, the HRSs were designed with a magnet configuration of QQ$D_n$Q (quadrupole, quadrupole, dipole, and quadrupole). The vertical bending dipole provides the field required to transport the scattered particles through the 45$^\circ$ bending angle to the detector hut. A drawing of an HRS can be seen in figure \ref{hrsfull}. The first quadrupole(Q1) focuses the incoming electrons in the vertical plane. The following two quadrupoles (Q2 and Q3 provide transverse focusing. This optical design allows the use of extended gas targets with no substantial loss in solid angle\cite{HallA}.  The spectrometers were designed to perform various functions which include: triggering the data acquisition system (DAQ) when certain requirements are met, gathering the position and direction of individual particles to reconstruct a track, provide precise timing information for time of flight calculations, and identify many different particle types that pass through the detector system. In order for both the Left HRS (LHRS) and Right HRS (RHRS) to  complete the required task, they contain a myriad of detectors. The HRSs use drift chambers, scintillators, cerenkov detectors, and shower calorimeters. Both the Left and Right HRSs contain two planes of scintillators to function has the main trigger for the detector package. The vertical drift chambers (VDC) that lay at the front of the detector in conjunction with the Shower that lies in the back of the detector provide information for reconstructing the particle tracks and precise timing. Particles are identified by the cerenkov, shower calorimeters, and pion rejectors that are contained in the left or right HRS. The layout of the individual detectors that make up the left and right detector package are shown in figure \ref{hrsss}  \cite{HallA}.
-
 \begin{figure}
 	\centering
 	\includegraphics[width=10cm]{HRS_full.png}
 	\caption{A side view of a HRS \cite{HallA}.
-	\label{hrsfull}}
+		\label{hrsfull}}
 \end{figure}
 
-\begin{figure}
+\section{High Resolution Spectrometers}
+Electrons that successfully scatter from the target may end up in either of the two HRSs(High Resolution Spectrometers). The HRSs were designed to detect charged particles with a high degree of precision. 
+In order to achieve a high level of resolution in momentum and angle, the HRSs were designed with a magnet configuration of QQ$D_n$Q (quadrupole, quadrupole, dipole, and quadrupole). The vertical bending dipole provides the field required to transport the scattered particles through the 45$^\circ$ bending angle to the detector hut. A drawing of an HRS can be seen in figure \ref{hrsfull}. The first quadrupole(Q1) focuses the incoming electrons in the vertical plane. The following two quadrupoles (Q2 and Q3 provide transverse focusing. This optical design allows the use of extended gas targets with no substantial loss in solid angle\cite{HallA}.  The spectrometers were designed to perform various functions which include: triggering the data acquisition system (DAQ) when certain requirements are met, gathering the position and direction of individual particles to reconstruct a track, provide precise timing information for time of flight calculations, and identify many different particle types that pass through the detector system. In order for both the Left HRS (LHRS) and Right HRS (RHRS) to  complete the required task, they contain a myriad of detectors. The HRSs use drift chambers, scintillators, cerenkov detectors, and shower calorimeters. Both the Left and Right HRSs contain two planes of scintillators to function has the main trigger for the detector package. The vertical drift chambers (VDC) that lay at the front of the detector in conjunction with the Shower that lies in the back of the detector provide information for reconstructing the particle tracks and precise timing. Particles are identified by the cerenkov, shower calorimeters, and pion rejectors that are contained in the left or right HRS. The layout of the individual detectors that make up the left and right detector package are shown in figure \ref{hrsss}  \cite{HallA}.
+\begin{figure}[t]
 	\centering
 	\includegraphics[width=10cm]{HRSs.png}
 	\caption{A view of both the left(top) and right(bottom) detector stacks inside the left and right HRS \cite{HallA}.
@@ -110,19 +109,25 @@ In order to achieve a high level of resolution in momentum and angle, the HRSs w
 \end{figure}
 
 	\subsection{Vertical Drift Chambers}
-	Each of the spectrometers housed in Hall A contains a vertical drift chamber(VDC). Each VDC contains two planes of crossing sense wires. Shown in figure \ref{VDC_profile}, the two planes of the VDC lie a distance of 0.335m apart \cite{drift}. The lower plane of the VDC is positioned at the approximate focal plane of the HRS and lies in the horizontal plane of the Hall A coordinate system. The sense wires located in the VDCs cross orthogonally. They are offset by $45^\circ$ in respect to the dispersive and non-dispersive directions. 
+	Each of the spectrometers housed in Hall A contains two vertical drift chambers(VDC). Each VDC incorporates two planes of crossing sense wires. Shown in figure \ref{VDC_profile}, the two planes of the VDC lie a distance of 0.335m apart \cite{drift}. The lower plane of the VDC is positioned at the approximate focal plane of the HRS and lies in the horizontal plane of the Hall A coordinate system. The sense wires located in the VDCs cross orthogonally. They are offset by $45^\circ$ in respect to the dispersive and non-dispersive directions. Each plane of the VDC uses 368 sense wires, with 4.24 mm between each wire. The signals from these wires are transmitted to the electronics via a set of printed circuit boards that contain a 16-channel connector and twisted pair ribbon cables. These ribbon cables transmit the VDC signal to a set of common stop TDC with 0.5 ns resolution \cite{drift}. The drift chamber's performance is constantly monitored through the experiment. The efficiency of an individual wire is determine by an algorithm that scan a plane for an event that fires a cluster of wires. A wire is determine to be efficient for that event if it fired along with it's two nearest neighbors. This efficiency calculation is used during the online analysis to keep track of the performance of the VDC and to assistant the maintenance of the HRSs throughout the experiment. 
+	\paragraph{}
+	
+	\begin{figure}
+		\centering
+		\includegraphics[width=15cm]{VDCeff.pdf}
+		\caption{The VDC efficiency for one plane of wires.}
+		\label{vdceff}
+	\end{figure}
 	
 	\cite{drift}
 	
 	
-	\begin{figure}
-	\centering
-	
-	\includegraphics[width=10cm]{VDC_profile_view.png}
-	
-	\caption{A sketch of the two VDC planes in the HRSs with a particle traveling through the detector at 45$^\circ$.\cite{drift}.
-	\label{VDC_profile}}
-	\end{figure}
+%	\begin{figure}
+%		\centering
+%		\includegraphics[width=10cm]{VDC_profile_view.png}
+%		\caption{A sketch of the two VDC planes in the HRSs with a particle traveling through the detector at 45$^\circ$.\cite{drift}.
+%		\label{VDC_profile}}
+%	\end{figure}
 	
 	
 	
@@ -134,12 +139,7 @@ In order to achieve a high level of resolution in momentum and angle, the HRSs w
 	\subsection{FPP Chambers}
 
 \section{Trigger Setup}
-	\begin{figure}
-	\centering
-	\includegraphics[width=10cm]{VDC_profile_view.png}
-	\caption{A sketch of the two VDC planes in the HRSs with a particle traveling through the detector at 45$^\circ$.\cite{drift}.
-	\label{trigger_Setup}}
-\end{figure}
+
 
 
 
