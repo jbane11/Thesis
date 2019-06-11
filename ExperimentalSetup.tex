@@ -26,8 +26,7 @@
 	\end{figure} 	 
 	 
 	 \paragraph{}The experimental Hall A and the scientific equipment used were designed for detailed investigations of the internal structure of nuclei. Two high resolution spectrometers in Hall A use the inclusive (e,e$\prime$) and exclusive (e,e$\prime$ p) reactions to gain a greater understanding of the structure of the nucleus. Completing detailed studies with high resolution and extreme accuracy requires knowing the beam position, size, energy, and current when the beam strikes the target. The instrumentation used in the precise measurement of these quantities in Hall A  are shown in figure \ref{BeamLine} \cite{HallA}. The information provided by these detectors originate through small changes in current and voltage sent through the electronics. These signals are transformed into useful information through calibrations.
-
-	 
+ 
 	 \subsection{Beam Position Monitors}
 	 \paragraph{} A pair of Beam Position Monitors(BPM)s are used to measure the relative beam position without affecting the beam. The two Hall A BPMs are located at 7.524 m and 1.286 m away from the target. Using the standard difference-over-sum technique, the relative beam position is determined with an accuracy of 100 $\mu$m with a beam current of at least 1 $\mu$A \cite{HallA}. The BPMs' positional data is recorded in two ways. Every second of beam time, the beam position average over 0.3 seconds is logged into the Experimental Physics and Industrial Control System (EPICS) database. The BPMs also transmit data event-by-event to the CEBAF online Data Acquisition system(CODA).
 	 	 	 
@@ -38,7 +37,7 @@
 	 	 	\includegraphics[width=14cm]{BeamLine.png} 
 	 	 \end{figure} 	
 	 	 	
-	 \paragraph{} The main beam line components of the BPMs consist of four open-ended antennas. Figure \ref{BPMimg} shows a BPM chamber and figure \ref{BPM_4} shows the layout of the four antennas as you look down the beam line. In this chamber, the design of three of the four antennas can be seen. The antennas are titled $u_+$, $u_-$ and $v_+$, $v_-$. The antennas receive an induced signal as electrons pass to determine the beam position in the u and v directions. The direction of the beam is determined by using the two BPMs in conjunction with with positional information of the BPMs. The accuracy of the BPMs requires an absolute measurement of the electron beam's position to calibrate the BPMs and a internal input oscillation measurement supply BPM signal coefficients \cite{BPM,BPM2}.
+	 \paragraph{} The main beam line components of the BPMs consist of four open-ended antennas. Figure \ref{BPMimg} shows a BPM chamber and figure \ref{BPM_4} shows the layout of the four antennas as you look down the beam line. In this chamber, the design of three of the four antennas can be seen. The antennas are titled $u_+$, $u_-$ and $v_+$, $v_-$. The antennas receive an induced signal as electrons pass to determine the beam position in the u and v directions. The BPMs send a DC offset to the DAQ. This DC offset is turned into a positional measurement via looking at both signals in one direction. The position in the frame of the u and v antennas are calculated by the taking the difference over the sum of the two wires in the u and v directions. The accuracy of the BPMs requires an absolute measurement of the electron beam's position to calibrate the BPMs\cite{BPM,BPM2}.
 	 	 	\begin{figure}[H]
 	 	 		\centering
 	 	 		\caption{BPM design diagram, from JLab instrumentation	group. Beam direction is from left to right \cite{BPM2}. }
@@ -52,7 +51,7 @@
 	 %			\label{BPM_4}
 	 %			\includegraphics[width=10cm]{BPM_4.png} 
 	 %		\end{figure} 
-		\paragraph{} The BPM signal coefficients are determined by a twiddle measurement. An RF module attached to the BPM antennas is used to pass a signal out of each of the antennas, one at a time. This will allow the determination of the conversion factor for the BPM signal to relative beam position. Two harps were used to provide the absolute measurement required for calibrating the BPMs. Figure \ref{harp} contains a drawing of the harps used in Hall A. The harps were moved into the beam line when calibration data is needed, but must be moved out for the production of experimental data because the harp wires are intrusive to the beam operation.  The harp forks are aligned perpendicular to the beam line, to allow the harps to be moved in and out of the beam line. Three different wires are used to determine the horizontal and vertical position of the beam. Each wire has one of three orientations: vertical, sloped down or sloped up. The two sloped wires are angled at 45$^{\circ}$ relative to the wire frame. As the harp fork is moved into the beam, the wires receive a signal as the beam interacts with the wires. The two sloped wires are used together to determine the vertical position of the beam. The vertical wire is used to determine the horizontal position of the beam \cite{BPM,BPM2}. 
+		\paragraph{} Two harps were used to provide the absolute measurement required for the calibrations. Each harp is located immediately after the BPM on the beam line. The harp forks are aligned perpendicular to the beam line to allow the harps to be moved in and out of the beam line. A wire that transverse between the fork tines at three different angles in respect to the harp is used to determine the horizontal and vertical position of the beam. The two sloped sections of the wire are angled at 45$^{\circ}$ relative to the harp frame. As the harp fork is moved into the beam, the wires receive a signal as the beam interacts with the wires. The two sloped wires are used together to determine the vertical position of the beam. The vertical wire is used to determine the horizontal position of the beam \cite{BPM,BPM2}. The harps are not used during production phases due their intrusive nature caused by the interaction of the beam with the harp wire.
 		\begin{figure}[H]
 			\centering
 			\caption{A schematic layout of a harp fork \cite{BPM2} }
@@ -60,7 +59,7 @@
 			\includegraphics[width=14cm]{harp.png} 
 		\end{figure}  	
 		
-		\paragraph{}The location of the wires on the harp frame and the position of the harp fork were used to calculate the absolute beam position. The BPM calibration coefficients were determine by using a bulls eye scan, figure \ref{bulls} shows an example of the five positions used to calculate the BPM calibration coefficients. The harp scan results are substituted into equation \ref{BPM_eq} for the X and Y positions. Using all five points and an $R^2$ regression technique, the coefficients can be determined with great accuracy. These highly accurate BPMs were crucial in reducing systematic error in the final results obtained from this experiment. 
+		\paragraph{}The location of the wires on the harp frame and the position of the harp fork were used to calculate the absolute beam position. Figure \ref{bulls} shows an example of five positions used to calculate the BPM calibration coefficients. This method of using beam positions at the nominal center and surrounding the center is called a bull's eye scan. The harp scan results are substituted into equation \ref{BPM_eq} for the X and Y positions. Using all five points and an $R^2$ regression technique, the coefficients can be determined with great accuracy. These highly accurate BPMs were crucial in reducing systematic error in the final results obtained from this experiment. 
 		\begin{equation}
 		\label{BPM_eq}
 		\begin{pmatrix}
@@ -93,8 +92,39 @@
 
 	 \subsection{Raster}
 	 \paragraph{} Damage to a target system from intense beam can cause extreme fluctuations in the target's temperature and density. A raster was used to counteract the damage caused by a focused beam. The raster used two magnetic fields produced by two dipoles to spread the electron beam out. This produces a large rectangle interaction area on the front face of the target container. A triangle wave of 25 kHz was used to control the coils of the dipole magnets. The raster systems are located $\approx$17 meters before the target chamber (upstream of the target\cite{BPM2}). The rasters position can be seen in figure \ref{HallA}. Safety constraints administrated by the target group at JLAB limited the minimum size of the raster spot for the MARATHON experiment to two millimeters by two millimeters. This limit was installed has a safety concern for the tritium target. 
-	 \paragraph{} The Hall A raster system consists of four dipoles. Two dipoles produce magnetic fields in the horizontal direction of the lab frame and two in the vertical. The upstream raster and downstream rasters include one vertical and one horizontal dipole. The relative change in position of the incoming electrons are controlled by the current supplied to the dipoles. In order to obtain the change in beam position due to the rasters, a calibration between the raster current and measured beam position were obtained.  
-	 
+	 \paragraph{} The Hall A raster system consists of four dipoles. Two dipoles produce magnetic fields in the horizontal direction of the lab frame and two in the vertical. The upstream raster and downstream rasters include one vertical and one horizontal dipole. The relative change in position of the incoming electrons are controlled by the current supplied to the dipoles. This current that drives the dipoles is recored by an ADC. In order to obtain the change in beam position due to the rasters, a calibration between the raster current and measured beam position were obtained.  
+	  \begin{figure}[h]
+	 	\centering
+	  	\includegraphics[width=7.5cm]{raster.pdf} 
+	 	\caption{The X and Y current of the raster with a carbon hole. The size of the carbon hole is fit with a radial sigmoid\cite{Trast}.}
+	 	\label{fig:raster}
+	 \end{figure} 
+	 \paragraph{}
+	 The raster calibration is done by creating a line that maps the raster current measured by ADC bins to a position. This calibration process is done to extract positions at the locations of both BPMs and the target center along the beam line. The calibration of the linear mapping of raster current to beam position took two process. The first process was to determine the size of the rastered beam spread. In order to accurately determine the width and height of the beam spread due to the raster, a carbon foil with a hole of a diameter of 2mm was used. A radial sigmoid was used to fit the hole. The fit of the carbon hole gives the width of the raster, the slope of the linear mapping term. In figure \ref{fig:raster}, the raster current in x and y directions are fitted using this radial sigmoid. Once the slope of the linear calibration is determined, the offsets can be found. This is discovered by using the calibrated BPM mean positions for a phase of rastered beam. The mean positions for both BPMA and BPMB are used to produce a track from the BPMs to the target. This projection provides a mean location of the beam at the target.  Using equation \ref{eq:raster}, the offsets also know as the intercepts can be solved for using the slope ($m_x,m_y$), the raster mean current value ($R_x,R_y$), and the mean BPM position($x,y$).  \cite{Trast} 
+	 \begin{equation}
+	 	\begin{pmatrix}
+	 	x\\
+	 	y
+	 	\end{pmatrix}
+	 	=
+	 	\begin{pmatrix}
+	 	R_x\\
+	 	R_y
+	 	\end{pmatrix}
+	 	*
+	 	\begin{pmatrix}
+		m_x && 0 \\
+		0  && m_y
+	 	\end{pmatrix}
+	 	+
+	 	\begin{pmatrix}
+	 	O_x\\
+	 	O_y
+	 	\end{pmatrix}
+	 	\label{eq:raster}
+	 \end{equation}
+
+ 
 	 \subsection{Beam Energy}
 	 \paragraph{}The electron beam energy is located in many of the equations used in an electron scattering experiment. This can cause a noticeable increase in systematic error if the beam energy measurement is not made precisely. At JLAB for the MARATHON experiment, the beam energy was measured in two ways. In Hall A, the beam energy was measured by using the (e,e$\prime$p) method. On the beam line, 17 meters upstream from the target an ep scattering chamber is located. The beam was directed into the target containing a rotating 10-30 $\mu$m thick tape of C$H_2$. The scattering angle of the electron and the recoil angle of the proton are used to determine the beam energy using equation \ref{EP}. Where $M_p$ is the mass of the proton and $\theta_p, \theta_e$ are the scattered angle of the proton, electron respectively. 
 	\begin{equation}
@@ -110,12 +140,25 @@
 	
 		  	\begin{figure}[H]
 		  	 	 		\centering
-		  	 	 		\caption{Hall A Current Monitor components \cite{BCM1}. }
-		  	 	 		\label{BCMpng}
+		  	 	 		\caption{Hall A Current Monitor components \cite{BCM1}. 
+		  	 	 		\label{BCMpng}}
 		  	 	 		\includegraphics[width=10cm]{BCM1.png} 
 		  	\end{figure}
 	\subsection{Beam Current Monitors}
-	\paragraph{} The main process of measuring the scattering yield for a calculation of a cross section looks at finding the ratio of the number of electrons scattered to the number of electrons sent. In order to accurately determine the number of electrons sent to scatter with our target system, Hall A use a highly accurate and non-invasive beam current monitor(BCM). The Hall A BCM has an a4bsolute accuracy of 0.2 percent as long as the current is between 1 and 180 $\mu$A. The BCM used in Hall A consists of three main components: a Parametric Current Transformer (PCT) and two pill box cavities. Figure \ref{BCMpng} shows the components in the Hall A BCM.  The BCM produces an RF signal that is proportional to the beam current. An 10 kHz down converter, RMS-to-DC converter, voltage-to-Frequency converter, and a scaler are used to inject the current signal into the Hall A DAQ. Proportionality constants are determined in the calibration process to correctly integrate the charge for a given amount of beam current\cite{BCM1}. Continue after the initial beam line components, an electron will enter into the target chamber, housing the target system.
+	\paragraph{} The main process of measuring the scattering yield for a calculation of a cross section looks at finding the ratio of the number of electrons scattered to the number of electrons sent. In order to accurately determine the number of electrons sent to scatter with our target system, Hall A use a set non-invasive beam current monitors(BCMs). The Hall A BCMs have an absolute accuracy of 0.2 percent as long as the current is between 1 and 180 $\mu$A. The BCMs used in Hall A consist of three main components: a Parametric Current Transformer (PCT) and two pill box cavities. Figure \ref{BCMpng} shows the components in the Hall A BCM.  The BCM produces an RF signal that is proportional to the beam current. An 10 kHz down converter, RMS-to-DC converter, voltage-to-Frequency converter, and a scaler are used to inject the current signal into the Hall A DAQ. Proportionality constants are determined in the calibration process to correctly integrate the charge for a given amount of beam current\cite{BCM1}.
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=17cm]{dnew_freq.png}
+		\caption{BCM calibration \cite{MikeTh}.
+		\label{dnewfreq}}
+	\end{figure}
+	The process of calibrating the BCM converts the frequency received from the BCMs to an amount of current in $\mu$A. In order to calibrate the BCMs in Hall A, a separate intrusive calibration of an unser must be done. The unser is calibrated by inserting a known current through a wire inside the beam pipe. The calibration of the unser is known to drift over time, which makes the unser an unfeasible to use as the main source of charge calculation. Once the unser is calibrated, the BCM calibration procedure can be completed. The BCM calibration requires the delivery of the electron beam with unique procedure. THis procedure consist of oscilating the beam on and off status while increasing the current. This process can be seen in figure \ref{dnewfreq}. This stepping up procedure provides an adequate number of data points to complete a linear fit of the BCM frequency verses the calibrated unser current. The linear fit parameters supply a multiplicative gain and an offset for the calibration of the BCMs. 
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=15cm]{dnew_freq.png}
+		\caption{BCM frequency for BCM calibration \cite{MikeTh}.
+			\label{dnewcal}}
+	\end{figure}	
 	  
 \section{Target}\label{sec:target}
 \paragraph{} The Hall A Tritium Target(HATT) system was used for the Tritium run group of experiments. The HATT target chamber was repurposed from a previously used cryo-target chamber in order to reduce the financial cost of designing a new target chamber. The refurbishing of the cryo-target chamber consisted of adding in new safety features to prevent and mitigate a tritium leak.  A 4 inch long collimator with an inner diameter of 0.4 inch was added inside of the target chamber but upstream of the target ladder to prevent the beam from striking the thin side wall of the aluminum cell. In case of a tritium leak in the target chamber, an exhaust system was installed to control the amount of tritium exposed to the Hall.\cite{HATT_eng}  Figure \ref{HATT} shows the HATT system with the target ladder in the home position and the scattering windows removed. 
@@ -125,14 +168,14 @@
 	\hspace*{-20pt}
 	\subfloat[A image of the HATT. \cite{DHimages}]{{\includegraphics[width=6cm]{HATT.jpg} }}
 	\quad
-	\subfloat[Image of the Hall A Tritium Target Ladder. \cite{DHimages}]{{\includegraphics[width=12cm]{HATT_Ladder.JPG} }}
+	\subfloat[Image of the Hall A Tritium Target Ladder. \cite{DHimages}]{{\includegraphics[width=10cm]{HATT_Ladder.JPG} }}
 	\label{HATT}
 
 
 \end{figure}
 A picture of the HATT ladder installed in the HATT system is shown if figure \ref{HATT}. The ladder contains both gaseous cells and solid targets. The MARATHON experiment had five gas cells. The top four of the gas cells were filled with tritium, deuterium, hydrogen, and $^3$helium, from top to bottom respectively. Due to safety restricts the tritium cell was not installed until the HATT system could be closed. The bottom most cell was left empty, to complete end cap subtractions. The lower half of the target ladder contains the solid targets used during the MARATHON experiment. Listed from top to bottom, the solid targets used were a pair of thick aluminum foils, carbon multifoil, single carbon foil, and a carbon foil with a 2mm diameter hole. The thick Al foils were used to aid the target window background subtraction. The multifoil target also know has the optics target was used to calibrate the z-axis  reconstruction of the optics matrix. The single carbon foil and carbon hole were used to calibrate the BPMs and rasters and to determine the off set of the central line of the detector. 
 
-\begin{figure}
+\begin{figure}[h]
 	\centering
 	\includegraphics[width=10cm]{HRS_full.png}
 	\caption{A side view of a HRS \cite{HallA}.
