@@ -152,7 +152,7 @@
 		\caption{BCM calibration \cite{MikeTh}.
 		\label{dnewfreq}}
 	\end{figure}
-	The process of calibrating the BCM converts the frequency received from the BCMs to an amount of current in $\mu$A. In order to calibrate the BCMs in Hall A, a separate intrusive calibration of an unser must be done. The unser is calibrated by inserting a known current through a wire inside the beam pipe. The calibration of the unser is known to drift over time, which makes the unser an unfeasible to use as the main source of charge calculation. Once the unser is calibrated, the BCM calibration procedure can be completed. The BCM calibration requires the delivery of the electron beam with unique procedure. THis procedure consist of oscilating the beam on and off status while increasing the current. This process can be seen in figure \ref{dnewfreq}. This stepping up procedure provides an adequate number of data points to complete a linear fit of the BCM frequency verses the calibrated unser current. The linear fit parameters supply a multiplicative gain and an offset for the calibration of the BCMs. 
+	The process of calibrating the BCM converts the frequency received from the BCMs to an amount of current in $\mu$A. In order to calibrate the BCMs in Hall A, a separate intrusive calibration of an unser must be done. The unser is calibrated by inserting a known current through a wire inside the beam pipe. The calibration of the unser is known to drift over time, which makes the unser an unfeasible to use as the main source of charge calculation. Once the unser is calibrated, the BCM calibration procedure can be completed. The BCM calibration requires the delivery of the electron beam with unique procedure. THis procedure consist of oscilating the beam on and off status while increasing the current. This process can be seen in figure \ref{dnewfreq}. This stepping up procedure provides an adequate number of data points to complete a linear fit of the BCM frequency verses the calibrated unser current. The linear fit parameters supply a multiplicative gain and an additive offset for the calibration of the BCMs. 
 	\begin{figure}[h]
 		\centering
 		\includegraphics[width=15cm]{dnew_freq.png}
@@ -193,7 +193,7 @@ In order to achieve a high level of resolution in momentum and angle, the HRSs w
 \end{figure}
 
 	\subsection{Vertical Drift Chambers}\label{sec:vdc}
-	Each of the spectrometers housed in Hall A contains two vertical drift chambers(VDC). Each VDC incorporates two planes of crossing sense wires. Shown in figure \ref{VDC_profile}, the two planes of the VDC lie a distance of 0.335m apart \cite{drift}. The lower plane of the VDC is positioned at the approximate focal plane of the HRS and lies in the horizontal plane of the Hall A coordinate system. The sense wires located in the VDCs cross orthogonally. They are offset by $45^\circ$ in respect to the dispersive and non-dispersive directions. Each plane of the VDC uses 368 sense wires, with 4.24 mm between each wire. The signals from these wires are transmitted to the electronics via a set of printed circuit boards that contain a 16-channel connector and twisted pair ribbon cables. These ribbon cables transmit the VDC signal to a set of common stop TDC with 0.5 ns resolution \cite{drift}. The VDC sense wires are held at ground potential between two planes of high-voltage. Particles that enter the gas filled VDC, collide with molecules of an argon($62\%$) and ethane ($38\%$) mixture \cite{HallA}. This collision causes the ionization of the gaseous mixture producing drift electrons.
+	\paragraph{}Each of the spectrometers housed in Hall A contains two vertical drift chambers(VDC). Each VDC incorporates two planes of crossing sense wires. Shown in figure \ref{VDC_profile}, the two planes of the VDC lie a distance of 0.335m apart \cite{drift}. The lower plane of the VDC is positioned at the approximate focal plane of the HRS and lies in the horizontal plane of the Hall A coordinate system. The sense wires located in the VDCs cross orthogonally. They are offset by $45^\circ$ in respect to the dispersive and non-dispersive directions. Each plane of the VDC uses 368 sense wires, with 4.24 mm between each wire. The signals from these wires are transmitted to the electronics via a set of printed circuit boards that contain a 16-channel connector and twisted pair ribbon cables. These ribbon cables transmit the VDC signal to a set of common stop TDC with 0.5 ns resolution \cite{drift}. The VDC sense wires are held at ground potential between two planes of high-voltage. Particles that enter the gas filled VDC, collide with molecules of an argon($62\%$) and ethane ($38\%$) mixture \cite{HallA}. This collision causes the ionization of the gaseous mixture producing drift electrons.
 	\begin{figure}
 		\centering
 		\includegraphics[width=10cm]{VDC_profile_view.png}
@@ -214,22 +214,40 @@ In order to achieve a high level of resolution in momentum and angle, the HRSs w
 		\caption{The VDC efficiency for one plane of wires.}
 		\label{vdceff}
 	\end{figure}
-	\paragraph{}The VDC's main task during an electron counting experiment is to determine the track of the scattered electron. The track of the electron is used to ascertain the electron's scattering momentum and scattering angle. Due to the electron's relativistic nature the primary ionization event for each wire region happens simultaneously compared to the resolution of the TDCs. The common stop TDCs used for the VDC signals record the amount of time from drift electron's signal in the sense wires to the stop signal formed by the trigger. This creates a high TDC signal for short drift distances. The time recorded from the TDCs is used to construct a location of the ionization event for each sense wire across the trajectory of the scattered electron. The analyzing software will use these drift distance from the four VDC planes to find a track for the scattered electron.
+	\paragraph{}The VDC's main task during an electron counting experiment is to determine the track of the scattered electron. The track of the electron is used to ascertain the electron's scattering momentum and scattering angle. Due to the electron's relativistic nature the primary ionization event for each wire region happens simultaneously compared to the resolution of the TDCs. The common stop TDCs used for the VDC signals record the amount of time from drift electron's signal in the sense wires to the stop signal formed by the trigger. This creates a high TDC signal for short drift distances. The raw TDC values recorded by the VDC include time associated with the signal but also the time required to form the trigger and time of flight for electrons between the VDCs and detectors used in the formation of a trigger. The calibration of the VDC removes these extra sources of time in the TDC signal. In order to calibrate the VDC raw signals, a refrense time is determined for every wire on every plane. This references time ($t_0$) is chosen as the TDC value of the sharp decrease on the outside of the peak in region C shown in figure \ref{fig:vdcraw}.
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=7.5cm]{vdc_raw.pdf}
+		\includegraphics[width=7.5cm]{vdc_cal.pdf}
+		\caption{Histograms of VDC signals before(left) and after(right) calibration of t0\cite{primer}.}
+		\label{fig:vdcraw}
+	\begin{itemize}
+		\item Region A: In this region, the point of primary ionization is far from the sense wire. As this distance increases, the chance of detecting the transversing particles by this wire is decreased. 
+		\item Region B: The probability of sense wires detecting a primary ionization event in this region are uniform due to the uniform electric field though out the region. 
+		\item Region C: The primary ionization position for these events are very near the sense wire and the electric field from this area is going to change to radial shape and the 	probability to detect a particle is going to increase in this area. The sense wire exist in the region, so the ionization event will have a minimum distance. This is shown in the sharp decline on the outside of the peak in region C. 
+		\cite{primer}
+	\end{itemize}	
+	\end{figure}
+	The time recorded from the TDCs is used to construct a location of the ionization event for each sense wire across the trajectory of the scattered electron. The analyzing software will use these drift distance from the four VDC planes to find a track for the scattered electron.
+
 	\subsection{Scintillators}\label{sec:scin}
+	\paragraph{} A pair of scintillator planes form the primary triggering apparatus for the HRSs. The planes of scintillator S0 and S2 consist of a collection of plastic scintillating paddles with photo multiplier tubes(PMTs) attached to both ends of the paddle. S0 the first scintillator in the stack consist of one scintillating paddle in a vertical direction. S2, the second scintillator was build with 16 overlapping paddles with PMTs attached to both ends. As electrons enter the scintillating plastics energy is absorbed by the material scintillates light. This light is detected by the PMTs on either side of the bar. The passing of the electron can happen at positions at an unequal distances from the PMTs on a scintillator bar. These relative differences cause a distortion in the timing calculation in the TOF known as the time walk effect. The scintillators are  in the calculation of $\beta$, the $v$ to $c$ ratio. Beta is calculated using the time of flight(TOF) between the two scintillator planes and distance traveled between the two points of interaction. 
 	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=9.5cm]{twcor.pdf}
+		\caption{$\beta$ before and after time walk correction.}
+		\label{fig:twcor}
+	\end{figure}
 	
 	
 	\subsection{Cherenkov}\label{sec:Cer}
 	\subsection{Calorimeter}\label{sec:Cal}
 
 
-
 \section{Trigger Setup}\label{sec:Trig}
 
-
-
-
-\section{DAQ - Data Acquisition System}\label{sec:daq}
+%\section{DAQ - Data Acquisition System}\label{sec:daq}
 
 \section{Kinematic Settings}\label{sec:kin}
 
