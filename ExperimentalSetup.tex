@@ -145,19 +145,19 @@
 		  	 	 		\includegraphics[width=10cm]{BCM1.png} 
 		  	\end{figure}
 	\subsection{Beam Current Monitors}
-	\paragraph{} The main process of measuring the scattering yield for a calculation of a cross section looks at finding the ratio of the number of electrons scattered to the number of electrons sent. In order to accurately determine the number of electrons sent to scatter with our target system, Hall A use a set non-invasive beam current monitors(BCMs). The Hall A BCMs have an absolute accuracy of 0.2 percent as long as the current is between 1 and 180 $\mu$A. The BCMs used in Hall A consist of three main components: a Parametric Current Transformer (PCT) and two pill box cavities. Figure \ref{BCMpng} shows the components in the Hall A BCM.  The BCM produces an RF signal that is proportional to the beam current. An 10 kHz down converter, RMS-to-DC converter, voltage-to-Frequency converter, and a scaler are used to inject the current signal into the Hall A DAQ. Proportionality constants are determined in the calibration process to correctly integrate the charge for a given amount of beam current\cite{BCM1}.
+	\paragraph{} The main process of measuring the scattering yield for a calculation of a cross section looks at finding the ratio of the number of electrons scattered to the number of electrons sent. In order to accurately determine the number of electrons sent to scatter with our target system, Hall A use a set non-invasive beam current monitors(BCMs). The Hall A BCMs have an absolute accuracy of 0.2 percent as long as the current is between 1 and 180 $\mu$A. The BCMs used in Hall A consist of three main components: a Parametric Current Transformer (PCT) and two pill box cavities. Figure \ref{BCMpng} shows the components in the Hall A BCM.  The BCM produces an RF signal that is proportional to the beam current. A 10 kHz down converter, RMS-to-DC converter, voltage-to-Frequency converter, and a scaler are used to inject the current signal into the Hall A DAQ. Proportionality constants are determined in the calibration process to correctly integrate the charge for a given amount of beam current\cite{BCM1}.
 	\begin{figure}[h]
 		\centering
 		\includegraphics[width=17cm]{dnew_freq.png}
 		\caption{BCM calibration \cite{MikeTh}.
 		\label{dnewfreq}}
 	\end{figure}
-	The process of calibrating the BCM converts the frequency received from the BCMs to an amount of current in $\mu$A. In order to calibrate the BCMs in Hall A, a separate intrusive calibration of an unser must be done. The unser is calibrated by inserting a known current through a wire inside the beam pipe. The calibration of the unser is known to drift over time, which makes the unser an unfeasible to use as the main source of charge calculation. Once the unser is calibrated, the BCM calibration procedure can be completed. The BCM calibration requires the delivery of the electron beam with unique procedure. THis procedure consist of oscilating the beam on and off status while increasing the current. This process can be seen in figure \ref{dnewfreq}. This stepping up procedure provides an adequate number of data points to complete a linear fit of the BCM frequency verses the calibrated unser current. The linear fit parameters supply a multiplicative gain and an additive offset for the calibration of the BCMs. 
+	The process of calibrating the BCM converts the frequency received from the BCMs to an amount of current in $\mu$A. In order to calibrate the BCMs in Hall A, a separate intrusive calibration of an unser must be done. The unser is calibrated by inserting a known current through a wire inside the beam pipe. The calibration of the unser is known to drift over time, which makes the unser unfeasible to use as the main source of charge calculation. Once the unser is calibrated, the BCM calibration procedure can be completed. The BCM calibration requires the delivery of the electron beam with unique procedure. This process consist of oscillating the beam on and off status while increasing the current. This process can be seen in figure \ref{dnewfreq}. This stepping up procedure provides an adequate number of data points to complete a linear fit of the BCM frequency verses the calibrated unser current. The linear fit parameters supply a multiplicative gain and an additive offset for the calibration of the BCMs. Figure \ref{bcmcal} shows a linear fit that provides gain and offset calibration constants for the BCM used in the calculation of charge. 
 	\begin{figure}[h]
 		\centering
-		\includegraphics[width=15cm]{dnew_freq.png}
+		\includegraphics[width=12cm]{BCMcal.pdf}
 		\caption{BCM frequency for BCM calibration \cite{MikeTh}.
-			\label{dnewcal}}
+			\label{bcmcal}}
 	\end{figure}	
 	  
 \section{Target}\label{sec:target}
@@ -231,17 +231,21 @@ In order to achieve a high level of resolution in momentum and angle, the HRSs w
 	The time recorded from the TDCs is used to construct a location of the ionization event for each sense wire across the trajectory of the scattered electron. The analyzing software will use these drift distance from the four VDC planes to find a track for the scattered electron.
 
 	\subsection{Scintillators}\label{sec:scin}
-	\paragraph{} A pair of scintillator planes form the primary triggering apparatus for the HRSs. The planes of scintillator S0 and S2 consist of a collection of plastic scintillating paddles with photo multiplier tubes(PMTs) attached to both ends of the paddle. S0 the first scintillator in the stack consist of one scintillating paddle in a vertical direction. S2, the second scintillator was build with 16 overlapping paddles with PMTs attached to both ends. As electrons enter the scintillating plastics energy is absorbed by the material scintillates light. This light is detected by the PMTs on either side of the bar. The passing of the electron can happen at positions at an unequal distances from the PMTs on a scintillator bar. These relative differences cause a distortion in the timing calculation in the TOF known as the time walk effect. The scintillators are  in the calculation of $\beta$, the $v$ to $c$ ratio. Beta is calculated using the time of flight(TOF) between the two scintillator planes and distance traveled between the two points of interaction. 
-	
+	\paragraph{} A pair of scintillator planes form the primary triggering apparatus for the HRSs. The planes of scintillator S0 and S2 consist of a collection of plastic scintillating paddles with photo multiplier tubes(PMTs) attached to both ends of the paddle. S0 the first scintillator in the stack consist of one scintillating paddle in a vertical direction. S2, the second scintillator was build with 16 overlapping paddles with PMTs attached to both ends. As electrons enter the scintillating plastics energy is absorbed by the material scintillating light. This light is detected by the PMTs on either side of the bar. The passing of the electron can happen at positions at an unequal distances from the PMTs on a scintillator bar. These relative differences cause a distortion in the timing calculation in the TOF known as the time walk effect. The scintillators are used in the calculation of $\beta$, the $v$ to $c$ ratio. Beta is calculated using the time of flight(TOF) between the two scintillator planes and distance traveled between the two points of interaction. 
 	\begin{figure}[h]
 		\centering
 		\includegraphics[width=9.5cm]{twcor.pdf}
-		\caption{$\beta$ before and after time walk correction.}
+		\caption{Histogram of $\beta$ before and after time walk correction.}
 		\label{fig:twcor}
 	\end{figure}
 	
 	
 	\subsection{Cherenkov}\label{sec:Cer}
+	\paragraph{}After a particle passes through S0, it will enter the large gas chamber for the gas cherenkov(GC). The GC is filled with $CO_2$ with an index of refraction of 1.00041. This high index of refraction creates a momentum threshold of 0.017 GeV/C for electrons, 4.8 GeV/C for pions, and 32 GeV/c for protons\cite{GasC}. 
+	
+	If an electron that scatters into the GC is relativistic, 
+	\cite{ref:GC}
+	
 	\subsection{Calorimeter}\label{sec:Cal}
 
 
