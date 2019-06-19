@@ -214,7 +214,7 @@ In order to achieve a high level of resolution in momentum and angle, the HRSs w
 		\caption{The VDC efficiency for one plane of wires.}
 		\label{vdceff}
 	\end{figure}
-	\paragraph{}The VDC's main task during an electron counting experiment is to determine the track of the scattered electron. The track of the electron is used to ascertain the electron's scattering momentum and scattering angle. Due to the electron's relativistic nature the primary ionization event for each wire region happens simultaneously compared to the resolution of the TDCs. The common stop TDCs used for the VDC signals record the amount of time from drift electron's signal in the sense wires to the stop signal formed by the trigger. This creates a high TDC signal for short drift distances. The raw TDC values recorded by the VDC include time associated with the signal but also the time required to form the trigger and time of flight for electrons between the VDCs and detectors used in the formation of a trigger. The calibration of the VDC removes these extra sources of time in the TDC signal. In order to calibrate the VDC raw signals, a refrense time is determined for every wire on every plane. This references time ($t_0$) is chosen as the TDC value of the sharp decrease on the outside of the peak in region C shown in figure \ref{fig:vdcraw}.
+	\paragraph{}The VDC's main task during an electron counting experiment is to determine the track of the scattered electron. The track of the electron is used to ascertain the electron's scattering momentum and scattering angle. Due to the electron's relativistic nature the primary ionization event for each wire region happens simultaneously compared to the resolution of the TDCs. The common stop TDCs used for the VDC signals record the amount of time from drift electron's signal in the sense wires to the stop signal formed by the trigger. This creates a high TDC signal for short drift distances. The raw TDC values recorded by the VDC include time associated with the signal but also the time required to form the trigger and time of flight for electrons between the VDCs and detectors used in the formation of a trigger. The calibration of the VDC removes these extra sources of time in the TDC signal. In order to calibrate the VDC raw signals, a reference time is determined for every wire on every plane. This references time ($t_0$) is chosen as the TDC value of the sharp decrease on the outside of the peak in region C shown in figure \ref{fig:vdcraw}.
 	\begin{figure}[h]
 		\centering
 		\includegraphics[width=7.5cm]{vdc_raw.pdf}
@@ -231,20 +231,33 @@ In order to achieve a high level of resolution in momentum and angle, the HRSs w
 	The time recorded from the TDCs is used to construct a location of the ionization event for each sense wire across the trajectory of the scattered electron. The analyzing software will use these drift distance from the four VDC planes to find a track for the scattered electron.
 
 	\subsection{Scintillators}\label{sec:scin}
-	\paragraph{} A pair of scintillator planes form the primary triggering apparatus for the HRSs. The planes of scintillator S0 and S2 consist of a collection of plastic scintillating paddles with photo multiplier tubes(PMTs) attached to both ends of the paddle. S0 the first scintillator in the stack consist of one scintillating paddle in a vertical direction. S2, the second scintillator was build with 16 overlapping paddles with PMTs attached to both ends. As electrons enter the scintillating plastics energy is absorbed by the material scintillating light. This light is detected by the PMTs on either side of the bar. The passing of the electron can happen at positions at an unequal distances from the PMTs on a scintillator bar. These relative differences cause a distortion in the timing calculation in the TOF known as the time walk effect. The scintillators are used in the calculation of $\beta$, the $v$ to $c$ ratio. Beta is calculated using the time of flight(TOF) between the two scintillator planes and distance traveled between the two points of interaction. 
+	\paragraph{} A pair of scintillator planes form the primary triggering apparatus for the HRSs. The planes of scintillator S0 and S2 consist of a collection of plastic scintillating paddles with photo multiplier tubes(PMTs) attached to both ends of the paddle. S0 the first scintillator in the stack consist of one scintillating paddle in a vertical direction. S2, the second scintillator was build with 16 overlapping paddles with PMTs attached to both ends. As electrons enter the scintillating plastics energy is absorbed by the material scintillating light. This light is detected by the PMTs on either side of the bar. The passing of the electron can happen at positions at an unequal distances from the PMTs on a scintillator bar. These relative differences cause a distortion in the timing calculation in the TOF known as the time walk effect. The scintillators are used in the calculation of $\beta$, the $v$ to $c$ ratio. Beta is calculated using the time of flight(TOF) between the two scintillator planes and distance traveled between the points of interaction. 
 	\begin{figure}[h]
 		\centering
 		\includegraphics[width=9.5cm]{twcor.pdf}
 		\caption{Histogram of $\beta$ before and after time walk correction.}
 		\label{fig:twcor}
 	\end{figure}
-	
+	Once calibrated, each plane has a time resolution of about 0.3 ns. This high time resolution and quick response makes the scintillators the perfect detector to form the main trigger.  
 	
 	\subsection{Cherenkov}\label{sec:Cer}
-	\paragraph{}After a particle passes through S0, it will enter the large gas chamber for the gas cherenkov(GC). The GC is filled with $CO_2$ with an index of refraction of 1.00041. This high index of refraction creates a momentum threshold of 0.017 GeV/C for electrons, 4.8 GeV/C for pions, and 32 GeV/c for protons\cite{GasC}. 
+	\paragraph{}After a particle passes through S0, it will enter the large gas chamber for the gas cherenkov(GC). The GC is filled with $CO_2$ with an index of refraction of 1.00041. This high index of refraction creates a momentum threshold of 0.017 GeV/C for electrons, 4.8 GeV/C for pions, and 32 GeV/c for protons\cite{GasC}. Relativistic particles entering the GC will produce a cone of cherenkov radiation. This cone of light will be focused by a set of mirrors on the back plane of the GC. These mirrors direct the focused light onto a set of PMTs. An depiction of the GC from a top down perspective is shown in figure \ref{fig:cer_TD}. 
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=9.5cm]{Cher.png}
+		\caption{Top down depiction inside the GC \cite{GasC}.}
+		\label{fig:cer_TD}
+	\end{figure}
+	The raw data recorded from the GC is in the from of raw ADC, or the size of the pulse seen by the PMT. In order to use this information, the ADC input needs to be calibrated. For the GC, two parts of the signal needs to be calibrated. Each ADC channel sees a different amount of noise and signal background from electronic fluctuations. This signal background is defined as the ADC pedestal, and is the fist calibration offset determined. Figure \ref{fig:cer_raw} shows the raw signal from one cherenkov PMT. This signal shows the pedestal at approximately 5800 ADC channels. The pedestal is subtracted from the raw ADC signal to normalize the background electronic noise for all PMT-ADC pairs in the cherenkov. The second calibration for the GC ADC signals is the photo electron peak. 
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=12.cm]{Cher_raw.pdf}
+		\caption{The raw signal captured from a single cherenkov PMT with a fit to the pedestal peak and a line draw to demonstrate its ADC channel number.}
+		\label{fig:cer_raw}
+	\end{figure}
+	\paragraph{}The GC is used for particle identification(PID). During the MARATHON experiment, the GC was used to differentiate between negatively charged pions and electrons that passed through the detector. 
 	
-	If an electron that scatters into the GC is relativistic, 
-	\cite{ref:GC}
+	
 	
 	\subsection{Calorimeter}\label{sec:Cal}
 
