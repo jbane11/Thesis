@@ -5,8 +5,11 @@
 
 \section{Thomas Jefferson Lab}
 \paragraph{}Thomas Jefferson Lab (Jlab) in Newport News, Virgina hosted the MARATHON experiment in the Fall of 2017 and Spring of 2018. Jlab uses support from the U.S. Department of Energy(DOE) and the state of Virgina to complete the lab's mission of delivering productive research by exploring the atomic nucleus and its fundamental constituents, including precise tests of their interactions. Along with applying an advanced particle accelerator, particle detectors and other technologies to develop new basic research capabilities and to address the challenges of a modern society.
-	\subsection{CEBAF}\label{sec:cebaf}
+\subsection{CEBAF}\label{sec:cebaf}
 	\paragraph{}The Continuous Electron Beam Accelerator Facility (CEBAF) was recently upgraded to a 12 GeV accelerator, upgrading it to be able to supply a 11 GeV beam of continuous electrons of up to 200 $\mu$A of current to three experimental halls (A,B,C) and 12 GeV to the recently constructed hall D. After being accelerated to 45 MeV by a polarized electron gun or a thermionic injector, the electrons are injected into the North linear accelerator (LINAC), shown in figure \ref{CEBAF}. The polarized gun can supply electrons with up to 80$\%$ polarization and the polarization direction can be controlled by a wien filter. To ensure the level of polarization, a 5 MeV Mott polarimeter may be used to measure the level of polarization\cite{HallA}.
+\subsection{Injector}
+	\paragraph{}\cite{CEBAF}
+\subsection{Accelerator}
 	\paragraph{} The electrons are conveyed through two LINACs and two bending arcs per complete pass of the accelerator. Electrons traveling to Halls A, B, and C complete a maximum of four and a half revolutions around the accelerator. Electrons going to all D travel through the north LINAC for an extra boost. These particles receive approximately 2.2 GeV in energy for each cycle through the accelerator. The radio frequency (RF) cavities in each LINAC use an oscillating electromagnetic field to supply a force to accelerate the passing electrons. These Niobium RF cavities are cooled to 2 K in order to create conditions that allow the cavities to be superconducting \cite{HallA}.    
 	
 	\begin{figure}[h]
@@ -162,12 +165,12 @@
 	  
 \section{Target}\label{sec:target}
 \paragraph{} The Hall A Tritium Target(HATT) system was used for the Tritium run group of experiments. The HATT target chamber was repurposed from a previously used cryo-target chamber in order to reduce the financial cost of designing a new target chamber. The refurbishing of the cryo-target chamber consisted of adding in new safety features to prevent and mitigate a tritium leak.  A 4 inch long collimator with an inner diameter of 0.4 inch was added inside of the target chamber but upstream of the target ladder to prevent the beam from striking the thin side wall of the aluminum cell. In case of a tritium leak in the target chamber, an exhaust system was installed to control the amount of tritium exposed to the Hall.\cite{HATT_eng}  Figure \ref{HATT} shows the HATT system with the target ladder in the home position and the scattering windows removed. 
-\begin{figure}
+\begin{figure}[H]
 	\centering
 	\caption{Target Images}
 	\hspace*{-20pt}
 	\subfloat[A image of the HATT. \cite{DHimages}]{{\includegraphics[width=6cm]{HATT.jpg} }}
-	\quad
+	\centering
 	\subfloat[Image of the Hall A Tritium Target Ladder. \cite{DHimages}]{{\includegraphics[width=10cm]{HATT_Ladder.JPG} }}
 	\label{HATT}
 
@@ -187,7 +190,7 @@ Electrons that successfully scatter from the target may end up in either of the 
 In order to achieve a high level of resolution in momentum and angle, the HRSs were designed with a magnet configuration of QQ$D_n$Q (quadrupole, quadrupole, dipole, and quadrupole). The vertical bending dipole provides the field required to transport the scattered particles through the 45$^\circ$ bending angle to the detector hut. A drawing of an HRS can be seen in figure \ref{hrsfull}. The first quadrupole(Q1) focuses the incoming electrons in the vertical plane. The following two quadrupoles (Q2 and Q3 provide transverse focusing. This optical design allows the use of extended gas targets with no substantial loss in solid angle\cite{HallA}.  The spectrometers were designed to perform various functions which include: triggering the data acquisition system (DAQ) when certain requirements are met, gathering the position and direction of individual particles to reconstruct a track, provide precise timing information for time of flight calculations, and identify many different particle types that pass through the detector system. In order for both the Left HRS (LHRS) and Right HRS (RHRS) to  complete the required task, they contain a myriad of detectors. The HRSs use drift chambers, scintillators, cerenkov detectors, and shower calorimeters. Both the Left and Right HRSs contain two planes of scintillators to function has the main trigger for the detector package. The vertical drift chambers (VDC) that lay at the front of the detector in conjunction with the Shower that lies in the back of the detector provide information for reconstructing the particle tracks and precise timing. Particles are identified by the cerenkov, shower calorimeters, and pion rejectors that are contained in the left or right HRS. The layout of the individual detectors that make up the left and right detector package are shown in figure \ref{hrsss}  \cite{HallA}.
 \begin{figure}[t]
 	\centering
-	\includegraphics[width=10cm]{HRSs.png}
+	\includegraphics[width=10cm]{HRS_s.png}
 	\caption{A view of both the left(top) and right(bottom) detector stacks inside the left and right HRS \cite{HallA}.
 	\label{hrsss}}
 \end{figure}
@@ -201,7 +204,7 @@ In order to achieve a high level of resolution in momentum and angle, the HRSs w
 			\label{VDC_profile}}
 	\end{figure}
 	\paragraph{} Particles that transverse the VDCs will travel through regions close to several sense wires. As the indecent particle ionizes gas in each of these regions, the VDC sense wires pick up the corresponding signal from the drift electrons. The drift electrons will travel to the sense wires via the parallel electron field lines until the electrons get close to the sense wires. Once close the sense wires, the electron field transitions to a radial field and the drift electrons then move to the sense wires. An example of a drift electron's trajectory  is shown in figure \ref{vdcpath}, in which a cluster of 5 wires sense scattered particle.
-	\begin{figure}
+	\begin{figure}[t]
 		\centering
 		\includegraphics[width=10cm]{VDCpath.pdf}
 		\caption{A possible track that causes signals in  wires. The drift electrons will follow the arrow path. The dot/dashed lines correspond to the projected distance used to reconstruct the path of the incident particle. The transition point from parallel to radial field lines is represented by the ellipses. \cite{drift} }
@@ -215,7 +218,7 @@ In order to achieve a high level of resolution in momentum and angle, the HRSs w
 		\label{vdceff}
 	\end{figure}
 	\paragraph{}The VDC's main task during an electron counting experiment is to determine the track of the scattered electron. The track of the electron is used to ascertain the electron's scattering momentum and scattering angle. Due to the electron's relativistic nature the primary ionization event for each wire region happens simultaneously compared to the resolution of the TDCs. The common stop TDCs used for the VDC signals record the amount of time from drift electron's signal in the sense wires to the stop signal formed by the trigger. This creates a high TDC signal for short drift distances. The raw TDC values recorded by the VDC include time associated with the signal but also the time required to form the trigger and time of flight for electrons between the VDCs and detectors used in the formation of a trigger. The calibration of the VDC removes these extra sources of time in the TDC signal. In order to calibrate the VDC raw signals, a reference time is determined for every wire on every plane. This references time ($t_0$) is chosen as the TDC value of the sharp decrease on the outside of the peak in region C shown in figure \ref{fig:vdcraw}.
-	\begin{figure}[h]
+	\begin{figure}[H]
 		\centering
 		\includegraphics[width=7.5cm]{vdc_raw.pdf}
 		\includegraphics[width=7.5cm]{vdc_cal.pdf}
@@ -244,24 +247,41 @@ In order to achieve a high level of resolution in momentum and angle, the HRSs w
 	\paragraph{}After a particle passes through S0, it will enter the large gas chamber for the gas cherenkov(GC). The GC is filled with $CO_2$ with an index of refraction of 1.00041. This high index of refraction creates a momentum threshold of 0.017 GeV/C for electrons, 4.8 GeV/C for pions, and 32 GeV/c for protons\cite{GasC}. Relativistic particles entering the GC will produce a cone of cherenkov radiation. This cone of light will be focused by a set of mirrors on the back plane of the GC. These mirrors direct the focused light onto a set of PMTs. An depiction of the GC from a top down perspective is shown in figure \ref{fig:cer_TD}. 
 	\begin{figure}[h]
 		\centering
-		\includegraphics[width=9.5cm]{Cher.png}
+		\includegraphics[width=7.5cm]{Cher.png}
 		\caption{Top down depiction inside the GC \cite{GasC}.}
 		\label{fig:cer_TD}
 	\end{figure}
-	The raw data recorded from the GC is in the from of raw ADC, or the size of the pulse seen by the PMT. In order to use this information, the ADC input needs to be calibrated. For the GC, two parts of the signal needs to be calibrated. Each ADC channel sees a different amount of noise and signal background from electronic fluctuations. This signal background is defined as the ADC pedestal, and is the fist calibration offset determined. Figure \ref{fig:cer_raw} shows the raw signal from one cherenkov PMT. This signal shows the pedestal at approximately 5800 ADC channels. The pedestal is subtracted from the raw ADC signal to normalize the background electronic noise for all PMT-ADC pairs in the cherenkov. The second calibration for the GC ADC signals is the photo electron peak. 
+	The raw data recorded from the GC is in the form of raw ADC, or the size of the pulse seen by the PMT. In order to use this information, the ADC input needs to be calibrated. For the GC, two parts of the signal needs to be calibrated. Each ADC channel sees a different amount of noise and signal background from electronic fluctuations. This signal background is defined as the ADC pedestal, and is the fist calibration offset determined. Figure \ref{fig:cer_raw} shows the raw signal from one cherenkov PMT. This signal shows the pedestal at approximately 5800 ADC channels. The pedestal is subtracted from the raw ADC signal to normalize the background electronic noise for all PMT-ADC pairs in the cherenkov. The second calibration for the GC ADC signals is the photo electron peak. The voltage used to power the PMTs in the cherenkov is tuned before the experiment to allow the PMT to give the best pedestal to signal ratio while also persevering the life of the PMT and signal quality. This forces a different signal strength to be seen by each PMT for the same amount of light experienced in the chamber. The photo electric peak in the ADC signal is then normalized to the same value across all PMTs by a gain factor. 
 	\begin{figure}[h]
 		\centering
 		\includegraphics[width=12.cm]{Cher_raw.pdf}
-		\caption{The raw signal captured from a single cherenkov PMT with a fit to the pedestal peak and a line draw to demonstrate its ADC channel number.}
+		\caption{The raw signal captured from a single cherenkov PMT, PMT[1], with a fit to the pedestal peak and a line draw to demonstrate its ADC channel number.}
 		\label{fig:cer_raw}
 	\end{figure}
-	\paragraph{}The GC is used for particle identification(PID). During the MARATHON experiment, the GC was used to differentiate between negatively charged pions and electrons that passed through the detector. 
-	
-	
-	
+	\paragraph{}The GC's main task during an experiment is to help in the identification of particles(PID). During the MARATHON experiment, the GC was used to differentiate between negatively charged pions and electrons that passed through the detector. MARATHON used the GC in PID for data capture and analysis. During data capture, the GC signal was used in the formation of the main trigger. Using the GC in the trigger by forcing a certain threshold in signal strength from the GC, allowed for the exclusion of many unwanted events. During the analysis of MARATHON data, pion suppression was done using the GC signal and signals from the calorimeter.   
 	\subsection{Calorimeter}\label{sec:Cal}
-
-
+	\paragraph{}The last detector in the spectrometer that particles interact with is the lead glass calorimeter. The Left HRS (LHRS) calorimeter system is made up of the preshower(PS) and shower(SH). The PS contains two columns of 24 blocks of lead glass with a PMT attached to the end. The SH has five columns, and each column as 16 blocks with a PMT. The right HRS'(RHRS) calorimeter system is constructed of the pion rejector 1(PR1) and the pion rejector 2(PR2). The two PRs on the RHRS consist of 34 blocks arranged in two, 17 block columns. 
+	\paragraph{}The calorimeters are used during the analysis process to help in PID. As high energy electrons pass through the dense leaded glass, the electron will lose its energy through bremsstrahlung radiation resulting in the emission of a photon. These photons begin a electromagnetic shower through the creation of positron-electron pairs. The shower of photons are detected by the PMTs attached to each block. The amount of energy contained in the scattered electron is directly proportional to the amount of photons generated during the shower.
+	\paragraph{} The signal from the calorimeters is recored as an ADC. These ADC signals need to be calibrated similar to the cherenkov detector, subtracting the pedestal and determining the normalizing gain factor to match all PMT-ADC combinations. The total signal seen from the colorimeter can be seen in figure \ref{fig:calo_raw}. In order to use this ADC signal to help ID particles, the calorimeter needs an energy calibration. 
+	\begin{figure}[t]
+		\centering
+		\hspace*{-65pt}
+		\subfloat[ADC Sum]{
+		\includegraphics[width=9.cm]{calo_adcs.pdf}
+		\label{fig:calo_raw}}
+		\centering	
+		\subfloat[$E^\prime / P$]{
+		\includegraphics[width=9.cm]{calo_ep.pdf}
+		\label{fig:calo_ep}}
+		\caption{Left: The sum of all ADC channels from the LHRS calorimeters. Right: The total energy deposited into the LHRS calorimeter scaled by the momentum setting. Electron cuts have been applied.}
+	\end{figure}
+	The calibration process uses a $\chi^2$ minimization. Equation \ref{EQ:cal_cal} demonstrates the minimization technique applied. In this equation, $C_j$ is the calibration coefficient being determined for the calorimeter block j. $Cal^{ADC}_{ij}$ is the ADC signal received from block j during event i, and $p_i$ is the momentum of the electron being detected. 
+	\begin{equation}
+		\frac{\partial\chi^2}{\partial C_i} = \sum\limits_{i}^{Events} \bigg( \sum\limits_{j}^{Blocks}C_{j}*Cal^{ADC}_{ij} - p_i  \bigg)^2 = 0 
+		\label{EQ:cal_cal}
+	\end{equation}
+	Using these calibration constants, the ADC signal in figure \ref{fig:calo_raw} can be turned in the calibrated data in the histogram show in figure \ref{fig:calo_ep}. This can be used to from PID selection cuts, removing any unwanted background events.  
+	
 \section{Trigger Setup}\label{sec:Trig}
 
 %\section{DAQ - Data Acquisition System}\label{sec:daq}
