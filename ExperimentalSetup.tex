@@ -6,26 +6,35 @@
 \section{Thomas Jefferson Lab}
 \paragraph{}Thomas Jefferson Lab (Jlab) in Newport News, Virgina hosted the MARATHON experiment in the Fall of 2017 and Spring of 2018. Jlab uses support from the U.S. Department of Energy(DOE) and the state of Virgina to complete the lab's mission of delivering productive research by exploring the atomic nucleus and its fundamental constituents, including precise tests of their interactions. Along with applying an advanced particle accelerator, particle detectors and other technologies to develop new basic research capabilities and to address the challenges of a modern society.
 \subsection{CEBAF}\label{sec:cebaf}
-	\paragraph{}The Continuous Electron Beam Accelerator Facility (CEBAF) was recently upgraded to a 12 GeV accelerator, upgrading it to be able to supply a 11 GeV beam of continuous electrons of up to 200 $\mu$A of current to three experimental halls (A,B,C) and 12 GeV to the recently constructed hall D. After being accelerated to 45 MeV by a polarized electron gun or a thermionic injector, the electrons are injected into the North linear accelerator (LINAC), shown in figure \ref{CEBAF}. The polarized gun can supply electrons with up to 80$\%$ polarization and the polarization direction can be controlled by a wien filter. To ensure the level of polarization, a 5 MeV Mott polarimeter may be used to measure the level of polarization\cite{HallA}.
+	\paragraph{}The Continuous Electron Beam Accelerator Facility (CEBAF) was recently upgraded to a 12 GeV accelerator, upgrading it to be able to supply a 11 GeV beam of continuous electrons of up to 200 $\mu$A of current to three experimental halls (A,B,C) and 12 GeV to the recently constructed hall D. 
 \subsection{Injector}
-	\paragraph{}\cite{CEBAF}
-\subsection{Accelerator}
-	\paragraph{} The electrons are conveyed through two LINACs and two bending arcs per complete pass of the accelerator. Electrons traveling to Halls A, B, and C complete a maximum of four and a half revolutions around the accelerator. Electrons going to all D travel through the north LINAC for an extra boost. These particles receive approximately 2.2 GeV in energy for each cycle through the accelerator. The radio frequency (RF) cavities in each LINAC use an oscillating electromagnetic field to supply a force to accelerate the passing electrons. These Niobium RF cavities are cooled to 2 K in order to create conditions that allow the cavities to be superconducting \cite{HallA}.    
-	
+	\paragraph{} CEBAF uses a micro-pulsed structure from the photo-electron gun to produce electrons in an efficient manner. This micro-pulsed structure is used to prolong the lifetime of the photocathode. The delivery of unique current and energy to all four halls requires the micro-pulses to have a 250 MHz or 500MHz structure and four individually tuned lasers. Frequencies of 250 MHz and 500MHz are chosen because these are sub-harmonics of the fundamental accelerator operating frequency of 1500 MHz. 
 	\begin{figure}[h]
 	\centering
-	 \caption{Schematic Layout of CEBAF. }
-	 \label{CEBAF}
-	 \includegraphics[width=10cm]{CEBAF.png} 
-	 \end{figure} 
-	 
-	 \section{Hall A Beam Line}\label{sec:halla}
+	\caption{Drawing of the Injector layout. }
+	\label{fig:inj}
+	\includegraphics[width=12cm]{injector.pdf} 
+	\end{figure} 
+	\paragraph{}Electrons are produce when laser light shines on a gallium arsenide photo cathode. A laser pulse excites electrons from the photo cathode via the photoelectric effect. These exited electrons form from the gallium arsenide wafer when the electrons are excited out of the valence band into the conduction band. Gallium arsenide was chosen because the energy level of the conduction band for this photo cathode sits above the energy of an electron vacuum. Electrons in the conduction band  escape from the material and are accelerated away from the wafer due to high negative potential on the photo cathode wafer \cite{sane}. 
+	\paragraph{}These electrons are accelerated into the injector beam line via the electron gun. Tunning the amount of electrons in a bunch happens at the chopper. Slits in the chopper allow for greater regulation of the currents sent to the four experimental halls. Testing and calibration of the four beams are done throughout the injector beam lines via the Faraday cups located at different spots in the beam line. The polarized gun can supply electrons with up to 80$\%$ polarization and the polarization direction can be controlled by a wien filter. To ensure the level of polarization, a 5 MeV Mott polarimeter may be used to measure the level of polarization\cite{HallA}. The injector accelerates the electrons up to 123 MeV before allowing them into the north LINAC	\cite{CEBAF,ref:photogun,ref:4beams}.
+\subsection{Accelerator}
+	\paragraph{} The electrons are conveyed through two LINACs and two bending arcs per complete pass of the accelerator. The two LINACs are approximately a quarter mile long and are thirty feet below the surface. The beam lines are kept under vacuum between $E^{-6}$ and $E^{-11}$ torr to provided an efficient medium for transfer.  Electrons traveling to Halls A, B, and C complete a maximum of four and a half revolutions around the accelerator. These particles receive approximately 2.2 GeV in energy for each cycle through the accelerator. 
+	\begin{figure}[h]
+		\centering
+		\caption{Schematic Layout of CEBAF. }
+		\label{CEBAF}
+		\includegraphics[width=12cm]{CEBAF.png} 
+	\end{figure} 
+	\paragraph{}The radio frequency (RF) cavities in each LINAC use an oscillating electromagnetic field to supply a force to accelerate the passing electrons. These Niobium RF cavities are cooled to 2 K in order to create conditions that allow the cavities to be superconducting \cite{HallA}. The superconduction RF(SRF) cavities provided a negatively charge field behind the electrons and positively charged field in front to accelerate the electrons through a set of cavities inside a cryomodule. A central helium liquefier circulates up to 17000 gallons of chilled liquid helium to control the temperature of the cryomodules. A dedicated 5 kW klystron  provides a 1500 Mhz RF driving signal for each cryomodules. 
+	\paragraph{} The electron beam exiting the north LINAC enters the east arc. The east and west arcs contain large dipole and quadrapole magnets to steer and focus the beam as the beam is accelerated back to the other LINAC. After electrons exit the south LINAC, they either continue on around the accelerator for another pass to increase in energy, or a RF separator projects the electron beam into the proper experiment hall \cite{CEBAF}. Energy loss, beam position, and beam charge monitors lie throughout the beam line, and are used to insure the quality of beam delivered to the halls.
+
+ \section{Hall A Beam Line}\label{sec:halla}
 	 
 	\begin{figure}[H]
 		\centering
 		\caption{A 3D drawing of Hall A. }
 		\label{HallA}
-		\includegraphics[width=14cm]{HallA_2.png} 
+		\includegraphics[width=12cm]{HallA_2.png} 
 	\end{figure} 	 
 	 
 	 \paragraph{}The experimental Hall A and the scientific equipment used were designed for detailed investigations of the internal structure of nuclei. Two high resolution spectrometers in Hall A use the inclusive (e,e$\prime$) and exclusive (e,e$\prime$ p) reactions to gain a greater understanding of the structure of the nucleus. Completing detailed studies with high resolution and extreme accuracy requires knowing the beam position, size, energy, and current when the beam strikes the target. The instrumentation used in the precise measurement of these quantities in Hall A  are shown in figure \ref{BeamLine} \cite{HallA}. The information provided by these detectors originate through small changes in current and voltage sent through the electronics. These signals are transformed into useful information through calibrations.
@@ -86,7 +95,7 @@
 		\end{pmatrix}			 
 		\end{equation}
 		
-		\begin{figure}[H]
+		\begin{figure}[t]
 			\centering
 			\caption{The X and Y position for a Bulls eye scan for BPM calibration. }
 			\label{bulls}
@@ -165,7 +174,7 @@
 	  
 \section{Target}\label{sec:target}
 \paragraph{} The Hall A Tritium Target(HATT) system was used for the Tritium run group of experiments. The HATT target chamber was repurposed from a previously used cryo-target chamber in order to reduce the financial cost of designing a new target chamber. The refurbishing of the cryo-target chamber consisted of adding in new safety features to prevent and mitigate a tritium leak.  A 4 inch long collimator with an inner diameter of 0.4 inch was added inside of the target chamber but upstream of the target ladder to prevent the beam from striking the thin side wall of the aluminum cell. In case of a tritium leak in the target chamber, an exhaust system was installed to control the amount of tritium exposed to the Hall.\cite{HATT_eng}  Figure \ref{HATT} shows the HATT system with the target ladder in the home position and the scattering windows removed. 
-\begin{figure}[H]
+\begin{figure}[t]
 	\centering
 	\caption{Target Images}
 	\hspace*{-20pt}
@@ -178,7 +187,7 @@
 \end{figure}
 A picture of the HATT ladder installed in the HATT system is shown if figure \ref{HATT}. The ladder contains both gaseous cells and solid targets. The MARATHON experiment had five gas cells. The top four of the gas cells were filled with tritium, deuterium, hydrogen, and $^3$helium, from top to bottom respectively. Due to safety restricts the tritium cell was not installed until the HATT system could be closed. The bottom most cell was left empty, to complete end cap subtractions. The lower half of the target ladder contains the solid targets used during the MARATHON experiment. Listed from top to bottom, the solid targets used were a pair of thick aluminum foils, carbon multifoil, single carbon foil, and a carbon foil with a 2mm diameter hole. The thick Al foils were used to aid the target window background subtraction. The multifoil target also know has the optics target was used to calibrate the z-axis  reconstruction of the optics matrix. The single carbon foil and carbon hole were used to calibrate the BPMs and rasters and to determine the off set of the central line of the detector. 
 
-\begin{figure}[h]
+\begin{figure}[t]
 	\centering
 	\includegraphics[width=10cm]{HRS_full.png}
 	\caption{A side view of a HRS \cite{HallA}.
@@ -217,7 +226,7 @@ In order to achieve a high level of resolution in momentum and angle, the HRSs w
 		\caption{The VDC efficiency for one plane of wires.}
 		\label{vdceff}
 	\end{figure}
-	\paragraph{}The VDC's main task during an electron counting experiment is to determine the track of the scattered electron. The track of the electron is used to ascertain the electron's scattering momentum and scattering angle. Due to the electron's relativistic nature the primary ionization event for each wire region happens simultaneously compared to the resolution of the TDCs. The common stop TDCs used for the VDC signals record the amount of time from drift electron's signal in the sense wires to the stop signal formed by the trigger. This creates a high TDC signal for short drift distances. The raw TDC values recorded by the VDC include time associated with the signal but also the time required to form the trigger and time of flight for electrons between the VDCs and detectors used in the formation of a trigger. The calibration of the VDC removes these extra sources of time in the TDC signal. In order to calibrate the VDC raw signals, a reference time is determined for every wire on every plane. This references time ($t_0$) is chosen as the TDC value of the sharp decrease on the outside of the peak in region C shown in figure \ref{fig:vdcraw}.
+	\paragraph{}The VDC's main task during an electron counting experiment is to determine the track of the scattered electron. The track of the electron is used to ascertain the electron's scattering momentum and scattering angle. Due to the electron's relativistic nature the primary ionization event for each wire region happens simultaneously compared to the resolution of the TDCs. The common stop TDCs used for the VDC signals record the amount of time from drift electron's signal in the sense wires to the stop signal formed by the trigger. This creates a high TDC signal for short drift distances. The raw TDC values recorded by the VDC include time associated with the signal but also the time required to form the trigger and time of flight for electrons between the VDCs and detectors used in the formation of a trigger. The calibration of the VDC removes these extra sources of time in the TDC signal. In order to calibrate the VDC raw signals, a reference time is determined for every wire on every plane. This references time ($t_0$) is chosen as the TDC value of the sharp decrease on the outside of the peak in region C shown in figure \ref{fig:vdcraw}.The time recorded from the TDCs is used to construct a location of the ionization event for each sense wire across the trajectory of the scattered electron. The analyzing software will use these drift distance from the four VDC planes to find a track for the scattered electron.
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=7.5cm]{vdc_raw.pdf}
@@ -231,7 +240,7 @@ In order to achieve a high level of resolution in momentum and angle, the HRSs w
 		\cite{primer}
 	\end{itemize}	
 	\end{figure}
-	The time recorded from the TDCs is used to construct a location of the ionization event for each sense wire across the trajectory of the scattered electron. The analyzing software will use these drift distance from the four VDC planes to find a track for the scattered electron.
+
 
 	\subsection{Scintillators}\label{sec:scin}
 	\paragraph{} A pair of scintillator planes form the primary triggering apparatus for the HRSs. The planes of scintillator S0 and S2 consist of a collection of plastic scintillating paddles with photo multiplier tubes(PMTs) attached to both ends of the paddle. S0 the first scintillator in the stack consist of one scintillating paddle in a vertical direction. S2, the second scintillator was build with 16 overlapping paddles with PMTs attached to both ends. As electrons enter the scintillating plastics energy is absorbed by the material scintillating light. This light is detected by the PMTs on either side of the bar. The passing of the electron can happen at positions at an unequal distances from the PMTs on a scintillator bar. These relative differences cause a distortion in the timing calculation in the TOF known as the time walk effect. The scintillators are used in the calculation of $\beta$, the $v$ to $c$ ratio. Beta is calculated using the time of flight(TOF) between the two scintillator planes and distance traveled between the points of interaction. 
@@ -283,6 +292,14 @@ In order to achieve a high level of resolution in momentum and angle, the HRSs w
 	Using these calibration constants, the ADC signal in figure \ref{fig:calo_raw} can be turned in the calibrated data in the histogram show in figure \ref{fig:calo_ep}. This can be used to from PID selection cuts, removing any unwanted background events.  
 	
 \section{Trigger Setup}\label{sec:Trig}
+\paragraph{} 
+\begin{figure}[T]
+	\hspace*{-2cm} 
+	\includegraphics[width=18.cm]{trigger_layout.pdf}
+	\caption{Scematic drawing of the trigger logic and timing for the MARATHON experiment \cite{flo_trig}.}
+	\label{fig:trig_layout}
+\end{figure}
+
 
 %\section{DAQ - Data Acquisition System}\label{sec:daq}
 
