@@ -26,7 +26,7 @@
 		\includegraphics[width=12cm]{CEBAF.png} 
 	\end{figure} 
 	\paragraph{}The radio frequency (RF) cavities in each LINAC use an oscillating electromagnetic field to supply a force to accelerate the passing electrons. These Niobium RF cavities are cooled to 2 K in order to create conditions that allow the cavities to be superconducting \cite{HallA}. The superconduction RF(SRF) cavities provided a negatively charge field behind the electrons and positively charged field in front to accelerate the electrons through a set of cavities inside a cryomodule. A central helium liquefier circulates up to 17000 gallons of chilled liquid helium to control the temperature of the cryomodules. A dedicated 5 kW klystron  provides a 1500 Mhz RF driving signal for each cryomodules. 
-	\paragraph{} The electron beam exiting the north LINAC enters the east arc. The east and west arcs contain large dipole and quadrapole magnets to steer and focus the beam as the beam is accelerated back to the other LINAC. After electrons exit the south LINAC, they either continue on around the accelerator for another pass to increase in energy, or a RF separator projects the electron beam into the proper experiment hall \cite{CEBAF}. Energy loss, beam position, and beam charge monitors lie throughout the beam line, and are used to insure the quality of beam delivered to the halls.
+	\paragraph{} The electron beam exiting the north LINAC enters the east arc. The east and west arcs contain large dipole and quadrapole magnets to steer and focus the beam as the beam is accelerated back to the other LINAC. After electrons exit the south LINAC, they either continue on around the accelerator for another pass to increase in energy, or a RF separator projects the electron beam into the proper experiment hall \cite{CEBAF}. Energy loss, beam position, and beam charge monitors lie throughout the beam line, and are used to insure the quality of beam delivered to the experimental halls.
 
  \section{Hall A Beam Line}\label{sec:halla}
 	 
@@ -292,24 +292,65 @@ In order to achieve a high level of resolution in momentum and angle, the HRSs w
 	Using these calibration constants, the ADC signal in figure \ref{fig:calo_raw} can be turned in the calibrated data in the histogram show in figure \ref{fig:calo_ep}. This can be used to from PID selection cuts, removing any unwanted background events.  
 	
 \section{Trigger Setup}\label{sec:Trig}
-\paragraph{} 
-\begin{figure}[T]
+\paragraph{} The MARATHON experiment designed three triggers to accept the most probable good electron events, while limiting the number of background events and preventing loss of efficiency due to electronic dead time. The design of these trigger are depicted in figure \ref{fig:trig_layout}. Each trigger is build by the coincidence of signal between S0, S2 and the gas cherenkov.  Trigger 1(T1) is the logical $\&$ between the S0 and S2. This is used as a loose trigger to help test the detector timing and efficiencies.  Trigger 2(T2) is the main trigger used for good electron selection for the MARATHON experiment and is by  combining T1 and GC with a logical $\&$. The addition of the GC helps remove many background pions and cosmic rays compared to T1. Trigger 3(T3), a logical $||$ between s0 and S2 and $\&$ with the GC, was designed to help with the study of the efficiency of T1 and T2. The RHRS uses the same triggers, T4 copy of T1, T5 copy of T2, and T6 copy of T3.
+\begin{figure}[H]
 	\hspace*{-2cm} 
 	\includegraphics[width=18.cm]{trigger_layout.pdf}
 	\caption{Scematic drawing of the trigger logic and timing for the MARATHON experiment \cite{flo_trig}.}
 	\label{fig:trig_layout}
 \end{figure}
-
-
+\paragraph{}The trigger signal from  S0 is the logical and between the signals of the two PMTS of S0. S0A has an additional time delay. This delay forces the leading edge of S0B to be the leading edge of the output of the S0 coincidence. The trigger signal for S2 is build by a coincidence in both the left and right PMT attached to each bar of the scintillator. The signal from the right pmt is used as the leading edge of the coincidence signal. S2 has many bars so the trigger source is formed by a coincidence in any of the S2 scintillator bars. The S2 trigger signal has an additional delay compared to the S0 trigger signal. This delay forces S2R to be the leading edge of all the logical $\&$ triggers The GC signal is formed by a sum of all the PMTs in the GC. If this sum meets some discriminator threshold, a trigger signal from the GC will be formed. The signals formed from the logic units for each of these trigger signals receive additional delays to prefect their timing in respect to each other. This tweaking of the timing spreads the trigger signals apart to help prevent the trigger signals from overlapping and allowing the recording of all possible triggers. 
+ 
 %\section{DAQ - Data Acquisition System}\label{sec:daq}
 
 \section{Kinematic Settings}\label{sec:kin}
+\paragraph{} The MARATHON experiment's goal is to study cross section ratios of $^3$H, $^3$He, $^2$D, and H. as a function of $X$. The MARATHON collaboration originally proposed to use the kinematics in table \ref{OldKT}, allowing for the LHRS and RHRS to have mirror settings to expedite the rate of data collection at each position of $X$. The plan was to complete one kinematic setting and push the spectrometers out in angle from near 18 degrees at kinematic 1 to near 35 degrees at kinematic 16 while keeping the momentum settings of the spectrometers at 3.10 GeV for the 1st 15 settings, then decreasing the momentum to 2.9 for the last kinematic. 
 
+\begin{table}[]
+	\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|}
+		\hline
+		Kin. & $X_{Bj}$& W2    & Q2    & E$^\prime$    & Theta & H2   & H3   & He3   & Total  \\ 
+        &&Ge$V^2$&Ge$V^2$& GeV & Degree& est. hours&est. hours&est. hours& hours  \\ \hline
+		1    & 0.23 & 12.30 & 3.41  & 3.10 & 18.19 & 0.28 & 0.45 & 0.28  & 1.02   \\ \hline
+		2    & 0.27 & 11.70 & 4.00  & 3.10 & 19.73 & 0.42 & 0.69 & 0.43  & 1.54   \\ \hline
+		3    & 0.31 & 11.11 & 4.60  & 3.10 & 21.15 & 0.62 & 1.03 & 0.62  & 2.27   \\ \hline
+		4    & 0.35 & 10.52 & 5.19  & 3.10 & 22.49 & 0.90 & 1.50 & 0.89  & 3.29   \\ \hline
+		5    & 0.39 & 9.92  & 5.78  & 3.10 & 23.76 & 1.29 & 2.17 & 1.27  & 4.73   \\ \hline
+		6    & 0.43 & 9.33  & 6.37  & 3.10 & 24.97 & 1.85 & 3.13 & 1.81  & 6.79   \\ \hline
+		7    & 0.47 & 8.74  & 6.97  & 3.10 & 26.12 & 2.66 & 4.52 & 2.57  & 9.75   \\ \hline
+		8    & 0.51 & 8.14  & 7.56  & 3.10 & 27.23 & 3.80 & 6.53 & 3.66  & 13.99  \\ \hline
+		9    & 0.55 & 7.55  & 8.15  & 3.10 & 28.30 & 5.52 & 9.56 & 5.27  & 20.36  \\ \hline
+		10   & 0.59 & 6.96  & 8.75  & 3.10 & 29.34 & 5.12 & 14.19& 7.70  & 30.01  \\ \hline
+		11   & 0.63 & 6.37  & 9.34  & 3.10 & 30.34 & 12.12& 21.39& 11.41 & 44.92  \\ \hline
+		12   & 0.67 & 5.77  & 9.93  & 3.10 & 31.31 & 18.56& 33.08& 17.35 & 68.99  \\ \hline
+		13   & 0.71 & 5.18  & 10.53 & 3.10 & 32.26 & 29.08& 52.35& 26.98 & 108.41 \\ \hline
+		14   & 0.75 & 4.59  & 11.12 & 3.10 & 33.18 & 47.19& 85.80& 43.47 & 176.46 \\ \hline
+		15   & 0.79 & 3.99  & 11.71 & 3.10 & 34.08 & 87.73&150.03& 74.76 & 306.51 \\ \hline
+		16   & 0.83 & 3.40  & 12.30 & 3.10 & 34.96 &155.36&287.74&141.21 & 584.30 \\ \hline
+	\end{tabular}
+	\caption{Kinematics originally planned for the MARATHON experiment inlcuding an estimation of time required for three of the gas targets in hours. Estimations provided by John Arrington and Zhihong Ye\cite{RateEst}. }
+	\label{OldKT}
+\end{table}
+\begin{table}[]
+	\begin{tabular}{|l|l|l|l|l|l|l|l|l|}
+		\hline
+		kin & X    & W2    & Q2    & E`   & theta & D2 count & He3 count & H3 count \\ \hline
+		1   & 0.22 & 11.89 & 3.07  & 3.1  & 17.58 & 94.0     & 93.0      & 124.3    \\ \hline
+		2   & 0.26 & 11.33 & 3.62  & 3.1  & 19.11 & 109.0    & 103.0     & 120.5    \\ \hline
+		3   & 0.3  & 10.76 & 4.19  & 3.1  & 20.58 & 121.0    & 78.0      & 101.1    \\ \hline
+		4   & 0.34 & 10.2  & 4.76  & 3.1  & 21.93 & 78.0     & 64.0      & 69.8     \\ \hline
+		5   & 0.38 & 9.63  & 5.32  & 3.1  & 23.21 & 25.0     & 39.0      & 39.3     \\ \hline
+		7   & 0.46 & 8.51  & 6.45  & 3.1  & 25.59 & 40.0     & 40.0      & 41.2     \\ \hline
+		9   & 0.54 & 7.38  & 7.57  & 3.1  & 27.78 & 36.0     & 36.0      & 35.5     \\ \hline
+		11  & 0.62 & 6.2   & 8.76  & 3.1  & 29.92 & 29.0     & 27.0      & 27.6     \\ \hline
+		13  & 0.7  & 5.13  & 9.82  & 3.1  & 31.73 & 23.0     & 23.0      & 23.0     \\ \hline
+		15  & 0.78 & 4.0   & 10.96 & 3.1  & 33.56 & 21.0     & 23.0      & 22.8     \\ \hline
+		16*  & 0.82 & 3.51  & 11.82 & 2.90 & 36.12 &24.2 &23.9& 24.6 \\ \hline
 
+	\end{tabular}
+	\caption{Kinematic settings used during the MARATHON experiment. Kinematic 1-15 for LHRS, and kinematic 16 using RHRS. The good electron count is in units of thousands. }
+	\label{newkin}
+\end{table}
 
-
-
-
-
-
+\paragraph{}Due to time and physical constraints caused by issues with the running of all four halls simultaneously, the kinematics where adjusted to provided the best chance of reaching the statical goals at a large range in $X$. The angle setting for each kinematic were adjusted slightly. Most kinematics experience a slight degrees in angle setting to increase the rate of electron counting. During the first few days of running the MARATHON experiment the RHRS dipole experience a power supply failure. This issue could not be resolved quickly. In order to complete our goal, the MARATHON experiment adjusted the kinematic plan to remove RHRS from running. The statical precision goal of the MARATHON experiment forced the collaboration to remove a few kinematic points from the plan. The kinematics that the MARATHON experiment were able to complete are listed in table \ref{newkin}. After the new plan was solidified and data for the first few kinematics where complete, the RHRS was restored to services. The RHRS was then set to kinematic 16 for rest of the experiment.      
 
