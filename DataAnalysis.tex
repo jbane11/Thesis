@@ -58,7 +58,7 @@ Electron_{eff}  & = \frac{ GE_{pass} } { GE_{sample} }
 \end{figure}
 
 \subsection[]{Trigger Efficiency}
-\paragraph{} The process of capturing data from the two HRSs begins with the firing of a trigger. The trigger design for MARATHON focused on triggering for electrons and reducing the amount of other particles. Figure \ref{trigger_Setup} describes the design of MARATHON's main trigger and efficiency triggers. MARATHON's main trigger, trigger 2, consist of a $(S_o \& S_2) \& Cer$. Due to inefficiencies of the electronics, logic, and detectors an event can produce a false trigger or a high quality electron may not fire 
+\paragraph{} The process of capturing data from the two HRSs begins with the firing of a trigger. The trigger design for MARATHON focused on triggering for electrons and reducing the amount of other particles. Figure \ref{fig:trig_layout} describes the design of MARATHON's main trigger and efficiency triggers. MARATHON's main trigger, trigger 2, consist of a $(So \& S2) \& Cer$. Due to inefficiencies of the electronics, logic, and detectors an event can produce a false trigger or a high quality electron may not fire 
 the main trigger.
 
 \begin{figure}[]
@@ -139,3 +139,87 @@ A correction for the number of back ground electrons produced via a pair product
 	\caption{The ratio of positron events to electrons for tritium \cite{tongsu}. }
 	\label{PC}
 \end{figure}
+
+
+\subsection{Beta Decay of Tritium}
+\paragraph{} Tritium a radioactive isotope of hydrogen will beta decay to $^3$He. Tritium has a half-life of 4500 $\pm$ 8 days \cite{T2HL}. The gas cell used to contain Tritium for the experiment was filled on October 23, 2017. The initial tritium thickness density of our tritium cell was $0.077 \pm 0.001 $ grams per cm$^2$. Tritium will decay to $^3$He via a beta interaction. The tritium in our cell is diatomic and decays via two channels\cite{diaT}. The possible decay channels and their branching probabilities are shown in equation \ref{branching}. In DIS interactions, the molecular effects are ignored due to the size of the probe in a DIS scattering event which allows for the different channels to be treated as one. 
+\begin{align}
+			^3H_2 &\rightarrow(^3H ^3He)^+  &(94.5 \pm 0.6\%) \nonumber \\ 
+			^3H_2 &\rightarrow(^3H)^+ + (^3He)^+  & (5.5 \pm 0.6\%) 
+			\label{branching}
+\end{align}
+\paragraph{}The amount of $^3$H and $^3$He in our tritium cell will change in respect to the time since the feeling of the cell. Equations \ref{nT} and \ref{nH} describe the amount of $^3$H and $^3$He in the tritium cell has a function of the time since fill date and the original amount of $^3$H and $^3$He in cell at filling. In equations \ref{nT} and \ref{nH}, $n_T(n_H)$ is the time dependent amount of tritium(helium), and  $n_T^0(n_H^0)$ is the amount of tritium(helium) in the cell at time of filling. t is the time since the cell was filled and $\tau$ is the mean lifetime of tritium.
+\begin{align}
+	n_T &= n_T^0 \: e^{-t/\tau} \label{nT}\\
+	n_H &= n_H^0(1 - e^{-t/\tau}) \label{nH},
+\end{align}
+The fraction of $^3He$ in the tritium can reach up to 3$\%$ for the later runs used for the MARATHON experiment. This $^3He$ fraction as a function of time is shown in figure \ref{Hfract}.
+
+\begin{figure}[]
+	\centering
+	\textbf{Helium Fraction from Tritium Cell. }\par\medskip
+	\includegraphics[width=12cm]{cont_Hfrac.pdf}
+	\caption{The amount of Helium in the Tritium cell in reference to the total amount of material in the cell as a function of time \cite{Beta}.  }
+	\label{Hfract}
+\end{figure}
+
+
+\begin{equation}
+Y_T = Y_{raw}\left(\frac{1}{1-\langle f_H \rangle}\right) - Y_H \left(\frac{\langle f_H \rangle}{1-\langle f_H \rangle}\right)
+\end{equation}
+
+
+
+
+
+
+The normalized yield is defined as:
+\begin{equation}
+Y = \frac{N}{Qn},
+\end{equation}
+where $N$ is the number of detected electrons, $Q$ is the beam charge incident on the target, and $n$ is the target number density.  Assume that $N$ includes all corrections (deadtime, efficiency, endcap contamination, etc.) \textit{not} related to tritium decay.  In practice, the yield is extracted from multiple runs, so the number of detected electrons and luminosity must be summed over run number $i$:
+\begin{equation}
+Y = \frac{\sum N_i}{\sum Q_i n_i},
+\end{equation}
+
+The required correction must account not only for the evolution of the target composition (quantified in the previous section), but also for the fact that some of the detected electrons $N$ will have actually scattered from a helium nucleus instead of a tritium nucleus.  Begin by expressing the raw, uncorrected normalized yield (which is measured) as
+
+\begin{equation}
+Y_{raw} = \frac{\sum (T_i + H_i)}{\sum Q_i (n_{T,i} + n_{H,i})} \label{Yraw}
+\end{equation}
+where $T$ and $H$ are the number of detected electrons scattered by tritium and helium, respectively.  For time-dependent quantities (such as $n_{T,i}$ and $n_{H,i}$, given by Equations \ref{nT} and \ref{nH}), the subscript indicates the value of the quantity at the time of run $i$.  The goal is to obtain the normalized tritium yield $Y_T$ in terms of $Y_{raw}$ and correction factors, where
+
+\begin{equation}
+Y_T = \frac{\sum T_i}{\sum Q_i n_{T,i}}. 
+\end{equation}
+
+Due to the helium contamination, the correction factor will depend on the normalized helium yield
+
+\begin{equation}
+Y_H = \frac{\sum H_i}{\sum Q_i n_{H,i}}. 
+\end{equation}
+
+From equation (\ref{Yraw}), only a few steps of algebra are required to obtain $Y_T$.  Recall that the total number density $n_{tot}=n_T + n_H$ is constant in time, and note that the tritium fraction $n_{T,i}/n = 1 - f_{H,i}$, where $f_H$ is the helium fraction defined by Equation \ref{fH}.
+
+\begin{align*}
+Y_{raw}         &= \frac{\sum (T_i + H_i)}{\sum Q_i (n_{T,i} + n_{H,i})} \\[15pt]
+&= \frac{\sum T_i}{n_{tot} \sum Q_i} + \frac{\sum H_i}{n_{tot} \sum Q_i} \\[15pt]
+&= \left(\frac{\sum_i T_i}{\sum_i Q_i n_{T,i}}\right)\left(\frac{\sum_i Q_i n_{T,i}}{n_{tot} \sum_i Q_i}\right)
++ \left(\frac{\sum_i H_i}{\sum_i Q_i n_{H,i}}\right)\left(\frac{\sum_i Q_i n_{H,i}}{n_{tot} \sum_i Q_i}\right) \\[15pt]
+&= Y_T\left(\frac{\sum Q_i(1-f_{H,i})}{\sum Q_i}\right) + Y_H\left(\frac{\sum Q_i f_{H,i}}{\sum Q_i}\right)
+\end{align*}
+
+To simplify notation, define the charge-averaged helium fraction:
+
+\begin{equation}
+\langle f_H \rangle \equiv \frac{\sum Q_i f_{H,i}}{\sum Q_i}
+\end{equation}
+
+
+\begin{equation}
+Y_{raw} = Y_T(1-\langle f_H \rangle) + Y_H \langle f_H \rangle,
+\end{equation}
+
+and finally,
+
+\cite{primer}
