@@ -153,73 +153,28 @@ A correction for the number of back ground electrons produced via a pair product
 	n_T &= n_T^0 \: e^{-t/\tau} \label{nT}\\
 	n_H &= n_H^0(1 - e^{-t/\tau}) \label{nH},
 \end{align}
-The fraction of $^3He$ in the tritium can reach up to 3$\%$ for the later runs used for the MARATHON experiment. This $^3He$ fraction as a function of time is shown in figure \ref{Hfract}.
+As time passes the amount of $^3He$ increases, the contamination becomes a non-negligible effect on the yield of scattered electrons. The fraction of $^3He$ in the tritium can reach up to 3$\%$ for the data from the end of the MARATHON experiment. This $^3He$ fraction as a function of time is shown in figure \ref{Hfract}, with the period for running the MARATHON experiment labeled as a color band. 
 
-\begin{figure}[]
+\begin{figure}[t]
 	\centering
 	\textbf{Helium Fraction from Tritium Cell. }\par\medskip
-	\includegraphics[width=12cm]{cont_Hfrac.pdf}
-	\caption{The amount of Helium in the Tritium cell in reference to the total amount of material in the cell as a function of time \cite{Beta}.  }
+	\includegraphics[width=13cm]{cont_Hfrac.pdf}
+	\caption{The amount of Helium in the Tritium cell in reference to the total amount of material in the cell as a function of time. Included are bands of time for different sections of the Tritium run group's plan \cite{Beta}.}
 	\label{Hfract}
 \end{figure}
-
-
 \begin{equation}
-Y_T = Y_{raw}\left(\frac{1}{1-\langle f_H \rangle}\right) - Y_H \left(\frac{\langle f_H \rangle}{1-\langle f_H \rangle}\right)
+Y = \frac{\sum N_i}{\sum Q_i n_i}, \label{yield} 
 \end{equation}
-
-
-
-
-
-
-The normalized yield is defined as:
-\begin{equation}
-Y = \frac{N}{Qn},
-\end{equation}
-where $N$ is the number of detected electrons, $Q$ is the beam charge incident on the target, and $n$ is the target number density.  Assume that $N$ includes all corrections (deadtime, efficiency, endcap contamination, etc.) \textit{not} related to tritium decay.  In practice, the yield is extracted from multiple runs, so the number of detected electrons and luminosity must be summed over run number $i$:
-\begin{equation}
-Y = \frac{\sum N_i}{\sum Q_i n_i},
-\end{equation}
-
-The required correction must account not only for the evolution of the target composition (quantified in the previous section), but also for the fact that some of the detected electrons $N$ will have actually scattered from a helium nucleus instead of a tritium nucleus.  Begin by expressing the raw, uncorrected normalized yield (which is measured) as
-
 \begin{equation}
 Y_{raw} = \frac{\sum (T_i + H_i)}{\sum Q_i (n_{T,i} + n_{H,i})} \label{Yraw}
 \end{equation}
-where $T$ and $H$ are the number of detected electrons scattered by tritium and helium, respectively.  For time-dependent quantities (such as $n_{T,i}$ and $n_{H,i}$, given by Equations \ref{nT} and \ref{nH}), the subscript indicates the value of the quantity at the time of run $i$.  The goal is to obtain the normalized tritium yield $Y_T$ in terms of $Y_{raw}$ and correction factors, where
-
 \begin{equation}
-Y_T = \frac{\sum T_i}{\sum Q_i n_{T,i}}. 
-\end{equation}
-
-Due to the helium contamination, the correction factor will depend on the normalized helium yield
-
-\begin{equation}
-Y_H = \frac{\sum H_i}{\sum Q_i n_{H,i}}. 
-\end{equation}
-
-From equation (\ref{Yraw}), only a few steps of algebra are required to obtain $Y_T$.  Recall that the total number density $n_{tot}=n_T + n_H$ is constant in time, and note that the tritium fraction $n_{T,i}/n = 1 - f_{H,i}$, where $f_H$ is the helium fraction defined by Equation \ref{fH}.
-
-\begin{align*}
-Y_{raw}         &= \frac{\sum (T_i + H_i)}{\sum Q_i (n_{T,i} + n_{H,i})} \\[15pt]
-&= \frac{\sum T_i}{n_{tot} \sum Q_i} + \frac{\sum H_i}{n_{tot} \sum Q_i} \\[15pt]
-&= \left(\frac{\sum_i T_i}{\sum_i Q_i n_{T,i}}\right)\left(\frac{\sum_i Q_i n_{T,i}}{n_{tot} \sum_i Q_i}\right)
-+ \left(\frac{\sum_i H_i}{\sum_i Q_i n_{H,i}}\right)\left(\frac{\sum_i Q_i n_{H,i}}{n_{tot} \sum_i Q_i}\right) \\[15pt]
-&= Y_T\left(\frac{\sum Q_i(1-f_{H,i})}{\sum Q_i}\right) + Y_H\left(\frac{\sum Q_i f_{H,i}}{\sum Q_i}\right)
-\end{align*}
-
-To simplify notation, define the charge-averaged helium fraction:
-
-\begin{equation}
-\langle f_H \rangle \equiv \frac{\sum Q_i f_{H,i}}{\sum Q_i}
+\langle f_H \rangle \equiv \frac{\sum Q_i f_{H,i}}{\sum Q_i} \label{QwHf}
 \end{equation}
 
 
+The events that scatted from Helium in our tritium cell need to be subtracted from the measured yield to supply an accurate count. The yield from any target is defined as the number of electrons per charge weighted scattering centers. The yield is shown in equation \ref{yield} and defined as the number of counted events($N_i$) per possible scattering changes, or charge($Q_i$) times number of scattering centers ($n_i$). Data is recorded in many runs, so a sum over runs($i$) is required to get the total yield. The subtraction factor is calculated by breaking down the yield from the tritium cell as the addition of the yield from tritium ($Y_T$)= $\Sigma(T_i/Q_in_{i})$ and helium ($Y_H$)= $\Sigma(H_i/Q_in_{i})$ in the tritium cell as shown in equation \ref{Yraw}. The correction for the beta decay is defined in equation \ref{YieldT}. It can be determined by expanding equation \ref{Yraw} out and solving for the tritium yield from the tritium cell. Where $\langle f_H \rangle$ is the charge weighted helium fraction defined in equation \ref{QwHf} \cite{primer}. The helium fraction $f_{H,i}$ is the ratio of helium scattering centers in the tritium cell to total number of scattering centers. 
+
 \begin{equation}
-Y_{raw} = Y_T(1-\langle f_H \rangle) + Y_H \langle f_H \rangle,
+Y_T = Y_{raw}\left(\frac{1}{1-\langle f_H \rangle}\right) - Y_H \left(\frac{\langle f_H \rangle}{1-\langle f_H \rangle}\right) \label{YieldT}
 \end{equation}
-
-and finally,
-
-\cite{primer}
