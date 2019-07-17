@@ -12,7 +12,7 @@ This reaction allowed Rutherford to conclude that the Hydrogen nucleus was a ele
 \section{Electron scattering}\label{sec:escat}
 \paragraph{}Deciphering and analyzing data from scattering experiments that use complex beams can be convoluted because the scattering interaction contains information about the internal structure of the target and the beam along with the complex interactions and forces between the two \cite{PnN}.  In order to remove some of the complexity in scattering experiments, one may employ highly relativistic electrons. Electrons being point-like particles without any internal structure allow the elimination of some of the analysis difficulties due to the complex nature of the internal structure of more complex scattering tools. Electrons and the target either a nucleus, nucleon, or quark interact via the exchange of a virtual photon. Using quantum electrodynamics (QED), these interactions can accurately be described by the well known electromagnetic interaction.
 \paragraph{}The electromagnetic interaction describes the coupling of fundamental particles via their electric charge. The interaction between two electrically charged particles begins when a virtual photon is emitted. The amplitude for the emission of photon is proportional to $\sqrt{\alpha}$. Where $\alpha$ is the fine structure constant. Higher order terms of this process contribute very little due to the coupling constant $\alpha \approx 1/137 $, being much smaller than one. 
-\paragraph{} Figure \ref{feynman} represents an electron scattering from a proton. The incoming or incident electron's four-momentum is described as k = (E,$ \vec{k}$) and the scattering electron's four-momentum is represented by $k^\prime{}$ = ($E^\prime{}$,$\vec{k}^\prime{}$). The exchange of the virtual photon in this electromagnetic interaction is defined by the four-momentum transfer q. $Q^2$, the square of the momentum transfer is the mass of the virtual photon that interacts with the hadron. 
+\paragraph{} The Feynman diagram in figure \ref{feynman} represents an electron scattering from a proton. The incoming or incident electron's four-momentum is described as k = (E,$ \vec{k}$) and the scattering electron's four-momentum is represented by $k^\prime{}$ = ($E^\prime{}$,$\vec{k}^\prime{}$). The exchange of the virtual photon in this electromagnetic interaction is defined by the four-momentum transfer q. $Q^2$, the square of the momentum transfer is the mass of the virtual photon that interacts with the hadron. 
 \begin{equation}
 \label{Q}
 Q^2 \equiv -q^2 = 4EE^\prime{} sin^2(\theta/2).
@@ -34,32 +34,64 @@ Simply, $\nu$ is the magnitude of energy loss by the electron during the scatter
 \label{W}
 W^2 \equiv (q + p)^2 = M^2 + 2M\nu -Q^2.
 \end{equation}
+In the general case of electron scattering off of a free proton or neutron elastically, the scattered energy of the electron will be a function of the incident electron's energy and the scatted angle of the electron, shown in the following equation.
+\begin{equation}
+E^\prime =\frac{E}{1+\frac{E}{Mc^2}(1-cos\theta)}
+\end{equation}
 A scattering event with the invariant mass equal to the the mass of the nucleon, $M$, falls in the regime of elastic scattering and the final state of hadron is a recoiling proton. Increasing the $W$ above $M$ will transform the scattering interaction from an elastic scattering interaction to an inelastic scattering event due to the excited state of the scattered byproduct. 
 \paragraph{} The intrinsic likelihood of an event with a certain $Q^2$, $\nu$, and $W$ is defined by the scattering cross section. An electron scattering off of a target with a charge of $Z*e$ can be described by the Rutherford cross-section. Povh et. al. details the Rutherford cross section as:
 \begin{equation}
 \bigg(\frac{d\sigma}{d\Omega}\bigg)_{Rutherford} = \frac{ \big(zZe^2\big)^2} {\big( 4\pi \epsilon_0\big)^2 * \big(e E_{kin}\big)^2 sin^4\big( \theta / 2 \big) }. 
 \end{equation}
-  In the early 1920s, German physicists Stern and Gerlach performed an experiment that confirmed the presence of electron angular momentum. Later a discovery of electron spin was made by Uhlenbeck an Gloudsmit.   The Mott cross-section is the evolved version of the Rutherford cross-section. The Rutherford cross-section neglects the spin of a electron and it's target. Evolving the Rutherford cross-section allows for the modifications needed to include the intrinsic spin of the target and electron. The Mott cross-section is described in equation \ref{Mott} \cite{HighE,PnN}.  Where $\alpha$ is the fine structure constant. This constant is related to the strength of the interaction between an electron and proton\cite{sane}.
+In the early 1920s, German physicists Stern and Gerlach performed an experiment with a beam of silver atoms. The Stern–Gerlach experiment measured the deflection of a beam of silver atoms from an inhomogeneous magnetic field\cite{strger}. The observations made by Stern and Gerlach demonstrated that particles bear an intrinsic angular momentum. In 1925, a forbidden spectral line of ionized helium raised questions of the current understanding of the quantum numbers used. This forbidden line lead to the discovery of electron spin by Uhlenbeck and Gloudsmit\cite{e_spin}. The Mott cross-section is the evolved version of the Rutherford cross-section. The Rutherford cross-section neglects the spin of an electron and the target. Evolving the Rutherford cross-section allows for the modifications needed to include the intrinsic spin of the target and electron. The Mott cross-section is described in equation \ref{Mott} \cite{HighE,PnN}.  Where $\alpha$ is the fine structure constant. This constant is related to the strength of the interaction between an electron and proton\cite{sane}.
 \begin{equation}
 \bigg(\frac{d\sigma}{d\Omega}\bigg)_{Mott} = \frac{4Z^2\alpha^2 \big(\hbar c \big)^2 E{^{\prime} }^2}{ |\boldsymbol{q}c|^4} cos^2 (\theta/2). \label{Mott}
 \end{equation}
+The inclusion of the interaction between the current of the electron and the target nucleon's magnetic moment creates the necessity to define the magnetic moment. Equation \ref{magmom} describes the magnetic moment of a charged, spin -1/2 particle. The magnetic momentum is build using M, the mass of the particle and g, a factor of 2 relating to relativistic quantum mechanics. 
+\begin{equation}
+\mu = g \cdot \frac{e}{2M}\cdot\frac{\hbar}{2} \label{magmom}
+\end{equation}
+Modifying the Mott scattering cross section equation to include a spin degree of freedom, is shown in equation \ref{spin.5}. $\tau$ is used in the cross section formalism to account for the magnetic moment of a nucleon and is defined as: $\tau = \frac{Q^2}{4M^2c^2}$ \cite{PnN}. 
+\begin{equation}
+\bigg(\frac{d\sigma}{d\Omega}\bigg)_{\substack{point \\ spin 1/2}} = \bigg(\frac{d\sigma}{d\Omega}\bigg)_{Mott} \cdot \big[1 + 2\tau \: \text{tan}^2\frac{\theta}{2} \big]\label{spin.5}
+\end{equation}
 
-\paragraph{}The interaction described in the Mott cross section equation is mediated by a single photon and is electromagnetic in nature. For an electromagnetic interaction conducted at a low resolution, there is an agreement between the measured cross section and the theoretical Mott cross-section. This agreement is minimized when in the limit of $|\boldsymbol{q}| \rightarrow  0$ for scattering events of electrons off of a target nuclei. As $|\boldsymbol{q}|$ climbs furtherer from zero and the resolution of probe grows, the experimentally measured cross sections will begin to differ from the Mott cross section, systematically decreasing \cite{PnN}. Increasing the $|\boldsymbol{q}|$ of an interaction reduces the size of the wavelength of the virtual photon that mediates the electromagnetic interaction between the electron and target nuclei and therefor increases the resolution of the probe. The wavelength of this virtual photon is inversely proportional to $|\boldsymbol{q}|$, and can be described by the following: $\lambda = \ \frac{\hbar}{|\boldsymbol{q}|}$ \cite{PnN}. Increasing the amount of momentum transfered in an electromagnetic reaction allows one to study deeper into the nucleus. The act of probing deeper into the nucleous or nucleon allows for the substructure of the target. 
+\begin{figure}[]
+	\centering
+	\textbf{ }\par\medskip
+	\includegraphics[width=10cm]{mott_exp.pdf}
+	\caption{Ratio of experimentally measured cross section to the Mott  cross-section verses tan$^2\theta/2$ for a $Q^2$ of 2.5 GeV$^2$/c$^2$. \cite{EPinter}}
+	\label{mott_exp}
+\end{figure}
+
+\paragraph{}The interaction described in the Mott cross section equation is mediated by a single photon and is electromagnetic in nature. For an electromagnetic interaction conducted at a low resolution, there is an agreement between the measured cross section and the theoretical Mott cross-section. This agreement is maximized when in the limit of $|\boldsymbol{q}| \rightarrow  0$ for scattering events of electrons off of a target nuclei. As $|\boldsymbol{q}|$ climbs furtherer from zero and the resolution of probe grows, the experimentally measured cross sections will begin to differ from the Mott cross section, systematically decreasing \cite{PnN}. The comparison of the Mott calculated cross section to experimentally measured cross section for a $Q^2$ of 2.5 GeV$^2$/c$^2$ is shown in figure \ref{mott_exp}. Increasing the $|\boldsymbol{q}|$ of an interaction reduces the size of the wavelength of the virtual photon that mediates the electromagnetic interaction between the electron and target nuclei and therefor increases the resolution of the probe. The wavelength of this virtual photon is inversely proportional to $|\boldsymbol{q}|$, and can be described by the following: $\lambda = \ \frac{\hbar}{|\boldsymbol{q}|}$ \cite{PnN}. Increasing the amount of momentum transfered in an electromagnetic reaction allows one to study deeper into the nucleus. The act of probing deeper into the nucleous or nucleon allows for the substructure of the target. 
 \paragraph{} Studying the internal structure of a nucleus with the electromagnetic interaction requires increasing the momentum transfered. Pushing $|\boldsymbol{q}|$ to be comparable with the mass of a nucleon adds more complexity to the details of the scattering interaction. At the appropriate levels of $|\boldsymbol{q}|$ to study the nucleons in the nucleus, the Mott cross-section equation requires modifications to include additional factors that incorporate information about the target. The Rosenbluth formula is based on the Mott cross section and embraces target recoil, magnetic moment, and charge and current distributions. Povh writes the Rosenbluth formula as:
 \begin{equation}
 \label{rosen}
 \bigg(\frac{d\sigma}{d\Omega}\bigg)=\bigg(\frac{d\sigma}{d\Omega}\bigg)_{Mott} *\bigg\lbrack \frac{G^2_E(Q^2) +\tau G^2_M(Q^2)}{1+\tau} + 2\tau G^2_M(Q^2)tan^2\frac{\theta}{2} \bigg\rbrack.
 \end{equation}
-Equation \ref{rosen} contains $G^2_E(Q^2)$ and $G^2_M(Q^2)$, the electric and magnetic form factors. $\tau$ is used in the Rosenbluth formalism to account for the magnetic moment of a nucleon and is defined as: $\tau = \frac{Q^2}{4M^2c^2}$ \cite{PnN}. In the general case of electron scattering off of a free proton or neutron elastically, the scattered energy of the electron will be a function of the incident electron's energy and the scatted angle of the electron, shown in the following equation.
-\begin{equation}
-E^\prime =\frac{E}{1+\frac{E}{Mc^2}(1-cos\theta)}
-\end{equation}
+Equation \ref{rosen} contains $G^2_E(Q^2)$ and $G^2_M(Q^2)$, the electric and magnetic form factors. These form factors depend on $Q^2$, and this measured dependence provides information on the radial charge distributions and magnetic moments of the scattering participants. 
+
+\begin{align}
+	\begin{split}
+		&G^P_E(Q^2=0) = 1 \\
+		&G^P_M(Q^2=0) = 2.79
+	\end{split}
+	\begin{split}
+	    &G^n_E(Q^2=0) = 0 \\
+	    &G^n_M(Q^2=0) = -1.91 \label{FFeq}
+	\end{split}
+\end{align}
 
 
 
 \subsection{Deep inelastic scattering}\label{sec:DIS}
 \paragraph{}The first generation of electron scattering experiments achieving a significantly large  $|\boldsymbol{q}|$ used a linear accelerator with a 25 GeV maximum beam energy, and following generations increased the total interaction energy to substantially higher thresholds. At these high incident beam energies, individual resonances cannot be separated in the invariant mass spectrum above 2.5 GeV. Observations made into this convoluted invariant mass spectrum has shown that many strongly interacting particles are produced, known as hadrons. Scattering interactions that generate these hadrons are considered to be inelastic. 
 \paragraph{}Inelastic scattering events contain the possibility of conceiving additional resultants causing an increase in the complexity of a scattering interaction. In order to create an inelastic event, the wavelength of the virtual photon has to be comparable to the radius of the struck nucleon. Increasing the amount of transferred momentum so that $Q^2R^2 \gtrsim 1$, will increase the resolution of the probe to a level that allows for the interaction to be with the charge constituents within the nucleon. When the scattering event probes the fundamental elements of a nucleon, the scattering process is titled deep inelastic scattering(DIS). Due to the increase in complexity, an additional degree of freedom has to be introduced into the scattering cross section formalism. Modifying the Rosenbluth formula to include the inelastic scattering structure functions $F_1(Q^2,\nu)$ and $F_2(Q^2,\nu)$ evolves the Rosenbluth formula to contain the needed complexity of an inelastic event. These modifications are shown in equation \ref{ISCS}. The $F_1$ and $F_2$ structure functions provide the details for describing the internal composition of the nucleon \cite{PnN}. 
+
+
+
+
 \begin{equation}
 \label{ISCS}
 \frac{d^2\sigma}{d\Omega dE^\prime}=\bigg(\frac{d\sigma}{d\Omega}\bigg)_{Mott} \bigg\lbrack \frac{F_2(Q^2,\nu)}{\nu} + \frac{2F_1(Q^2,\nu)}{M}tan^2\frac{\theta}{2} \bigg \rbrack.
