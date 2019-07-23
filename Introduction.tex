@@ -113,21 +113,26 @@ The $G^2_E(0)$ corresponds to the electric charge of the target. $G^2_M(0)$ is s
 	\caption{ Structure function results measured from three  lepton-nucleon scattering experiments \cite{Atwood}.}
 	\label{3leps}
 \end{figure}
-\paragraph{}Figure \ref{3leps} from Atwood et. al. (1982), contains data on three unique experiments plotting structure function results against $x$. Solid dots are elastic electron proton at incident energy of 18 GeV and scattered angle of 4$^\circ$. The elastic peak at $x$ of 1 due to the scattering event happening elastically off the entire proton. The open points are quasi-elastic scattering from deuterium. The peak is located at 0.5 in $x$ because the scattering event happens from the proton and neutron, which individually contain only half of the mass of the complete deuteron. The data represented by an x displays result from an inelastic electron scattering measurement. The data plotted is the difference between two nucleon structure functions. The peak is located at one third. The location of the peak at one third demonstrates that struck constituent of the nucleon  has a mass $\approx$ one third of the nucleon and there exists three constituents inside the nucleon \cite{Atwood,PnN}.
+\paragraph{}Figure \ref{3leps} from Atwood et. al. (1982), contains data on three unique experiments plotting structure function results against $x$. Solid dots are elastic electron proton at incident energy of 18 GeV and scattered angle of 4$^\circ$. The elastic peak at $x$ of 1 due to the scattering event happening elastically off the entire proton. The open points are quasi-elastic scattering from deuterium. The peak is located at 0.5 in $x$ because the scattering event happens from the proton and neutron, which individually contain only half of the mass of the complete deuteron. The data represented by an x displays result from an inelastic electron scattering measurement. The data plotted is the difference between two nucleon structure functions. The peak is located at one third. The location of the peak at one third demonstrates that the struck constituent of the nucleon has a mass approximately one third of the nucleon and there exists three constituents inside the nucleon with equal mass\cite{Atwood,PnN}.
 
 \subsection{Quark Parton Model}
-\paragraph{}In the case of DIS off of a proton, the electron probe is used to explore the exclusive internal structure of the proton, it's constituents. In 1969, Feynman assumed the internal make up of the proton was that of point-like partons \cite{Briskin_thesis,DISproton}, the basis of the parton model. As part of this model, the impulse approximation makes an assumption that the duration of the interaction between the mediating photon and parton is relatively short, allowing for the interaction between individual partons to be neglected. Thus in a DIS interaction, the partons can be described as free, with minimal internal interactions. Under this understanding, a electron-nucleon DIS interaction would characterize the properties and motions of the partons that make up the struck nucleon\cite{DISproton}. The characteristics, the motions and properties, of the partons are formalized into a parton distribution function $f_i(x_B)$.  The parton distribution functions can be used to relate the $F_1$ and $F_2$ structure functions used in equation \ref{ISCS} \cite{PnN}. 
+\paragraph{}In the case of DIS off of a proton, the electron probe is used to explore the exclusive internal structure of the proton, it's constituents. In 1969, Feynman assumed the internal make up of the proton was that of point-like partons \cite{Briskin_thesis,DISproton}, the basis of the parton model. As part of this model, the impulse approximation makes an assumption that the duration of the interaction between the mediating photon and parton is relatively short, allowing for the interaction between individual partons to be neglected. Thus in a DIS interaction, the partons can be described as quasi-free, with minimal internal interactions. Under this understanding, a electron-nucleon DIS interaction would characterize the properties and motions of the partons that make up the struck nucleon\cite{DISproton}. 
+\paragraph{}The characteristics, the motions and properties, of the partons are formalized into a parton distribution function $f_i(x_B)$ \cite{PnN}. The relationship for the parton distribution function with the $F_2$ structure function is shown in equation \ref{F2pd}. The $F_1$ structure function is the DIS equivalent to the magnetic form factor from equation \ref{FFeq}, and will vanish for scattering from spin zero particles \cite{PnN}. Figure \ref{fig:spin1/2} shows the linear relationship of the ratio of $\frac{2xF_1}{F_2}$ as a function of $x$. This data from SLAC helped confirmed theories from C. G. Callan Jr. and David J. Gross that the partons that are found in the nucleons of a nucleus are spin 1/2 \cite{callan,DISquark}. The relation ship between $F_1$ and $F_2$ is known as the Callan$\_$Gross relation \cite{PnN}.
 \begin{align}
-	\label{PDFs}
-	F_2(x) &= x \Sigma_i e^2_i f_i(x)\\
-	F_1(x) &= \frac{1}{2x} F_2(x) \nonumber
+		F_2(x) &= x \Sigma_i e^2_i f_i(x) \label{F2pd}\\ 
+		F_1(x) &= \frac{1}{2x} F_2(x) \label{CGr} 
 \end{align}
-\begin{equation}
-\label{F2q}
-F_2(x) = x1 \cdot \Sigma_f z^2_f ( q_f(x) + \bar{q}_f(x))
-\end{equation}
+\paragraph{} 
+
+%		F_2(x) &= x \cdot \Sigma_f z^2_f ( q_f(x) + \bar{q}_f(x)) \label{F2quarks}\\ 
 \paragraph{}
 \cite{DISearly,DISproton,whitlow_sigma,Q2indy}
+\begin{figure}[]
+	\centering
+	\includegraphics[width=9cm]{f1_f2_spin.pdf} 
+	\caption{Data from SLAC plotting the ratio of the structure functions $2x\cdot F_1(x)$ and $F_2(x)$ vs. $x$ \cite{PnN,IntroHEP}.}
+	\label{fig:spin1/2}
+\end{figure} 
 
 
 \begin{figure}[]
