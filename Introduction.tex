@@ -1,7 +1,5 @@
 
-
-
-\chapter{Introduction}\paragraph{}Understanding the world around us is the goal of every scientist, from the chemist that experiments with the formation of atoms to the geologist exploring the process of rock formations. Nuclear physicists focus on studying the fundamental constituents of matter, the building blocks of nature. Physicist use scattering experiments at accelerator facilities, like CERN in Switzerland, DESY in Germany, BATES in Massachusetts, JLab in Virginia, and many others, to study the protons and neutrons that make up a nucleus and the constituents that make up the internal structure of a nucleon. These experiments allow physicists to probe inside a nucleus to observe the internal structure and to investigate the interactions between the quarks and gluons. Many of the experiments are design to confirm an existing results while also expanding on unique ideas.
+\chapter{Introduction}\paragraph{}Understanding the world around us is the goal of every scientist, from the chemist that experiments with the formation of atoms to the geologist exploring the process of rock formations. Nuclear physicists focus on studying the fundamental constituents of matter, the building blocks of nature. Physicist use scattering experiments at accelerator facilities, like CERN in Switzerland, DESY in Germany, BATES in Massachusetts, JLab in Virginia, and many others, to study the protons and neutrons that make up a nucleus and the constituents that form the internal structure of a nucleon. These experiments allow physicists to probe inside a nucleus to observe the internal structure and to investigate the interactions between the quarks and gluons. Many of the experiments are design to confirm an existing results while also expanding on unique ideas.
 \paragraph{}In the last century, there have been numerous breakthroughs in the fields of nuclear and particle physics. Rutherford discovered the proton by bombarding light nuclei with alpha particles to produce the reaction,  
 	\begin{equation}
 	^{14}N + ^4He \rightarrow ^{17}O + p.
@@ -106,6 +104,29 @@ The $G^2_E(0)$ corresponds to the electric charge of the target. $G^2_M(0)$ is s
 \end{figure} 
 \subsection{Scaling}
 \paragraph{}The Bjorken scaling variable, $x_B$ or $x$, is a dimensionless quantity that measures the in-elasticity of a scattering process and is defined as: $x \equiv \frac{Q^2}{2M\nu}$. Measurements from the Standford Linear Accelerator(SLAC) and others for the DIS $F_2$ structure function are displayed in figure \ref{F2_fig}. This plot displays results of $F_2$ as a function of $x$ and $Q^2$. The $x$ dependence of $F_2$ is strong and shows that $F_2$ will decrease as $x$ increases. However, at a constant value of $x$, the dependence of $Q^2$ on $F_2$ is weak for moderate values of $x$. This phenomenon of a solo dependence on $x$ was known as scaling. This scaling was observed to be present for scattering interactions with $Q^2 > 2 \: GeV^2$  and $\nu > 2.5 GeV$ \cite{Atwood}. In the Bjorken limit, v $\rightarrow \infty$ and $Q^2 \rightarrow \infty$, the deep inelastic structure functions can be described as functions of only $x$.
+
+
+\subsection{Quark Parton Model}
+\paragraph{}In the case of DIS off of a proton, the electron probe is used to explore the exclusive internal structure of the proton, it's constituents. In 1969, Feynman assumed the internal make up of the proton was that of point-like partons \cite{Briskin_thesis,DISproton}, the basis of the parton model. As part of this model, the impulse approximation makes an assumption that the duration of the interaction between the mediating photon and parton is relatively short, allowing for the interaction between individual partons to be neglected. Thus in a DIS interaction, the partons can be described as quasi-free, with minimal internal interactions. Under this understanding, an electron-nucleon DIS interaction would characterize the properties and motions of the partons that form the struck nucleon\cite{DISproton}.
+
+\begin{figure}[t]
+	\centering
+	\includegraphics[width=9cm]{f1_f2_spin.pdf} 
+	\caption{Data from SLAC plotting the ratio of the structure functions $2x\cdot F_1(x)$ and $F_2(x)$ vs. $x$ \cite{PnN,IntroHEP}.}
+	\label{fig:spin1/2}
+\end{figure} 
+
+\paragraph{}The characteristics, (the motions and properties), of the partons are formalized into a parton distribution function $f_i(x_B)$ \cite{PnN}. The relationship for the parton distribution function with the $F_2$ structure function is shown in equation \ref{F2pd}. The $F_1$ structure function is the DIS equivalent to the magnetic form factor from equation \ref{FFeq}, and will vanish for scattering from spin zero particles \cite{PnN}. Figure \ref{fig:spin1/2} shows the linear relationship of the ratio of $\frac{2xF_1}{F_2}$ as a function of $x$. This data from SLAC helped confirmed theories from C. G. Callan Jr. and David J. Gross that the partons that are found in the nucleons of a nucleus are spin 1/2 \cite{callan,DISquark}. The relationship between $F_1$ and $F_2$ is known as the Callan-Gross relation \cite{PnN}. This relationship can be seen in equation \ref{CGr}. 
+
+
+\begin{align}
+		F_2(x) &= x \Sigma_i e^2_i f_i(x) \label{F2pd}\\ 
+		F_1(x) &= \frac{1}{2x} F_2(x) \label{CGr} 
+\end{align}
+\begin{equation}
+		F_2(x) = x \cdot \Sigma_f z^2_f ( q_f(x) + \bar{q}_f(x)) \label{F2quarks} 
+\end{equation}
+\paragraph{}The electromagnetic interaction that occurs during a scattering event happens between two charged bodies. The electron carries a charge of $- e$ and the proton carries a charge of $+e$. The partons that makeup the proton or neutron must carry a total charge equal to the charge of the proton or neutron. Using DIS scattering from electron, neutrino, and muon beams, the amount of charge carried by the partons was determined by using the equation \ref{F2quarks} \cite{PnN,DISquark,callan}. 
 \begin{figure}[t]
 	%	\hspace*{-20pt}
 	\centering
@@ -113,34 +134,14 @@ The $G^2_E(0)$ corresponds to the electric charge of the target. $G^2_M(0)$ is s
 	\caption{ Structure function results measured from three  lepton-nucleon scattering experiments \cite{Atwood}.}
 	\label{3leps}
 \end{figure}
-\paragraph{}Figure \ref{3leps} from Atwood et. al. (1982), contains data on three unique experiments plotting structure function results against $x$. Solid dots are elastic electron proton at incident energy of 18 GeV and scattered angle of 4$^\circ$. The elastic peak at $x$ of 1 due to the scattering event happening elastically off the entire proton. The open points are quasi-elastic scattering from deuterium. The peak is located at 0.5 in $x$ because the scattering event happens from the proton and neutron, which individually contain only half of the mass of the complete deuteron. The data represented by an x displays result from an inelastic electron scattering measurement. The data plotted is the difference between two nucleon structure functions. The peak is located at one third. The location of the peak at one third demonstrates that the struck constituent of the nucleon has a mass approximately one third of the nucleon and there exists three constituents inside the nucleon with equal mass\cite{Atwood,PnN}.
-
-\subsection{Quark Parton Model}
-\paragraph{}In the case of DIS off of a proton, the electron probe is used to explore the exclusive internal structure of the proton, it's constituents. In 1969, Feynman assumed the internal make up of the proton was that of point-like partons \cite{Briskin_thesis,DISproton}, the basis of the parton model. As part of this model, the impulse approximation makes an assumption that the duration of the interaction between the mediating photon and parton is relatively short, allowing for the interaction between individual partons to be neglected. Thus in a DIS interaction, the partons can be described as quasi-free, with minimal internal interactions. Under this understanding, a electron-nucleon DIS interaction would characterize the properties and motions of the partons that make up the struck nucleon\cite{DISproton}. 
-\paragraph{}The characteristics, the motions and properties, of the partons are formalized into a parton distribution function $f_i(x_B)$ \cite{PnN}. The relationship for the parton distribution function with the $F_2$ structure function is shown in equation \ref{F2pd}. The $F_1$ structure function is the DIS equivalent to the magnetic form factor from equation \ref{FFeq}, and will vanish for scattering from spin zero particles \cite{PnN}. Figure \ref{fig:spin1/2} shows the linear relationship of the ratio of $\frac{2xF_1}{F_2}$ as a function of $x$. This data from SLAC helped confirmed theories from C. G. Callan Jr. and David J. Gross that the partons that are found in the nucleons of a nucleus are spin 1/2 \cite{callan,DISquark}. The relation ship between $F_1$ and $F_2$ is known as the Callan$\_$Gross relation \cite{PnN}.
-\begin{align}
-		F_2(x) &= x \Sigma_i e^2_i f_i(x) \label{F2pd}\\ 
-		F_1(x) &= \frac{1}{2x} F_2(x) \label{CGr} 
-\end{align}
-\paragraph{} 
-
-%		F_2(x) &= x \cdot \Sigma_f z^2_f ( q_f(x) + \bar{q}_f(x)) \label{F2quarks}\\ 
-\paragraph{}
-\cite{DISearly,DISproton,whitlow_sigma,Q2indy}
-\begin{figure}[]
-	\centering
-	\includegraphics[width=9cm]{f1_f2_spin.pdf} 
-	\caption{Data from SLAC plotting the ratio of the structure functions $2x\cdot F_1(x)$ and $F_2(x)$ vs. $x$ \cite{PnN,IntroHEP}.}
-	\label{fig:spin1/2}
-\end{figure} 
-
-
-\begin{figure}[]
+\paragraph{}Figure \ref{3leps} from Atwood et. al. (1982), contains data on three unique experiments plotting structure function results against $x$. Solid dots are elastic electron proton at an incident energy of 18 GeV and scattered angle of 4$^\circ$. The elastic peak at $x$ of 1 is due to the scattering event happening elastically off the entire proton. The open points are quasi-elastic scattering from deuterium. The peak is located at 0.5 in $x$ because the scattering event happens from the proton and neutron, which individually contain only half of the mass of the complete deuteron. The data represented by an 'x' displays result from an inelastic electron scattering measurement. The data plotted is the difference between two nucleon structure functions. The peak is located at one-third. The location of the peak at one-third demonstrates that the struck constituents of the nucleon have a mass approximately one-third of the nucleon and there exist three constituents inside the nucleon with equal mass\cite{Atwood,PnN}.
+\begin{figure}[t]
 	\centering
 	\includegraphics[width=7.5cm]{quarks.png} 
-	\caption{ Table of leptons, quarks, and bosons with mass, charge and spin \cite{sane}.}
+	\caption{ Elementary particles including leptons, quarks, and bosons with mass, charge, and spin \cite{sane}.}
 	\label{fig:quarks}
 \end{figure} 
-
-	
-	
+\paragraph{}Nuclear physicist of the mid 19th century changed the understanding of the building blocks of nature by discovering fundamental constitutes of the protons and neutrons. It was unearthed that these partons have an electric charge, spin of 1/2, and some mass. Due to these partons having these properties, they can be identified as quarks from Gell-Mann's symmetry scheme, the eightfold way. This theory was based on the SU(3) mathematical symmetry \cite{strger,8fold}.
+Through nuclear and high energy experiments six quarks have been discovered\cite{DISLaH}. A table of the elementary particles is shown in figure \ref{fig:quarks}.
+%\paragraph{}The quarks that make up the nucleons, two up quarks and one down quark for the proton or two down and one up for the neutron, only contains half of the total momentum of the nucleon. Part of the remaining momentum is carried by particles identified as gluons which do not interact electromagnetically or weakly\cite{PnN}. The internal structure of a proton is not only made up of the up and down quarks (the valance quarks) and gluons. There are also quark-antiquark pairs that carry a small fraction of the momentum. These quark-antiquark pairs are known as the sea quarks.
+\paragraph{}A scattering interaction between a lepton probe and a target nucleus probes the structure of the target. A DIS interaction delves inside the nucleus to observed the nucleons and their quarks and gluons. The European Muon Collaboration (EMC) used DIS experiment to study the internal structure of a few targets. Their use of DIS in 1983 discovered a new phenomenon defined as the EMC effect \cite{PnN,CC}.
