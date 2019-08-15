@@ -72,31 +72,60 @@ Where $A_1$ and $A_2$ denote the different nuclei. Using the definition of $R$ i
 \paragraph{} The analysis of these ratios revealed the magnitude of the EMC effect, taken to be the A/D ratio at $x=0.6$, was found to be different for the various nuclei, and roughly scaled with the size or density of the nuclei. Figure \ref{gomez_wa}, shows the EMC effect magnitude as a function of the nuclear weight of the targets. It demonstrates an agreement with data from the NMC, that the EMC effect's dependence on A, to be approximately logarithmic \cite{Ajth,gomez,seelyth}. 
 \begin{figure}[h]
 	\centering
-	\caption{ \cite{gomez}}
+	\caption{The dependence of the atomic mass number on the EMC effect\cite{gomez}.}
 	\label{gomez_wa}
 	\includegraphics[width=10cm]{slac_wa.pdf} 
 \end{figure} 
 \subsection{HERMES at DESY}
 \paragraph{}
-The High-Energy Radiation Megavolt Electron Source(HERMES) collaboration used the Hadron-Electron Ring Accelerator(HERA) at Deutsches Elektronen-Synchrotron(DESY), German Electron Synchrotron, to study the DIS cross section ratios of $^3$He, $^{14}$N, and $^{84}$Kr with respect to D \cite{HERMES_EMC}. Data was collected at $x$ kinematics ranging from 0.010 and 0.65 with $Q^2$ varying between 0.5 and 15 GeV$^2$\cite{HERMES_EMC}. The HERMES collaboration used a 27.5 GeV positron beam to scatter off of gaseous targets into the HERMES forward angle spectrometer. 
-\subsection{Jefferon Lab}
+The High-Energy Radiation Megavolt Electron Source(HERMES) collaboration used the Hadron-Electron Ring Accelerator(HERA) at Deutsches Elektronen-Synchrotron (DESY), German Electron Synchrotron, to study the DIS cross section ratios of $^3$He, $^{14}$N, and $^{84}$Kr with respect to D \cite{HERMES_EMC}. Data was collected at $x$ kinematics ranging from 0.010 and 0.65 with $Q^2$ varying between 0.5 and 15 GeV$^2$\cite{HERMES_EMC}. The HERMES collaboration used a 27.5 GeV positron beam to scatter off of gaseous targets into the HERMES forward angle spectrometer. 
+\subsection{Experiments at Jefferson Lab}
+\paragraph{}Experiments at Thomas Jefferson National accelerator facility(JLab) produced two notable EMC ratio results. In 2006, an experiment designed to study the scaling og the structure function of the target nucleus produced data for the extraction of EMC ratios for C, Fe, and Au. The kinematics of this experiment produced data in the resonance region with a $Q^2 \approx$ 4 $GeV^2/c^2$ and 1.2 $ < W^2 < $ 3 $GeV^2/c^2$. This data is shown in figure \ref{fig:EMCJA} compared with data from SLAC and BCDMS. 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=8cm]{EMC_JA.png} 
+	\caption{Ratio of nuclear to deuterium cross section per nucleon corrected for neutron excess\cite{EMC_JA}. The JLab data in red is compared with SLAC data in Blue \cite{gomez} and BCDMS data in green \cite{BCDMS}.}
+	\label{fig:EMCJA}
+\end{figure} 
+\begin{equation}
+\xi = \frac{2x}{\sqrt{1 + \frac{4M^2x^2}{Q^2}}} \label{xi}
+\end{equation}
+
+The SLAC and BCDMS experiments took data in the DIS region with a $W^2 > $ 3 $GeV^2/c^2$. The $Q^2$ value of the data needs to be account for a comparison to made between these three experiments. This has been done by using Nachtmann variable $\xi$, defined in equation \ref{xi} \cite{EMC_JA}. The results show that the EMC ratio in the resonance region matches the same ratio from the DIS region and therefor DIS structure functions information can be extracted from the resonance region \cite{seelyth}. 
+\paragraph{}In 2009, results from another Jefferson lab experiment were published describing the EMC effect in very light nuclei. This experiment measured the inclusive cross section from D, $^3$He, $^4$He, $^9$Be, and $^{12}$C for $x$ between 0.3 and 0.9, with $Q^2 \approx$ 3-6 $GeV^2$ \cite{seeley}.  This experiment provided the first results for $^3$He EMC ratios for high $x$.  Also, results from all of the nuclear targets showed that the nuclear dependence of the EMC effect may depend on the local nuclear environment \cite{seeley}. Previous results showed a logarithmic dependence of the EMC effect on A. The EMC results for $^9$Be create a disagreement from past results. This analysis is shown in figure \ref{EMCrho} \cite{seeley}.
 
 \iffalse
 \begin{figure}[h]
 	\centering
-	\caption{EMC effect from EMC, SLAC, and BCDMS \cite{Norton}}
-	\label{EMC3}
-	\centering
-	\includegraphics[width=10cm]{EMC3.png}
-\end{figure}
+	\includegraphics[width=10cm]{He3_EMC_seely.pdf} 
+	\caption{EMC ratio for He3, Blue points are corrected for proton excess\cite{seeley}.}
+	\label{EMCHe3_Seely}
+\end{figure} 
+\fi
 
 \begin{figure}[h]
 	\centering
-	\caption{ Graph of the ratio of A/D structure functions vs $x$ for Carbon \cite{CC}.}
-	\label{EMC 1}
-	\includegraphics[width=10cm]{EMC1.png} 
+	\includegraphics[width=10cm]{EMC_rho.pdf} 
+	\caption{Isoscalar EMC effect as function of nuclear density \cite{seeley}.}
+	\label{EMCrho}
 \end{figure} 
-\fi
+
+\section{EMC Theory and Models}
+\paragraph{}Since the founding of the EMC effect, there has been numerous amounts of work conducted on the theories to describe these EMC ratios. The models attempt to characterize both the nuclear and nucleon structure functions for the entire range of $x$ from 0.0 to 1.0. This section will briefly discuss the basic idea of a few EMC models.
+\subsection{Multiquark Cluster}
+\paragraph{}
+\cite{Geesaman}
+\cite{EMC_model_1}
+\cite{EMC_multiQ}
+\subsection{Nuclear Binding}
+\paragraph{} Describing the EMC effect via nuclear binding was first attempted by Akulinechev et. al. \cite{EMC_binding_3} and Dunne and Thomas \cite{EMC_binding_2}. For the nuclear binding model, an average nucleon has a momentum and a separation energy defined as $\vec{p}$ and $\langle \epsilon \rangle$ respectively \cite{Norton}. The inclusion of the separation energy in the definition of momentum of the post scattering A-1 system causes a manipulation in the value of $x$. $x$ becomes $x^{\prime} = \frac{Q^2}{2p^{\prime}\cdot q}$, where $p^{\prime}$ is (M + $\epsilon$, $\vec{p}$) \cite{Norton}. The modification of the momentum through nuclear binding allows this EMC model to explain the EMC effect and the sharp rise in the fermi motion area, but fails to correctly describe the rise in the anti-shawdowing region around $x$ = 0.2 \cite{EMC_binding, EMC_model_1, Ajth}.
+
+\subsection{Medium Modification}
+\paragraph{}
+\cite{EMC_medium_1}
+\cite{EMC_medium_2}
+\subsection{Rescaling}
+\paragraph{} Nachtmann and Pierner \cite{EMC_rescaling_2} and Close et al \cite{EMC_rescaling_1} discovered a way to relate the DIS structure function of Fe and D with scaling variable. They found that by using a relative shift in the scale of the $Q^2$ value that $F_2^{Fe}(Q^2) =F_2^{D}(\xi Q^2)$ \cite{Geesaman}. Both teams proposed that as nuclei get heavier their quarks are bound in an area larger compared to the confinement area for a free nucleon. This dynamic rescaling model is applicable for 0.2 $ < x <$ 0.8, but does not match the EMC ratio for the Fermi motion region with $x > 0.8$ \cite{EMC_model_1, EMC_rescaling_1, Geesaman, EMC_rescaling_2}.
 
 
 
@@ -107,5 +136,5 @@ The High-Energy Radiation Megavolt Electron Source(HERMES) collaboration used th
 
 
 \section{MARATHON}
-Experiment E12-010-102, MARATHON (MeAsurement of the $F2^n$/$F_2^p$,$d$/$u$ RAtios and A=3 EMC Effect in Deep Inelastic Electron Scattering Off the Tritium and Helium MirrOr Nuclei), will use deep inelastic scattering off of the mirror nuclei $^3$H and $^3$He to measure the EMC effect for both $^3$H and $^3$He, to determine the ratio of the neutron to proton inelastic structure functions, and to find the ratio of the down to up quark distributions in the nucleon.
+\paragraph{}Experiment E12-010-102, MARATHON (MeAsurement of the $F_2^n$/$F_2^p$,$d$/$u$ RAtios and A=3 EMC Effect in Deep Inelastic Electron Scattering Off the Tritium and Helium MirrOr Nuclei), will use deep inelastic scattering off of the mirror nuclei $^3$H and $^3$He to measure the EMC effect for both $^3$H and $^3$He, to determine the ratio of the neutron to proton inelastic structure functions, and to find the ratio of the down to up quark distributions in the nucleon.
 
