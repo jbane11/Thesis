@@ -1,4 +1,13 @@
 \chapter{Data Analysis}
+\paragraph{}The goal for the MARATHON experiment is to determine the EMC effect for the two A=3 systems $^3$He and $^3$H, extract the  $F_2^n$/$F_2^p$, and calculate the $d$/$u$ quark distribution ratios. The goal of this analysis is to determine the EMC effect for the two A=3 systems via the ratio of measured cross sections. The cross-section of a scattering interaction is the probability of that event happening. In order to measure the probability of an event happening, a ratio has to be calculated between the magnitude of the number of those events versus the number of times that event could of happened. This analysis will use data from the HRSs, beam line detectors, and target information to measure the cross-section of $^3$He and $^3$H for kinematics of 0.2 $< x <$ 0.82. 
+\section{Analysis Software}
+\paragraph{}Hall A at JLab uses an analysis software (Analyzer) that is built on top of ROOT. The Analyzer is used to decode raw data received from TDCs, ADCs, and scalars into meaningful results. The decoding process uses raw data from the detectors in the HRSs and on the beam line to create an event. This event is assigned a track if applicable, and the events signal from the detectors are stored into a ROOT file. This ROOT file contains the raw and calibrated data from each signal, the track information, and physics variables calculated via the calibrated data and track information.
+ 
+
+ 
+
+\section{Electron Counting}
+\paragraph{}
 
 \section{Efficiencies}
 \paragraph{}The high resolution spectrometers are capable of detecting a myriad of particles that track through the detectors. The design of an experimental trigger uses the properties of the individual detectors to capture data of meaningful events. Many accidentals, background, and unwanted events trigger the data acquisition system, and some good electrons are missed by our DAQ. The removal of these unwanted events takes place during analysis via software cuts. Restricting the applicable signal from certain detectors through different cuts allows for the rejection of background particles and prevents contamination in the yield extraction. 
@@ -178,3 +187,17 @@ The events that scatted from Helium in our tritium cell need to be subtracted fr
 \begin{equation}
 Y_T = Y_{raw}\left(\frac{1}{1-\langle f_H \rangle}\right) - Y_H \left(\frac{\langle f_H \rangle}{1-\langle f_H \rangle}\right) \label{YieldT}
 \end{equation}
+
+\section{Luminosity}
+
+\section{Monte Carlo Ratio Method}
+Use ECs slides need cite ,explain how to get CS from data/MC
+
+\subsection{Monte Carlo Simulation}
+gen - table -weight
+\subsection{Monte Carlo Comparison}
+acc - comp
+\section{DIS Cross Section}
+
+\section{Systematic Error}
+
