@@ -3,21 +3,45 @@
 \section{Analysis Software}
 \paragraph{}Hall A at JLab uses an analysis software (Analyzer) that is built on top of ROOT. The Analyzer is used to decode raw data received from TDCs, ADCs, and scalars into meaningful results. The decoding process uses raw data from the detectors in the HRSs and on the beam line to create an event. This event is assigned a track if applicable, and the events signal from the detectors are stored into a ROOT file. This ROOT file contains the raw and calibrated detector data from each signal, the track information, and physics variables calculated via the calibrated data and track information. 
 \subsection{Tracking}
-\paragraph{}The Analyzer uses calibrated VDC data to calculate the track of an event. The detector calibration was discussed in chapter \ref{ch:ExpUp}. The event tracking is used to determine the scattered angle and momentum of the electrons detected. The track determined from the VDCs is in reference to the detector coordinate system. The Analyzer uses a optics matrix to relate the tracking information between all coordinate systems used in the Hall A analysis process. The coordinate systems will be briefly discussed in this section. A more complete guide with in-depth discussion of the coordinate systems is discussed in \cite{espace}.
+\paragraph{}The Analyzer uses calibrated VDC data to calculate the track of an event. The detector calibration was discussed in chapter \ref{ch:ExpUp}. The event tracking is used to determine the scattered angle and momentum of the electrons detected. The track determined from the VDCs is in reference to the detector coordinate system. The Analyzer uses a optics matrix to relate the tracking information between all coordinate systems used in the Hall A analysis process. The coordinate systems will be briefly discussed in this section. A more complete guide with in-depth discussion of the coordinate systems is discussed in \cite{espace}. The coordinate system definitions and relations are obtained from \cite{espace,optics,HallA}.
 \begin{itemize}
 	\item \textbf{Hall Coordinate System(HCS):} The intersection of the electron beam and the vertical symmetry axis of the target system defines the origin of the HCS. This allows for $\hat{z}$ to point along the beam line towards the beam dump and $\hat{y}$ is up. 
-	\item \textbf{Target Coordinate System (TCS):} The TCS is unique to the individual HRS. The $\hat{z}$ axis of the TCS is defined by a line perpendicular to the surface of the spectrometers sieve slit aligned with the midpoint of the center hole. $z_{tg}$ points away from the target towards the spectrometer. Nilange Liyange states in reference \cite{optics}, "In the ideal case where the spectrometer is pointing directly at the hall center and the sieve slit is perfectly centered on the spectrometer, the z$_{tg}$ axis passes through the hall center." Using the idea case, the origin of the TCS is defined by a set distance from the sieve surface. For the Left HRS, the TCS origin is 1.181m from the sieve, and for the Right HRS it is 1.178m. In the ideal case, the TCS origin is the HCS origin. Figure \ref{fig:TCS} shows the TCS with a an electron scattering event from a foil. 
+	\item \textbf{Target Coordinate System (TCS):} The TCS is unique to the individual HRS. The $\hat{z}$ axis of the TCS is defined by a line perpendicular to the surface of the spectrometers sieve slit aligned with the midpoint of the center hole. $z_{tg}$ points away from the target towards the spectrometer. Nilange Liyange states in reference \cite{optics}, "In the ideal case where the spectrometer is pointing directly at the hall center and the sieve slit is perfectly centered on the spectrometer, the z$_{tg}$ axis passes through the hall center." Using the idea case, the origin of the TCS is defined by a set distance from the sieve surface. For the Left HRS, the TCS origin is 1.181m from the sieve, and for the Right HRS it is 1.178m. In the ideal case, the TCS origin is the HCS origin. Figure \ref{fig:TCS} shows the TCS with a an electron scattering event from a foil.  
 	\begin{figure}[]
 		\centering
 		\includegraphics[width=11cm]{TCS.pdf}
-		\caption{The TCS for an electron scattering event as seen from above. The event happens at $z_{react}$ distance from the Hall center. \textbf{L} is the distance from the Hall center to the sieve plane. \textbf{D} is the horizontal displacement of the spectrometer axis from the ideal position. $\Theta$ is the spectrometer's central angle. }
+		\caption{The TCS for an electron scattering event as seen from above. The event happens at $z_{react}$ distance from the Hall center. \textbf{L} is the distance from the Hall center to the sieve plane. \textbf{D} is the horizontal displacement of the spectrometer axis from the ideal position. $\Theta$ is the spectrometer's central angle \cite{optics}. }
 		\label{fig:TCS}
 	\end{figure}
-	\item \textbf{Detector Coordinate System (DCS):}  The origin of the DCS is at the intersection of wire 184 of the U1 and V1 planes of the first VDC. "$\hat{y}$ is parallel to the short symmetry axis of the lower VDC \cite{espace}." $\hat{z}$ is vertically up, perpendicular to the vdc planes.  $\hat{x}$  points away from the center of curvature of the dipole. 
-	
+	\item \textbf{Detector Coordinate System (DCS):}  The origin of the DCS is at the intersection of wire 184 of the U1 and V1 planes of the first VDC. "$\hat{y}$ is parallel to the short symmetry axis of the lower VDC \cite{espace}." $\hat{z}$ is vertically up, perpendicular to the vdc planes.  $\hat{x}$  points away from the center of curvature of the dipole. The DCS values are calculated by using the intersection points of the 4 VDC planes and the spacial information of the VDC planes.
+	\item \textbf{Transport Coordinate System (TRCS) at the focal plane:} Rotating the DCS clockwise around its y-axis by 45$^\circ$ generates the TRCS. The TRCS can be expressed by  DCS variables. 	
+	\item \textbf{Focal Plane Coordinate System (FCS):} The FCS is used to transport an event's track from the DCS to the TCS. The FCS is determined by rotating the DCS around its y-axis by the angle between the local central ray and the $\hat{z}$ axis of the DCS. The local central ray is defined as a ray with $\theta = \phi =0$ for the corresponding relative momentum $\frac{\Delta_p}{p}$ \cite{optics}. In the calculation of the FCS, the offsets of the VDCs are used to correct any misalignments.  
 \end{itemize}
+\paragraph{} The Analyzer provides two spatial coordinates and two angular coordinates for each event. These coordinates are determined by data received via the VDCs and decoded into the DCS. $x_{det}$ and $\theta_{det}$ is the particle's position and tangent of the angle made by its trajectory along the dispersive direction. $y_{det}$ and $\phi_{det}$ is the particle position and tangent of the angle perpendicular to the dispersive direction \cite{optics}. Using rotation matrices and other transfer definitions these DCS coordinates are converted to the FCS. The analyzer uses a calibration matrix to transport the FCS to the TCS. The first order approximation of the matrix can be defined as:
 
 
+\[
+\begin{bmatrix}
+	\delta \\
+	\theta \\
+	y      \\
+	\phi   
+\end{bmatrix}_{tg}
+=
+\begin{bmatrix}
+	\langle \delta \vert x \rangle &\langle \delta \vert \theta \rangle & 0 & 0\\
+	\langle \theta \vert x \rangle &\langle \theta \vert \theta \rangle & 0 & 0\\
+	0 & 0 & \langle y \vert y \rangle &\langle y \vert \phi \rangle\\
+	0 & 0 & \phi y \vert y \rangle &\langle \phi \vert \phi \rangle
+\end{bmatrix}
+\begin{bmatrix}
+	x     \\    
+	\theta \\
+	y      \\
+	\phi   
+\end{bmatrix}_{fp}
+\]
+The relationship between the focal plane variables and the target coordinates our conventionally can be expressed in a set tensors, defined as . 
  
 
 \section{Electron Counting}
