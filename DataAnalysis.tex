@@ -18,9 +18,7 @@
 	\item \textbf{Focal Plane Coordinate System (FCS):} The FCS is used to transport an event's track from the DCS to the TCS. The FCS is determined by rotating the DCS around its y-axis by the angle between the local central ray and the $\hat{z}$ axis of the DCS. The local central ray is defined as a ray with $\theta = \phi =0$ for the corresponding relative momentum $\frac{\Delta_p}{p}$ \cite{optics}. In the calculation of the FCS, the offsets of the VDCs are used to correct any misalignments.  
 \end{itemize}
 \paragraph{} The Analyzer provides two spatial coordinates and two angular coordinates for each event. These coordinates are determined by data received via the VDCs and decoded into the DCS. $x_{det}$ and $\theta_{det}$ is the particle's position and tangent of the angle made by its trajectory along the dispersive direction. $y_{det}$ and $\phi_{det}$ is the particle position and tangent of the angle perpendicular to the dispersive direction \cite{optics}. Using rotation matrices and other transfer definitions these DCS coordinates are converted to the FCS. The analyzer uses a calibration matrix to transport the FCS to the TCS. The first order approximation of the matrix can be defined as:
-
-
-\[
+\begin{equation}
 \begin{bmatrix}
 	\delta \\
 	\theta \\
@@ -39,13 +37,29 @@
 	\theta \\
 	y      \\
 	\phi   
-\end{bmatrix}_{fp}
-\]
-The relationship between the focal plane variables and the target coordinates our conventionally can be expressed in a set tensors, defined as . 
+\end{bmatrix}_{fp}.
+\end{equation}
+The relationship between the focal plane variables and the target coordinates our conventionally expressed in a set of tensors, defined as Y$_{jkl}$, T$_{jkl}$, P$_{jkl}$, and D$_{jkl}$. These tensors are polynomials in x$_{fp}$ and are optimized to the 5th order. They can be use to relate the FCS to the TCS by the following relations:
+\begin{align}
+y_{tg} &= \sum_{j,k,l} Y_{jkl}\theta^j_{fp}y^k_{fp}\phi^l_{fp} \\
+\theta_{tg} &= \sum_{j,k,l} T_{jkl}\theta^j_{fp}y^k_{fp}\phi^l_{fp} \\
+\phi_{tg} &= \sum_{j,k,l} P_{jkl}\theta^j_{fp}y^k_{fp}\phi^l_{fp}  \\
+\delta_{tg} &= \sum_{j,k,l} D_{jkl}\theta^j_{fp}y^k_{fp}\phi^l_{fp} 
+\end{align}
+The elements of the optics matrix used for the transporting from the FCS to the TCS are part of the tensors,Y$_{jkl}$, T$_{jkl}$, P$_{jkl}$, and D$_{jkl}$. The elements of the optics matrix are calculated via an optics calibration using a sieve slit and multi foil optics target. The procedure for calculating those matrix elements is in reference \cite{optics}. 
+\paragraph{}Along with the tracking information in the TCS, the analyzer also provides the location of the reaction vertex and the scattering angle for the electron event from the tracking information. The reaction vertex along the beam line, z$_{react}$, is the location where the scattering event happened in the HCS. z$_{react}$ can be found via the following relationship:
+\begin{equation}
+z_{react} = \frac{-(y_{tg} + \text{Spect\_Offset}_y) + x_{beam}(cos(\Theta_0) - \phi_{tg}sin(\Theta_0))} {cos(\Theta_0)\phi_{tg} + sin(\Theta_0)}
+\end{equation}
+The relationship for z$_{react}$ includes terms for the offset due to the mis-pointing of the spectrometer (Spect\_Offset$_y$), the offset of the beam at the point of intersection with the target (X$_{beam}$), and the setting for the spectrometer central angle ($\Theta_0$). The scattering angle of the electron, $\theta_{scat}$, is determined by a relationship wit the TCS angle coordinates $\theta_{tg}$ and $\phi_{tg}$ and the angle setting of the spectrometer. The relationship between the scattering angle and the target coordinates is described in equation \ref{scatangle}.
+\begin{equation}
+\theta_{scat} = arccos \left( \frac{cos(\theta_{0})- \phi_{tg}sin(\theta_{0})} {\sqrt{1 + \theta_{tg}^2 + \phi_{tg}^2}} \right) \label{scatangle}
+\end{equation}
  
-
 \section{Electron Counting}
 \paragraph{}
+
+%cuts, total electrons per kinematic, binning in x 
 
 \section{Efficiencies}
 \paragraph{}The high resolution spectrometers are capable of detecting a myriad of particles that track through the detectors. The design of an experimental trigger uses the properties of the individual detectors to capture data of meaningful events. Many accidentals, background, and unwanted events trigger the data acquisition system, and some good electrons are missed by our DAQ. The removal of these unwanted events takes place during analysis via software cuts. Restricting the applicable signal from certain detectors through different cuts allows for the rejection of background particles and prevents contamination in the yield extraction. 
@@ -96,7 +110,7 @@ Electron_{eff}  & = \frac{ GE_{pass} } { GE_{sample} }
 
 \paragraph{}The efficiencies of the spectrometer's particle identification(PID) detectors were determined by using the first calorimeter layer, the second calorimeter layer, and the cherenkov to provide samples of good electrons and other particles. The PID efficiency of the individual detectors was determined using equation \ref{effequ}. The good electron sample for calculating the efficiency of the single detector was defined by sampling through the other two detectors. Sampling through the two layers of the calorimeter is shown in figure \ref{samA} for the first layer of the calorimeter and \ref{samB} for the second layer. The cherenkov good electron sample is shown in figure \ref{samC}. The electron sample from the cherenkov is contaminated by delta particles and a combination of unknown particles. These unidentified background particles are known to be relativistic due to the amount of light seen in the cherenkov. However, the events do not deposit enough energy into the calorimeter system to be considered as a good electron that scatter from our target through the detector. Using sampling in one layer of the calorimeter and the cherenkov, these unwanted low energy particles are rejected from sampling for efficiency calculations. The electron selection PID efficiency for the three PID detectors was determine at each kinematic setting to be approximately 98$\%$ . The efficiency was determined to be independent of the kinematic setting. Only small fluctuations were seen during the study, these small changes are due to decrease in statics, and all of the results fall within statical uncertainty of being independent of kinematic setting. The non-electron suppression efficiency was determine as part of this PID efficiency study to ascertain how many back ground particles leak into our sample of good electrons after cuts our made. The suppression efficiency of the cherenkov suffered due to the contamination of the relativistic low energy particles. Combining the two calorimeter detectors with the cherenkov increased the overall suppression efficiency for the spectrometer to 99.9$\%$ over the entire kinematic range of the MARATHON experiment. 
 
-\begin{figure}
+\begin{figure}[t]
 	{\centering
 		\textbf{PID efficency for each detector for all kinematics. }\par\medskip}
 	\centering
@@ -169,15 +183,7 @@ ECC = 1- \big(\frac{Yield_{EC}}{(Yield_{Gas} + Yield_{EC})}\big) \equiv \frac{Yi
 
 
 \subsection{Pair Produced Electrons}
-\paragraph{} The high energy scattering interaction used to create deep inelastic scattering events can produce high energy photons and pions. The high energy photons that have energy greater than 1.022 MeV can convert into e$^+$e$^-$ pairs when the photons interact with a medium.   
-%\begin{figure}[h]
-%	\centering
-%	\textbf{Pair Production Feynman diagram}\par\medskip
-%	\includegraphics[width=6.0cm]{../images/pp_FD.png}
-%	\caption{A feynman diagram of positron electron pair produced via photon interaction.}
-%	\label{PC_fey}
-%\end{figure}
-A correction for the number of back ground electrons produced via a pair production process was calculated by determining the amount of positrons produced from equal targets and kinematics. The yield of positrons were measured for kinematics one through five. The results were used to construct a function to determine the amount of contamination at high $x_{Bj}$ kinematics. Figure \ref{PC} shows the amount of positron contamination for tritium and an exponential fit to extrapolate over the entire ranged in $x_{Bj}$ for the MARATHON experiment. 
+\paragraph{} The high energy scattering interaction used to create deep inelastic scattering events can produce high energy photons and pions. The high energy photons that have energy greater than 1.022 MeV can convert into e$^+$e$^-$ pairs when the photons interact with a medium. A correction for the number of back ground electrons produced via a pair production process was calculated by determining the amount of positrons produced from equal targets and kinematics. The yield of positrons were measured for kinematics one through five. The results were used to construct a function to determine the amount of contamination at high $x_{Bj}$ kinematics. Figure \ref{PC} shows the amount of positron contamination for tritium and an exponential fit to extrapolate over the entire ranged in $x_{Bj}$ for the MARATHON experiment. 
 
 \begin{figure}[h]
 	\centering
@@ -186,7 +192,6 @@ A correction for the number of back ground electrons produced via a pair product
 	\caption{The ratio of positron events to electrons for tritium \cite{tongsu}. }
 	\label{PC}
 \end{figure}
-
 
 \subsection{Beta Decay of Tritium}
 \paragraph{} Tritium a radioactive isotope of hydrogen will beta decay to $^3$He. Tritium has a half-life of 4500 $\pm$ 8 days \cite{T2HL}. The gas cell used to contain Tritium for the experiment was filled on October 23, 2017. The initial tritium thickness density of our tritium cell was $0.077 \pm 0.001 $ grams per cm$^2$. Tritium will decay to $^3$He via a beta interaction. The tritium in our cell is diatomic and decays via two channels\cite{diaT}. The possible decay channels and their branching probabilities are shown in equation \ref{branching}. In DIS interactions, the molecular effects are ignored due to the size of the probe in a DIS scattering event which allows for the different channels to be treated as one. 
