@@ -47,13 +47,26 @@ y_{tg} &= \sum_{j,k,l} Y_{jkl}\theta^j_{fp}y^k_{fp}\phi^l_{fp} \\
 \delta_{tg} &= \sum_{j,k,l} D_{jkl}\theta^j_{fp}y^k_{fp}\phi^l_{fp} 
 \end{align}
 The elements of the optics matrix used for the transporting from the FCS to the TCS are part of the tensors,Y$_{jkl}$, T$_{jkl}$, P$_{jkl}$, and D$_{jkl}$. The elements of the optics matrix are calculated via an optics calibration using a sieve slit and multi foil optics target. The procedure for calculating those matrix elements is in reference \cite{optics}. 
-\paragraph{}Along with the tracking information in the TCS, the analyzer also provides the location of the reaction vertex and the scattering angle for the electron event from the tracking information. The reaction vertex along the beam line, z$_{react}$, is the location where the scattering event happened in the HCS. z$_{react}$ can be found via the following relationship:
+\paragraph{}Along with the tracking information in the TCS, the analyzer also provides the location of the reaction vertex, the scattering angle for the electron event, and the momentum of the scatted electron from the tracking information. The reaction vertex along the beam line, z$_{react}$, is the location where the scattering event happened in the HCS. z$_{react}$ can be found via the following relationship:
 \begin{equation}
 z_{react} = \frac{-(y_{tg} + \text{Spect\_Offset}_y) + x_{beam}(cos(\Theta_0) - \phi_{tg}sin(\Theta_0))} {cos(\Theta_0)\phi_{tg} + sin(\Theta_0)}
 \end{equation}
-The relationship for z$_{react}$ includes terms for the offset due to the mis-pointing of the spectrometer (Spect\_Offset$_y$), the offset of the beam at the point of intersection with the target (X$_{beam}$), and the setting for the spectrometer central angle ($\Theta_0$). The scattering angle of the electron, $\theta_{scat}$, is determined by a relationship wit the TCS angle coordinates $\theta_{tg}$ and $\phi_{tg}$ and the angle setting of the spectrometer. The relationship between the scattering angle and the target coordinates is described in equation \ref{scatangle}.
+The relationship for z$_{react}$ includes terms for the offset due to the mis-pointing of the spectrometer (Spect\_Offset$_y$), the offset of the beam at the point of intersection with the target (x$_{beam}$), and the setting for the spectrometer central angle ($\Theta_0$). The scattering angle of the electron, $\theta_{scat}$, is determined by a relationship wit the TCS angle coordinates $\theta_{tg}$ and $\phi_{tg}$ and the angle setting of the spectrometer. The relationship used to calculate the scattering angle from the target coordinates is described in reference \cite{HallA}, as:
 \begin{equation}
 \theta_{scat} = arccos \left( \frac{cos(\theta_{0})- \phi_{tg}sin(\theta_{0})} {\sqrt{1 + \theta_{tg}^2 + \phi_{tg}^2}} \right) \label{scatangle}
+\end{equation}
+The accuracy of the TCS angles $\theta_{tg}$ and $\phi_{tg}$ determine the accuracy of the measured scattered angle. The precise measurement of the scattering angle is crucial to every electron counting experiment. In order to provide accurate measurement of the scattering angle, a set of measurement surveys are completed. These surveys measure the:
+\begin{itemize}
+	\item the target position,
+	\item the spectrometer central angle,
+	\item the mispointing of the spectrometer nominal central ray from the hall center,
+	\item the position of the sieve-slit center with respect to the nominal central ray,
+	\item the position of the BPMs with respect to the ideal beam line \cite{HallA}.
+\end{itemize} 
+The results from the surveys have an approximate systematic uncertainty of 0.5 mm due to equipment uncertainties. The contribution of all the measurements uncertainties added in quadrature provide an approximate 0.6 mrad uncertainty to the overall measurement of the scattered angle \cite{HallA}. 
+\paragraph{}The momentum of the scatted electron is also calculated via tracking information.  $\delta_{tg}$, the relative momentum of an event, is used in the calculation of the momentum of a particle traveling through the spectrometer. $p$, the absolute momentum for an event, is determine through the following relation.
+\begin{equation}
+p = p_0(1+\delta_{tg})
 \end{equation}
  
 \section{Electron Counting}
@@ -243,4 +256,8 @@ acc - comp
 \section{DIS Cross Section}
 
 \section{Systematic Error}
+\cite{Ar_Ti}
+
+
+
 
