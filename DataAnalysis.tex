@@ -1,5 +1,9 @@
 	\chapter{Data Analysis}
-\paragraph{}The goal for the MARATHON experiment is to determine the EMC effect for the two A=3 systems $^3$He and $^3$H, extract the  $F_2^n$/$F_2^p$, and calculate the $d$/$u$ quark distribution ratios. The goal of this analysis is to determine the EMC effect for the two A=3 systems via the ratio of measured cross sections. The cross-section of a scattering interaction is the probability of that event happening. In order to measure the probability of an event happening, a ratio has to be calculated between the magnitude of the number of those events versus the number of times that event could of happened. This analysis will use data from the HRSs, beam line detectors, and target information to measure the cross-section of $^3$He and $^3$H for kinematics of 0.2 $< x <$ 0.82. 
+\paragraph{}The goal for the MARATHON experiment is to determine the EMC effect for the two A=3 systems $^3$He and $^3$H, extract the  $F_2^n$/$F_2^p$, and calculate the $d$/$u$ quark distribution ratios. The goal of this analysis is to determine the EMC effect for the two A=3 systems via the ratio of measured cross sections. The cross-section of a scattering interaction is the probability of that event happening. In order to measure the probability of an event happening, a ratio has to be calculated between the magnitude of the number of those events versus the number of times that event could of happened. This analysis will use data from the HRSs, beam line detectors, and target information to measure the cross-section of $^3$He and $^3$H for kinematics of 0.2 $< x <$ 0.82. The cross section can be extracted experimentally in bins of $x$ using the following equation:
+\begin{equation}
+\dfrac{d\sigma}{dE^{\prime}d\Omega} = \frac{(N - BG)}{\mathscr{L} \cdot \epsilon \cdot A(E^{\prime},\Omega)}.
+\end{equation}
+The number of counted electrons (N) have to be corrected for any background events (BG) and for inefficiencies ($\epsilon$) in the detectors, data collection, particle identification, and analysis. The electron yield ( $Y=(N-BG)/\epsilon$) is normalized by the luminosity ($\mathscr{L}$) and detector acceptance in momentum and solid angle ($A(E^{\prime},\Omega)$). This chapter will discuss the process of analyzing raw data received from the detector to extract the raw cross-section in bins of $x$. 
 \section{Analysis Software}
 \paragraph{}Hall A at JLab uses an analysis software (Analyzer) that is built on top of ROOT. The Analyzer is used to decode raw data signals received from TDCs, ADCs, and scalars into meaningful results. The decoding process uses raw data from the detectors in the HRSs and on the beam line to create an event. This event is assigned a track if applicable, and the events signal from the detectors are stored into a ROOT file. This ROOT file contains the raw and calibrated detector data from each signal, the track information, and physics variables calculated via the calibrated data and track information. 
 \subsection{Tracking}
@@ -68,11 +72,28 @@ The results from the surveys have an approximate systematic uncertainty of 0.5 m
 \begin{equation}
 p_0 = \sum_{i=1}^{3} \Gamma_iB_0^i
 \end{equation}
-$\Gamma$ is a set of spectrometer constants calculated to an accuracy of $4\times10^{-4}$. The left HRS constants are $\Gamma_{1,2,3}$ (2702,0,-1.6), and the right HRS constants are $\Gamma_{1,2,3}$ (2698,0,-1.6) \cite{HallA}.
+$\Gamma$ is a set of spectrometer constants calculated to an accuracy of $4\times10^{-4}$. The left HRS constants are $\Gamma_{1,2,3}$ (2702,0,-1.6), and the right HRS constants are $\Gamma_{1,2,3}$ (2698,0,-1.6) in units of MeV/T$^i$ \cite{HallA}.
  
-\section{Electron Counting}
-\paragraph{}
+\section{Electron Selection}
+\paragraph{} The extraction of the electron scattering cross section requires the counting of scatted electrons from a target. In order to count the number of scattered electrons, data is analyzed on an event by event basis. The event is passed through a number of criteria(cuts) in order to determine the identification and source of the scattered event. These cuts used for this analysis are separated into two different types, acceptance and particle identification(PID).
+\paragraph{} The HRS was designed to accept particles within a range of $\delta$, $y_{tg}$, $\theta_{tg}$, $\phi_{tg}$, and the vertex location z$_{react}$. The acceptance of the spectrometer is well known near the central ray. Due to the geometry of the spectrometer's magnets, the distribution of accepted electrons at the edge of the acceptance is not well understood. This is shown in figure \ref{phi_comp}. Applying cuts in the target variables creates an area of acceptance that is well understood. The acceptance cuts used for this analysis are:
 
+\begin{tabular}{@{$\bullet$ }ll}
+ $\delta_{tg} >=$ -0.035 & $\delta_{tg} <=$ -0.035\\
+ $\theta_{tg} >=$ -0.04 rad  &  $\theta_{tg} <=$ -0.04 rad\\
+ $\phi_{tg}   >=$ -0.025 rad &  $\phi_{tg}   <=$ -0.025 rad
+\end{tabular}
+
+
+
+\begin{figure}[]
+	\centering
+	\textbf{Spectrometer Acceptance}\par\medskip
+	\vspace*{-5pt}
+	\includegraphics[width=15cm]{Phi_tg_comp_1.pdf}
+	\caption{Simulation of events to demonstrate the acceptance of the spectrometer. Black events have been generated with no acceptance effects, Red points include a cut to only allow events that transverse the entire spectrometer. The Blue lines are example locations of cuts used in event selection to exclude the edge of the acceptance. }
+	\label{phi_comp}
+\end{figure}
 %cuts, total electrons per kinematic, binning in x 
 
 \section{Efficiencies}
@@ -246,6 +267,8 @@ Y_T = Y_{raw}\left(\frac{1}{1-\langle f_H \rangle}\right) - Y_H \left(\frac{\lan
 \end{equation}
 
 \section{Luminosity}
+
+Density correction
 
 \section{Monte Carlo Ratio Method}
 Use ECs slides need cite ,explain how to get CS from data/MC
