@@ -75,16 +75,27 @@ p_0 = \sum_{i=1}^{3} \Gamma_iB_0^i
 $\Gamma$ is a set of spectrometer constants calculated to an accuracy of $4\times10^{-4}$. The left HRS constants are $\Gamma_{1,2,3}$ (2702,0,-1.6), and the right HRS constants are $\Gamma_{1,2,3}$ (2698,0,-1.6) in units of MeV/T$^i$ \cite{HallA}.
  
 \section{Electron Selection}
-\paragraph{} The extraction of the electron scattering cross section requires the counting of scatted electrons from a target. In order to count the number of scattered electrons, data is analyzed on an event by event basis. The event is passed through a number of criteria(cuts) in order to determine the identification and source of the scattered event. These cuts used for this analysis are separated into two different types, acceptance and particle identification(PID).
-\paragraph{} The HRS was designed to accept particles within a range of $\delta$, $y_{tg}$, $\theta_{tg}$, $\phi_{tg}$, and the vertex location z$_{react}$. The acceptance of the spectrometer is well known near the central ray. Due to the geometry of the spectrometer's magnets, the distribution of accepted electrons at the edge of the acceptance is not well understood. This is shown in figure \ref{phi_comp}. Applying cuts in the target variables creates an area of acceptance that is well understood. The acceptance cuts used for this analysis are:
+\paragraph{} The extraction of the electron scattering cross section requires the counting of scatted electrons from a target. In order to count the number of scattered electrons, data is analyzed on an event by event basis. The event is passed through a number of criteria(cuts) in order to determine the identity and source of the scattered event. The cuts used for this analysis are separated into two different types, acceptance and particle identification(PID). The acceptance cuts are used to limit the source location and trajectory of the particle through the detector to provide greater accuracy for the reconstruction of the particle's scattered angle, momentum, and scattering vertex location. Cuts are also used to identify the particle and the type of scattering interaction it experienced. 
+\subsection{Acceptance Cuts}
+\paragraph{} The HRS was designed to accept particles within a range of $\delta$, $y_{tg}$, $\theta_{tg}$, $\phi_{tg}$, and the vertex location along the beam line. The acceptance of the spectrometer is well known near the central ray. Due to the geometry of the spectrometer's magnets, the distribution of accepted electrons at the edge of the acceptance is not well understood. This is shown in figure \ref{phi_comp}. Applying cuts in the target variables creates an area of acceptance that is well understood. The acceptance cuts used for this analysis are:
 
-\begin{tabular}{@{$\bullet$ }ll}
- $\delta_{tg} >=$ -0.035 & $\delta_{tg} <=$ -0.035\\
- $\theta_{tg} >=$ -0.04 rad  &  $\theta_{tg} <=$ -0.04 rad\\
- $\phi_{tg}   >=$ -0.025 rad &  $\phi_{tg}   <=$ -0.025 rad
+\begin{tabular}{@{$\bullet$ }lll}
+-0.035 &$ >=$ &$\delta_{tg} <=$ -0.035\\
+-0.04 rad &$>=$  &$\theta_{tg} <=$ -0.04 rad\\
+-0.025 rad &$>=$  &$\phi_{tg}   <=$ -0.025 rad
 \end{tabular}
 
+\paragraph{}A cut is applied to the acceptance variable for the reaction location, Vertex z. The target cells are constructed of aluminum with thin end caps. Many electrons that are sent to the target scatter of the aluminum end caps. Figure \ref{EC5} shows distributions of the reaction vertex along the z axis of the beam line in the HCS for different gas filled cells and the empty cell. Comparing the empty cell to the cells filled with gas provides a observable comparison between the yield of events from the end caps of the cells to the yield of events from the gas in the cell. Figure \ref{EC5} also contains two vertical lines to demonstrate the locations of cuts selected to create the greatest area of acceptance of events from the target gas while also rejected most of the events from the end caps.   
 
+\begin{tabular}{@{$\bullet$ }lll}
+  -0.07 m &$>=$& Vertex Z $<=$ 0.09 m
+\end{tabular}
+
+\paragraph{} The analysis software assigns an event a track if the signal in the VDCs meet the required criteria. It is possible for the signal received by the VDC to produce multiple tracks for one event. Events that produce multiple tracks are cut out via a cut. These events are removed due the uncertainty of the correct track and position within the acceptance of the spectrometer. Section \ref{eff_track} contains a discussion of the efficiency of the cut applied to remove multi track events. 
+
+\begin{tabular}{@{$\bullet$ }lll}
+	Number of tracks == 0
+\end{tabular}
 
 \begin{figure}[]
 	\centering
@@ -94,9 +105,26 @@ $\Gamma$ is a set of spectrometer constants calculated to an accuracy of $4\time
 	\caption{Simulation of events to demonstrate the acceptance of the spectrometer. Black events have been generated with no acceptance effects, Red points include a cut to only allow events that transverse the entire spectrometer. The Blue lines are example locations of cuts used in event selection to exclude the edge of the acceptance. }
 	\label{phi_comp}
 \end{figure}
+
+
+\subsection{Identification Cuts}
+\paragraph{} The process of capturing data from the two HRSs begins with the firing of a trigger. The trigger design for MARATHON focused on triggering for electrons and reducing the amount of other particles. Figure \ref{fig:trig_layout} describes the design of MARATHON's main trigger and efficiency triggers. MARATHON's main trigger, trigger 2, consist of a $(So \& S2) \& GC$. This was discussed in section \ref{sec:Trig}. Using the scintillators as a trigger allows the capture of data from charged particles that pass through the detector. These particles are mainly electrons and pions. The addition of the GC to the trigger allows for a first pass cut on unwanted particles. Applying a MARATHON trigger cut to the data narrows the sample of non-electrons. The trigger data is stored bitwise by the analysis software to allow for the capture of every trigger that fired for the event. The trigger cut applied for this analysis requires the event to fire the MARATHON trigger but does not exclude events that fire multiple triggers.
+   
+\begin{tabular}{@{$\bullet$ }lll}
+	MARATHON trigger (bit) & (1<<2)
+\end{tabular}
+
+
+PID -> cal \& cher
+
+invar mass
+
+
+
+
 %cuts, total electrons per kinematic, binning in x 
 
-\section{Efficiencies}
+\section{Efficiencies}\label{effs}
 \paragraph{}The high resolution spectrometers are capable of detecting a myriad of particles that track through the detectors. The design of an experimental trigger uses the properties of the individual detectors to capture data of meaningful events. Many accidentals, background, and unwanted events trigger the data acquisition system, and some good electrons are missed by our DAQ. The removal of these unwanted events takes place during analysis via software cuts. Restricting the applicable signal from certain detectors through different cuts allows for the rejection of background particles and prevents contamination in the yield extraction. 
 
 \subsection{Computer and electronic Lifetime}
@@ -154,9 +182,7 @@ Electron_{eff}  & = \frac{ GE_{pass} } { GE_{sample} }
 \end{figure}
 
 \subsection{Trigger Efficiency}
-\paragraph{} The process of capturing data from the two HRSs begins with the firing of a trigger. The trigger design for MARATHON focused on triggering for electrons and reducing the amount of other particles. Figure \ref{fig:trig_layout} describes the design of MARATHON's main trigger and efficiency triggers. MARATHON's main trigger, trigger 2, consist of a $(So \& S2) \& Cer$. Due to inefficiencies of the electronics, logic, and detectors an event can produce a false trigger or a high quality electron may not fire 
-the main trigger.
-
+\paragraph{}  Due to inefficiencies of the electronics, logic, and detectors an event can produce a false trigger or a high quality electron may not fire the main trigger.
 \begin{figure}[]
 	\centering
 	\textbf{Trigger efficiency for the MARATHON experiment }\par\medskip
@@ -164,10 +190,9 @@ the main trigger.
 	\caption{Trigger efficiency of trigger 2 for different targets at all kinematics calculated via sampling from trigger 1. }
 	\label{trigeff}
 \end{figure}
+A low threshold in the cherenkov signal allows for an inclusive trigger limiting the overall number of quality electrons missed, but allows for a large quantity of none-electron triggers. Software PID cuts prevent the contamination of non-electrons in the yield calculation. The tight PID software cuts removes the false positive inefficiency from the trigger design and is then considered in the PID efficiencies. The trigger inefficiency caused by missed high quality electrons was then calculated by sampling the high quality electrons in trigger 1, $(S_o \& S_2)$. This ties the efficiency of trigger 2 with the performance of the scintillators. The efficiency of the two scintillating planes in conjunction is calculated by using sampling in trigger 3, $(S_o | S_2) \& Cer$ with strict PID cuts in both layers of the calorimeters and requiring a hit in the cherenkov. The two scintillator planes in conjunction have an efficiency greater than $99.7 \% $ for all kinematics. Combining the trigger efficiency of the main trigger shown in figure \ref{trigeff} with the performance of the scintillators give an over all efficiency for the trigger of the MARATHON experiment of greater then $99.6\%$.
 
-\paragraph{} A low threshold in the cherenkov allows for an inclusive trigger limiting the overall number of quality electrons missed, but allows for a large quantity of false triggers. Software PID cuts prevent the contamination of false positives from trigger inefficiencies. The tight PID software cuts removes the false positive inefficiency from the trigger design and is then considered in the PID efficiencies. The trigger inefficiency caused by missed high quality electrons was then calculated by sampling the high quality electrons in trigger 1, $(S_o \& S_2)$. This ties the efficiency of trigger 2 with the performance of the scintillators. The efficiency of the two scintillating planes in conjunction is calculated by using sampling in trigger 3, $(S_o | S_2) \& Cer$ with strict PID cuts in both layers of the calorimeters and requiring a hit in the cherenkov. The two scintillator planes in conjunction have an efficiency greater than $99.7 \% $ for all kinematics. Combining the trigger efficiency of the main trigger shown in figure \ref{trigeff} with the performance of the scintillators give an over all efficiency for the trigger of the MARATHON experiment of greater then $99.6\%$.
-
-\subsection{Tracking Efficiency}
+\subsection{Tracking Efficiency}\label{eff_track}
 \begin{figure}[]
 	\centering
 	\textbf{Tracking efficiency for the MARATHON experiment }\par\medskip
