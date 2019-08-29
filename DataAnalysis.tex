@@ -108,14 +108,28 @@ $\Gamma$ is a set of spectrometer constants calculated to an accuracy of $4\time
 
 
 \subsection{Identification Cuts}
-\paragraph{} The process of capturing data from the two HRSs begins with the firing of a trigger. The trigger design for MARATHON focused on triggering for electrons and reducing the amount of other particles. Figure \ref{fig:trig_layout} describes the design of MARATHON's main trigger and efficiency triggers. MARATHON's main trigger, trigger 2, consist of a $(So \& S2) \& GC$. This was discussed in section \ref{sec:Trig}. Using the scintillators as a trigger allows the capture of data from charged particles that pass through the detector. These particles are mainly electrons and pions. The addition of the GC to the trigger allows for a first pass cut on unwanted particles. Applying a MARATHON trigger cut to the data narrows the sample of non-electrons. The trigger data is stored bitwise by the analysis software to allow for the capture of every trigger that fired for the event. The trigger cut applied for this analysis requires the event to fire the MARATHON trigger but does not exclude events that fire multiple triggers.
+\paragraph{} The process of capturing data from the two HRSs begins with the firing of a trigger. The trigger design for MARATHON focused on triggering for electrons and reducing the amount of other particles. Figure \ref{fig:trig_layout} describes the design of MARATHON's main trigger and efficiency triggers. MARATHON's main trigger, trigger 2, consist of a $(So \& S2) \& GC$. This was discussed in section \ref{sec:Trig}. Using the scintillators as a trigger allows the capture of data from charged particles that pass through the detector. These particles are mainly electrons and pions. The addition of the GC to the trigger allows for a first pass cut on unwanted particles. Applying a MARATHON trigger cut to the data narrows the sample of non-electrons that need to be analyzed. The trigger data is stored bitwise by the analysis software to allow for the capture of every trigger that fired for the event. The trigger cut applied for this analysis requires the event to fire the MARATHON trigger but does not exclude events that fire multiple triggers.
    
 \begin{tabular}{@{$\bullet$ }lll}
-	MARATHON trigger (bit) & (1<<2)
+	MARATHON trigger (bit) &\& &(1$<<$2)
 \end{tabular}
 
 
-PID -> cal \& cher
+
+\begin{tabular}{@{$\bullet$ }lll}
+	Total Cherenkov adc sum &$>$ &1800\\
+	Calo. Layer 1 Energy &$>$ & 1 GeV\\
+	Calo. Layer 2 Energy &$>$ & 0.6 GeV
+\end{tabular}
+
+\begin{figure}[]
+	\centering
+	\textbf{PID Cut Scan }\par\medskip
+	\includegraphics[width=13cm]{PID_3layer_plot.pdf}
+	\caption{ A scan of the PID efficiency for a cut in each layer of the calorimeters.}
+	\label{cal_pidscan}
+\end{figure}
+
 
 invar mass
 
@@ -142,7 +156,7 @@ invar mass
 \end{table}
   
 
-\subsection{Particle Identification Efficiency}
+\subsection{Particle Identification Efficiency}\label{ss:PID}
 \paragraph{} One of the largest sources of contamination for the MARATHON experiment are negatively charged pions. These pions are removed through software cuts made in the total signal from the ten cherenkov PMTs(photomultiplier tubes) and the energy deposited into the blocks of both layers of the calorimeter. Electrons can be identified by their behavior in the spectrometer. High-quality electrons will track through the entire detector stack to deposit most of their energy into the total calorimeter system and creating a large amount of light in the cherenkov. Though this knowledge tight cuts can be used to study the efficiency of the particle identification system. Plotting the signal in the cherenkov versus the energy deposited into both layers of the calorimeter allows for visual representation of the sampling cuts made in the efficiency studies, which can be seen in figure \ref{elesample}. 
 \begin{equation}\label{effequ}
 \begin{split}
