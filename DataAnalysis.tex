@@ -1,7 +1,7 @@
 	\chapter{Data Analysis}
 \paragraph{}The goal for the MARATHON experiment is to determine the EMC effect for the two A=3 systems $^3$He and $^3$H, extract the  $F_2^n$/$F_2^p$, and calculate the $d$/$u$ quark distribution ratios. The goal of this analysis is to determine the EMC effect for the two A=3 systems via the ratio of measured cross sections. The cross-section of a scattering interaction is the probability of that event happening. In order to measure the probability of an event happening, a ratio has to be calculated between the magnitude of the number of those events versus the number of times that event could of happened. This analysis will use data from the HRSs, beam line detectors, and target information to measure the cross-section of $^3$He and $^3$H for kinematics of 0.2 $< x <$ 0.82. The cross section can be extracted experimentally in bins of $x$ using the following equation:
 \begin{equation}
-\dfrac{d\sigma}{dE^{\prime}d\Omega} = \frac{(N - BG)}{\mathscr{L} \cdot \epsilon \cdot A(E^{\prime},\Omega)}.
+\dfrac{d\sigma}{dE^{\prime}d\Omega} = \frac{(N - BG)}{\mathscr{L} \cdot \epsilon \cdot A(E^{\prime},\Omega)}. \label{expcc}
 \end{equation}
 The number of counted electrons (N) have to be corrected for any background events (BG) and for inefficiencies ($\epsilon$) in the detectors, data collection, particle identification, and analysis. The electron yield ( $Y=(N-BG)/\epsilon$) is normalized by the luminosity ($\mathscr{L}$) and detector acceptance in momentum and solid angle ($A(E^{\prime},\Omega)$). This chapter will discuss the process of analyzing raw data received from the detector to extract the raw cross-section in bins of $x$. 
 \section{Analysis Software}
@@ -108,13 +108,13 @@ $\Gamma$ is a set of spectrometer constants calculated to an accuracy of $4\time
 
 
 \subsection{Identification Cuts}
-\paragraph{} The process of capturing data from the two HRSs begins with the firing of a trigger. The trigger design for MARATHON focused on triggering for electrons and reducing the amount of other particles. Figure \ref{fig:trig_layout} describes the design of MARATHON's main trigger and efficiency triggers. MARATHON's main trigger, trigger 2, consist of a $(So \& S2) \& GC$. This was discussed in section \ref{sec:Trig}. Using the scintillators as a trigger allows the capture of data from charged particles that pass through the detector. These particles are mainly electrons and pions. The addition of the GC to the trigger allows for a first pass cut on unwanted particles. Applying a MARATHON trigger cut to the data narrows the sample of non-electrons that need to be analyzed. The trigger data is stored bitwise by the analysis software to allow for the capture of every trigger that fired for the event. The trigger cut applied for this analysis requires the event to fire the MARATHON trigger but does not exclude events that fire multiple triggers.
+\paragraph{} The process of capturing data from the two HRSs begins with the firing of a trigger. The trigger design for MARATHON focused on triggering for electrons and reducing the amount of other particles. Figure \ref{fig:trig_layout} describes the design of MARATHON's main trigger and efficiency triggers. MARATHON's main trigger, trigger 2, consist of a $(So \& S2) \& GC$. This was discussed in section \ref{sec:Trig}. Using the scintillators as a trigger allows the capture of data from charged particles that pass through the detector. These particles are mainly electrons and pions. The addition of the GC to the trigger allows for a first pass cut on unwanted particles. Applying a MARATHON trigger cut to the data narrows the sample of non-electrons that need to be analyzed. The trigger data is stored bitwise by the analysis software to allow for the capture of every trigger that fired for the event. The trigger cut applied for this analysis requires the event to fire the MARATHON trigger but does not exclude events that fire multiple triggers. This is accomplished by bitwise comparing the trigger to 1 bit shifted to the left by 2.  
    
 \begin{tabular}{@{$\bullet$ }lll}
 	MARATHON trigger (bit) &\& &(1$<<$2)
 \end{tabular}
 
-
+\paragraph{}One of the largest sources of contamination for the MARATHON experiment are negatively charged pions. These pions are removed through software cuts made in the total signal from the ten cherenkov PMTs(photomultiplier tubes) and the energy deposited into the blocks of both layers of the calorimeter. Electrons can be identified by their behavior in the spectrometer. High-quality electrons will track through the entire detector stack to deposit most of their energy into the total calorimeter system and creating a large amount of light in the cherenkov. An efficiency scan is used to determine the best location for the cuts in the calorimeters and cherenkov. A efficiency scan for the two layers of the calorimeters is shown in figure \ref{cal_pidscan}. The scan covers a large range of possible energy deposition in a layer of the calorimeter calculating both the efficiency of rejecting pions and of counting electrons. The description of how the efficiency is calculated can be found in section \ref{ss:PID}.
 
 \begin{tabular}{@{$\bullet$ }lll}
 	Total Cherenkov adc sum &$>$ &1800\\
@@ -130,16 +130,17 @@ $\Gamma$ is a set of spectrometer constants calculated to an accuracy of $4\time
 	\label{cal_pidscan}
 \end{figure}
 
+\paragraph{}The electrons that have pass all of the previous discussed cuts are tools used to study the scattering interaction and the components of the scattering interaction that produced the resulting event. The kinematics used for the MARATHON will produce events in the DIS, resonance, and quasi-elastic regimes of the scattering spectrum. A cut is applied to the invariant mass of the scattered event to only include events that are deeply inelastic. 
 
-invar mass
-
-
+\begin{tabular}{@{$\bullet$ }lll}
+	W$^2$ &$>$ &2.5\\
+\end{tabular}
 
 
 %cuts, total electrons per kinematic, binning in x 
 
 \section{Efficiencies}\label{effs}
-\paragraph{}The high resolution spectrometers are capable of detecting a myriad of particles that track through the detectors. The design of an experimental trigger uses the properties of the individual detectors to capture data of meaningful events. Many accidentals, background, and unwanted events trigger the data acquisition system, and some good electrons are missed by our DAQ. The removal of these unwanted events takes place during analysis via software cuts. Restricting the applicable signal from certain detectors through different cuts allows for the rejection of background particles and prevents contamination in the yield extraction. 
+\paragraph{}The high resolution spectrometers are capable of detecting a myriad of particles that track through the detectors. The design of an experimental trigger uses the properties of the individual detectors to capture data of meaningful events. Many accidentals, background, and unwanted events trigger the data acquisition system, and some good electrons are missed by our DAQ. The removal of these unwanted events takes place during analysis via software cuts. Restricting the applicable signal from certain detectors through different cuts allows for the rejection of background particles and prevents contamination in the yield extraction. The efficiency of the HRSs and the software cuts applied will be discussed in this section.  
 
 \subsection{Computer and electronic Lifetime}
 \paragraph{}The signal from events that fire the DAQ travel through electronics like amplifiers and logic modules on its way to be recorded by the TDCs and ADCs. The processing of these signals require time at each stage. During that time another event will be discarded due to limitations in the hardware. This time when the DAQ system cannot handle another event is known as the dead-time of the system. Lifetime therefor is the percentage of time when an event can be recorded. The lost events need to be account for during the analysis process. The lifetime of the DAQ system for the MARATHON experiment was measured by determining the percentage of events that were recorded relative to the number of events that fired the corresponding trigger. The lifetime for the MARATHON experiment depended on the rate of events. The lifetime during the highest rate kinematic was determine to be 0.947, and climbs to 0.998 for the highest angle setting. Listed in table \ref{LTtable} are the calculated values for lifetime at each kinematic. 
@@ -157,7 +158,7 @@ invar mass
   
 
 \subsection{Particle Identification Efficiency}\label{ss:PID}
-\paragraph{} One of the largest sources of contamination for the MARATHON experiment are negatively charged pions. These pions are removed through software cuts made in the total signal from the ten cherenkov PMTs(photomultiplier tubes) and the energy deposited into the blocks of both layers of the calorimeter. Electrons can be identified by their behavior in the spectrometer. High-quality electrons will track through the entire detector stack to deposit most of their energy into the total calorimeter system and creating a large amount of light in the cherenkov. Though this knowledge tight cuts can be used to study the efficiency of the particle identification system. Plotting the signal in the cherenkov versus the energy deposited into both layers of the calorimeter allows for visual representation of the sampling cuts made in the efficiency studies, which can be seen in figure \ref{elesample}. 
+\paragraph{} The contamination of pions is a large concern for the counting of scattering electrons. Software cuts are used to remove the pions from the electron count. The efficiency of the PID cuts will be discussed in this section. Plotting the signal in the cherenkov versus the energy deposited into both layers of the calorimeter allows for visual representation of the sampling cuts made in the efficiency studies, which can be seen in figure \ref{elesample}. 
 \begin{equation}\label{effequ}
 \begin{split}
 GE_{sample} & = \textrm{Known electron sample from tight cut}  \\
@@ -185,7 +186,7 @@ Electron_{eff}  & = \frac{ GE_{pass} } { GE_{sample} }
 \end{figure}
 
 
-\paragraph{}The efficiencies of the spectrometer's particle identification(PID) detectors were determined by using the first calorimeter layer, the second calorimeter layer, and the cherenkov to provide samples of good electrons and other particles. The PID efficiency of the individual detectors was determined using equation \ref{effequ}. The good electron sample for calculating the efficiency of the single detector was defined by sampling through the other two detectors. Sampling through the two layers of the calorimeter is shown in figure \ref{samA} for the first layer of the calorimeter and \ref{samB} for the second layer. The cherenkov good electron sample is shown in figure \ref{samC}. The electron sample from the cherenkov is contaminated by delta particles and a combination of unknown particles. These unidentified background particles are known to be relativistic due to the amount of light seen in the cherenkov. However, the events do not deposit enough energy into the calorimeter system to be considered as a good electron that scatter from our target through the detector. Using sampling in one layer of the calorimeter and the cherenkov, these unwanted low energy particles are rejected from sampling for efficiency calculations. The electron selection PID efficiency for the three PID detectors was determine at each kinematic setting to be approximately 98$\%$ . The efficiency was determined to be independent of the kinematic setting. Only small fluctuations were seen during the study, these small changes are due to decrease in statics, and all of the results fall within statical uncertainty of being independent of kinematic setting. The non-electron suppression efficiency was determine as part of this PID efficiency study to ascertain how many back ground particles leak into our sample of good electrons after cuts our made. The suppression efficiency of the cherenkov suffered due to the contamination of the relativistic low energy particles. Combining the two calorimeter detectors with the cherenkov increased the overall suppression efficiency for the spectrometer to 99.9$\%$ over the entire kinematic range of the MARATHON experiment. 
+\paragraph{}The efficiencies of the spectrometer's particle identification(PID) detectors were determined by using the first calorimeter layer, the second calorimeter layer, and the cherenkov to provide samples of good electrons and other particles. The PID efficiency of the individual detectors was determined using equation \ref{effequ}. The good electron sample for calculating the efficiency of the single detector was defined by sampling through the other two detectors. Sampling through the two layers of the calorimeter is shown in figure \ref{samA} for the first layer of the calorimeter and \ref{samB} for the second layer. The cherenkov good electron sample is shown in figure \ref{samC}. The electron sample from the cherenkov is contaminated by delta rays and a combination of unknown particles. These unidentified background particles are known to be relativistic due to the amount of light seen in the cherenkov. However, the events do not deposit enough energy into the calorimeter system to be considered as a good electron that scatter from our target through the detector. Using sampling in one layer of the calorimeter and the cherenkov, these unwanted low energy particles are rejected from sampling for efficiency calculations. The electron selection PID efficiency for the three PID detectors was determine at each kinematic setting to be approximately 98$\%$ . The efficiency was determined to be independent of the kinematic setting. Only small fluctuations were seen during the study, these small changes are due to decrease in statics, and all of the results fall within statical uncertainty of being independent of kinematic setting. The non-electron suppression efficiency was determine as part of this PID efficiency study to ascertain how many back ground particles leak into our sample of good electrons after cuts our made. The suppression efficiency of the cherenkov suffered due to the contamination of the relativistic low energy particles. Combining the two calorimeter detectors with the cherenkov increased the overall suppression efficiency for the spectrometer to 99.9$\%$ over the entire kinematic range of the MARATHON experiment. 
 
 \begin{figure}[t]
 	{\centering
@@ -306,8 +307,27 @@ Y_T = Y_{raw}\left(\frac{1}{1-\langle f_H \rangle}\right) - Y_H \left(\frac{\lan
 \end{equation}
 
 \section{Luminosity}
+\paragraph{}The equation of the experimentally measured cross section was shown in equation \ref{expcc}. The luminosity ($\mathscr{L}$) is the amount of possible scattering interactions. $\mathscr{L}$ is defined as the product of the number of incoming beam particles, the target particle density, and the target's thickness \cite{PnN}. The MARATHON experiment took many runs of data for each kinematic. The luminosity of each runs was calculated and sum together to determine the luminosity for each kinematic.  
+\begin{equation}
+	\mathscr{L}_{Run} =  \left(\frac{Q_e \cdot T_{thick} \cdot \rho \cdot N_a}{AtomicMass} \right) \qquad
+	\mathscr{L}_{kin} = \sum_i^{Runs} \mathscr{L}_{i}
+\end{equation}
+The calculation of the $\mathscr{L}$ requires data from the BCMs to determine the total charge sent to the target during a run. This is converted to number of electrons to produce Q$_e$. \cite{HATT_eng}
 
-Density correction
+\begin{table}[]
+	\caption{Table of gas target density thickness and uncertainty \cite{HATT_eng}}
+	\begin{tabular}{llc}
+	Target &Thickness(mg/cm$^2$) & Uncertainty(mg/cm$^2$)   \\
+	\hline
+	Tritium & 85.1 & 0.8 \\
+	Helium-3 & 53.4 & 0.6\\
+	Deuterium & 142.2 & 0.8\\
+	\hline
+	\end{tabular}
+\end{table}
+
+
+Density correction \cite{denscor}
 
 \section{Monte Carlo Ratio Method}
 Use ECs slides need cite ,explain how to get CS from data/MC
