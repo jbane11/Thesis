@@ -307,16 +307,16 @@ Y_T = Y_{raw}\left(\frac{1}{1-\langle f_H \rangle}\right) - Y_H \left(\frac{\lan
 \end{equation}
 
 \section{Luminosity}
-\paragraph{}The equation of the experimentally measured cross section was shown in equation \ref{expcc}. The luminosity ($\mathscr{L}$) is the amount of possible scattering interactions. $\mathscr{L}$ is defined as the product of the number of incoming beam particles, the target particle density, and the target's thickness \cite{PnN}. The MARATHON experiment took many runs of data for each kinematic. The luminosity of each runs was calculated and sum together to determine the luminosity for each kinematic.  
+\paragraph{}The equation of the experimentally measured cross section was shown in equation \ref{expcc}. The luminosity ($\mathscr{L}$) is the amount of possible scattering interactions. $\mathscr{L}$ is defined as the product of the number of incoming beam particles, the target particle density, and the target's thickness \cite{PnN}. The MARATHON experiment took many runs of data for each kinematic. The luminosity of each runs was calculated and summed together to determine the luminosity for each kinematic. 
 \begin{equation}
-	\mathscr{L}_{Run} =  \left(\frac{Q_e \cdot T_{thick} \cdot \rho \cdot N_a}{AtomicMass} \right) \qquad
+	\mathscr{L}_{Run} =  \left(\frac{Q_e \cdot T_{thick} \cdot N_a}{AtomicMass} \right) \qquad
 	\mathscr{L}_{kin} = \sum_i^{Runs} \mathscr{L}_{i}
 \end{equation}
-The calculation of the $\mathscr{L}$ requires data from the BCMs to determine the total charge sent to the target during a run. This is converted to number of electrons to produce Q$_e$. \cite{HATT_eng}
-
+The calculation of the $\mathscr{L}$ requires data from the BCMs to determine the total charge sent to the target during a run. This is converted to number of electrons to produce Q$_e$. The targets density thickness (T$_{thick}$) was provided by the JLab's target group as part of their target report \cite{HATT_eng}. Avogadro's number and the atomic mass of the target makes the luminosity have units of electrons per cm$^2$. Then applying a conversion for cm to nb gives the luminosity units commonly used for cross section extractions.
 \begin{table}[]
 	\caption{Table of gas target density thickness and uncertainty \cite{HATT_eng}}
-	\begin{tabular}{llc}
+	\centering
+	\begin{tabular}{lcc}
 	Target &Thickness(mg/cm$^2$) & Uncertainty(mg/cm$^2$)   \\
 	\hline
 	Tritium & 85.1 & 0.8 \\
@@ -325,10 +325,23 @@ The calculation of the $\mathscr{L}$ requires data from the BCMs to determine th
 	\hline
 	\end{tabular}
 \end{table}
-
-
-Density correction \cite{denscor}
-
+\paragraph{}  Due to the fluid nature of the gas targets, a target's density will fluctuate with temperature. A temperature control system uses cryogenic gas and heaters to control the temperature of the target. Power supplied to the target from the indecent beam heats the gas causing temperature fluctuations and therefor changes the density of the target gas. A dedicated density change study was performed by S.N. Santiesteban and S. Alsalmi \cite{denscor}. Their study showed a quadric dependence on the density of the gas targets with respect to the current applied. The equation used to determine the correction applied to the target's density for a given current is shown in equation \ref{eq:dc}. Where p$_i$ are the parameters for the quadric fit, and I is the current. This correction is applied to the luminosity calculation each run by using the average current for the corresponding run. 
+\begin{equation}
+\rho_c = p_0 + p_1 \cdot I + p_2 \cdot I^2 \label{eq:dc}
+\end{equation}
+\begin{table}[]
+	\caption{Table of density correction parameters \cite{denscor}.}
+	\centering
+	\begin{tabular}{lccc}
+		Target & p$_0$ & p$_1$ & p$_2$  \\
+		\hline
+		Tritium & 1. $\pm$ 0.003 & (-6.8 $\pm$ 0.89) $\times 10^{-3}$ & (1.06 $\pm$ 0.36) $\times 10^{-3}$\\
+		Helium-3 & 1. $\pm$ 0.003 & (-5.1 $\pm$ 0.64) $\times 10^{-3}$ & (1.04 $\pm$ 0.25) $\times 10^{-3}$\\
+		Deuterium & 1. $\pm$ 0.003 & (-6.7 $\pm$ 0.71) $\times 10^{-3}$ & (1.16 $\pm$ 0.29) $\times 10^{-3}$\\
+		\hline
+	\end{tabular}
+\end{table}
+		
 \section{Monte Carlo Ratio Method}
 Use ECs slides need cite ,explain how to get CS from data/MC
 
