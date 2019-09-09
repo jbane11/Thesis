@@ -1,9 +1,9 @@
 	\chapter{Data Analysis}
 \paragraph{}The goal for the MARATHON experiment is to determine the EMC effect for the two A=3 systems $^3$He and $^3$H, extract the  $F_2^n$/$F_2^p$, and calculate the $d$/$u$ quark distribution ratios. The goal of this analysis is to determine the EMC effect for the two A=3 systems via the ratio of measured cross sections. The cross-section of a scattering interaction is the probability of that event happening. In order to measure the probability of an event happening, a ratio has to be calculated between the magnitude of the number of those events versus the number of times that event could of happened. This analysis will use data from the HRSs, beam line detectors, and target information to measure the cross-section of $^3$He and $^3$H for kinematics of 0.2 $< x <$ 0.82. The cross section can be extracted experimentally in bins of $x$ using the following equation:
 \begin{equation}
-\dfrac{d\sigma}{dE^{\prime}d\Omega} = \frac{(N - BG)}{\mathscr{L} \cdot \epsilon \cdot A(E^{\prime},\Omega)}. \label{expcc}
+\dfrac{d\sigma}{dE^{\prime}d\Omega} = \frac{(N - BG)}{\mathscr{L} \cdot \epsilon \cdot \Delta E^{\prime} \Delta \Omega \cdot A(E^{\prime},\theta)}. \label{expcc}
 \end{equation}
-The number of counted electrons (N) have to be corrected for any background events (BG) and for inefficiencies ($\epsilon$) in the detectors, data collection, particle identification, and analysis. The electron yield ( $Y=(N-BG)/\epsilon$) is normalized by the luminosity ($\mathscr{L}$) and detector acceptance in momentum and solid angle ($A(E^{\prime},\Omega)$). This chapter will discuss the process of analyzing raw data received from the detector to extract the raw cross-section in bins of $x$. 
+The number of counted electrons (N) have to be corrected for any background events (BG) and for inefficiencies ($\epsilon$) in the detectors, data collection, particle identification, and analysis. The phase  The electron yield ( $Y=(N-BG)/\epsilon$) is normalized by the luminosity ($\mathscr{L}$) and detector acceptance in momentum and scattering angle ($A(E^{\prime},\theta)$). The $x$ bin for this cross section is a function of the momentum and solid angle phase space ($\Delta E^{\prime} \Delta \Omega$). This chapter will discuss the process of analyzing raw data received from the detector to extract the raw cross-section in bins of $x$. 
 \section{Analysis Software}
 \paragraph{}Hall A at JLab uses an analysis software (Analyzer) that is built on top of ROOT. The Analyzer is used to decode raw data signals received from TDCs, ADCs, and scalars into meaningful results. The decoding process uses raw data from the detectors in the HRSs and on the beam line to create an event. This event is assigned a track if applicable, and the events signal from the detectors are stored into a ROOT file. This ROOT file contains the raw and calibrated detector data from each signal, the track information, and physics variables calculated via the calibrated data and track information. 
 \subsection{Tracking}
@@ -309,7 +309,7 @@ Y_T = Y_{raw}\left(\frac{1}{1-\langle f_H \rangle}\right) - Y_H \left(\frac{\lan
 \section{Luminosity}
 \paragraph{}The equation of the experimentally measured cross section was shown in equation \ref{expcc}. The luminosity ($\mathscr{L}$) is the amount of possible scattering interactions. $\mathscr{L}$ is defined as the product of the number of incoming beam particles, the target particle density, and the target's thickness \cite{PnN}. The MARATHON experiment took many runs of data for each kinematic. The luminosity of each runs was calculated and summed together to determine the luminosity for each kinematic. 
 \begin{equation}
-	\mathscr{L}_{Run} =  \left(\frac{Q_e \cdot T_{thick} \cdot N_a}{AtomicMass} \right) \qquad
+	\mathscr{L}_{Run} =  \left(\frac{Q_e \cdot T_{thick} \cdot \rho_c \cdot N_a}{AtomicMass} \right) \qquad
 	\mathscr{L}_{kin} = \sum_i^{Runs} \mathscr{L}_{i}
 \end{equation}
 The calculation of the $\mathscr{L}$ requires data from the BCMs to determine the total charge sent to the target during a run. This is converted to number of electrons to produce Q$_e$. The targets density thickness (T$_{thick}$) was provided by the JLab's target group as part of their target report \cite{HATT_eng}. Avogadro's number and the atomic mass of the target makes the luminosity have units of electrons per cm$^2$. Then applying a conversion for cm to nb gives the luminosity units commonly used for cross section extractions.
@@ -325,7 +325,7 @@ The calculation of the $\mathscr{L}$ requires data from the BCMs to determine th
 	\hline
 	\end{tabular}
 \end{table}
-\paragraph{}  Due to the fluid nature of the gas targets, a target's density will fluctuate with temperature. A temperature control system uses cryogenic gas and heaters to control the temperature of the target. Power supplied to the target from the indecent beam heats the gas causing temperature fluctuations and therefor changes the density of the target gas. A dedicated density change study was performed by S.N. Santiesteban and S. Alsalmi \cite{denscor}. Their study showed a quadric dependence on the density of the gas targets with respect to the current applied. The equation used to determine the correction applied to the target's density for a given current is shown in equation \ref{eq:dc}. Where p$_i$ are the parameters for the quadric fit, and I is the current. This correction is applied to the luminosity calculation each run by using the average current for the corresponding run. 
+\paragraph{}  Due to the fluid nature of the gas targets, a target's density will fluctuate with temperature. A temperature control system uses cryogenic gas and heaters to control the temperature of the target. Power supplied to the target from the indecent beam heats the gas causing temperature fluctuations and local density variations in the target gas. A dedicated density change study was performed by S.N. Santiesteban and S. Alsalmi \cite{denscor}. Their study showed a quadric dependence on the density of the gas targets with respect to the current applied. The equation used to determine the correction applied to the target's density for a given current is shown in equation \ref{eq:dc}. Where p$_i$ are the parameters for the quadric fit, and I is the current. This correction is applied to the luminosity calculation each run by using the average current for the corresponding run. 
 \begin{equation}
 \rho_c = p_0 + p_1 \cdot I + p_2 \cdot I^2 \label{eq:dc}
 \end{equation}
@@ -342,11 +342,28 @@ The calculation of the $\mathscr{L}$ requires data from the BCMs to determine th
 	\end{tabular}
 \end{table}
 		
-\section{Monte Carlo Ratio Method}
-Use ECs slides need cite ,explain how to get CS from data/MC
+\section{HRS Acceptance}
+\paragraph{} The acceptance for a bin, A($E^{\prime},\theta$), is defined as the probability that a particle of energy $E^{\prime}$ and scatted angle $\theta$ will be able to pass through the spectrometer. This analysis will use a Monte Carlo(MC) simulation to account the acceptance for the HRS at a bin of $x$. 
+
+ A MC generated yield of electrons:
+\begin{equation}
+Y_{MC}(E^{\prime},\theta) = \mathscr{L} \cdot \sigma^{model} \cdot (\Delta E^{\prime} \Delta \Omega) \cdot A(E^{\prime},\theta)
+\end{equation}
+Rewriting the MC generated yield to emphasize the normalization factors, luminosity, phase space and acceptance allows for a direct comparison with the experimental cross section using the measured yield.
+\begin{align}
+Y_{MC}(x) / \sigma^{model} &= \mathscr{L} \cdot (\Delta E^{\prime}_{MC} \Delta \Omega_{MC}) \cdot A(E^{\prime},\theta)_{MC} \\
+\sigma^{data}(x) &= \frac{Y_{data}(x)}{ \mathscr{L} \cdot (\Delta E^{\prime}_{Data} \Delta \Omega_{Data}) \cdot A(E^{\prime},\theta)_{Data} }
+\end{align}
+This analysis uses the hall A single arm Monte carlo simulation to simulate events so that A$_{MC}$ is equivalent to A$_{Data}$. Using the monte carlo ratio method, the experimental cross section can be calulated for a bin of $x$ by:
+\begin{equation}
+\sigma_{Data} = \sigma_{model} \cdot \frac{Y_{Data}}{Y_{MC}}.
+\end{equation} 
+This section will discuss the Monte Carlo simulation and compare the Yield of Monte Carlo to Yield from Data.
 
 \subsection{Monte Carlo Simulation}
-gen - table -weight
+The process of creating MC yields contains three steps: event generation, production of cross section table with radiative corrections, and event weighting. 
+
+
 \subsection{Monte Carlo Comparison}
 acc - comp
 \section{DIS Cross Section}
