@@ -358,10 +358,12 @@ This analysis uses the hall A single arm Monte carlo simulation to simulate even
 \begin{equation}
 \sigma_{Data} = \sigma_{model} \cdot \frac{Y_{Data}}{Y_{MC}}.
 \end{equation} 
-This section will discuss the Monte Carlo simulation and compare the Yield of Monte Carlo to Yield from Data.
+This section will discuss the Monte Carlo simulation and compare the yield of Monte Carlo to yield from data.
 
 \subsection{Monte Carlo Simulation}
-The process of creating MC yields contains three steps: event generation, production of cross section table with radiative corrections, and event weighting. 
+\paragraph{}The process of creating MC yields contains three steps: event generation, production of cross section table with radiative corrections, and weighing accepted events with the model cross section. The MC simulation generates events in the target frame to travel from the point of interaction to the spectrometer's focal plane. The events are generated to have a uniform distribution in $\delta$, $\theta$, and $\phi$. A generated event drifts from the point of interaction to the entrance of the spectrometer. Along this drift, the simulation calculates the chances of multiple scattering events using the radiation length of the intervening material. Simulated electrons pass through the remaining target length, aluminum endcap, vacuum, aluminum wall of the scattering chamber, air, and kapton film at the entrance of the spectrometer's vacuum.  
+
+
 
 
 \subsection{Monte Carlo Comparison}
