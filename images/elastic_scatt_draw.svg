@@ -15,7 +15,10 @@
    version="1.1"
    id="svg831"
    inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
-   sodipodi:docname="elastic_scatt_draw.svg">
+   sodipodi:docname="elastic_scatt_draw.svg"
+   inkscape:export-filename="/home/jbane/latex_shows/images/elast_draw.png"
+   inkscape:export-xdpi="100"
+   inkscape:export-ydpi="100">
   <defs
      id="defs825">
     <marker
@@ -89,7 +92,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -179,7 +182,7 @@
          id="tspan2835-1"
          x="45.463005"
          y="126.22106"
-         style="font-size:4.23333311px;stroke-width:0.26458332">nucleous</tspan></text>
+         style="font-size:4.23333311px;stroke-width:0.26458332">nucleus</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
