@@ -17,9 +17,9 @@ The number of counted electrons (N) have to be corrected for any background even
 		\caption{The TCS for an electron scattering event as seen from above. The event happens at $z_{react}$ distance from the Hall center. \textbf{L} is the distance from the Hall center to the sieve plane. \textbf{D} is the horizontal displacement of the spectrometer axis from the ideal position. $\Theta$ is the spectrometer's central angle \cite{optics}. }
 		\label{fig:TCS}
 	\end{figure}
-	\item \textbf{Detector Coordinate System (DCS):}  The origin of the DCS is at the intersection of wire 184 of the U1 and V1 planes of the first VDC. "$\hat{y}$ is parallel to the short symmetry axis of the lower VDC \cite{espace}." $\hat{z}$ is vertically up, perpendicular to the vdc planes.  $\hat{x}$  points away from the center of curvature of the dipole. The DCS values are calculated by using the intersection points of the 4 VDC planes and the spacial information of the VDC planes.
+	\item \textbf{Detector Coordinate System (DCS):}  The origin of the DCS is at the intersection of wire 184 of the U1 and V1 planes of the first VDC. $\hat{y}$ is parallel to the short symmetry axis of the lower VDC \cite{espace}. $\hat{z}$ is vertically up, perpendicular to the vdc planes.  $\hat{x}$  points away from the center of curvature of the dipole. The DCS values are calculated by using the intersection points of the 4 VDC planes and the spacial information of the VDC planes.
 	\item \textbf{Transport Coordinate System (TRCS) at the focal plane:} Rotating the DCS clockwise around its y-axis by 45$^\circ$ generates the TRCS. The TRCS can be expressed by  DCS variables. 	
-	\item \textbf{Focal Plane Coordinate System (FCS):} The FCS is used to transport an event's track from the DCS to the TCS. The FCS is determined by rotating the DCS around its y-axis by the angle between the local central ray and the $\hat{z}$ axis of the DCS. The local central ray is defined as a ray with $\theta = \phi =0$ for the corresponding relative momentum $\frac{\Delta_p}{p}$ \cite{optics}. In the calculation of the FCS, the offsets of the VDCs are used to correct any misalignments.  
+	\item \textbf{Focal Plane Coordinate System (FCS):} The FCS is used to transport an event's track from the DCS to the TCS. The FCS is determined by rotating the DCS around its y-axis by the angle between the local central ray and the $\hat{z}$ axis of the DCS. The local central ray is defined as a ray with $\theta = \phi =0$ for the corresponding relative momentum $\frac{\Delta_p}{p}$($\delta$) \cite{optics}. In the calculation of the FCS, the offsets of the VDCs are used to correct any misalignments.  
 \end{itemize}
 \paragraph{} The Analyzer provides two spatial coordinates and two angular coordinates for each event. These coordinates are determined by data received via the VDCs and decoded into the DCS. $x_{det}$ and $\theta_{det}$ is the particle's position and tangent of the angle made by its trajectory along the dispersive direction. $y_{det}$ and $\phi_{det}$ is the particle position and tangent of the angle perpendicular to the dispersive direction \cite{optics}. Using rotation matrices and other transfer definitions these DCS coordinates are converted to the FCS. The analyzer uses a calibration matrix to transport the FCS to the TCS. The first order approximation of the matrix can be defined as:
 \begin{equation}
@@ -370,26 +370,68 @@ This section will discuss the Monte Carlo simulation and compare the yield of Mo
 	\item event generation,
 	\item weighing accepted events with the model cross section .
 \end{itemize} 
-\textbf{Cross Section Table}
-\vspace{-10pt}\paragraph{} A cross section model is used to weight the Monte Carlo events to make a comparison between a Monte Carlo yield and a yield from data. The scattered event that is measured through the experiment is not alone the Born process (the one photon exchange approximation) shown in figure \ref{fig:radcors} but a combination of all the other processes shown. In order to produce a comparable result with data, these higher order contributions have to be addressed.
+\subsubsection{Cross Section Table}
+\vspace{-10pt}\paragraph{} A cross section model is used to weight the Monte Carlo events to make a comparison between a Monte Carlo yield and a yield from data. The Born cross section is calculated via a DIS model with an EMC model correction. An Arie Bodek model \cite{DISmodel} is used to determine the nuclear structure function in the DIS regime. This same model uses a smearing technique to include any effects from the elastic and quasi-elastic tail. The kinematics closest to the resonance region experiences an almost negligible quasi-elastic contribution. A correction calculated from SLAC EMC data is applied to correct for the building of the nuclear structure function from free nucleon structure functions. The resulting born cross section is used to weight events in the Monte Carlo simulation.
+
+\begin{figure}
+	\caption{Model cross section for tritium at kinematic 1 for scattered angle and momentum.}
+	\includegraphics[width=10cm]{cs_m_T1.png}
+\end{figure}
+\paragraph{} The scattered event that is measured through the experiment is not alone the Born process (the one photon exchange approximation) shown in figure \ref{fig:radcors} but a combination of all the other processes shown. In order to produce a comparable result with data, these higher order contributions have to be addressed.
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=10cm]{radcors.png}
 	\caption{Lowest order Feynman diagrams for inclusive lepton-nucleon scattering \cite{Ajth}.}
 	\label{fig:radcors}
 \end{figure} 
-\paragraph{}There are two broad types of radiative effects that needed be account for during an electron nucleus scattering interaction, internal and external. External effects account for the electron radiating a real photo before or after the scattering interaction. External bremsstrahlung and ionization energy losses are two of the process that occur causing external effects.   
+\paragraph{}There are two broad types of radiative effects that needed be account for during an electron nucleus scattering interaction, internal and external. External effects account for the electron radiating a real photon before or after the designated target. This radiation is caused by an interaction with fields of nuclei that make up the material other then the target. External bremsstrahlung and ionization energy losses are two of the process that occur causing these external effects. The internal radiative effects happen at the interaction point, the scattering vertex. The Feynman diagrams in figure \ref{fig:radcors} shows the lowest order approximation for the possible interaction channels. These high order processes are calculable in QED. Mo and Tsai \cite{radcors2} and S. Sasu \cite{radcors} describe in detailed the method of calculating these radiative effects. This analysis used a radiative correction code originally by S. Dasu \cite{radcors}. This package use Mo and Tsai's formula to complete the measured cross section calculation.  The internal bremsstrahlung contribution is calculated via an equivalent radiator approximation. A full integral calculation is done over the entire length of radiators to make a complete calculation for the entire radiative effect  \cite{Ajth,radcors,radcors2,seelyth}. A correction is applied as a weighing factor with the born cross section. A 2 dimensional grid is made from a scan of possible scatted angles covering the acceptance of the spectrometer for each value of scatted momentum possible for the kinematic setting. This grid is then used to populate a cross section table for each target at each kinematic. The cross section and radiative correction factor are calculated for the combination of kinematic variables to complete the cross section table(CST). 
 
-
-\textbf{Generation}
-\vspace{-10pt}\paragraph{}The MC simulation generates events in the target frame to travel from the point of interaction to the spectrometer's focal plane. The events are generated to have a uniform distribution in $\delta$, $\theta$, and $\phi$. A generated event drifts from the point of interaction to the entrance of the spectrometer. Along this drift, the simulation calculates the chances of multiple scattering events using the radiation length of the intervening material. Simulated electrons pass through the remaining target length, aluminum endcap, vacuum, aluminum wall of the scattering chamber, air, and kapton film at the entrance of the spectrometer's vacuum. Once entering the spectrometer, the simulated event will use differential algebra based COSY model to pass through the magnetic field of the spectrometer's dipole and quadrapoles. The code checks a particles trajectory through the spectrometer ensuring no collision with the magnetic apertures.  Events that have successfully traveled to the VDC will receive a smearing effect to account for the finite resolution of the VDCs in the HRS \cite{HallA}. The event's focal plane coordinates are used to transform back to the target coordinates to calculate the scattered energy and scattered angle.\\ 
-
-
-
-
+\subsubsection{Generation}
+\paragraph{}The MC simulation generates events in the target frame to travel from the point of interaction to the spectrometer's focal plane. The events are generated to have a uniform distribution in $\delta$, $\theta$, and $\phi$. A generated event drifts from the randomized point of interaction to the entrance of the spectrometer. Along this drift, the simulation calculates the chances of multiple scattering events using the radiation length of the intervening material. Simulated electrons pass through the remaining target length, aluminum endcap, vacuum, aluminum wall of the scattering chamber, air, and kapton film at the entrance of the spectrometer's vacuum. Once entering the spectrometer, the simulated event will use differential algebra based COSY model to pass through the magnetic field of the spectrometer's dipole and quadrapoles. The code checks a particles trajectory through the spectrometer ensuring no collision with the magnetic apertures.  Events that have successfully traveled to the VDC will receive a smearing effect to account for the finite resolution of the VDCs in the HRS \cite{HallA}. The event's focal plane coordinates are used to transform back to the target coordinates to calculate the scattered energy and scattered angle.\\ 
+\subsubsection{Event Weighting}
+\paragraph{}An accepted Monte Carlo event is weighted to best match physical conditions. The comparison of simulation with actual data requires the event to be weighted with the born cross section of that event and corrected for radiative effects. The subroutine used for this analysis uses a 2 dimensional interpolation (scattered energy and momentum) to determine the born cross section and radiative correction factor for the exact event. The 2D interpolation is completed by finding 4 locations on the cross section table. For the following description of the table locations, $_{evt} =$ event and $_{cst} =$ cross section table. The cross section value is pulled from the table for a row that meets the criteria. For example, $\sigma[1]$ is the born cross section for the row where the angle is closest but lower then the event and the momentum is closest but lower then the event. 
+\begin{align}
+ 	\sigma[1] &=\sigma[\theta_<][P_<]\rightarrow\,(P^{\prime}_{cst}\, <=\, P^{\prime}_{evt}\; \&\& \;\theta_{cst}\, <=\, \theta_{evt}) \nonumber\\
+	\sigma[2] &=\sigma[\theta_<][P_>]\rightarrow\,(P^{\prime}_{cst}\, >=\, P^{\prime}_{evt}\; \&\& \;\theta_{cst}\, <=\, \theta_{evt}) \nonumber\\
+	\sigma[3] &=\sigma[\theta_>][P_<]\rightarrow\,(P^{\prime}_{cst}\, <=\, P^{\prime}_{evt}\; \&\& \;\theta_{cst}\, >=\, \theta_{evt}) \nonumber\\
+	\sigma[4] &=\sigma[\theta_>][P_>]\rightarrow\,(P^{\prime}_{cst}\, >=\, P^{\prime}_{evt}\; \&\& \;\theta_{cst}\, >=\, \theta_{evt})
+\end{align}
+Each cross section value has it's corresponding momentum $P[i]$, angle $\theta[i]$, and the momentum and angle differences between the event and table  $\Delta P[i]$, and $\Delta \theta[i]$. The 2D interpolation is broken down into two 1D interpolations between the momentum values.
+\begin{align}
+\sigma_1 &= \frac{\left(\sigma[1] \cdot \Delta P[1] +  \sigma[2] \cdot \Delta P[2] \right)} {P[2]-P[1]}\nonumber\\
+\sigma_2 &= \frac{\left(\sigma[3] \cdot \Delta P[3] +  \sigma[4] \cdot \Delta P[4] \right)} {P[4]-P[3]}
+\end{align}
+Then an interpolation is done between the calculated $\theta$ values.
+\begin{equation}
+\sigma = \frac{\left(sigma_2 \cdot \Delta \theta[3] + sigma_1 \cdot \Delta \theta[1]\right) }{\theta[3] -\theta[1]}
+\end{equation}
+The 2D interpolation is completed both for the born cross section and the radiative correction factor for each accepted simulated event.
 \subsection{Monte Carlo Comparison}
-acc - comp
+\paragraph{}The weighted monte carlo events are binned into the target and focal planes for comparison to data. The comparison is used to determine the quality of the simulation. Figure \ref{tcomp} and \ref{fcomp} show the comparison for target plane variables and focal plane variables respectively. The comparison between data and monte carlo has been deemed good, with 99\% comparison for the single foil carbon target. 
+
+\begin{figure}
+	\caption{Monte Carlo to Data comparison for target plane variables, top left $\delta$ ,bottom left y, top right $\theta$, bottom right $\phi$. Run 1207, kinematic 1 on carbon foil.\label{tcomp}}
+	{\centering
+	\hspace{-50pt}
+	\includegraphics[width=9cm]{dp_ytar_1207.eps}
+	\includegraphics[width=9cm]{xp_yp_tar_1207.eps}
+}
+\end{figure}
+\begin{figure}
+	{\centering
+	\hspace{-50pt}
+	\includegraphics[width=9cm]{xp_yp_foc_1207.eps}
+	\includegraphics[width=9cm]{x_y_foc_1207.eps}}
+	\caption{Monte Carlo to Data comparison for focal plane variables, top left $\theta$ ,bottom left $\phi$, top right $x$, bottom right $y$. Run 1207, kinematic 1 on carbon foil. \label{fcomp} }
+\end{figure}
+
+
 \section{DIS Cross Section}
+\paragraph{}Using the Monte Carlo ratio method:
+\begin{equation}
+\sigma_{Data} = \sigma_{model} \cdot \frac{Y_{Data}}{Y_{MC}}.
+\end{equation} 
+
 
 \section{Systematic Error}
 \cite{Ar_Ti}
