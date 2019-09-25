@@ -4,7 +4,7 @@
 \dfrac{d\sigma}{dE^{\prime}d\Omega} = \frac{(N - BG)}{\mathscr{L} \cdot \epsilon \cdot \Delta E^{\prime} \Delta \Omega \cdot A(E^{\prime},\theta)}. \label{expcc}
 \end{equation}
 The number of counted electrons (N) have to be corrected for any background events (BG) and for inefficiencies ($\epsilon$) in the detectors, data collection, particle identification, and analysis. The phase  The electron yield ( $Y=(N-BG)/\epsilon$) is normalized by the luminosity ($\mathscr{L}$) and detector acceptance in momentum and scattering angle ($A(E^{\prime},\theta)$). The $x$ bin for this cross section is a function of the momentum and solid angle phase space ($\Delta E^{\prime} \Delta \Omega$). This chapter will discuss the process of analyzing raw data received from the detector to extract the raw cross-section in bins of $x$. This process starts with the Hall A analysis software.  
-\paragraph{}Hall A at JLab uses an analysis software (Analyzer) that is built on top of ROOT. The Analyzer is used to decode raw data signals received from TDCs, ADCs, and scalars into meaningful results. The decoding process uses raw data from the detectors in the HRSs and on the beam line to create an event. This event is assigned a track if applicable, and the events signal from the detectors are stored into a ROOT file. This ROOT file contains the raw and calibrated detector data from each signal, the track information, and physics variables calculated via the calibrated data and track information. 
+\paragraph{}Hall A at JLab uses an analysis software (Analyzer) that is built on top of CERN ROOT. The Analyzer is used to decode raw data signals received from TDCs, ADCs, and scalars into meaningful results. The decoding process uses raw data from the detectors in the HRSs and on the beam line to create an event. This event is assigned a track if applicable, and the events signal from the detectors are stored into a ROOT file. This ROOT file contains the raw and calibrated detector data from each signal, the track information, and physics variables calculated via the calibrated data and track information. The analysis of an event begins with reconstructing its track. 
 \section{Tracking}
 \paragraph{}The Analyzer uses calibrated VDC data to calculate the track of an event. The detector calibration was discussed in chapter \ref{ch:ExpUp}. An event's track contains information on trajectory and location of a particle as it travels through the spectrometer. The track determined from the VDCs is in reference to the detector coordinate system. The Analyzer uses a optics matrix to relate the tracking information between all coordinate systems used in the Hall A analysis process. The coordinate systems will be briefly discussed in this section. A more complete guide with in-depth discussion of the coordinate systems is discussed in \cite{espace}. The coordinate system definitions and relations are obtained from \cite{espace,HallA,optics}.
 \begin{itemize}
@@ -71,7 +71,7 @@ The results from the surveys have an approximate systematic uncertainty of 0.5 m
 \begin{equation}
 p_0 = \sum_{i=1}^{3} \Gamma_iB_0^i
 \end{equation}
-$\Gamma$ is a set of spectrometer constants calculated to an accuracy of $4\times10^{-4}$. The left HRS constants are $\Gamma_{1,2,3}$ (2702,0,-1.6), and the right HRS constants are $\Gamma_{1,2,3}$ (2698,0,-1.6) in units of MeV/T$^i$ \cite{HallA}.
+$\Gamma$ is a set of spectrometer constants calculated to an accuracy of $4\times10^{-4}$. The left HRS constants are $\Gamma_{1,2,3}$ (2702,0,-1.6), and the right HRS constants are $\Gamma_{1,2,3}$ (2698,0,-1.6) in units of MeV/T$^i$ \cite{HallA}. Once the analyzer produces a track for an event, the event can be included or excluded for future consideration. In the next section, I will discuses the selection of events for continued analysis.
  
 \section{Electron Selection}\label{sec:ES}
 \paragraph{} The extraction of the electron scattering cross section requires the counting of scatted electrons from a target. In order to count the number of scattered electrons, data is analyzed on an event by event basis. The event is passed through a number of criteria(cuts) in order to determine the identity and source of the scattered event. The cuts used for this analysis are separated into two different types, acceptance and particle identification(PID). The acceptance cuts are used to limit the source location and trajectory of the particle through the detector to provide greater accuracy for the reconstruction of the particle's scattered angle, momentum, and scattering vertex location. Cuts are also used to identify the particle and the type of scattering interaction it experienced. 
@@ -221,7 +221,7 @@ A low threshold in the cherenkov signal allows for an inclusive trigger limiting
 Where the number of good electron events that have one good track is defined as $N_{1 track}$, and $N_{all}$ are all of the electrons rather they have a good track or not. The good electron selection is made via PID cuts in the calorimeter and cherenkov, and cuts in the ADC and TDC of the scintillators. Direct cuts in the signal of the scintillators where made to include the nominal acceptance cuts, which our produced through tracking software. The tracking efficiency of HRSs during the MARATHON experiment is shown in figure \ref{trackeff} for the three gas targets during all kinematic ranges. The efficiency of the VDCs is not relative to the angle of the spectrometer. So the uniform tracking efficiency across all kinematics is expected and helps eliminate any concerns of the performance of the VDCs during the experiment. 
 
 \section{Background Subtraction}
-\paragraph{} The purpose of this analysis is to study the DIS cross sections of deuterium, helium-3, and tritium. The sample of scattered events used to determine the cross section of a given nuclear target then needs to be cleaned of any contamination produced from other targets and processes. The electrons detected by the spectrometers can be electrons that scatted from our chosen target, scattered from a source other then our target, or produced through process other than DIS scattering. The two sources of contamination for the MARATHON experiment are events scattered from the aluminum end caps of the target cell and pair produced electrons via photon interaction. 
+\paragraph{} The purpose of this analysis is to study the DIS cross sections of deuterium, helium-3, and tritium. The sample of scattered events used to determine the cross section of a given nuclear target then needs to be cleaned of any contamination produced from other targets and processes. The electrons detected by the spectrometers can be electrons that scatted from our chosen target, scattered from a source other then our target, or produced through process other than DIS scattering. The two sources of contamination for the MARATHON experiment are events scattered from the aluminum end caps of the target cell and pair produced electrons via photon interaction. The tritium gas will experience beta decay, that produces helium-3. This helium-3 that contaminates the tritium cell will also be addressed in this section.
 \subsection{End Caps}
 \paragraph{} The target cells used during the MARATHON experiment are shown in figure \ref{HATT}. The majority of the events from the end caps can be removed easily via a cut in the reconstructed quantity of reaction vertex along the beam axis. The relatively large density thickness of the aluminum end caps cause a large amount of end cap contamination. The majority of the electrons that scatter from the end caps can be removed through software cuts in the reaction vertex along the beam axis(z). Show in figure \ref{EC5} is a comparison of the reaction vertex of the electron events between the gaseous targets and the empty cell target at kinematic 4. The yield is normalized by the number of event in the histogram to remove any bias from the amount of time of beam on target. The empty target  results in figure \ref{EC5}, demonstrate the form of scattering off of the aluminum windows of our target cell. Using the reconstructed vertex location of the scattering origin, the vast majority of the events from the windows can be removed. This vertex cut is shown by the two vertical blue lines. Only events that lie within these two line are considered good electrons from our chosen target. 
 
@@ -305,14 +305,6 @@ Y_T = Y_{raw}\left(\frac{1}{1-\langle f_H \rangle}\right) - Y_H \left(\frac{\lan
 \end{equation}
 The beta decay correction is applied on kinematic basis. The charge weighted average correction factor is calculated for each kinematic. The correction is then applied to the yield in each bin of that kinematic. 
 
-\section{Yield}
-\paragraph{}The events that pass the good electron criteria are binned in bins of $x$ with varying size to decrease statistical error for the large values of $x$. The bin size ranges from 0.03 to 0.08. Events are corrected for efficiency, and background on a event by event basis. 
-\begin{align}
-Yield_{run}(bin) &= \sum_{i}^{\text{Good Electrons(bin)} } \left( BG_{i}/\epsilon_{i} \right) \nonumber\\
-Yield_{kin}(bin) &= \sum_{run}^{runs} \bigg( Yield_{run}(bin) \bigg)
-\end{align}
-The yield for a kinematic is combined on a run by run basis so that the run depended corrections can be applied to the correct events. For many of the kinematics, the bins that fall within the acceptance overlap. A good electron count weighted average is used to combined the overlapping bins.
-
 
 \section{Luminosity}
 \paragraph{}The equation of the experimentally measured cross section was shown in equation \ref{expcc}. The luminosity ($\mathscr{L}$) is the amount of possible scattering interactions. $\mathscr{L}$ is defined as the product of the number of incoming beam particles, the target particle density, and the target's thickness \cite{PnN}. The MARATHON experiment took many runs of data for each kinematic. The luminosity of each runs was calculated and summed together to determine the luminosity for each kinematic. 
@@ -349,9 +341,23 @@ The calculation of the $\mathscr{L}$ requires data from the BCMs to determine th
 		\hline
 	\end{tabular}
 \end{table}
+
+\section{Yield}
+\paragraph{}The events that pass the good electron criteria are binned in bins of $x$ with varying size to decrease statistical error for the large values of $x$. The bin size ranges from 0.03 to 0.08. Events are corrected for efficiency, and background on a event by event basis. The background is accounted for through a background correction factor(BG$_i$). This factor is calculated to be a percentage of good events in the total sample and is applied as a multiplicative factor on an event basis. The efficiency ($\epsilon$) factor is a combination of the efficiency discussed in this chapter and is calculated on a run basis. The efficiencies of the current run is then applied to each good electron event. 
+\begin{align}
+Yield_{run}(bin) &= \sum_{i}^{\text{Good Electrons(bin)} } \left( BG_{i}/\epsilon_{i} \right) \nonumber\\
+Yield_{kin}(bin) &= \sum_{run}^{runs} \bigg( Yield_{run}(bin) \bigg)
+\end{align}
+The yield for a kinematic is combined on a run by run basis so that the run depended corrections can be applied to the correct events. For many of the kinematics, the bins that fall within the acceptance overlap. A good electron count weighted average is used to combined the overlapping bins. 
+\begin{equation}
+Yield(bin) = \frac{\left( Yield_{kin}(bin)\cdot N_e^{kin}(bin)+ Yield_{kin+1}(bin)\cdot N_e^{kin+1}(bin) \right)}{N_e^{kin}(bin)+N_e^{kin+1}(bin)}
+\end{equation}
+\begin{figure}
+	\caption{Luminosity normalized corrected yield for deuterium. The yield for each kinematic is shown as a different color and marker, with the combined yield as a grey 'x'.  \label{kinYield}}
+	\includegraphics[width=15cm]{Yield_new.pdf}
+\end{figure}
 		
- 
-\section{Monte Carlo Ratio Method}
+ \section{Monte Carlo Ratio Method}
  A Monte Carlo(MC) generated yield of electrons:
 \begin{equation}
 Y_{MC}(E^{\prime},\theta) = \mathscr{L} \cdot \sigma^{model} \cdot (\Delta E^{\prime} \Delta \Omega) \cdot A(E^{\prime},\theta)
@@ -447,7 +453,7 @@ The yield dependence in $\phi_{tg}$ and $\delta_{tg}$ are expected due to the de
 \end{equation} 
 
 \begin{figure}
-	\caption{Comparison of the yield of Data to Monte Carlo for deuterium. \label{d-mc comp}}
+	\caption{Comparison of the yield of Data to Monte Carlo for deuterium in bins of $x$ for each kinematic. \label{d-mc comp}}
 	\includegraphics[width=15cm]{YieldComp.pdf}
 \end{figure}
 \paragraph{}Using the ratio of the yield from data to the yield from Monte Carlo, I manipulate the model cross section to calculate the experimentally measured cross section.
