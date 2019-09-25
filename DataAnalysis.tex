@@ -307,12 +307,12 @@ The beta decay correction is applied on kinematic basis. The charge weighted ave
 
 
 \section{Luminosity}
-\paragraph{}The equation of the experimentally measured cross section was shown in equation \ref{expcc}. The luminosity ($\mathscr{L}$) is the amount of possible scattering interactions. $\mathscr{L}$ is defined as the product of the number of incoming beam particles, the target particle density, and the target's thickness \cite{PnN}. The MARATHON experiment took many runs of data for each kinematic. The luminosity of each runs was calculated and summed together to determine the luminosity for each kinematic. 
+\paragraph{} The luminosity ($\mathscr{L}$) is the amount of possible scattering interactions. $\mathscr{L}$ is defined as the product of the number of incoming beam particles, the target particle density, and the target's thickness \cite{PnN}. The MARATHON experiment took many runs of data for each kinematic. The luminosity of each runs was calculated and summed together to determine the luminosity for each kinematic. 
 \begin{equation}
 	\mathscr{L}_{Run} =  \left(\frac{Q_e \cdot T_{thick} \cdot \rho_c \cdot N_a}{AtomicMass} \right) \qquad
 	\mathscr{L}_{kin} = \sum_i^{Runs} \mathscr{L}_{i}
 \end{equation}
-The calculation of the $\mathscr{L}$ requires data from the BCMs to determine the total charge sent to the target during a run. This is converted to number of electrons to produce Q$_e$. The targets density thickness (T$_{thick}$) was provided by the JLab's target group as part of their target report \cite{HATT_eng}. Avogadro's number and the atomic mass of the target makes the luminosity have units of electrons per cm$^2$. Then applying a conversion for cm to nb gives the luminosity units commonly used for cross section extractions.
+The calculation of the $\mathscr{L}$ requires data from the BCMs to determine the total charge sent to the target during a run. This is converted to number of electrons to produce $Q_e$. The targets density thickness (T$_{thick}$) was provided by the JLab's target group as part of their target report \cite{HATT_eng}. Avogadro's number and the atomic mass of the target makes the luminosity have units of electrons per cm$^2$. Then applying a conversion for cm to nb gives the luminosity units commonly used for cross section extractions.
 \begin{table}[]
 	\caption{Table of gas target density thickness and uncertainty \cite{HATT_eng}}
 	\centering
@@ -348,12 +348,12 @@ The calculation of the $\mathscr{L}$ requires data from the BCMs to determine th
 Yield_{run}(bin) &= \sum_{i}^{\text{Good Electrons(bin)} } \left( BG_{i}/\epsilon_{i} \right) \nonumber\\
 Yield_{kin}(bin) &= \sum_{run}^{runs} \bigg( Yield_{run}(bin) \bigg)
 \end{align}
-The yield for a kinematic is combined on a run by run basis so that the run depended corrections can be applied to the correct events. For many of the kinematics, the bins that fall within the acceptance overlap. A good electron count weighted average is used to combined the overlapping bins. 
+The yield for a kinematic is combined on a run by run basis so that the run depended corrections can be applied to the correct events. For many of the kinematics, the bins that fall within the acceptance overlap. A good electron count weighted average is used to combined the overlapping bins. Equation \ref{comb_w} describe the weighting average procedure for combining overlapping bins. Figure \ref{kinYield} shows the normalized corrected yield for deuterium from all kinematics. Also the combined yield is shown as a gray x. 
 \begin{equation}
-Yield(bin) = \frac{\left( Yield_{kin}(bin)\cdot N_e^{kin}(bin)+ Yield_{kin+1}(bin)\cdot N_e^{kin+1}(bin) \right)}{N_e^{kin}(bin)+N_e^{kin+1}(bin)}
+Yield(bin) = \frac{\left( Yield_{kin}(bin)\cdot N_e^{kin}(bin)+ Yield_{kin+1}(bin)\cdot N_e^{kin+1}(bin) \right)}{N_e^{kin}(bin)+N_e^{kin+1}(bin)} \label{comb_w}
 \end{equation}
 \begin{figure}
-	\caption{Luminosity normalized corrected yield for deuterium. The yield for each kinematic is shown as a different color and marker, with the combined yield as a grey 'x'.  \label{kinYield}}
+	\caption{Luminosity normalized corrected yield for deuterium. The yield for each kinematic is shown as a different color and marker, with the combined yield as a gray 'x'.  \label{kinYield}}
 	\includegraphics[width=15cm]{Yield_new.pdf}
 \end{figure}
 		
@@ -452,10 +452,6 @@ The yield dependence in $\phi_{tg}$ and $\delta_{tg}$ are expected due to the de
 \sigma_{Data} = \sigma_{model} \cdot \frac{Y_{Data}}{Y_{MC}}. \nonumber
 \end{equation} 
 
-\begin{figure}
-	\caption{Comparison of the yield of Data to Monte Carlo for deuterium in bins of $x$ for each kinematic. \label{d-mc comp}}
-	\includegraphics[width=15cm]{YieldComp.pdf}
-\end{figure}
 \paragraph{}Using the ratio of the yield from data to the yield from Monte Carlo, I manipulate the model cross section to calculate the experimentally measured cross section.
  
 \begin{figure}
