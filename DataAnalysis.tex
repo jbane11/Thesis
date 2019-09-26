@@ -343,7 +343,7 @@ The calculation of the $\mathscr{L}$ requires data from the BCMs to determine th
 \end{table}
 
 \section{Yield}
-\paragraph{}The events that pass the good electron criteria are binned in bins of $x$ with varying size to decrease statistical error for the large values of $x$. The bin size ranges from 0.03 to 0.08. Events are corrected for efficiency, and background on a event by event basis. The background is accounted for through a background correction factor(BG$_i$). This factor is calculated to be a percentage of good events in the total sample and is applied as a multiplicative factor on an event basis. The efficiency ($\epsilon$) factor is a combination of the efficiency discussed in this chapter and is calculated on a run basis. The efficiencies of the current run is then applied to each good electron event. 
+\paragraph{}The events that pass the good electron criteria are binned in bins of $x$ with varying size to decrease statistical error for the kinematics with lower rate. The bin size ranges from 0.03 to 0.08. Events are corrected for efficiency, and background on a event by event basis. The background is accounted for through a background correction factor(BG$_i$). This factor is calculated to be a percentage of good events in the total sample and is applied as a multiplicative factor on an event basis. The efficiency ($\epsilon$) factor is a combination of the efficiency discussed in this chapter and is calculated on a run basis. The efficiencies of the current run is then applied to each good electron event. 
 \begin{align}
 Yield_{run}(bin) &= \sum_{i}^{\text{Good Electrons(bin)} } \left( BG_{i}/\epsilon_{i} \right) \nonumber\\
 Yield_{kin}(bin) &= \sum_{run}^{runs} \bigg( Yield_{run}(bin) \bigg)
@@ -356,21 +356,19 @@ Yield(bin) = \frac{\left( Yield_{kin}(bin)\cdot N_e^{kin}(bin)+ Yield_{kin+1}(bi
 	\caption{Luminosity normalized corrected yield for deuterium. The yield for each kinematic is shown as a different color and marker, with the combined yield as a gray 'x'.  \label{kinYield}}
 	\includegraphics[width=15cm]{Yield_new.pdf}
 \end{figure}
-		
+\section{Acceptance } 
+\paragraph{} The acceptance for an event for a bin of $x$, A($x$), is defined as the probability that the event will be able to pass through the spectrometer apertures. The acceptance of an event is dependent on 6 variables, $\theta$, $\phi$, E$^{\prime}$, and the x, y, and z of the reaction location. There are two ways to account for the acceptance. One is two determine an acceptance function that is dependent on all 6 of these variables.  The other way is to use a Monte Carlo simulation to produce a yield that will average over all of the variables. The simulated yield can then be compared with data to account for the acceptance effects. This analysis will use a Monte Carlo simulation to account for acceptance effects via a comparison with data.
  \section{Monte Carlo Ratio Method}
- A Monte Carlo(MC) generated yield of electrons:
+ A Monte Carlo($_{MC}$) generated yield of electrons:
 \begin{equation}
-Y_{MC}(E^{\prime},\theta) = \mathscr{L} \cdot \sigma^{model} \cdot (\Delta E^{\prime} \Delta \Omega) \cdot A(E^{\prime},\theta)
+Y_{MC}(E^{\prime},\theta) = \mathscr{L} \cdot \sigma^{model} \cdot (\Delta E^{\prime} \Delta \Omega) \cdot A(E^{\prime},\theta).
 \end{equation}
-Rewriting the MC generated yield to emphasize the normalization factors, luminosity, phase space and acceptance allows for a direct comparison with the experimental cross section using the measured yield.
+Rewriting the Monte Carlo generated yield to emphasize the normalization factors luminosity, phase space and acceptance allows for a direct comparison with the experimental cross section using the measured yield.
 \begin{align}
 Y_{MC}(x) / \sigma^{model} &= \mathscr{L} \cdot (\Delta E^{\prime}_{MC} \Delta \Omega_{MC}) \cdot A(E^{\prime},\theta)_{MC} \\
 \sigma^{data}(x) &= \frac{Y_{data}(x)}{ \mathscr{L} \cdot (\Delta E^{\prime}_{Data} \Delta \Omega_{Data}) \cdot A(E^{\prime},\theta)_{Data} }
 \end{align}
-
-\paragraph{} The acceptance for a bin, A($E^{\prime},\theta$), is defined as the probability that a particle of energy $E^{\prime}$ and scatted angle $\theta$ will be able to pass through the spectrometer. This analysis will use a Monte Carlo(MC) simulation to account for the acceptance of the HRS in a bin of $x$.
-
-This analysis uses the hall A single arm Monte carlo simulation to simulate events so that A$_{MC}$ is equivalent to A$_{Data}$. Using the monte carlo ratio method, the experimental cross section can be calulated for a bin of $x$ by:
+Using the Monte Carlo ratio method, the experimental cross section can be calulated for a bin of $x$ by:
 \begin{equation}
 \sigma_{Data} = \sigma_{model} \cdot \frac{Y_{Data}}{Y_{MC}}.
 \end{equation} 
