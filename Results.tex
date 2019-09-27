@@ -1,6 +1,6 @@
 
 \chapter{Results}
-The culminating part of this nuclear physics analysis begins with the extraction of the experimentally measured DIS cross sections for three targets. Then using those cross sections to study the per nucleon scaled ratio. I will also use these A/D ratios to study the EMC effect for both helium-3 and tritium. In this chapter, I will present my results for the DIS cross sections and EMC effect. I will also discuss an error analysis for both the cross section measurements and the EMC effect results. 
+The culminating part of this nuclear physics analysis begins with the extraction of the experimentally measured DIS cross sections for three targets. Then using those cross sections to study the per nucleon scaled A/D ratio. I will also use these A/D ratios to study the EMC effect for both helium-3 and tritium. In this chapter, I will present my results for the DIS cross sections and EMC effect. I will also discuss an error analysis for both the cross section measurements and the EMC effect results. 
 \section{DIS Cross Section}
 \paragraph{}Using the Monte Carlo ratio method, I extracted the experimental measured cross section for helium-3, tritium, and deuterium. These DIS cross section extraction ranges from 0.18 to 0.82 in $x$, from 2.2 to 11.8 GeV$^2$ in $Q^2$, and has W$^2$ $>3.5$ GeV$^2$. The central momentum setting of the spectrometer is 3.1 GeV/c and the spectrometer was moved from 17.5 to 33.5 degrees.
 \begin{figure}
@@ -14,7 +14,8 @@ The culminating part of this nuclear physics analysis begins with the extraction
 I compared the data yield to the Monte Carlo yield to produce a correcting factor for the model cross section. Figure \ref{D_MC_COMP} shows the ratio comparison between data and Monte Carlo in bins of $x$ for each kinematic measurement and the combined ratio for the overlapping bins. Then apply the ratio factor for a bin in $x$ to the model cross section to extract out the experimentally measured cross section for that bin. Figure \ref{CCplot} show a plot of the experientially measured cross section for tritium, helium-3, and deuterium. This measurement includes a total normalization uncertainty due to the target thickness measurement uncertainty, tritium= 0.97\%, helium-3 = 1.12\%, and deuterium = 0.56\% \cite{HATT_eng}. The measurement uncertainties for each gas target are displayed in table \ref{tgt_table}. 
 
 \begin{figure}
-	\includegraphics[width=15cm]{total_xs.pdf}
+	\hspace{-80pt}
+	\includegraphics[width=19cm]{total_xs.pdf}
 	\caption{Experimentally measured cross section using the Monte Carlo ratio method for tritium, helium-3, and deuterium. Normalization uncertainty due to target thickness uncertainty for tritium= 0.97\%, helium-3 = 1.12\%, and deuterium = 0.56\%. \label{CCplot}}
 \end{figure}
 
@@ -26,7 +27,11 @@ The measurement of the cross section requires finally tune detectors and analysi
 \text{NormY} &= \left(N_e \cdot BG/\epsilon \right) / \mathscr{L}
 \end{align}
 \paragraph{}
-The contributions for error on the measurement of the normalized yield(normY) can be simplified into the contributions for the corrected number of electrons and the luminosity. The error for the corrected number of counted electrons includes the random statistical error for the count of electrons detected, the error associated with the calculated efficiencies, and the error from the background correction.   Correcting the number of electrons for background events and efficiencies
+The contributions for error on the measurement of the normalized yield(normY) can be simplified into the contributions for the corrected number of electrons and the luminosity. The error for the corrected number of counted electrons includes the random statistical error for the count of electrons detected, the error associated with the calculated efficiencies, and the error from the background correction. The electron statics range from 4875 to more then 42000 in a bin and therefor I have treated the randomness of the counting in a standard error technique. The relative statistical error for a bin is $\frac{1}{\sqrt{Ne}}$ and ranges from 1.4\% to 0.5\%. Calculating the efficiencies deals with calculating a probability of a binomial choice. The errors associated with the efficiencies are calculated using the Wilson score interval described in equation \ref{WSI}, where $p$ is the efficiency or a probability of a success, $n$ is the number of samples, $z$ is 1.645 for a 95\% confidence level. The individual efficiency errors are added in quadrature to calculate an over all efficiency error.
+\begin{equation}
+p[_{UpperBound},_{LowerBound}] = \frac{ 2np +z^2 \pm \left[z\sqrt{z^2 - \frac{1}{n} + 4np(1-p) +(4p-2)} + 1 \right]}{2(n+z^2)} \label{WSI}
+\end{equation}
+
 
 Measurements of the target thicknesses uncertainty are associated with an overall normalization uncertainty that could cause the value of the cross section for all bins to increase or decrease uniformly.
 
