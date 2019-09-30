@@ -383,7 +383,7 @@ This section will discuss the Monte Carlo simulation and compare the yield of Mo
 	\item weighing accepted events with the model cross section .
 \end{itemize} 
 \subsubsection{Cross Section Table}
-\vspace{-10pt}\paragraph{} A cross section model is used to weight the Monte Carlo events to make a comparison between a Monte Carlo yield and a yield from data. The Born cross section is calculated via a DIS model with an EMC model correction. An Arie Bodek model \cite{DISmodel} is used to determine the nuclear structure function in the DIS regime. This same model uses a smearing technique to include any effects from the elastic and quasi-elastic tail. The kinematics closest to the resonance region experiences an almost negligible quasi-elastic contribution. A correction calculated from SLAC EMC data is applied to correct for the building of the nuclear structure function from free nucleon structure functions. The resulting born cross section is used to weigh events in the Monte Carlo simulation. Figure \ref{MCS} shows the born cross section for tritium at kinematic 1 for scattered angle along the x-axis and scattered momentum along the z-axis associated with color.  
+\vspace{-10pt}\paragraph{} A cross section model is used to weight the Monte Carlo events to make a comparison between a Monte Carlo yield and a yield from data. The Born cross section is calculated via a DIS model with an EMC model correction. An Arie Bodek model \cite{DISmodel} is used to determine the nuclear structure function in the DIS regime. This same model uses a smearing technique to include any effects from the elastic and quasi-elastic tail. The kinematics closest to the resonance region experiences an almost negligible quasi-elastic contribution. A correction calculated from SLAC EMC data is applied to correct for the building of the nuclear structure function from free nucleon structure functions. The resulting born cross section is used to weigh events in the Monte Carlo simulation. Figure \ref{MCS} shows the born cross section for tritium at kinematic one for scattered angle along the x-axis and scattered momentum along the z-axis associated with color.  
 
 \begin{figure}
 	\caption{Model cross section for tritium at kinematic 1 for scattered angle and momentum. \label{MCS}}
@@ -442,5 +442,8 @@ The 2D interpolation is completed both for the born cross section and the radiat
 	\includegraphics[height=7.75cm,width=9cm]{x_y_foc_1207.eps}}
 \end{figure}
 The yield dependence in $\phi_{tg}$ and $\delta_{tg}$ are expected due to the dependence of the cross section on those variables. The good comparison for those quantities show the simulation's good performance in matching the spectrometers acceptance and the cross section models functional form. The comparison between data and Monte Carlo has been deemed good, with 99\% comparison for the single foil carbon target. 
-
-
+\begin{figure}
+	\caption{The ratio of data to Monte Carlo yield in bins of $x$ for three gas targets.\label{D_MC_COMP}}
+	\includegraphics[width=15cm]{Ratio_all.pdf}
+\end{figure}
+I show the comparison between data and Monte Carlo in bins of $x$ for cross section extraction in figure \ref{D_MC_COMP}.
