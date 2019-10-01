@@ -124,7 +124,7 @@ $\Gamma$ is a set of spectrometer constants calculated to an accuracy of $4\time
 \begin{figure}[]
 	\centering
 	\textbf{PID Cut Scan }\par\medskip
-	\includegraphics[width=13cm]{PID_3layer_plot.pdf}
+	\includegraphics[width=15cm]{PID_3layer_plot.pdf}
 	\caption{ A scan of the PID efficiency for a cut in each layer of the calorimeters.}
 	\label{cal_pidscan}
 \end{figure}
@@ -145,11 +145,12 @@ $\Gamma$ is a set of spectrometer constants calculated to an accuracy of $4\time
 \paragraph{}The signal from events that fire the DAQ travel through electronics like amplifiers and logic modules on its way to be recorded by the TDCs and ADCs. The processing of these signals require time at each stage. During that time another event will be discarded due to limitations in the hardware. This time when the DAQ system cannot handle another event is known as the dead-time of the system. livetime therefor is the percentage of time when an event can be recorded. The lost events need to be account for during the analysis process. The livetime of the DAQ system for the MARATHON experiment was measured by determining the percentage of events that were recorded relative to the number of events that fired the corresponding trigger. The livetime for the MARATHON experiment depended on the rate of events. The livetime during the highest rate kinematic was determine to be 0.947, and climbs to 0.998 for the highest angle setting. Listed in table \ref{LTtable} are the calculated values for livetime at each kinematic. 
 
 \begin{table}[]
+	\centering
 	\textbf{Livetime for each kinematic }\par\medskip
-	\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|l|}
+	\begin{tabular}{|l|l|l|l|l|l|l|l|l|}
 		\hline
-		Kin      & 1 & 2 & 3 & 4 & 5 & 7 & 9 & 11 & 13 & 15 \\ \hline
-		LiveTime & 0.947 & 0.969 & 0.981 & 0.986 & 0.992 & 0.996 & 0.997 & 0.998  & 0.998  & 0.998\\ \hline
+		Kin      & 1 & 2 & 3 & 4 & 5 & 7 & 9 & 11,13,15 \\ \hline
+		LiveTime & 0.947 & 0.969 & 0.981 & 0.986 & 0.992 & 0.996 & 0.997 & 0.998\\ \hline
 	\end{tabular}
 	\caption{Livetime during the MARATHON experiment calculated using trigger 2.  }
 	\label{LTtable}
@@ -241,7 +242,7 @@ ECC = 1- \big(\frac{Yield_{EC}}{(Yield_{Gas} + Yield_{EC})}\big) \equiv \frac{Yi
 
 %\begin{table}[]
 %	\textbf{End cap contamination for each target at all kinematics. }\par\medskip
-%	\hspace{-70pt}
+%	ace{-70pt}
 %	\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|l|}
 %		\hline
 %		Kinematic  & 1       & 2       & 3        & 4        & 5        & 7       & 9       & 11       & 13       & 15   \\ \hline
@@ -259,7 +260,7 @@ ECC = 1- \big(\frac{Yield_{EC}}{(Yield_{Gas} + Yield_{EC})}\big) \equiv \frac{Yi
 \subsection{Pair Produced Electrons}
 \paragraph{} The high energy scattering interaction used to create deep inelastic scattering events can produce high energy photons and pions. The high energy photons that have energy greater than 1.022 MeV can convert into e$^+$e$^-$ pairs when the photons interact with a medium. A correction for the number of back ground electrons produced via a pair production process was calculated by determining the amount of positrons produced from equal targets and kinematics. The yield of positrons were measured for kinematics one through five. The results were used to construct a function to determine the amount of contamination at high $x_{Bj}$ kinematics. Figure \ref{PC} shows the amount of positron contamination for tritium and an exponential fit to extrapolate over the entire ranged in $x_{Bj}$ for the MARATHON experiment. 
 
-\begin{figure}[h]
+\begin{figure}[t]
 	\centering
 	\textbf{Tritium positron contamination. }\par\medskip
 	\includegraphics[width=15.0cm]{../images/positron_H3_bane.pdf}
@@ -387,8 +388,8 @@ This section will discuss the Monte Carlo simulation and compare the yield of Mo
 
 \begin{figure}
 	\caption{Model cross section for tritium at kinematic 1 for scattered angle and momentum. \label{MCS}}
-	\hspace{-40pt}
-	\includegraphics[width=18cm]{cs_m_T1.pdf}
+%	\hspace{-40pt}
+	\includegraphics[width=15.5cm]{cs_m_T1.pdf}
 \end{figure}
 \paragraph{} The scattered event that is measured through the experiment is not alone the Born process (the one photon exchange approximation) shown in figure \ref{fig:radcors} but a combination of all the other processes shown. In order to produce a comparable result with data, these higher order contributions have to be addressed.
 \begin{figure}[h]
@@ -400,8 +401,8 @@ This section will discuss the Monte Carlo simulation and compare the yield of Mo
 \paragraph{}There are two broad types of radiative effects that needed be account for during an electron nucleus scattering interaction, internal and external. External effects account for the electron radiating a real photon before or after the designated target. This radiation is caused by an interaction with fields of nuclei that make up the material other then the target. External bremsstrahlung and ionization energy losses are two of the process that occur causing these external effects. The internal radiative effects happen at the interaction point, the scattering vertex. The Feynman diagrams in figure \ref{fig:radcors} shows the lowest order approximation for the possible interaction channels. These high order processes are calculable in QED. Mo and Tsai \cite{radcors2} and S. Sasu \cite{radcors} describe in detailed the method of calculating these radiative effects. This analysis used a radiative correction code originally by S. Dasu \cite{radcors}. This package use Mo and Tsai's formula to complete the measured cross section calculation.  The internal bremsstrahlung contribution is calculated via an equivalent radiator approximation. A full integral calculation is done over the entire length of radiators to make a complete calculation for the entire radiative effect  \cite{Ajth,radcors,radcors2,seelyth}. A correction is applied as a weighing factor with the born cross section. A 2 dimensional grid is made from a scan of possible scatted angles covering the acceptance of the spectrometer for each value of scatted momentum possible for the kinematic setting. This grid is then used to populate a cross section table for each target at each kinematic. The cross section and radiative correction factor are calculated for the combination of kinematic variables to complete the cross section table(CST). Figure \ref{RCF} shows the radiative correction factor ($RCF=\frac{\sigma_{Rad}}{\sigma_{Born}}$) for tritium at kinematic 1 for scattered angle along the x-axis and scattered momentum along the z-axis associated with color.  
 \begin{figure}
 	\caption{Radiative correction for Tritium at kinematic 1, for scattered angle and momentum.\label{RCF}}
-	\hspace{-40pt}
-	\includegraphics[width=18cm]{rad_m_T1.pdf}
+	%\hspace{-40pt}
+	\includegraphics[width=15.5cm]{rad_m_T1.pdf}
 \end{figure}
 
 \subsubsection{Generation}
@@ -429,17 +430,17 @@ The 2D interpolation is completed both for the born cross section and the radiat
 \begin{figure}[h]
 	\caption{Monte Carlo to Data comparison for target plane variables, top left $\delta$ ,bottom left y, top right $\theta$, bottom right $\phi$. Run 1207, kinematic 1 on carbon foil.\label{tcomp}}
 	{\centering
-	\hspace{-50pt}
-	\includegraphics[height=7.75cm,width=9cm]{dp_ytar_1207.eps}
-	\includegraphics[height=7.75cm,width=9cm]{xp_yp_tar_1207.eps}
+	\hspace{-10pt}
+	\includegraphics[height=7.75cm,width=7.75cm]{dp_ytar_1207.eps}
+	\includegraphics[height=7.75cm,width=7.75cm]{xp_yp_tar_1207.eps}
 }
 \end{figure}
 \begin{figure}[H]
 	\caption{Monte Carlo to Data comparison for focal plane variables, top left $\theta$ ,bottom left $\phi$, top right $x$, bottom right $y$. Run 1207, kinematic 1 on carbon foil. \label{fcomp} }
 	{\centering
-	\hspace{-50pt}
-	\includegraphics[height=7.75cm,width=9cm]{xp_yp_foc_1207.eps}
-	\includegraphics[height=7.75cm,width=9cm]{x_y_foc_1207.eps}}
+	\hspace{-10pt}
+	\includegraphics[height=7.75cm,width=7.75cm]{xp_yp_foc_1207.eps}
+	\includegraphics[height=7.75cm,width=7.75cm]{x_y_foc_1207.eps}}
 \end{figure}
 The yield dependence in $\phi_{tg}$ and $\delta_{tg}$ are expected due to the dependence of the cross section on those variables. The good comparison for those quantities show the simulation's good performance in matching the spectrometers acceptance and the cross section models functional form. The comparison between data and Monte Carlo has been deemed good, with 99\% comparison for the single foil carbon target. 
 \begin{figure}

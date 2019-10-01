@@ -9,7 +9,7 @@
 	\paragraph{}The Continuous Electron Beam Accelerator Facility (CEBAF) was recently upgraded to a 12 GeV accelerator, upgrading it to be able to supply a 11 GeV beam of continuous electrons of up to 200 $\mu$A of current to three experimental halls (A,B,C) and 12 GeV to the recently constructed hall D. 
 \subsection{Injector}
 	\paragraph{} CEBAF uses a micro-pulsed structure from the photo-electron gun to produce electrons in an efficient manner. This micro-pulsed structure is used to prolong the lifetime of the photocathode. The delivery of unique current and energy to all four halls requires the micro-pulses to have a 250 MHz or 500MHz structure and four individually tuned lasers. Frequencies of 250 MHz and 500MHz are chosen because these are sub-harmonics of the fundamental accelerator operating frequency of 1500 MHz. 
-	\begin{figure}[h]
+	\begin{figure}[t]
 	\centering
 	\caption{Drawing of the Injector layout. }
 	\label{fig:inj}
@@ -42,7 +42,7 @@
 	 \subsection{Beam Position Monitors}
 	 \paragraph{} A pair of Beam Position Monitors(BPM)s are used to measure the relative beam position without affecting the beam. The two Hall A BPMs are located at 7.524 m and 1.286 m away from the target. Using the standard difference-over-sum technique, the relative beam position is determined with an accuracy of 100 $\mu$m with a beam current of at least 1 $\mu$A \cite{HallA}. The BPMs' positional data is recorded in two ways. Every second of beam time, the beam position average over 0.3 seconds is logged into the Experimental Physics and Industrial Control System (EPICS) database. The BPMs also transmit data event-by-event to the CEBAF online Data Acquisition system(CODA).
 	 	 	 
- 	 	\begin{figure}[H]
+ 	 	\begin{figure}[t]
  	 		\centering
  	 		\caption{A schematic layout of the beam line in Hall. \cite{HallA} }
 	 	 	\label{BeamLine}
@@ -50,7 +50,7 @@
 	 	 \end{figure} 	
 	 	 	
 	 \paragraph{} The main beam line components of the BPMs consist of four open-ended antennas. Figure \ref{BPMimg} shows a BPM chamber and figure \ref{BPM_4} shows the layout of the four antennas as you look down the beam line. In this chamber, the design of three of the four antennas can be seen. The antennas are titled $u_+$, $u_-$ and $v_+$, $v_-$. The antennas receive an induced signal as electrons pass to determine the beam position in the u and v directions. The BPMs send a DC offset to the DAQ. This DC offset is turned into a positional measurement via looking at both signals in one direction. The position in the frame of the u and v antennas are calculated by the taking the difference over the sum of the two wires in the u and v directions. The accuracy of the BPMs requires an absolute measurement of the electron beam's position to calibrate the BPMs\cite{BPM,BPM2}.
-	 	 	\begin{figure}[H]
+	 	 	\begin{figure}[t]
 	 	 		\centering
 	 	 		\caption{BPM design diagram, from JLab instrumentation	group. Beam direction is from left to right \cite{BPM2}. }
 	 	 		\label{BPMimg}
@@ -99,7 +99,7 @@
 			\centering
 			\caption{The X and Y position for a Bulls eye scan for BPM calibration. }
 			\label{bulls}
-			\includegraphics[width=10cm]{bulls.png} 
+			\includegraphics[width=11.5cm]{BPM_after.png} 
 		\end{figure} 	
 
 	 \subsection{Raster}
@@ -150,7 +150,7 @@
 	\end{equation}	
 	In equation \ref{arc}, p is the momentum of the electrons, $\theta$ is the bend angle, and $\vec{B}$ is the magnetic field the electron experiences. Then using the momentum of the electron, the energy of the beam can be extracted. The error on the beam energy measurement is $\delta$ E/E $\approx$ 2 $* 10^{-4} $ \cite{EPMet, Flay}.  The MARATHON experiment used both methods to accurately determine the electron beam energy.
 	
-		  	\begin{figure}[H]
+		  	\begin{figure}[t]
 		  	 	 		\centering
 		  	 	 		\caption{Hall A Current Monitor components \cite{BCM1}. 
 		  	 	 		\label{BCMpng}}
@@ -158,14 +158,14 @@
 		  	\end{figure}
 	\subsection{Beam Current Monitors}
 	\paragraph{} The main process of measuring the scattering yield for a calculation of a cross section looks at finding the ratio of the number of electrons scattered to the number of electrons sent. In order to accurately determine the number of electrons sent to scatter with our target system, Hall A use a set non-invasive beam current monitors(BCMs). The Hall A BCMs have an absolute accuracy of 0.2 percent as long as the current is between 1 and 180 $\mu$A. The BCMs used in Hall A consist of three main components: a Parametric Current Transformer (PCT) and two pill box cavities. Figure \ref{BCMpng} shows the components in the Hall A BCM.  The BCM produces an RF signal that is proportional to the beam current. A 10 kHz down converter, RMS-to-DC converter, voltage-to-Frequency converter, and a scaler are used to inject the current signal into the Hall A DAQ. Proportionality constants are determined in the calibration process to correctly integrate the charge for a given amount of beam current\cite{BCM1}.
-	\begin{figure}[h]
+	\begin{figure}[t]
 		\centering
 		\includegraphics[width=17cm]{dnew_freq.png}
-		\caption{BCM calibration \cite{MikeTh}.
+		\caption{BCM calibration, changing the current at observing the rate \cite{MikeTh}.
 		\label{dnewfreq}}
 	\end{figure}
 	The process of calibrating the BCM converts the frequency received from the BCMs to an amount of current in $\mu$A. In order to calibrate the BCMs in Hall A, a separate intrusive calibration of an unser must be done. The unser is calibrated by inserting a known current through a wire inside the beam pipe. The calibration of the unser is known to drift over time, which makes the unser unfeasible to use as the main source of charge calculation. Once the unser is calibrated, the BCM calibration procedure can be completed. The BCM calibration requires the delivery of the electron beam with unique procedure. This process consist of oscillating the beam on and off status while increasing the current. This process can be seen in figure \ref{dnewfreq}. This stepping up procedure provides an adequate number of data points to complete a linear fit of the BCM frequency verses the calibrated unser current. The linear fit parameters supply a multiplicative gain and an additive offset for the calibration of the BCMs. Figure \ref{bcmcal} shows a linear fit that provides gain and offset calibration constants for the BCM used in the calculation of charge. 
-	\begin{figure}[h]
+	\begin{figure}[t]
 		\centering
 		\includegraphics[width=12cm]{BCMcal.pdf}
 		\caption{BCM frequency for BCM calibration \cite{MikeTh}.
@@ -180,7 +180,7 @@
 	\hspace*{-20pt}
 	\subfloat[A image of the HATT. \cite{DHimages}]{{\includegraphics[width=6cm]{HATT.jpg} }}
 	\centering
-	\subfloat[Image of the Hall A Tritium Target Ladder. \cite{DHimages}]{{\includegraphics[width=10cm]{HATT_Ladder.JPG} }}
+	\subfloat[Image of the Hall A Tritium Target Ladder. \cite{DHimages}]{{\includegraphics[width=8.5cm]{HATT_Ladder.JPG} }}
 	\label{HATT}
 
 
@@ -254,16 +254,16 @@ In order to achieve a high level of resolution in momentum and angle, the HRSs w
 	
 	\subsection{Cherenkov}\label{sec:Cer}
 	\paragraph{}After a particle passes through S0, it will enter the large gas chamber for the gas cherenkov(GC). The GC is filled with $CO_2$ with an index of refraction of 1.00041. This high index of refraction creates a momentum threshold of 0.017 GeV/C for electrons, 4.8 GeV/C for pions, and 32 GeV/c for protons\cite{GasC}. Relativistic particles entering the GC will produce a cone of cherenkov radiation. This cone of light will be focused by a set of mirrors on the back plane of the GC. These mirrors direct the focused light onto a set of PMTs. An depiction of the GC from a top down perspective is shown in figure \ref{fig:cer_TD}. 
-	\begin{figure}[h]
+	\begin{figure}[t]
 		\centering
 		\includegraphics[width=7.5cm]{Cher.png}
 		\caption{Top down depiction inside the GC \cite{GasC}.}
 		\label{fig:cer_TD}
 	\end{figure}
 	The raw data recorded from the GC is in the form of raw ADC, or the size of the pulse seen by the PMT. In order to use this information, the ADC input needs to be calibrated. For the GC, two parts of the signal needs to be calibrated. Each ADC channel sees a different amount of noise and signal background from electronic fluctuations. This signal background is defined as the ADC pedestal, and is the fist calibration offset determined. Figure \ref{fig:cer_raw} shows the raw signal from one cherenkov PMT. This signal shows the pedestal at approximately 5800 ADC channels. The pedestal is subtracted from the raw ADC signal to normalize the background electronic noise for all PMT-ADC pairs in the cherenkov. The second calibration for the GC ADC signals is the photo electron peak. The voltage used to power the PMTs in the cherenkov is tuned before the experiment to allow the PMT to give the best pedestal to signal ratio while also persevering the life of the PMT and signal quality. This forces a different signal strength to be seen by each PMT for the same amount of light experienced in the chamber. The photo electric peak in the ADC signal is then normalized to the same value across all PMTs by a gain factor. 
-	\begin{figure}[h]
+	\begin{figure}[t]
 		\centering
-		\includegraphics[width=12.cm]{Cher_raw.pdf}
+		\includegraphics[width=14.cm]{Cher_raw.pdf}
 		\caption{The raw signal captured from a single cherenkov PMT, PMT[1], with a fit to the pedestal peak and a line draw to demonstrate its ADC channel number.}
 		\label{fig:cer_raw}
 	\end{figure}
@@ -274,13 +274,13 @@ In order to achieve a high level of resolution in momentum and angle, the HRSs w
 	\paragraph{} The signal from the calorimeters is recored as an ADC. These ADC signals need to be calibrated similar to the cherenkov detector, subtracting the pedestal and determining the normalizing gain factor to match all PMT-ADC combinations. The total signal seen from the colorimeter can be seen in figure \ref{fig:calo_raw}. In order to use this ADC signal to help ID particles, the calorimeter needs an energy calibration. 
 	\begin{figure}[t]
 		\centering
-		\hspace*{-65pt}
+%		\hspace*{-65pt}
 		\subfloat[ADC Sum]{
-		\includegraphics[width=9.cm]{calo_adcs.pdf}
+		\includegraphics[width=7.25cm]{calo_adcs.pdf}
 		\label{fig:calo_raw}}
 		\centering	
 		\subfloat[$E^\prime / P$]{
-		\includegraphics[width=9.cm]{calo_ep.pdf}
+		\includegraphics[width=7.25cm]{calo_ep.pdf}
 		\label{fig:calo_ep}}
 		\caption{Left: The sum of all ADC channels from the LHRS calorimeters. Right: The total energy deposited into the LHRS calorimeter scaled by the momentum setting. Electron cuts have been applied.}
 	\end{figure}
@@ -293,9 +293,9 @@ In order to achieve a high level of resolution in momentum and angle, the HRSs w
 	
 \section{Trigger Setup}\label{sec:Trig}
 \paragraph{} The MARATHON experiment designed three triggers to accept the most probable good electron events, while limiting the number of background events and preventing loss of efficiency due to electronic dead time. The design of these trigger are depicted in figure \ref{fig:trig_layout}. Each trigger is build by the coincidence of signal between S0, S2 and the gas cherenkov.  Trigger 1(T1) is the logical $\&$ between the S0 and S2. This is used as a loose trigger to help test the detector timing and efficiencies.  Trigger 2(T2) is the main trigger used for good electron selection for the MARATHON experiment and is by  combining T1 and GC with a logical $\&$. The addition of the GC helps remove many background pions and cosmic rays compared to T1. Trigger 3(T3), a logical $||$ between s0 and S2 and $\&$ with the GC, was designed to help with the study of the efficiency of T1 and T2. The RHRS uses the same triggers, T4 copy of T1, T5 copy of T2, and T6 copy of T3.
-\begin{figure}[H]
-	\hspace*{-2cm} 
-	\includegraphics[width=18.cm]{trigger_layout.pdf}
+\begin{figure}[t]
+%	\hspace*{-2cm} 
+	\includegraphics[width=15.5cm]{trigger_layout.pdf}
 	\caption{Scematic drawing of the trigger logic and timing for the MARATHON experiment \cite{flo_trig}.}
 	\label{fig:trig_layout}
 \end{figure}
@@ -310,7 +310,7 @@ In order to achieve a high level of resolution in momentum and angle, the HRSs w
 	\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|}
 		\hline
 		Kin. & $X_{Bj}$& W2    & Q2    & E$^\prime$    & Theta & H2   & H3   & He3   & Total  \\ 
-        &&Ge$V^2$&Ge$V^2$& GeV & Degree& est. hours&est. hours&est. hours& hours  \\ \hline
+        &&Ge$V^2$&Ge$V^2$& GeV & Degree& (h)& (h)&(h)&(h)  \\ \hline
 		1    & 0.23 & 12.30 & 3.41  & 3.10 & 18.19 & 0.28 & 0.45 & 0.28  & 1.02   \\ \hline
 		2    & 0.27 & 11.70 & 4.00  & 3.10 & 19.73 & 0.42 & 0.69 & 0.43  & 1.54   \\ \hline
 		3    & 0.31 & 11.11 & 4.60  & 3.10 & 21.15 & 0.62 & 1.03 & 0.62  & 2.27   \\ \hline
@@ -335,16 +335,16 @@ In order to achieve a high level of resolution in momentum and angle, the HRSs w
 	\begin{tabular}{|l|l|l|l|l|l|l|l|l|}
 		\hline
 		kin & X    & W2    & Q2    & E`   & theta & D2 count & He3 count & H3 count \\ \hline
-		1   & 0.22 & 11.89 & 3.07  & 3.1  & 17.58 & 94.0     & 93.0      & 124.3    \\ \hline
-		2   & 0.26 & 11.33 & 3.62  & 3.1  & 19.11 & 109.0    & 103.0     & 120.5    \\ \hline
-		3   & 0.3  & 10.76 & 4.19  & 3.1  & 20.58 & 121.0    & 78.0      & 101.1    \\ \hline
-		4   & 0.34 & 10.2  & 4.76  & 3.1  & 21.93 & 78.0     & 64.0      & 69.8     \\ \hline
-		5   & 0.38 & 9.63  & 5.32  & 3.1  & 23.21 & 25.0     & 39.0      & 39.3     \\ \hline
-		7   & 0.46 & 8.51  & 6.45  & 3.1  & 25.59 & 40.0     & 40.0      & 41.2     \\ \hline
-		9   & 0.54 & 7.38  & 7.57  & 3.1  & 27.78 & 36.0     & 36.0      & 35.5     \\ \hline
-		11  & 0.62 & 6.2   & 8.76  & 3.1  & 29.92 & 29.0     & 27.0      & 27.6     \\ \hline
-		13  & 0.7  & 5.13  & 9.82  & 3.1  & 31.73 & 23.0     & 23.0      & 23.0     \\ \hline
-		15  & 0.78 & 4.0   & 10.96 & 3.1  & 33.56 & 21.0     & 23.0      & 22.8     \\ \hline
+		1   & 0.22 & 11.89 & 3.07  & 3.1  & 17.58 & 94.0   & 93.0      & 124.3    \\ \hline
+		2   & 0.26 & 11.33 & 3.62  & 3.1  & 19.11 & 109.0  & 103.0     & 120.5    \\ \hline
+		3   & 0.3  & 10.76 & 4.19  & 3.1  & 20.58 & 121.0  & 78.0      & 101.1    \\ \hline
+		4   & 0.34 & 10.2  & 4.76  & 3.1  & 21.93 & 78.0   & 64.0      & 69.8     \\ \hline
+		5   & 0.38 & 9.63  & 5.32  & 3.1  & 23.21 & 25.0   & 39.0      & 39.3     \\ \hline
+		7   & 0.46 & 8.51  & 6.45  & 3.1  & 25.59 & 40.0   & 40.0      & 41.2     \\ \hline
+		9   & 0.54 & 7.38  & 7.57  & 3.1  & 27.78 & 36.0   & 36.0      & 35.5     \\ \hline
+		11  & 0.62 & 6.2   & 8.76  & 3.1  & 29.92 & 29.0   & 27.0      & 27.6     \\ \hline
+		13  & 0.7  & 5.13  & 9.82  & 3.1  & 31.73 & 23.0   & 23.0      & 23.0     \\ \hline
+		15  & 0.78 & 4.0   & 10.96 & 3.1  & 33.56 & 21.0   & 23.0      & 22.8     \\ \hline
 		16*  & 0.82 & 3.51  & 11.82 & 2.90 & 36.12 &24.2 &23.9& 24.6 \\ \hline
 
 	\end{tabular}
@@ -355,9 +355,9 @@ In order to achieve a high level of resolution in momentum and angle, the HRSs w
 \paragraph{}Due to time and physical constraints caused by issues with the running of all four halls simultaneously, the kinematics where adjusted to provided the best chance of reaching the statical goals at a large range in $X$. The angle setting for each kinematic were adjusted slightly. Most kinematics experience a slight degrees in angle setting to increase the rate of electron counting. During the first few days of running the MARATHON experiment the RHRS dipole experience a power supply failure. This issue could not be resolved quickly. In order to complete our goal, the MARATHON experiment adjusted the kinematic plan to remove RHRS from running. The statical precision goal of the MARATHON experiment forced the collaboration to remove a few kinematic points from the plan. The kinematics that the MARATHON experiment were able to complete are listed in table \ref{newkin}. After the new plan was solidified and data for the first few kinematics where complete, the RHRS was restored to services. The RHRS was then set to kinematic 16 for rest of the experiment.      
 
 \begin{figure}[h]
-	\hspace*{-2.cm} 
+%	\hspace*{-2.cm} 
 	\centering
-	\includegraphics[width=18.cm]{KinCov.pdf}
+	\includegraphics[width=15.5cm]{KinCov.pdf}
 	\caption{A kinematic coverage plot, demonstrating the $Q^2$ coverage for $x$ and Theta. Also the relationship between $x$ and Theta. The band around the points represents the approximate spectrometer acceptance in the y axis.}
 	\label{fig:kincov}
 \end{figure}

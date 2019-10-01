@@ -1,7 +1,7 @@
 
 \chapter{EMC Simulation}Nuclei are systems of nucleons that interact strongly. The characteristic scale for the nucleons momentum is approximately the Fermi momentum, $k_F \approx 200-270 MeV/c$ \cite{gomez}. However because of the strongly repulsive nature of the nucleon-nucleon interaction at short distances prevents two nucleons from laying in close proximately to each other. This strong interaction demands the presence of high-momentum components in the nuclear ground state wave function. A simulation was designed to phenomenologically study the effect of these high-momentum components on the nuclear EMC effect. This program was designed in two phases. The first phase used simple elastic scattering and a single value for the targets momentum to investigate overall effect of different target momentum on the yield in bins of $x_B$. The second phase of the simulation was created to lay out the effect of using different momentum distributions on the yield for the EMC effect region of $x_B$, 0.3 to 0.7.
 \section{Investigation} This simulation phenomenologically investigates the effect of a moving target on the EMC effect by scattering a beam of electrons off of a moving proton. The target protons are comprised of a directional vector of 0$^\circ$ to 360$^\circ$ in respect to the incoming electron beam and a momentum between 0 and 1 GeV/c. Figure \ref{example} contains a possible event for the simulation. The electron approaches with 2.5 GeV of energy and collides with a proton moving with a momentum of 0.5 GeV/c with an angle of 45$^\circ$ in respect to the electron trajectory. 
-\begin{figure}[h]
+\begin{figure}[t]
 \centering
 \caption{Example of the electron beam(red) with a energy of 2.5 GeV and the proton(blue) with angle of 45$^\circ$ in respect to the electron and with a momentum of 0.5 GeV/c.}
 \includegraphics[width=8cm]{Initial.png}
@@ -13,7 +13,7 @@ Using conservation of momentum and conservation of energy in elastic collisions,
 \section{Transformation}
 The Simulation completes a set of Lorentz invariant  rotations and boost for each event to transform the lab frame of the electron and proton collision into the rest frame of the proton. First the simulation takes the initial proton and electron vectors and rotates them to align the proton vector to the horizontal axis, shown in figure \ref{LAM}.This rotation uses the angle between the proton and the electron defined as $\lambda$. This allows for a straight forward calculations for the Lorentz factors $\beta$ and $\gamma $ and to boost into the rest frame of the target proton, figure \ref{boost}. Once in the boosted frame, the angle between the electron and the horizontal axis is defined as $\delta$.  Right before the simulation starts to calculate the scattered products, it completes one more rotation to align the electron vector with the horizontal axis, figure \ref{delta}, to make the scattering calculation systematic and unconditional. 
 
-\begin{figure}[h]
+\begin{figure}[t]
   \centering
   
   \subfloat[Initial Vectors]{
@@ -43,22 +43,22 @@ The Simulation completes a set of Lorentz invariant  rotations and boost for eac
   \begin{figure}[h]
     \centering
     \subfloat[After scattering]{
-    \includegraphics[width=6.0cm]{afterscatter.png}
+    \includegraphics[width=7.0cm]{afterscatter.png}
     \label{boom}}
     \quad
     \centering
     \subfloat[Rotate back by $\delta$]{
-    \includegraphics[width=6.0cm]{Rotatedbydelta.png}
+    \includegraphics[width=7.0cm]{Rotatedbydelta.png}
     \label{delta2}}
     \vspace{-1cm}
     \centering
     \subfloat[Boosted]{
-    \includegraphics[width=6.0cm]{boostedback.png}
+    \includegraphics[width=7.0cm]{boostedback.png}
     \label{boost2}}
     \quad
     \centering
     \subfloat[Final vectors]{
-   \includegraphics[width=6.0cm]{final.png}
+   \includegraphics[width=7.0cm]{final.png}
     \label{Final}}
     
     \caption{Vector representations of the momentum for the incoming electron(red) and  target proton(blue) with units of GeV for each phase of their transformations after scattering).}
