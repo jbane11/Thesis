@@ -55,7 +55,7 @@ The contributions for error on the measurement of the normalized yield(normY) ca
 p[_{UpperBound},_{LowerBound}] = \frac{ 2np +z^2 \pm \left[z\sqrt{z^2 - \frac{1}{n} + 4np(1-p) +(4p-2)} + 1 \right]}{2(n+z^2)} \label{WSI}
 \end{equation}
 The relative efficiency errors are added in quadrature to calculate an over all efficiency error to be propagated into the yield calculation.
-\paragraph{}The correction for background events corrects for events from the end caps and pair produced electrons. The end cap correction factor is produced by a ratio of yields between the gas cells and the empty cell. This yield measurement allows for the cancellation of many of the systematic uncertainties. The largest contribution to the this error is the low statistics of the back ground events. The estimated error to the cross section analysis is about 1\%. Furtherer study of the end cap contamination and the error associated with the correct is part of the ongoing analysis. The error for the positron correction involves using the covariance matrix for the exponential fit and propagating the error for each parameter of each target using the $x_{Bj}$ dependent function. The covariance terms between the parameters are also included in the error analysis.
+\paragraph{}The correction for background events corrects for events from the end caps and pair produced electrons. The end cap correction factor is produced by a ratio of yields between the gas cells and the empty cell. This yield measurement allows for the cancellation of many of the systematic uncertainties. The largest contribution to the this error is the low statistics of the back ground events. The estimated error to the cross section analysis is about 1\%. Furtherer study of the end cap contamination and the error associated with the correct is part of the ongoing analysis. The error for the positron correction involves using the covariance matrix for the exponential fit and propagating the error for each parameter of each target using the $x_{Bj}$ dependent function. The error for the fit parameters are propagated to an error for the correction using equation \ref{cv_err}.
 \begin{equation}
 \frac{\Delta f(x)}{f(x)} =  \sqrt{ \sum_{i}^{} \left(\delta p_i\cdot x^i\right)^2 + \sum_{ij}^{}\left( 2\cdot \delta p_{ij}\cdot \dfrac{df(x)}{dp_i}\cdot \dfrac{df(x)}{dp_i}\right) } \label{cv_err}
 \end{equation}
@@ -73,6 +73,8 @@ The error for the background corrections are added in quadrature to get an overa
 
 \cite{Ar_Ti}
 \subsection{Cross Section Model Error}
+\paragraph{}
+The model dependence of the DIS cross section and the radiative corrections are the two factors of the systematic error that accompanies the Monte Carlo ratio method. My analysis of the model depended errors used different DIS cross section models to supply an error for the model cross section and the radiative corrections.
 
 \section{EMC Ratios}
 \paragraph{}In this section, I will present the A/D cross section ratios for helium-3 and tritium. The ratios are normalized by the number of nucleons in each target. Included in figure \ref{ADplot} are results from E03103. These results have different invariant mass but are considered DIS until 0.65 in $x$. Above this threshold, the invariant mass begins to drop lower then the DIS criteria used for my analysis. 
@@ -86,7 +88,7 @@ The error for the background corrections are added in quadrature to get an overa
 	\caption{The A/D ratio for helium-3 and tritium from my analysis. Also included, EMC analysis from E03103\cite{seeley} and the EMC ratios from a DIS scattering model from Arie Bodek model \cite{DISmodel}.}
 	\label{ADplot}
 \end{figure}
-
+The data for each of these targets were taken with the same spectrometer in rotating fashion to 
 %\end{sidewaysfigure}
 %\end{landscape}
 
