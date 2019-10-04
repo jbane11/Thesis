@@ -21,8 +21,9 @@ The culminating part of this nuclear physics analysis begins with the extraction
 I compared the data yield to the Monte Carlo yield to produce a correcting factor for the model cross section. Figure \ref{D_MC_COMP} shows the ratio comparison between data and Monte Carlo in bins of $x$. Then apply the ratio factor for a bin in $x$ to the model cross section to extract out the experimentally measured cross section for that bin. Figure \ref{CCplot} shows a plot of the experientially measured cross section for tritium, helium-3, and deuterium.  This is the first result of an inclusive DIS cross section for tritium.  Appendix (?) contains a table of the cross section and summaries of the errors included in the error study for the cross section analysis. 
 \section{Cross Section Error Analysis}
 The measurement of the cross section requires finally tune detectors and analysis process. Uncertainties arise due to the nature and limitations of the spectrometers and the analysis of the data received. In this section, I will discuss the calculation and propagation of errors in the analysis of the DIS cross section. The error analysis will be broken into the calculation of normalized yield for data, yield for Monte Carlo, and the cross section extraction. 
+
 \begin{table}[]
-	\caption{Relative Error Contributions in $\%$ for Cross Section for a selection of bins. The efficiency error is a combination of the error from the livetime, PID, tracking, and trigger efficiency calculations.}
+	\caption{Relative Error Contributions in $\%$ for Cross Section for a selection of bins. This table contains the summary of relative error to the cross section for the yield, Monte Carlo, and Cross Section Model.}
 	\centering
 	\begin{tabular}{|l|l|l|l|}
 		\hline
@@ -95,7 +96,7 @@ The model dependence of the DIS cross section and the radiative corrections are 
 %\end{landscape}
 
 \subsection{Isoscalar Correction}
-	The definition of an EMC effect ratio is the ratio of the per nucleon cross section ratio of a target nucleus with deuterium. Also,  this comparison is of a target with equal number of protons and neutrons, an isoscalar nuclei. When looking at the EMC ratio of a target with not an equal number of nucleons, an isoscalar correction needs to be applied. This correction is used to correct for the difference in cross section between the neutron and proton. The per nucleon nuclear F$_2^A $ of an unsymmetrical nucleon can be wrote as:
+	\paragraph{}The definition of an EMC effect ratio is the ratio of the per nucleon cross section ratio of a target nucleus with deuterium. Also,  this comparison is of a target with equal number of protons and neutrons, an isoscalar nuclei. When looking at the EMC ratio of a target with not an equal number of nucleons, an isoscalar correction needs to be applied. This correction is used to correct for the difference in cross section between the neutron and proton. The per nucleon nuclear F$_2^A $ of an unsymmetrical nucleon can be written as:
 	\begin{equation}
 	\frac{1}{A}\left(ZF^p_2 + \left(A-Z\right)F^2_n\right)\nonumber
 	\end{equation}
@@ -103,23 +104,31 @@ The model dependence of the DIS cross section and the radiative corrections are 
 	\begin{equation}
 		\frac{1}{2}\left(F^p_2 + F^2_n\right).\nonumber
 	\end{equation}	
-	This isoscalar correction can be determine by applying correction function $f_{iso}$ to equate the two and solving that combination for the function.
+	The isoscalar correction can be determine by applying a correction function $f_{iso}$ to equate the two previous equations and solving that combination for the correction function.
 	\begin{equation}
 		\frac{1}{2}\left(F^p_2 + F^2_n\right) =  f^A_{iso}\frac{1}{A}\left(ZF^p_2 + \left(A-Z\right)F^2_n\right)\nonumber
 	\end{equation}
 	\begin{equation}
 	f^A_{iso} = \frac{\frac{1}{2}\left(1+F^n_2/F^p_n\right)}{\frac{1}{A}\left(Z +(A-Z)F^n_2/F^p_n\right)} \label{isoC}
 	\end{equation}
-	The isoscalar correction for a nuclear target depends on A,Z, and the F$_2$ ratio. There exist no data on the free neutron, so the $F^n_2/F^p_n$ is a model dependent extraction. The  F$_2$ ratio has been extracted from a ratio of tritium to helium from the MARATHON experiment and  hydrogen to deuterium ratios from previous experiments from SLAC and the NMC. I have used the $F^n_2/F^p_n$ from MARATHON to calculate my iscscalar correction. I have estimated the error of this model dependent correction by comparing the isoscalar correction from the MARATHON extraction with the isoscalar correction using three other $F^n_2/F^p_n$ models Kulagin, S. A. and Petti, R. \cite{kpmodel}, J. Arrington \cite{JA_FR}, and NMC \cite{NMC_ratio}. The relative variance of this calculation ranges from $\pm$ 0.1\% to $\pm$ 3.8\% for tritium EMC ratio. These 4 models and the error band from this study is shown in figure \ref{isofuncs}.
+	\paragraph{}The isoscalar correction for a nuclear target depends on A,Z, and the F$_2$ ratio. There exist no data on the free neutron, so the $F^n_2/F^p_n$ is a model dependent extraction. The  F$_2$ ratio has been extracted from the ratio of tritium to helium from the MARATHON experiment and deuterium to hydrogen ratios from previous experiments from SLAC and the NMC. I have used the $F^n_2/F^p_n$ from MARATHON to calculate my iscscalar correction for both helium-3 and tritium. I have estimated the error of this model dependent correction by comparing the isoscalar correction from the MARATHON extraction with the isoscalar correction using three other $F^n_2/F^p_n$ models Kulagin, S. A. and Petti, R. \cite{kpmodel}, J. Arrington \cite{JA_FR}, and NMC \cite{NMC_ratio}. The relative variance of this calculation ranges from $\pm$ 0.1\% to $\pm$ 3.8\% for tritium EMC ratio. These 4 models and the error band from this study is shown in figure \ref{isofuncs}.
 
 	\begin{figure}[t]
-		\includegraphics[width=15cm]{ISOfacs.pdf}
+		\includegraphics[width=15cm]{ISOfacsH3.pdf}
 		\caption{Isoscalar correction factor for the tritium EMC ratio from four different models discussed in this section.}
 		\label{isofuncs}
 	\end{figure}
+	\begin{figure}
+		\includegraphics[width=15cm]{ISOfacsHe3.pdf}
+		\caption{Isoscalar correction factor for the helium-3 EMC ratio from four different models discussed in this section.}
+		\label{isofuncsHe3}
+	\end{figure}
 
+\section{EMC Effect}
+\paragraph{} The MARATHON experiment was designed to study the ratio of yields between nuclear targets. The process of studying ratios help eliminate many systematic errors. MARATHON's design of rotating targets, and uniform data taking procedure allows the cancellation of the detector efficiency correction facto and corrections due to acceptance issues. This will reduce the size of the uncertainty of the EMC effect measurement and provides a better result for the EMC ratio of the two A=3 nuclei. The isoscalar corrected EMC Effect ratios for helium-3 and tritium from my inclusive DIS cross section extraction are displayed in figure \ref{ISOEMC_B}.   
 
-
-\subsection{EMC Effect}
-\paragraph{}The EMC Effect isoscalar corrected ratios for helium-3 and tritium from my inclusive DIS cross section extraction are displayed in this section. The data for each of these targets were taken with the same spectrometer in rotating fashion to help eliminate some of the systemic uncertainties.
-
+	\begin{figure}
+		\includegraphics[width=15cm]{EMCIsotwo.pdf}
+		\caption{Isoscalar correction factor for the helium-3 EMC ratio from four different models discussed in this section.}
+		\label{ISOEMC_B}
+	\end{figure}
