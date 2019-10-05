@@ -1,6 +1,6 @@
 
 \chapter{Results}
-The culminating part of this nuclear physics analysis begins with the extraction of the experimentally measured DIS cross sections for three targets. Then using those cross sections to study the per nucleon scaled A/D ratio. I will also use these A/D ratios to study the EMC effect for both helium-3 and tritium. In this chapter, I will present my results for the DIS cross sections and EMC effect. I will also discuss an error analysis for both the cross section measurements and the EMC effect results. 
+\paragraph{}The culminating part of this nuclear physics analysis begins with the extraction of the experimentally measured DIS cross sections for three targets. Then using those cross sections to study the per nucleon scaled A/D ratio. I will also use these A/D ratios to study the EMC effect for both helium-3 and tritium. In this chapter, I will present my results for the DIS cross sections and EMC effect. I will also discuss an error analysis for both the cross section measurements and the EMC effect results. 
 \section{DIS Cross Section}
 \paragraph{}Using the Monte Carlo ratio method, I extracted the experimental measured cross section for helium-3, tritium, and deuterium. These DIS cross section extraction ranges from 0.18 to 0.82 in $x$, from 2.2 to 11.8 GeV$^2$ in $Q^2$, and has W$^2$ $>3.5$ GeV$^2$. The central momentum setting of the spectrometer was 3.1 GeV/c and the spectrometer was moved from 17.5 to 33.5 degrees.
 
@@ -18,9 +18,9 @@ The culminating part of this nuclear physics analysis begins with the extraction
 \end{figure}
 %\end{sidewaysfigure}
 %\end{landscape}
-I compared the data yield to the Monte Carlo yield to produce a correcting factor for the model cross section. Figure \ref{D_MC_COMP} shows the ratio comparison between data and Monte Carlo in bins of $x$. Then apply the ratio factor for a bin in $x$ to the model cross section to extract out the experimentally measured cross section for that bin. Figure \ref{CCplot} shows a plot of the experientially measured cross section for tritium, helium-3, and deuterium.  This is the first result of an inclusive DIS cross section for tritium.  Appendix (?) contains a table of the cross section and summaries of the errors included in the error study for the cross section analysis. 
+I compared the data yield to the Monte Carlo yield to produce a correcting factor for the model cross section. Figure \ref{D_MC_COMP} shows the ratio comparison between data and Monte Carlo in bins of $x$. Then apply the ratio factor for a bin in $x$ to the model cross section to extract out the experimentally measured cross section for that bin. Figure \ref{CCplot} shows a plot of the experientially measured cross section for tritium, helium-3, and deuterium.  This is the first result of an inclusive DIS cross section for tritium and expands on the DIS cross section for helium-3, pushing the invariant mass past the resonance region at higher values of $x$.  Appendix \ref{A_cst} contains tables of the cross section and summaries of the errors included in the error study for the cross section analysis of each target. 
 \section{Cross Section Error Analysis}
-The measurement of the cross section requires finally tune detectors and analysis process. Uncertainties arise due to the nature and limitations of the spectrometers and the analysis of the data received. In this section, I will discuss the calculation and propagation of errors in the analysis of the DIS cross section. The error analysis will be broken into the calculation of normalized yield for data, yield for Monte Carlo, and the cross section extraction. 
+\paragraph{}The measurement of the cross section requires finally tune detectors and analysis processes. Uncertainties arise due to the nature and limitations of the spectrometers and the analysis of the data received. In this section, I will discuss the calculation and propagation of errors in the analysis of the DIS cross section. The error analysis will be broken into the calculation of normalized yield for data, yield for Monte Carlo, and the model used for cross section extraction. 
 
 \begin{table}[]
 	\caption{Relative Error Contributions in $\%$ for Cross Section for a selection of bins. This table contains the summary of relative error to the cross section for the yield, Monte Carlo, and Cross Section Model.}
@@ -41,14 +41,14 @@ The measurement of the cross section requires finally tune detectors and analysi
 		Total Error		 	 	& 0.95  & 1.931 & 3.316 \\ \hline
 	\end{tabular}
 \end{table}
-
+\subsection{Normalized Yield Error}
+\subsubsection{Corrected Electron Count Error}
 \begin{align}
 \dfrac{d\sigma}{dE^{\prime}d\Omega} &= \frac{(N - BG)}{\mathscr{L} \cdot \epsilon \cdot \Delta E^{\prime} \Delta \Omega \cdot A(E^{\prime},\theta)}. \nonumber\\
 \sigma &= \text{NormY}/\left(\Delta E^{\prime} \Delta \Omega \cdot A(E^{\prime},\theta)\right)\nonumber\\
 \text{NormY} &= \left(N_e \cdot BG/\epsilon \right) / \mathscr{L}
 \end{align}
-\subsection{Normalized Yield Error}
-\subsubsection{Corrected Electron Count Error}
+
 \paragraph{}
 The contributions for error on the measurement of the normalized yield(normY) can be simplified into the contributions for the corrected number of electrons and the luminosity. The error for the corrected number of counted electrons includes the random statistical error for the count of electrons detected, the error associated with the calculated efficiencies, and the error from the background correction. The electron statics range from 4875 to more then 42000 in a bin and therefor I have treated the randomness of the counting in a standard error technique. The relative statistical error for a bin is $\frac{1}{\sqrt{Ne}}$ and ranges from .5\% to 1.4\%. Calculating the efficiencies deals with calculating a probability of a binomial choice. The errors associated with the efficiencies are calculated using the Wilson score interval described in equation \ref{WSI}, where $p$ is the efficiency or a probability of a success, $n$ is the number of samples, $z$ is 1.645 for a 95\% confidence level. 
 \begin{equation}
@@ -124,9 +124,11 @@ The model dependence of the DIS cross section and the radiative corrections are 
 	\end{figure}
 
 \section{EMC Effect}
-\paragraph{} Using the extracted cross section of the two A=3 nuclei and deuterium, the first measurement of the tritium EMC effect has been achieved. The data also provides a comparison of the EMC effect of the mirror nuclei helium-3. MARATHON's design of rotating targets, and uniform data taking procedure allows for the cancellation of the detector efficiency correction factors and corrections due to acceptance issues. This will reduce the size of the uncertainty of the EMC effect measurement and provides a better result for the EMC ratio of the two A=3 nuclei. The isoscalar corrected EMC Effect ratios for helium-3 and tritium from my inclusive DIS cross section extraction are displayed in figure \ref{ISOEMC_B}. These results provide a comparison between my extract of the helium-3 EMC and the helium-3 EMC results from the E03103 from J. Seeley and A. Daniels \cite{seely}. The EMC results are plotted with a error bars that represent the total point to point error for the EMC measurement and an error band for the overall normalization uncertainty dominated by the target thickness uncertainty.  
+\paragraph{} Using the extracted cross section of the two A=3 nuclei and deuterium, the first measurement of the tritium EMC effect has been achieved. The data also provides a comparison of the EMC effect of the mirror nuclei helium-3. MARATHON's design of rotating targets, and uniform data taking procedure allows for the cancellation of the detector efficiency correction factors and corrections due to acceptance issues. This will reduce the size of the uncertainty of the EMC effect measurement and provides precise result for the EMC ratio of the two A=3 nuclei. 
+\paragraph{}The isoscalar corrected EMC Effect ratios for helium-3 and tritium from my inclusive DIS cross section extraction are displayed in figure \ref{ISOEMC_B}. These results provide a comparison between my extract of the helium-3 EMC and the helium-3 EMC results from the E03103 from J. Seeley and A. Daniels \cite{seeley}. My EMC effect for helium-3 shows good agreement with the E03103 experimental results within uncertainty. The EMC results are plotted with error bars that represent the total point to point uncertainty for the EMC measurement and an error band for the overall normalization uncertainty dominated by the error in target thickness measurement.  
 	\begin{figure}
 		\includegraphics[width=15cm]{EMCIsotwo.pdf}
 		\caption{Isoscalar correction factor for the helium-3 EMC ratio from four different models discussed in this section.}
 		\label{ISOEMC_B}
 	\end{figure}
+
