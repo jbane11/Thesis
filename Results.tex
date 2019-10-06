@@ -20,27 +20,20 @@
 %\end{landscape}
 I compared the data yield to the Monte Carlo yield to produce a correcting factor for the model cross section. Figure \ref{D_MC_COMP} shows the ratio comparison between data and Monte Carlo in bins of $x$. Then apply the ratio factor for a bin in $x$ to the model cross section to extract out the experimentally measured cross section for that bin. Figure \ref{CCplot} shows a plot of the experientially measured cross section for tritium, helium-3, and deuterium.  This is the first result of an inclusive DIS cross section for tritium and expands on the DIS cross section for helium-3, pushing the invariant mass past the resonance region at higher values of $x$.  Appendix \ref{A_cst} contains tables of the cross section and summaries of the errors included in the error study for the cross section analysis of each target. 
 \section{Cross Section Error Analysis}
-\paragraph{}The measurement of the cross section requires finally tune detectors and analysis processes. Uncertainties arise due to the nature and limitations of the spectrometers and the analysis of the data received. In this section, I will discuss the calculation and propagation of errors in the analysis of the DIS cross section. The error analysis will be broken into the calculation of normalized yield for data, yield for Monte Carlo, and the model used for cross section extraction. 
+\paragraph{}The measurement of the cross section requires finally tune detectors and analysis processes. Uncertainties arise due to the nature and limitations of the spectrometers and the analysis of the data received. In this section, I will discuss the calculation and propagation of errors in the analysis of the DIS cross section. The error analysis will be broken into the calculation of normalized yield for data, yield for Monte Carlo, and the model used for cross section extraction. Table \ref{ET_sum} cotains the summary of the erros for the cross section extraction for the error on the yield, MC, and model. 
 
 \begin{table}[]
-	\caption{Relative Error Contributions in $\%$ for Cross Section for a selection of bins. This table contains the summary of relative error to the cross section for the yield, Monte Carlo, and Cross Section Model.}
-	\centering
-	\begin{tabular}{|l|l|l|l|}
-		\hline
-		\textbf{\qquad \qquad\qquad x bin}   & \textbf{0.215} & \textbf{0.455} & \textbf{0.705} \\ \hline\hline
-		Statistical             & 0.512 & 0.889 & 1.106 \\ \hline
-		Efficiency Error*       & 0.665 & 1.477 & 2.951 \\ \hline
-		Positron Correction     & 0.036 & 0.016 & 0.005 \\ \hline
-		End cap Correction     & 1.0 & 1.0 & 1.0 \\ \hline
-		Charge Calculation     & 0.2 & 0.2 & 0.2 \\ \hline
-		Density Correction      & 0.2 & 0.2 & 0.2 \\ \hline
-		Monte Carlo Statistical & 0.193 & 0.217 & 0.209 \\ \hline
-		Optics Reconstruction	& ?0.665& ?1.477 &?2.951 \\ \hline
-		??Cross Section Model 	& ?0.193 & ?0.217 & ?0.209 \\ \hline
-		??Radiative Corrections\cite{primer} 	& 0.5  & 0.5 & 0.5 \\ \hline
-		Total Error		 	 	& 0.95  & 1.931 & 3.316 \\ \hline
-	\end{tabular}
+	\caption{Relative Error Contributions for Cross Section for a selection of bins. This table contains the summary of relative error to the cross section for the yield, Monte Carlo, and Cross Section Model. Then summed in quadrature is the total relative error for the cross section.}
+	\label{ET_sum}
+\begin{tabular}{|l|l|l|l|l|l|l|}
+	\hline
+	\multicolumn{1}{|r|}{Xbjc}        & \textbf{0.185} & \textbf{0.305} & \textbf{0.49} & \textbf{0.57} & \textbf{0.705} & \textbf{0.825} \\ \hline
+	Corrected Norm. Yield Error       & 0.01           & 0.01           & 0.014         & 0.015         & 0.014          & 0.016          \\ \hline
+	MC and Model Total Error & 0.015          & 0.015          & 0.013         & 0.014         & 0.028          & 0.026          \\ \hline
+	Cross Section Error               & 0.018          & 0.018          & 0.019         & 0.021         & 0.031          & 0.031          \\ \hline
+\end{tabular}
 \end{table}
+
 \subsection{Normalized Yield Error}
 \subsubsection{Corrected Electron Count Error}
 \begin{align}
@@ -62,8 +55,23 @@ The relative efficiency errors are added in quadrature to calculate an over all 
 The error for the background corrections are added in quadrature to get an overall error for the total back ground correction.  
 \subsubsection{Luminosity Error}
 \paragraph{}The errors involved in the luminosity calculated is the target density thickness measurement, beam charge calculation, and density correction. The error in the target thickness measurement is considered a overall normalization uncertainty. The error for the three gas targets' thickness measurements are: tritium= 0.97\%, helium-3 = 1.12\%, and deuterium = 0.56\% \cite{HATT_eng}. The measurement uncertainties for each gas target are displayed in table \ref{tgt_table}. The amount of beam charge deposited on the target is calculated via the BCM(beam charge monitors) and their calibrations. The BCM calibrations were determined a few times through the run period with no change to the calibration constants. Due to the consistency of the BCMs and the high quality calibration the  error estimation for charge calculation is approximately 0.2\%. The error for the density correction is based in the error from the 2nd order polynomial fit. The error is calculated using the same method as the positron background correct, combining the errors for the fit parameters and the covariance terms through the propagation formula \ref{cv_err} using the current dependent correction function, \ref{eq:dc}. The relative error in charge on target and density correction have been added in quadrature to calculate a systematic error for the luminosity calculation. The systematic error for the luminosity and the systematic error for the correct count of electrons are then added in quadrature to calculate and overall normalized yield error.  
+\begin{table}[]
+	\caption{This table provides a summary of the error analysis for the Corrected Normalized Electron Yield. Containing the relative error for the bin statistics, background subtraction, efficiencies, and luminosity calculation. Including the total error on the Yield analysis for a selection of bins over the entire range of kinematics.  }
+	\label{Y_Etable}
+	\begin{tabular}{|l|l|l|l|l|l|l|}
+		\hline
+		\multicolumn{1}{|r|}{\textbf{Xbjc}} & \textbf{0.185} & \textbf{0.305} & \textbf{0.49} & \textbf{0.57} & \textbf{0.705} & \textbf{0.825} \\ \hline
+		Stat Err                            & 0.0062         & 0.0053         & 0.0097        & 0.0106        & 0.011          & 0.0143         \\ \hline
+		Density Correction             & 0.002          & 0.0024         & 0.003         & 0.003         & 0.0026         & 0.002          \\ \hline
+		Positron Correction            & 0.0004         & 0.0002         & 0.0001        & 0.0001        & 0.0001         & 0.0001         \\ \hline
+		End Cap Subtraction            & 0.007          & 0.007          & 0.007         & 0.007         & 0.0070         & 0.007          \\ \hline
+		Efficiencies Error             & 0.004          & 0.0051         & 0.0075        & 0.0071        & 0.0041         & 0.0032         \\ \hline
+		Corrected Norm. Yield Error    & 0.0104         & 0.0104         & 0.0145        & 0.0148        & 0.0139         & 0.0164         \\ \hline
+	\end{tabular}
+\end{table}
+
 \subsection{Monte Carlo Yield Error}
-\paragraph{}The responsibility of the Monte Carlo is to accurately account for the acceptance of the spectrometers. The uncertainty for thee Monte Carlo yield combines the statical uncertainty of the number of events generated and the reconstruction of the momentum and angle.  The statistical uncertainty is reduced due to the generation of a few million events. The uncertainty in the reconstruction of an event is a mixture of the uncertainties in the beam x and y position, spectrometer offsets, beam energy, optics, and acceptance cuts. The uncertainties for the beam x and y position was controlled by the BPMs and the calibration I completed. The uncertainty for the BPM measurements is 140 $\mu$m. The beam energy measurement is quoted to have an absolute accuracy of 5 x 10$^{-4}$.  The optics are capable of determining the relative in-plane angle with an accuracy of $\pm$ 0.2 mrad, out-of-plane angle with $\pm$ 0.6 mrad in the target coordinates, and momentum reconstruction 2.5x10$^{-4}$\cite{HallA}.  Using equation \ref{scatangle}, I propagated the resolution of target reconstruction variables to determine the relative uncertainty of the scattered angle to be $\approx$ 0.15\%. I have calculated the effect of the accuracy of the optics by comparing the cross section for the nominal values of , beam energy, scattered angle, and momentum, to the cross section of these values shifted by their uncertainties. A summary of the uncertainties used in the uncertainty of optics reconstruction are listed below.
+\paragraph{}The responsibility of the Monte Carlo is to accurately account for the acceptance of the spectrometers. The uncertainty for thee Monte Carlo yield combines the statical uncertainty of the number of events generated and the reconstruction of the momentum and angle.  The statistical uncertainty is reduced due to the generation of a few million events. The uncertainty in the reconstruction of an event is a mixture of the uncertainties in the beam x and y position, spectrometer offsets, beam energy, optics, and acceptance cuts. The uncertainties for the beam x and y position was controlled by the BPMs and the calibration I completed. The uncertainty for the BPM measurements is 140 $\mu$m. The beam energy measurement is quoted to have an absolute accuracy of 5 x 10$^{-4}$.  The optics are capable of determining the relative in-plane angle with an accuracy of $\pm$ 0.2 mrad, out-of-plane angle with $\pm$ 0.6 mrad in the target coordinates, and momentum reconstruction 2.5x10$^{-4}$\cite{HallA}.  Using equation \ref{scatangle}, I propagated the resolution of target reconstruction variables to determine the relative uncertainty of the scattered angle to be $\approx$ 0.15\%. I have calculated the effect of the accuracy of the optics by comparing the cross section for the nominal values of , beam energy, scattered angle, and momentum, to the cross section of these values shifted by their uncertainties. A summary of the uncertainties used in the uncertainty of optics reconstruction are listed below. In table \ref{MC_ErrT}, I summary the relative errors associated the Monte Carlo yield and the model cross section discussed in the next section. 
 \begin{itemize}
 \item$\delta \theta$ = 0.15\%
 \item$\delta E^{\prime}$ = $\pm$0.00025
@@ -78,6 +86,18 @@ Using the errors in scattering angle, scattering momentum, and beam energy, I ca
 \subsection{Cross Section Model Error}
 \paragraph{}
 The model dependence of the DIS cross section and the radiative corrections are the two factors of the systematic error that accompanies the Monte Carlo ratio method. My analysis of the model depended errors used different DIS cross section models to supply an error for the model cross section and the radiative corrections. The models I will used to study the model dependent error can be broken into 3 sections, models for F$_{2d}$, model for EMC correction, and model for the ratio for $F_{2n}/F_{2p}$. I will two models to form the deuterium structure function Ari Bodek \cite{DISmodel} and M. Arneodo's NMC model \cite{NMC_model}. I will use two EMC correction models, Kulagin, S. A. and Petti, R. \cite{kpmodel}, and a SLAC EMC correction \cite{SLAC_bodek}. The structure function ratio is formed by two models also, linear Ratio = (1 - 0.8$*x$) and NMC \cite{NMC_ratio}. The model depended error was estimated by comparing the different models together with the chosen model. In the extreme case, this error reached a maximum of 2\%    
+\begin{table}[]
+	\caption{This table contains a summary of the relative error for the Monte Carlo yield extraction and the model cross section. Also, I include the errors add in quadrature for these two analysis parts. }
+	\label{MC_ErrT}
+	\begin{tabular}{|l|l|l|l|l|l|l|}
+		\hline
+		\multicolumn{1}{|r|}{\textbf{Xbjc}} & \textbf{0.185} & \textbf{0.305} & \textbf{0.49} & \textbf{0.53} & \textbf{0.705} & \textbf{0.825} \\ \hline
+		MC Stat Error                           & 0.003          & 0.002          & 0.003         & 0.002         & 0.002          & 0.002          \\ \hline
+		Resolution Error                       & 0.015          & 0.011          & 0.006         & 0.004         & 0.007          & 0.02           \\ \hline
+		Model Error                    & 0.002          & 0.01           & 0.011         & 0.011         & 0.027          & 0.018          \\ \hline
+		MC and Model Total Error   & 0.015          & 0.015          & 0.013         & 0.012         & 0.028          & 0.026          \\ \hline
+	\end{tabular}
+\end{table}
 
 \section{EMC Ratios}
 \paragraph{}In this section, I will present the A/D cross section ratios for helium-3 and tritium. The ratios are normalized by the number of nucleons in each target. Included in figure \ref{ADplot} are results from E03103. These results have different invariant mass but are considered DIS until 0.65 in $x$. Above this threshold, the invariant mass begins to drop lower then the DIS criteria used for my analysis. 
