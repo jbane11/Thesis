@@ -222,7 +222,7 @@ A low threshold in the cherenkov signal allows for an inclusive trigger limiting
 Where the number of good electron events that have one good track is defined as $N_{1 track}$, and $N_{all}$ are all of the electrons rather they have a good track or not. The good electron selection is made via PID cuts in the calorimeter and cherenkov, and cuts in the ADC and TDC of the scintillators. Direct cuts in the signal of the scintillators where made to include the nominal acceptance cuts, which our produced through tracking software. The tracking efficiency of HRSs during the MARATHON experiment is shown in figure \ref{trackeff} for the three gas targets during all kinematic ranges. The efficiency of the VDCs is not relative to the angle of the spectrometer. So the uniform tracking efficiency across all kinematics is expected and helps eliminate any concerns of the performance of the VDCs during the experiment. 
 
 \section{Background Subtraction}
-\paragraph{} The purpose of this analysis is to study the DIS cross sections of deuterium, helium-3, and tritium. The sample of scattered events used to determine the cross section of a given nuclear target then needs to be cleaned of any contamination produced from other targets and processes. The electrons detected by the spectrometers can be electrons that scatted from our chosen target, scattered from a source other then our target, or produced through process other than DIS scattering. The two sources of contamination for the MARATHON experiment are events scattered from the aluminum end caps of the target cell and pair produced electrons via photon interaction. The tritium gas will experience beta decay, that produces helium-3. This helium-3 that contaminates the tritium cell will also be addressed in this section.
+\paragraph{} The purpose of this analysis is to study the DIS cross sections of $^2$D, $^3$He, and $^3$H. The sample of scattered events used to determine the cross section of a given nuclear target then needs to be cleaned of any contamination produced from other targets and processes. The electrons detected by the spectrometers can be electrons that scatted from our chosen target, scattered from a source other then our target, or produced through process other than DIS scattering. The two sources of contamination for the MARATHON experiment are events scattered from the aluminum end caps of the target cell and pair produced electrons via photon interaction. The $^3$H gas will experience beta decay, that produces $^3$He. This $^3$He that contaminates the $^3$H cell will also be addressed in this section.
 \subsection{End Caps}
 \paragraph{} The target cells used during the MARATHON experiment are shown in figure \ref{HATT}. The majority of the events from the end caps can be removed easily via a cut in the reconstructed quantity of reaction vertex along the beam axis. The relatively large density thickness of the aluminum end caps cause a large amount of end cap contamination. The majority of the electrons that scatter from the end caps can be removed through software cuts in the reaction vertex along the beam axis(z). Show in figure \ref{EC5} is a comparison of the reaction vertex of the electron events between the gaseous targets and the empty cell target at kinematic 4. The yield is normalized by the number of event in the histogram to remove any bias from the amount of time of beam on target. The empty target  results in figure \ref{EC5}, demonstrate the form of scattering off of the aluminum windows of our target cell. Using the reconstructed vertex location of the scattering origin, the vast majority of the events from the windows can be removed. This vertex cut is shown by the two vertical blue lines. Only events that lie within these two line are considered good electrons from our chosen target. 
 
@@ -258,35 +258,35 @@ ECC = 1- \big(\frac{Yield_{EC}}{(Yield_{Gas} + Yield_{EC})}\big) \equiv \frac{Yi
 
 
 \subsection{Pair Produced Electrons}
-\paragraph{} The high energy scattering interaction used to create deep inelastic scattering events can produce high energy photons and pions. The high energy photons that have energy greater than 1.022 MeV can convert into e$^+$e$^-$ pairs when the photons interact with a medium. A correction for the number of back ground electrons produced via a pair production process was calculated by determining the amount of positrons produced from equal targets and kinematics. The yield of positrons were measured for kinematics one through five. The results were used to construct a function to determine the amount of contamination at high $x_{Bj}$ kinematics. Figure \ref{PC} shows the amount of positron contamination for tritium and an exponential fit to extrapolate over the entire ranged in $x_{Bj}$ for the MARATHON experiment. 
+\paragraph{} The high energy scattering interaction used to create deep inelastic scattering events can produce high energy photons and pions. The high energy photons that have energy greater than 1.022 MeV can convert into e$^+$e$^-$ pairs when the photons interact with a medium. A correction for the number of back ground electrons produced via a pair production process was calculated by determining the amount of positrons produced from equal targets and kinematics. The yield of positrons were measured for kinematics one through five. The results were used to construct a function to determine the amount of contamination at high $x_{Bj}$ kinematics. Figure \ref{PC} shows the amount of positron contamination for $^3$H and an exponential fit to extrapolate over the entire ranged in $x_{Bj}$ for the MARATHON experiment. 
 
 \begin{figure}[t]
 	\centering
-	\textbf{Tritium positron contamination. }\par\medskip
+	\textbf{$^3$H positron contamination. }\par\medskip
 	\includegraphics[width=15.0cm]{../images/positron_H3_bane.pdf}
-	\caption{The ratio of positron events to electrons for tritium \cite{tongsu}. }
+	\caption{The ratio of positron events to electrons for $^3$H \cite{tongsu}. }
 	\label{PC}
 \end{figure}
 
-\subsection{Beta Decay of Tritium}
-\paragraph{} Tritium a radioactive isotope of hydrogen will beta decay to $^3$He. Tritium has a half-life of 4500 $\pm$ 8 days \cite{T2HL}. The gas cell used to contain Tritium for the experiment was filled on October 23, 2017. The initial tritium thickness density of our tritium cell was $0.077 \pm 0.001 $ grams per cm$^2$. Tritium will decay to $^3$He via a beta interaction. The tritium in our cell is diatomic and decays via two channels\cite{diaT}. The possible decay channels and their branching probabilities are shown in equation \ref{branching}. In DIS interactions, the molecular effects are ignored due to the size of the probe in a DIS scattering event which allows for the different channels to be treated as one. 
+\subsection{Beta Decay of $^3$H}
+\paragraph{} $^3$H a radioactive isotope of hydrogen will beta decay to $^3$He. $^3$H has a half-life of 4500 $\pm$ 8 days \cite{T2HL}. The gas cell used to contain $^3$H for the experiment was filled on October 23, 2017. The initial $^3$H thickness density of our $^3$H cell was $0.077 \pm 0.001 $ grams per cm$^2$. $^3$H will decay to $^3$He via a beta interaction. The $^3$H in our cell is diatomic and decays via two channels\cite{diaT}. The possible decay channels and their branching probabilities are shown in equation \ref{branching}. In DIS interactions, the molecular effects are ignored due to the size of the probe in a DIS scattering event which allows for the different channels to be treated as one. 
 \begin{align}
 			^3H_2 &\rightarrow(^3H ^3He)^+  &(94.5 \pm 0.6\%) \nonumber \\ 
 			^3H_2 &\rightarrow(^3H)^+ + (^3He)^+  & (5.5 \pm 0.6\%) 
 			\label{branching}
 \end{align}
-\paragraph{}The amount of $^3$H and $^3$He in our tritium cell will change in respect to the time since the feeling of the cell. Equations \ref{nT} and \ref{nH} describe the amount of $^3$H and $^3$He in the tritium cell has a function of the time since fill date and the original amount of $^3$H and $^3$He in cell at filling. In equations \ref{nT} and \ref{nH}, $n_T(n_H)$ is the time dependent amount of tritium(helium), and  $n_T^0(n_H^0)$ is the amount of tritium(helium) in the cell at time of filling. t is the time since the cell was filled and $\tau$ is the mean livetime of tritium.
+\paragraph{}The amount of $^3$H and $^3$He in our $^3$H cell will change in respect to the time since the feeling of the cell. Equations \ref{nT} and \ref{nH} describe the amount of $^3$H and $^3$He in the $^3$H cell has a function of the time since fill date and the original amount of $^3$H and $^3$He in cell at filling. In equations \ref{nT} and \ref{nH}, $n_T(n_H)$ is the time dependent amount of $^3$H($^3$He), and  $n_T^0(n_H^0)$ is the amount of $^3$H($^3$He) in the cell at time of filling. t is the time since the cell was filled and $\tau$ is the mean livetime of $^3$H.
 \begin{align}
 	n_T &= n_T^0 \: e^{-t/\tau} \label{nT}\\
 	n_H &= n_H^0(1 - e^{-t/\tau}) \label{nH},
 \end{align}
-As time passes the amount of $^3He$ increases, the contamination becomes a non-negligible effect on the yield of scattered electrons. The fraction of $^3He$ in the tritium can reach up to 3$\%$ for the data from the end of the MARATHON experiment. This $^3He$ fraction as a function of time is shown in figure \ref{Hfract}, with the period for running the MARATHON experiment labeled as a color band. 
+As time passes the amount of $^3He$ increases, the contamination becomes a non-negligible effect on the yield of scattered electrons. The fraction of $^3He$ in the $^3$H can reach up to 3$\%$ for the data from the end of the MARATHON experiment. This $^3He$ fraction as a function of time is shown in figure \ref{Hfract}, with the period for running the MARATHON experiment labeled as a color band. 
 
 \begin{figure}[t]
 	\centering
-	\textbf{Helium Fraction from Tritium Cell. }\par\medskip
+	\textbf{$^3$He Fraction from $^3$H Cell. }\par\medskip
 	\includegraphics[width=13cm]{cont_Hfrac.pdf}
-	\caption{The amount of Helium in the Tritium cell in reference to the total amount of material in the cell as a function of time. Included are bands of time for different sections of the Tritium run group's plan \cite{Beta}.}
+	\caption{The amount of $^3$He in the $^3$H cell in reference to the total amount of material in the cell as a function of time. Included are bands of time for different sections of the $^3$H run group's plan \cite{Beta}.}
 	\label{Hfract}
 \end{figure}
 \begin{equation}
@@ -300,7 +300,7 @@ Y_{raw} = \frac{\sum (T_i + H_i)}{\sum Q_i (n_{T,i} + n_{H,i})} \label{Yraw}
 \end{equation}
 
 
-The events that scatted from Helium in our tritium cell need to be subtracted from the measured yield to supply an accurate count. The yield from any target is defined as the number of electrons per charge weighted scattering centers. The yield is shown in equation \ref{yield} and defined as the number of counted events($N_i$) per possible scattering changes, or charge($Q_i$) times number of scattering centers ($n_i$). Data is recorded in many runs, so a sum over runs($i$) is required to get the total yield. The subtraction factor is calculated by breaking down the yield from the tritium cell as the addition of the yield from tritium ($Y_T$)= $\Sigma(T_i/Q_in_{i})$ and helium ($Y_H$)= $\Sigma(H_i/Q_in_{i})$ in the tritium cell as shown in equation \ref{Yraw}. The correction for the beta decay is defined in equation \ref{YieldT}. It can be determined by expanding equation \ref{Yraw} out and solving for the tritium yield from the tritium cell. Where $\langle f_H \rangle$ is the charge weighted helium fraction defined in equation \ref{QwHf} \cite{primer}. The helium fraction $f_{H,i}$ is the ratio of helium scattering centers in the tritium cell to total number of scattering centers. 
+The events that scatted from $^3$He in our $^3$H cell need to be subtracted from the measured yield to supply an accurate count. The yield from any target is defined as the number of electrons per charge weighted scattering centers. The yield is shown in equation \ref{yield} and defined as the number of counted events($N_i$) per possible scattering changes, or charge($Q_i$) times number of scattering centers ($n_i$). Data is recorded in many runs, so a sum over runs($i$) is required to get the total yield. The subtraction factor is calculated by breaking down the yield from the $^3$H cell as the addition of the yield from $^3$H ($Y_T$)= $\Sigma(T_i/Q_in_{i})$ and $^3$He ($Y_H$)= $\Sigma(H_i/Q_in_{i})$ in the $^3$H cell as shown in equation \ref{Yraw}. The correction for the beta decay is defined in equation \ref{YieldT}. It can be determined by expanding equation \ref{Yraw} out and solving for the $^3$H yield from the $^3$H cell. Where $\langle f_H \rangle$ is the charge weighted $^3$He fraction defined in equation \ref{QwHf} \cite{primer}. The $^3$He fraction $f_{H,i}$ is the ratio of $^3$He scattering centers in the $^3$H cell to total number of scattering centers. 
 \begin{equation}
 Y_T = Y_{raw}\left(\frac{1}{1-\langle f_H \rangle}\right) - Y_H \left(\frac{\langle f_H \rangle}{1-\langle f_H \rangle}\right) \label{YieldT}
 \end{equation}
@@ -320,9 +320,9 @@ The calculation of the $\mathscr{L}$ requires data from the BCMs to determine th
 	\begin{tabular}{lcc}
 	Target &Thickness(mg/cm$^2$) & Uncertainty(mg/cm$^2$)   \\
 	\hline
-	Tritium & 85.1 & 0.8 \\
-	Helium-3 & 53.4 & 0.6\\
-	Deuterium & 142.2 & 0.8\\
+	$^3$H & 85.1 & 0.8 \\
+	$^3$He & 53.4 & 0.6\\
+	$^2$D & 142.2 & 0.8\\
 	\hline
 	\end{tabular}
 \end{table}
@@ -336,9 +336,9 @@ The calculation of the $\mathscr{L}$ requires data from the BCMs to determine th
 	\begin{tabular}{lccc}
 		Target & p$_0$ & p$_1$ & p$_2$  \\
 		\hline
-		Tritium & 1. $\pm$ 0.003 & (-6.8 $\pm$ 0.89) $\times 10^{-3}$ & (1.06 $\pm$ 0.36) $\times 10^{-3}$\\
-		Helium-3 & 1. $\pm$ 0.003 & (-5.1 $\pm$ 0.64) $\times 10^{-3}$ & (1.04 $\pm$ 0.25) $\times 10^{-3}$\\
-		Deuterium & 1. $\pm$ 0.003 & (-6.7 $\pm$ 0.71) $\times 10^{-3}$ & (1.16 $\pm$ 0.29) $\times 10^{-3}$\\
+		$^3$H & 1. $\pm$ 0.003 & (-6.8 $\pm$ 0.89) $\times 10^{-3}$ & (1.06 $\pm$ 0.36) $\times 10^{-3}$\\
+		$^3$He & 1. $\pm$ 0.003 & (-5.1 $\pm$ 0.64) $\times 10^{-3}$ & (1.04 $\pm$ 0.25) $\times 10^{-3}$\\
+		$^2$D & 1. $\pm$ 0.003 & (-6.7 $\pm$ 0.71) $\times 10^{-3}$ & (1.16 $\pm$ 0.29) $\times 10^{-3}$\\
 		\hline
 	\end{tabular}
 \end{table}
@@ -349,12 +349,12 @@ The calculation of the $\mathscr{L}$ requires data from the BCMs to determine th
 Yield_{run}(bin) &= \sum_{i}^{\text{Good Electrons(bin)} } \left( BG_{i}/\epsilon_{i} \right) \nonumber\\
 Yield_{kin}(bin) &= \sum_{run}^{runs} \bigg( Yield_{run}(bin) \bigg)
 \end{align}
-The yield for a kinematic is combined on a run by run basis so that the run depended corrections can be applied to the correct events. For many of the kinematics, the bins that fall within the acceptance overlap. A good electron count weighted average is used to combined the overlapping bins. Equation \ref{comb_w} describe the weighting average procedure for combining overlapping bins. Figure \ref{kinYield} shows the normalized corrected yield for deuterium from all kinematics. Also the combined yield is shown as a gray x. 
+The yield for a kinematic is combined on a run by run basis so that the run depended corrections can be applied to the correct events. For many of the kinematics, the bins that fall within the acceptance overlap. A good electron count weighted average is used to combined the overlapping bins. Equation \ref{comb_w} describe the weighting average procedure for combining overlapping bins. Figure \ref{kinYield} shows the normalized corrected yield for $^2$D from all kinematics. Also the combined yield is shown as a gray x. 
 \begin{equation}
 Yield(bin) = \frac{\left( Yield_{kin}(bin)\cdot N_e^{kin}(bin)+ Yield_{kin+1}(bin)\cdot N_e^{kin+1}(bin) \right)}{N_e^{kin}(bin)+N_e^{kin+1}(bin)} \label{comb_w}
 \end{equation}
 \begin{figure}
-	\caption{Luminosity normalized corrected yield for deuterium. The yield for each kinematic is shown as a different color and marker, with the combined yield as a gray 'x'.  \label{kinYield}}
+	\caption{Luminosity normalized corrected yield for $^2$D. The yield for each kinematic is shown as a different color and marker, with the combined yield as a gray 'x'.  \label{kinYield}}
 	\includegraphics[width=15cm]{Yield_new.pdf}
 \end{figure}
 \section{Acceptance } 
@@ -384,10 +384,10 @@ This section will discuss the Monte Carlo simulation and compare the yield of Mo
 	\item weighing accepted events with the model cross section .
 \end{itemize} 
 \subsubsection{Cross Section Table}
-\vspace{-10pt}\paragraph{} A cross section model is used to weight the Monte Carlo events to make a comparison between a Monte Carlo yield and a yield from data. The Born cross section is calculated via a DIS model with an EMC model correction. An Arie Bodek model \cite{DISmodel} is used to determine the nuclear structure function in the DIS regime. This same model uses a smearing technique to include any effects from the elastic and quasi-elastic tail. The kinematics closest to the resonance region experiences an almost negligible quasi-elastic contribution. A correction calculated from SLAC EMC data is applied to correct for the building of the nuclear structure function from free nucleon structure functions. The resulting born cross section is used to weigh events in the Monte Carlo simulation. Figure \ref{MCS} shows the born cross section for tritium at kinematic one for scattered angle along the x-axis and scattered momentum along the z-axis associated with color.  
+\vspace{-10pt}\paragraph{} A cross section model is used to weight the Monte Carlo events to make a comparison between a Monte Carlo yield and a yield from data. The Born cross section is calculated via a DIS model with an EMC model correction. An Arie Bodek model \cite{DISmodel} is used to determine the nuclear structure function in the DIS regime. This same model uses a smearing technique to include any effects from the elastic and quasi-elastic tail. The kinematics closest to the resonance region experiences an almost negligible quasi-elastic contribution. A correction calculated from SLAC EMC data is applied to correct for the building of the nuclear structure function from free nucleon structure functions. The resulting born cross section is used to weigh events in the Monte Carlo simulation. Figure \ref{MCS} shows the born cross section for $^3$H at kinematic one for scattered angle along the x-axis and scattered momentum along the z-axis associated with color.  
 
 \begin{figure}
-	\caption{Model cross section for tritium at kinematic 1 for scattered angle and momentum. \label{MCS}}
+	\caption{Model cross section for $^3$H at kinematic 1 for scattered angle and momentum. \label{MCS}}
 %	\hspace{-40pt}
 	\includegraphics[width=15.5cm]{cs_m_T1.pdf}
 \end{figure}
@@ -398,9 +398,9 @@ This section will discuss the Monte Carlo simulation and compare the yield of Mo
 	\caption{Lowest order Feynman diagrams for inclusive lepton-nucleon scattering \cite{Ajth}.}
 	\label{fig:radcors}
 \end{figure} 
-\paragraph{}There are two broad types of radiative effects that needed be account for during an electron nucleus scattering interaction, internal and external. External effects account for the electron radiating a real photon before or after the designated target. This radiation is caused by an interaction with fields of nuclei that make up the material other then the target. External bremsstrahlung and ionization energy losses are two of the process that occur causing these external effects. The internal radiative effects happen at the interaction point, the scattering vertex. The Feynman diagrams in figure \ref{fig:radcors} shows the lowest order approximation for the possible interaction channels. These high order processes are calculable in QED. Mo and Tsai \cite{radcors2} and S. Sasu \cite{radcors} describe in detailed the method of calculating these radiative effects. This analysis used a radiative correction code originally by S. Dasu \cite{radcors}. This package use Mo and Tsai's formula to complete the measured cross section calculation.  The internal bremsstrahlung contribution is calculated via an equivalent radiator approximation. A full integral calculation is done over the entire length of radiators to make a complete calculation for the entire radiative effect  \cite{Ajth,radcors,radcors2,seelyth}. A correction is applied as a weighing factor with the born cross section. A 2 dimensional grid is made from a scan of possible scatted angles covering the acceptance of the spectrometer for each value of scatted momentum possible for the kinematic setting. This grid is then used to populate a cross section table for each target at each kinematic. The cross section and radiative correction factor are calculated for the combination of kinematic variables to complete the cross section table(CST). Figure \ref{RCF} shows the radiative correction factor ($RCF=\frac{\sigma_{Rad}}{\sigma_{Born}}$) for tritium at kinematic 1 for scattered angle along the x-axis and scattered momentum along the z-axis associated with color.  
+\paragraph{}There are two broad types of radiative effects that needed be account for during an electron nucleus scattering interaction, internal and external. External effects account for the electron radiating a real photon before or after the designated target. This radiation is caused by an interaction with fields of nuclei that make up the material other then the target. External bremsstrahlung and ionization energy losses are two of the process that occur causing these external effects. The internal radiative effects happen at the interaction point, the scattering vertex. The Feynman diagrams in figure \ref{fig:radcors} shows the lowest order approximation for the possible interaction channels. These high order processes are calculable in QED. Mo and Tsai \cite{radcors2} and S. Sasu \cite{radcors} describe in detailed the method of calculating these radiative effects. This analysis used a radiative correction code originally by S. Dasu \cite{radcors}. This package use Mo and Tsai's formula to complete the measured cross section calculation.  The internal bremsstrahlung contribution is calculated via an equivalent radiator approximation. A full integral calculation is done over the entire length of radiators to make a complete calculation for the entire radiative effect  \cite{Ajth,radcors,radcors2,seelyth}. A correction is applied as a weighing factor with the born cross section. A 2 dimensional grid is made from a scan of possible scatted angles covering the acceptance of the spectrometer for each value of scatted momentum possible for the kinematic setting. This grid is then used to populate a cross section table for each target at each kinematic. The cross section and radiative correction factor are calculated for the combination of kinematic variables to complete the cross section table(CST). Figure \ref{RCF} shows the radiative correction factor ($RCF=\frac{\sigma_{Rad}}{\sigma_{Born}}$) for $^3$H at kinematic 1 for scattered angle along the x-axis and scattered momentum along the z-axis associated with color.  
 \begin{figure}
-	\caption{Radiative correction for Tritium at kinematic 1, for scattered angle and momentum.\label{RCF}}
+	\caption{Radiative correction for $^3$H at kinematic 1, for scattered angle and momentum.\label{RCF}}
 	%\hspace{-40pt}
 	\includegraphics[width=15.5cm]{rad_m_T1.pdf}
 \end{figure}
