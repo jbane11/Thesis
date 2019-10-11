@@ -12,7 +12,7 @@
 %\iffalse
 %\begin{landscape}
 %\begin{sidewaysfigure}
-\begin{figure}
+\begin{figure}[t!]
 	\hspace{-20pt}
 	\includegraphics[width=17cm]{../images/total_xs.pdf}
 	\caption{Experimentally measured cross section using the Monte Carlo ratio method for $^3$H, $^3$He, and $^2$D. Normalization uncertainty due to target thickness uncertainty for $^3$H= 0.97\%, $^3$He = 1.12\%, and $^2$D = 0.56\%.}
@@ -29,14 +29,14 @@
 	\hspace{-40pt}
 	\includegraphics[width=27cm]{../images/total_xs_L.pdf}
 	\caption{Experimentally measured cross section using the Monte Carlo ratio method for $^3$H, $^3$He, and $^2$D. Normalization uncertainty due to target thickness uncertainty for $^3$H= 0.97\%, $^3$He = 1.12\%, and $^2$D = 0.56\%.}
-	\label{CCplot}
+%label{CCplot}
 \end{figure}
 %\end{sidewaysfigure}
 \end{landscape}
 \fi
 
 
-I compared the data yield to the Monte Carlo yield to produce a correcting factor for the model cross section. Figure \ref{D_MC_COMP} shows the ratio comparison between data and Monte Carlo in bins of $x$. Then apply the ratio factor for a bin in $x$ to the model cross section to extract out the experimentally measured cross section for that bin. Figure \ref{CCplot} shows a plot of the experientially measured cross section for $^3$H, $^3$He, and $^2$D.  This is the first result of an inclusive DIS cross section for $^3$H and expands on the DIS cross section for $^3$He, pushing the invariant mass past the resonance region at higher values of $x$.  Appendix \ref{A_cst} contains tables of the cross section and summaries of the errors included in the error study for the cross section analysis of each target. 
+I compared the data yield to the Monte Carlo yield to produce a correcting factor for the model cross section. Figure \ref{D_MC_COMP} shows the ratio comparison between data and Monte Carlo in bins of $x$. Then apply the ratio factor for a bin in $x$ to the model cross section to extract out the experimentally measured cross section for that bin. Figure \ref{CCplot} shows a plot of the experimentally measured cross section for $^3$H, $^3$He, and $^2$D.  This is the first result of an inclusive DIS cross section for $^3$H and expands on the DIS cross section for $^3$He, pushing the invariant mass past the resonance region at higher values of $x$.  Appendix \ref{A_cst} contains tables of the cross section and summaries of the errors included in the error study for the cross section analysis of each target. 
 \section{Cross Section Error Analysis}
 \paragraph{}The measurement of the cross section requires finally tune detectors and analysis processes. Uncertainties arise due to the nature and limitations of the spectrometers and the analysis of the data received. In this section, I will discuss the calculation and propagation of errors in the analysis of the DIS cross section. The error analysis will be broken into the calculation of normalized yield for data, yield for Monte Carlo, and the model used for cross section extraction. Table \ref{ET_sum} contains the summary of the errors for the cross section extraction for the error on the yield, MC, and model. 
 
@@ -61,18 +61,18 @@ I compared the data yield to the Monte Carlo yield to produce a correcting facto
 \end{align}
 
 \paragraph{}
-The contributions for error on the measurement of the normalized yield(normY) can be simplified into the contributions for the corrected number of electrons and the luminosity. The error for the corrected number of counted electrons includes the random statistical error for the count of electrons detected, the error associated with the calculated efficiencies, and the error from the background correction. The electron statics range from 4875 to more then 42000 in a bin and therefor I have treated the randomness of the counting in a standard error technique. The relative statistical error for a bin is $\frac{1}{\sqrt{Ne}}$ and ranges from .5\% to 1.4\%. Calculating the efficiencies deals with calculating a probability of a binomial choice. The errors associated with the efficiencies are calculated using the Wilson score interval described in equation \ref{WSI}, where $p$ is the efficiency or a probability of a success, $n$ is the number of samples, $z$ is 1.645 for a 95\% confidence level. 
+The contributions for error on the measurement of the normalized yield(normY) can be simplified into the contributions for the corrected number of electrons and the luminosity. The error for the corrected number of counted electrons includes the random statistical error for the count of electrons detected, the error associated with the calculated efficiencies, and the error from the background correction. The electron statics range from 4875 to more than 42000 in a bin and therefore I have treated the randomness of the counting in a standard error technique. The relative statistical error for a bin is $\frac{1}{\sqrt{Ne}}$ and ranges from .5\% to 1.4\%. Calculating the efficiencies deals with calculating a probability of a binomial choice. The errors associated with the efficiencies are calculated using the Wilson score interval described in equation \ref{WSI}, where $p$ is the efficiency or a probability of a success, $n$ is the number of samples, $z$ is 1.645 for a 95\% confidence level. 
 \begin{equation}
 p[_{UpperBound},_{LowerBound}] = \frac{ 2np +z^2 \pm \left[z\sqrt{z^2 - \frac{1}{n} + 4np(1-p) +(4p-2)} + 1 \right]}{2(n+z^2)} \label{WSI}
 \end{equation}
 The relative efficiency errors are added in quadrature to calculate an over all efficiency error to be propagated into the yield calculation.
-\paragraph{}The correction for background events corrects for events from the end caps and pair produced electrons. The end cap correction factor is produced by a ratio of yields between the gas cells and the empty cell. This yield measurement allows for the cancellation of many of the systematic uncertainties. The largest contribution to the this error is the low statistics of the back ground events. The estimated error to the cross section analysis is about 1\%. Furtherer study of the end cap contamination and the error associated with the correct is part of the ongoing analysis. The error for the positron correction involves using the covariance matrix for the exponential fit and propagating the error for each parameter of each target using the $x_{Bj}$ dependent function. The error for the fit parameters are propagated to an error for the correction using equation \ref{cv_err}.
+\paragraph{}The correction for background events corrects for events from the end caps and pair produced electrons. The end cap correction factor is produced by a ratio of yields between the gas cells and the empty cell. This yield measurement allows for the cancellation of many of the systematic uncertainties. The largest contribution to the this error is the low statistics of the back ground events. The estimated error to the cross section analysis is about 1\%. Further study of the end cap contamination and the error associated with the correct is part of the ongoing analysis. The error for the positron correction involves using the covariance matrix for the exponential fit and propagating the error for each parameter of each target using the $x_{Bj}$ dependent function. The error for the fit parameters are propagated to an error for the correction using equation \ref{cv_err}.
 \begin{equation}
 \frac{\Delta f(x)}{f(x)} =  \sqrt{ \sum_{i}^{} \left(\delta p_i\cdot x^i\right)^2 + \sum_{ij}^{}\left( 2\cdot \delta p_{ij}\cdot \dfrac{df(x)}{dp_i}\cdot \dfrac{df(x)}{dp_i}\right) } \label{cv_err}
 \end{equation}
 The error for the background corrections are added in quadrature to get an overall error for the total back ground correction.  
 \subsubsection{Luminosity Error}
-\paragraph{}The errors involved in the luminosity calculated is the target density thickness measurement, beam charge calculation, and density correction. The error in the target thickness measurement is considered a overall normalization uncertainty. The error for the three gas targets' thickness measurements are: $^3$H= 0.97\%, $^3$He = 1.12\%, and $^2$D = 0.56\% \cite{HATT_eng}. The measurement uncertainties for each gas target are displayed in table \ref{tgt_table}. The amount of beam charge deposited on the target is calculated via the BCM(beam charge monitors) and their calibrations. The BCM calibrations were determined a few times through the run period with no change to the calibration constants. Due to the consistency of the BCMs and the high quality calibration the  error estimation for charge calculation is approximately 0.2\%. The error for the density correction is based in the error from the 2nd order polynomial fit. The error is calculated using the same method as the positron background correct, combining the errors for the fit parameters and the covariance terms through the propagation formula \ref{cv_err} using the current dependent correction function, \ref{eq:dc}. The relative error in charge on target and density correction have been added in quadrature to calculate a systematic error for the luminosity calculation. The systematic error for the luminosity and the systematic error for the correct count of electrons are then added in quadrature to calculate and overall normalized yield error.  
+\paragraph{}The errors involved in the luminosity calculated is the target density thickness measurement, beam charge calculation, and density correction. The error in the target thickness measurement is considered an overall normalization uncertainty. The error for the three gas targets' thickness measurements are: $^3$H= 0.97\%, $^3$He = 1.12\%, and $^2$D = 0.56\% \cite{HATT_eng}. The measurement uncertainties for each gas target are displayed in table \ref{tgt_table}. The amount of beam charge deposited on the target is calculated via the BCM(beam charge monitors) and their calibrations. The BCM calibrations were determined a few times through the run period with no change to the calibration constants. Due to the consistency of the BCMs and the high quality calibration the  error estimation for charge calculation is approximately 0.2\%. The error for the density correction is based in the error from the 2nd order polynomial fit. The error is calculated using the same method as the positron background correct, combining the errors for the fit parameters and the covariance terms through the propagation formula \ref{cv_err} using the current dependent correction function, \ref{eq:dc}. The relative error in charge on target and density correction have been added in quadrature to calculate a systematic error for the luminosity calculation. The systematic error for the luminosity and the systematic error for the correct count of electrons are then added in quadrature to calculate and overall normalized yield error.  
 \begin{table}[]
 	\caption{This table provides a summary of the error analysis for the Corrected Normalized Electron Yield. Containing the relative error for the bin statistics, background subtraction, efficiencies, and luminosity calculation. Including the total error on the Yield analysis for a selection of bins over the entire range of kinematics.  }
 	\label{Y_Etable}
@@ -95,7 +95,7 @@ The error for the background corrections are added in quadrature to get an overa
 \item$\delta E^{\prime}$ = $\pm$0.00025
 \item$\delta E_{beam}$ = $\pm$0.0005
 \end{itemize}
-Using the errors in scattering angle, scattering momentum, and beam energy, I calculated an approximate error associated with the reconstruction events into $x$ bins with equation \ref{reconErr}. The fluctuation of this error is large and ranges from 1/2\% to 1.5\% and therefor will be applied on a point to point bases. 
+Using the errors in scattering angle, scattering momentum, and beam energy, I calculated an approximate error associated with the reconstruction events into $x$ bins with equation \ref{reconErr}. The fluctuation of this error is large and ranges from 1/2\% to 1.5\% and therefore will be applied on a point to point bases. 
 
 \begin{equation}
 \frac{\Delta \sigma(E,E^{\prime},\theta)}{ \sigma(E,E^{\prime},\theta)} = \frac{\sigma(E+\Delta E_{beam},E^{\prime}+\Delta E^{\prime},\theta+\Delta \theta) - \sigma(E,E^{\prime},\theta)}{\sigma(E,E^{\prime},\theta)} \label{reconErr}
@@ -151,7 +151,7 @@ The model dependence of the DIS cross section and the radiative corrections are 
 	\end{equation}
 	\paragraph{}The isoscalar correction for a nuclear target depends on A,Z, and the F$_2$ ratio. There exist no data on the free neutron, so the $F^n_2/F^p_n$ is a model dependent extraction. The  F$_2$ ratio has been extracted from the ratio of $^3$H to $^3$He from the MARATHON experiment and $^2$D to hydrogen ratios from previous experiments from SLAC and the NMC. I have used the $F^n_2/F^p_n$ from MARATHON to calculate my iscscalar correction for both $^3$He and $^3$H. I have estimated the error of this model dependent correction by comparing the isoscalar correction from the MARATHON extraction with the isoscalar correction using three other $F^n_2/F^p_n$ models Kulagin, S. A. and Petti, R. \cite{kpmodel}, J. Arrington \cite{JA_FR}, and NMC \cite{NMC_ratio}. The relative variance of this calculation ranges from $\pm$ 0.1\% to $\pm$ 3.8\% for $^3$H EMC ratio. These 4 models and the error band from this study is shown in figure \ref{isofuncs} for the isoscalar correction on $^3$H and figure \ref{isofuncsHe3} for the isoscalar correction on $^3$He.
 
-	\begin{figure}[h]
+	\begin{figure}[!]
 		\includegraphics[width=15cm]{ISOfacsH3.pdf}
 		\caption{Isoscalar correction factor for the $^3$H EMC ratio from four different models discussed in this section.}
 		\label{isofuncs}
@@ -164,7 +164,7 @@ The model dependence of the DIS cross section and the radiative corrections are 
 \section{EMC Effect}
 \paragraph{} Using the extracted cross section of the two A=3 nuclei and $^2$D, the first measurement of the $^3$H EMC effect has been achieved. The data also provides a comparison of the EMC effect of the mirror nuclei $^3$He. MARATHON's design of rotating targets, and uniform data taking procedure allows for the cancellation of the detector efficiency correction factors and corrections due to acceptance issues. This will reduce the size of the uncertainty of the EMC effect measurement and provides precise result for the EMC ratio of the two A=3 nuclei. 
 \paragraph{}The isoscalar corrected EMC Effect ratios for $^3$He and $^3$H from my inclusive DIS cross section extraction are displayed in figures \ref{ISOEMC_He3} and \ref{ISOEMC_H3}. These results provide a comparison between my extract of the $^3$He EMC and the $^3$He EMC results from the E03103 from J. Seeley and A. Daniels \cite{seeley}. My EMC effect for $^3$He shows good agreement with the E03103 experimental results within uncertainty. The EMC results are plotted with error bars that represent the total point to point uncertainty for the EMC measurement and an error band for the overall normalization uncertainty dominated by the error in target thickness measurement.  
-	\begin{figure}
+	\begin{figure}[!]
 		\includegraphics[width=15cm]{EMCIsoHe3.pdf}
 		\caption{Isoscalar corrected EMC ratio for $^3$He. The point to point error bars are the total systemic and statical errors for the EMC effect.}
 		\label{ISOEMC_He3}
@@ -174,3 +174,10 @@ The model dependence of the DIS cross section and the radiative corrections are 
 	\label{ISOEMC_H3}
 \end{figure}
 
+\subsection{Ratio of EMC Effects}
+\paragraph{} If figure \ref{ISORatio}, I display the results of the ratio of the two A=3 mirror nuclei EMC effects. The errors associated with the extraction of this ratio are the errors for extracted both cross sections and the errors for the ratio of the isoscalar correction. For the errors on the isoscalar correction, I looked at the ratio of isoscalar correction for the different models and extracted the standard deviation from the model dependence on the ratio. The error bars in figure \ref{ISORatio} are all error contributions added in quadrature. 
+
+\begin{figure}
+	\includegraphics[width=15cm]{Iso_H_He.pdf}
+	\caption{Ratio of the isoscalar corrected  $^3$H EMC Effect and $^3$He EMC Effect.}\label{ISORatio}
+\end{figure}
