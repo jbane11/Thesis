@@ -13,7 +13,8 @@ git add ./references/*.bib
 git add ./images/*
 git add *.pdf
 git add *.sh
-
+git add back-matter/*.tex
+git add front-matter/*.tex
 
 
 
