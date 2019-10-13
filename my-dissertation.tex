@@ -45,6 +45,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % LOAD SOME USEFUL PACKAGES
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{enumitem}
 \usepackage{nomencl}                    % produces a nomenclature
 \usepackage{float}                      % figure floats
 \usepackage{natbib}                     % this package allows you to link your references
@@ -64,10 +65,29 @@
 \usepackage[outdir=./images/]{epstopdf}
 %%/lin\usepackage{csvsimple}
 
+
+\usepackage[absolute]{textpos}
+\usepackage{fancyhdr}
+
 \usepackage{lineno}
 %\linenumbers
 \usepackage{mathrsfs}                   % additional math scripts
 %%% PACKAGES THAT ARE PRELOADED WITH THE CLASS ARE: amsmath,amsthm,amssymb,setspace,geometry,hyperref,and color
+
+\usepackage{lscape}
+
+\fancypagestyle{lscape}{% 
+	\fancyhf{} % clear all header and footer fields 
+	\fancyfoot[CE]{%
+		\begin{textblock}{20}(1,5){\rotatebox{90}{\leftmark}}\end{textblock}
+		\begin{textblock}{1}(13,10.5){\rotatebox{90}{\thepage}}\end{textblock}}
+	\fancyfoot[CO] {%
+		\begin{textblock}{1}(13,10.5){\rotatebox{90}{\thepage}}\end{textblock}
+		\begin{textblock}{20}(1,13.25){\rotatebox{90}{\rightmark}}\end{textblock}}
+	\renewcommand{\headrulewidth}{0pt} 
+	\renewcommand{\footrulewidth}{0pt}}
+
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

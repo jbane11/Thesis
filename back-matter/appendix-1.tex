@@ -15,7 +15,15 @@
 		W$^2$ &$>$ &2.5
 \end{tabular}
 
-\begin{sidewaystable}
+\pagebreak
+\newgeometry{hmargin=1in,vmargin=1in}
+\thispagestyle{lscape}
+\pagestyle{lscape}
+\begin{landscape}
+
+\begin{table}	
+%\begin{sidewaystable}
+\centering
 \caption{Cross section table for $^3$H. }\label{CST_H3}
 	\begin{tabular}{|p{1cm}|p{1cm}|p{1.5cm}|p{1.5cm}|p{2cm}|p{2cm}|p{1.5cm}|p{1.5cm}|p{2.5cm}|p{2.5cm}|}
 		\hline
@@ -39,13 +47,23 @@
 		0.76  & 10.688 & 0.065         & 0.0109            & 0.002              & 0.0                  & 0.007              & 0.0035                & 0.026             & 0.029               \\ \hline
 		0.825 & 11.468 & 0.03          & 0.0143            & 0.002              & 0.0                  & 0.007              & 0.0032                & 0.037             & 0.04                \\ \hline
 	\end{tabular}
-\end{sidewaystable}
+\end{table}
+%\end{sidewaystable}
+\end{landscape}
+\restoregeometry
+\pagestyle{plain}
 
-\begin{sidewaystable}[]
+\pagebreak
+\newgeometry{hmargin=1in,vmargin=1in}
+\thispagestyle{lscape}
+\begin{landscape}
+
+	\begin{table}
+			\centering
 	\caption{Cross section table for $^3$H.}\label{CST_He3}
 	\begin{tabular}{|p{1cm}|p{1cm}|p{1.5cm}|p{1.5cm}|p{2cm}|p{2cm}|p{1.5cm}|p{1.5cm}|p{2.5cm}|p{2.5cm}|}
-		\hline
-		x     & Q2     & Cross Section & Statistical Error & Density Correction & Positron Subtraction & Endcap Subtraction & Detector Efficiencies & MC \& Model Error & Cross Section Error \\ \hline
+	\hline
+	x     & Q2     & Cross Section & Stat. Error & Density Cor. & Positron Sub. & Endcap Sub. & Detector Eff. & MC \& Model Error & Cross Section Error \\ \hline
 		0.185 & 2.709  & 20.71         & 0.0063            & 0.002              & 0.0006               & 0.007              & 0.004                 & 0.016             & 0.019               \\ \hline
 		0.215 & 3.059  & 17.303        & 0.0051            & 0.002              & 0.0004               & 0.007              & 0.004                 & 0.015             & 0.018               \\ \hline
 		0.245 & 3.447  & 13.59         & 0.0052            & 0.002              & 0.0002               & 0.007              & 0.0041                & 0.016             & 0.019               \\ \hline
@@ -65,14 +83,23 @@
 		0.76  & 10.689 & 0.087         & 0.0105            & 0.002              & 0.0                  & 0.007              & 0.0035                & 0.035             & 0.037               \\ \hline
 		0.825 & 11.467 & 0.038         & 0.0141            & 0.002              & 0.0                  & 0.007              & 0.0031                & 0.024             & 0.029               \\ \hline
 	\end{tabular}
-\end{sidewaystable}
+	\end{table}
+\end{landscape}
 
+\restoregeometry
+\pagestyle{plain}
 
-\begin{sidewaystable}[]
+\pagebreak
+\newgeometry{hmargin=1in,vmargin=1in}
+\thispagestyle{lscape}
+\begin{landscape}
+
+	\begin{table}
+			\centering
 	\caption{Cross section table for D.}\label{CST_D2}
 	\begin{tabular}{|p{1cm}|p{1cm}|p{1.5cm}|p{1.5cm}|p{2cm}|p{2cm}|p{1.5cm}|p{1.5cm}|p{2.5cm}|p{2.5cm}|}
-		\hline
-		x     & Q2     & Cross Section & Statistical Error & Density Correction & Positron Subtraction & Endcap Subtraction & Detector Efficiencies & MC \& Model Error & Cross Section Error \\ \hline
+	\hline
+	x     & Q2     & Cross Section & Stat. Error & Density Cor. & Positron Sub. & Endcap Sub. & Detector Eff. & MC \& Model Error & Cross Section Error \\ \hline
 		0.185 & 2.708  & 13.048        & 0.0062            & 0.002              & 0.0004               & 0.007              & 0.004                 & 0.015             & 0.018               \\ \hline
 		0.215 & 3.061  & 10.858        & 0.0051            & 0.002              & 0.0002               & 0.007              & 0.004                 & 0.013             & 0.016               \\ \hline
 		0.245 & 3.452  & 8.473         & 0.0051            & 0.002              & 0.0002               & 0.007              & 0.0041                & 0.013             & 0.016               \\ \hline
@@ -92,4 +119,7 @@
 		0.76  & 10.688 & 0.052         & 0.0109            & 0.0022             & 0.0                  & 0.007              & 0.0035                & 0.027             & 0.03                \\ \hline
 		0.825 & 11.467 & 0.023         & 0.0143            & 0.002              & 0.0                  & 0.007              & 0.0032                & 0.026             & 0.031               \\ \hline
 	\end{tabular}
-\end{sidewaystable}
+	\end{table}
+\end{landscape}
+\restoregeometry
+\pagestyle{plain}
