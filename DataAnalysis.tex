@@ -84,7 +84,7 @@ $\Gamma$ is a set of spectrometer constants calculated to an accuracy of $4\time
 -0.025 rad &$>=$  &$\phi_{tg}   <=$ -0.025 rad
 \end{tabular}
 
-\paragraph{}A cut is applied to the acceptance variable for the reaction location, Vertex z. The target cells are constructed of aluminum with thin end caps. Many electrons that are sent to the target scatter of the aluminum end caps. Figure \ref{EC5} shows distributions of the reaction vertex along the z axis of the beam line in the HCS for different gas filled cells and the empty cell. Comparing the empty cell to the cells filled with gas provides an observable comparison between the yield of events from the end caps of the cells to the yield of events from the gas in the cell. Figure \ref{EC5} also contains two vertical lines to demonstrate the locations of cuts selected to create the greatest area of acceptance of events from the target gas while also rejected most of the events from the end caps.   
+\paragraph{}A cut is applied to the acceptance variable for the reaction location, Vertex z. The target cells are constructed of aluminum with thin end caps. Many electrons that are sent to the target scatter of the aluminum end caps. Comparing the empty cell to the cells filled with gas provides an observable comparison between the yield of events from the end caps of the cells to the yield of events from the gas in the cell. Section \ref{sec:ecc} continues the discussion on mitigation of contamination due to events scattered off the end caps.    
 
 \begin{tabular}{@{$\bullet$ }lll}
   -0.07 m &$>=$& Vertex Z $<=$ 0.09 m
@@ -98,9 +98,10 @@ $\Gamma$ is a set of spectrometer constants calculated to an accuracy of $4\time
 
 \begin{figure}[]
 	\centering
-	\textbf{Spectrometer Acceptance}\par\medskip
+
 	\vspace*{-5pt}
 	\includegraphics[width=15cm]{Phi_tg_comp_1.pdf}
+
 	\caption{Simulation of events to demonstrate the acceptance of the spectrometer. Black events have been generated with no acceptance effects, Red points include a cut to only allow events that transverse the entire spectrometer. The Blue lines are example locations of cuts used in event selection to exclude the edge of the acceptance. }
 	\label{phi_comp}
 \end{figure}
@@ -123,8 +124,9 @@ $\Gamma$ is a set of spectrometer constants calculated to an accuracy of $4\time
 
 \begin{figure}[]
 	\centering
-	\textbf{PID Cut Scan }\par\medskip
+
 	\includegraphics[width=15cm]{PID_3layer_plot.pdf}
+	
 	\caption{ A scan of the PID efficiency for a cut in each layer of the calorimeters.}
 	\label{cal_pidscan}
 \end{figure}
@@ -146,14 +148,14 @@ $\Gamma$ is a set of spectrometer constants calculated to an accuracy of $4\time
 
 \begin{table}[]
 	\centering
-	\textbf{Livetime for each kinematic }\par\medskip
+	\caption{Livetime during the MARATHON experiment calculated using trigger 2.  }
+\label{LTtable}
 	\begin{tabular}{|l|l|l|l|l|l|l|l|l|}
 		\hline
 		Kin      & 1 & 2 & 3 & 4 & 5 & 7 & 9 & 11,13,15 \\ \hline
 		LiveTime & 0.947 & 0.969 & 0.981 & 0.986 & 0.992 & 0.996 & 0.997 & 0.998\\ \hline
 	\end{tabular}
-	\caption{Livetime during the MARATHON experiment calculated using trigger 2.  }
-	\label{LTtable}
+
 \end{table}
   
 
@@ -168,32 +170,31 @@ Electron_{eff}  & = \frac{ GE_{pass} } { GE_{sample} }
 \end{equation}
 \begin{figure}[]
 	\centering
-	\textbf{Cherenkov sum versus Total Energy deposited }\par\medskip
+
 	\includegraphics[width=13cm]{PID_2d}
 	\caption{Two dimensional plot of the Cherenkov sum versus Total Energy deposited, including electron sampling in teal and non-electron sampling in red. }
 	\label{elesample}
 \end{figure}
 
 \begin{figure}[t!]%
-	{\centering
-		\textbf{Particle ID and efficiency sampling for PID detectors }\par\medskip}
+
 	\centering
 	\subfloat[]{\includegraphics[width=0.5\textwidth,height=4.cm]{Lprl1}\label{samA}}%
 	\subfloat[]{\includegraphics[width=0.5\textwidth,height=4.cm]{Lprl2}\label{samB}}\\
-	\subfloat[]{\includegraphics[width=0.95\textwidth,height=3.65cm]{Lcerasum}\label{samC}}%
-	\caption{Electrons and other back ground particles identified via cuts in the total calorimeter and the gas Cherenkov shown in the individual layers of the calorimeters and the Cherenkov. Sampling cuts for Electrons in teal and Non-Electrons in red.}%
+	\subfloat[]{\includegraphics[width=0.95\textwidth,height=3.65cm]{Lcerasum}\label{samC}}\\%
+			\caption{Electrons and other back ground particles identified via cuts in the total calorimeter and the gas Cherenkov shown in the individual layers of the calorimeters and the Cherenkov. Sampling cuts for Electrons in teal and Non-Electrons in red.}%
 	\label{sampling}%
 \end{figure}
 
 
-\paragraph{}The efficiencies of the spectrometer's particle identification(PID) detectors were determined by using the first calorimeter layer, the second calorimeter layer, and the Cherenkov to provide samples of good electrons and other particles. The PID efficiency of the individual detectors was determined using equation \ref{effequ}. The good electron sample for calculating the efficiency of the single detector was defined by sampling through the other two detectors. Sampling through the two layers of the calorimeter is shown in figure \ref{samA} for the first layer of the calorimeter and \ref{samB} for the second layer. The Cherenkov good electron sample is shown in figure \ref{samC}. The electron sample from the Cherenkov is contaminated by delta rays and a combination of unknown particles. These unidentified background particles are known to be relativistic due to the amount of light seen in the Cherenkov. However, the events do not deposit enough energy into the calorimeter system to be considered as a good electron that scatter from our target through the detector. Using sampling in one layer of the calorimeter and the Cherenkov, these unwanted low energy particles are rejected from sampling for efficiency calculations. The electron selection PID efficiency for the three PID detectors was determined at each kinematic setting to be approximately 98$\%$ . The efficiency was determined to be independent of the kinematic setting. Only small fluctuations were seen during the study, these small changes are due to decrease in statics, and all of the results fall within statical uncertainty of being independent of kinematic setting. The non-electron suppression efficiency was determined as part of this PID efficiency study to ascertain how many back ground particles leak into our sample of good electrons after cuts our made. The suppression efficiency of the Cherenkov suffered due to the contamination of the relativistic low energy particles. Combining the two calorimeter detectors with the Cherenkov increased the overall suppression efficiency for the spectrometer to 99.9$\%$ over the entire kinematic range of the MARATHON experiment. 
+\paragraph{}The efficiencies of the spectrometer's particle identification(PID) detectors were determined by using the first calorimeter layer, the second calorimeter layer, and the Cherenkov to provide samples of good electrons and other particles. The PID efficiency of the individual detectors was determined using equation \ref{effequ}. The good electron sample for calculating the efficiency of the single detector was defined by sampling through the other two detectors. Sampling through the two layers of the calorimeter is shown in figure \ref{samA} for the first layer of the calorimeter and \ref{samB} for the second layer. The Cherenkov good electron sample is shown in figure \ref{samC}. The electron sample from the Cherenkov is contaminated by delta rays and a combination of unknown particles. These unidentified background particles are known to be relativistic due to the amount of light seen in the Cherenkov. However, the events do not deposit enough energy into the calorimeter system to be considered as a good electron that scatter from our target through the detector. Using sampling in one layer of the calorimeter and the Cherenkov, these unwanted low energy particles are rejected from sampling for efficiency calculations. The electron selection PID efficiency for the three PID detectors was determined at each kinematic setting to be approximately 98$\%$ . The efficiency was determined to be independent of the kinematic setting. Only small fluctuations were seen during the study, these small changes are due to decrease in statics, and all of the results fall within statical uncertainty of being independent of kinematic setting. Figure \ref{PID_eff} displays the efficiency for the Cherenkov and both layers of the calorimeter at different kinematics for different targets. The non-electron suppression efficiency was determined as part of this PID efficiency study to ascertain how many back ground particles leak into our sample of good electrons after cuts our made. The suppression efficiency of the Cherenkov suffered due to the contamination of the relativistic low energy particles. Combining the two calorimeter detectors with the Cherenkov increased the overall suppression efficiency for the spectrometer to 99.9$\%$ over the entire kinematic range of the MARATHON experiment. 
 
 \begin{figure}[t!]
-	{\centering
-		\textbf{PID efficency for each detector for all kinematics. }\par\medskip}
+
 	\centering
 	\includegraphics[width=15cm]{PID_allkin_alltgt}
-	\caption{The PID efficiency for the Cherenkov and both layers of the calorimeter,including the overall total PID efficiency for each of the gas targets at all of the kinematics.}
+	
+	\caption{The PID efficiency for the Cherenkov and both layers of the calorimeter,including the overall total PID efficiency for each of the gas targets at all of the kinematics.\label{PID_eff}}
 \end{figure}
 
 \subsection{Trigger Efficiency}
@@ -201,16 +202,18 @@ Electron_{eff}  & = \frac{ GE_{pass} } { GE_{sample} }
 A low threshold in the Cherenkov signal allows for an inclusive trigger limiting the overall number of quality electrons missed, but allows for a large quantity of none-electron triggers. Software PID cuts prevent the contamination of non-electrons in the yield calculation. The tight PID software cuts removes the false positive inefficiency from the trigger design and is then considered in the PID efficiencies. The trigger inefficiency caused by missed high quality electrons was then calculated by sampling the high quality electrons in trigger 1, $(S_o \& S_2)$. This ties the efficiency of trigger 2 with the performance of the scintillators. The efficiency of the two scintillating planes in conjunction is calculated by using sampling in trigger 3, $(S_o | S_2) \& GC$ with strict PID cuts in both layers of the calorimeters and requiring a hit in the Cherenkov. The two scintillator planes in conjunction have an efficiency greater than $99.7 \% $ for all kinematics. Combining the trigger efficiency of the main trigger shown in figure \ref{trigeff} with the performance of the scintillators give an over all efficiency for the trigger of the MARATHON experiment of greater than $99.6\%$.
 \begin{figure}[]
 	\centering
-	\textbf{Trigger efficiency for the MARATHON experiment }\par\medskip
+
 	\includegraphics[width=15cm]{Trigger_Eff.eps}
+	
 	\caption{Trigger efficiency of trigger 2 for different targets at all kinematics calculated via sampling from trigger 1. }
 	\label{trigeff}
 \end{figure}
 \subsection{Tracking Efficiency}\label{eff_track}
 \begin{figure}[]
 	\centering
-	\textbf{Tracking efficiency for the MARATHON experiment }\par\medskip
+
 	\includegraphics[width=15cm]{Tracking_Eff_allkin.eps}
+	
 	\caption{Tracking efficiency of the VDCs for different targets at all kinematics. }
 	\label{trackeff}
 \end{figure}
@@ -220,16 +223,17 @@ A low threshold in the Cherenkov signal allows for an inclusive trigger limiting
 \end{equation}
 Where the number of good electron events that have one good track is defined as $N_{1 track}$, and $N_{all}$ are all of the electrons rather they have a good track or not. The good electron selection is made via PID cuts in the calorimeter and Cherenkov, and cuts in the ADC and TDC of the scintillators. Direct cuts in the signal of the scintillators were made to include the nominal acceptance cuts, which our produced through tracking software. The tracking efficiency of HRSs during the MARATHON experiment is shown in figure \ref{trackeff} for the three gas targets during all kinematic ranges. The efficiency of the VDCs is not relative to the angle of the spectrometer. So the uniform tracking efficiency across all kinematics is expected and helps eliminate any concerns of the performance of the VDCs during the experiment. 
 
-\section{Background Subtraction}
+\section{Background Subtraction}\label{sec:BG}
 \paragraph{} The purpose of this analysis is to study the DIS cross sections of $^2$D, $^3$He, and $^3$H. The sample of scattered events used to determine the cross section of a given nuclear target then needs to be cleaned of any contamination produced from other targets and processes. The electrons detected by the spectrometers can be electrons that scattered from our chosen target, scattered from a source other than our target, or produced through process other than DIS scattering. The two sources of contamination for the MARATHON experiment are events scattered from the aluminum end caps of the target cell and pair produced electrons via photon interaction. The $^3$H gas will experience beta decay, that produces $^3$He. This $^3$He that contaminates the $^3$H cell will also be addressed in this section.
-\subsection{End Caps}
+\subsection{End Caps}\label{sec:ecc}
 \paragraph{} The target cells used during the MARATHON experiment are shown in figure \ref{HATT}. The majority of the events from the end caps can be removed easily via a cut in the reconstructed quantity of reaction vertex along the beam axis. The relatively large density thickness of the aluminum end caps cause a large amount of end cap contamination. The majority of the electrons that scatter from the end caps can be removed through software cuts in the reaction vertex along the beam axis(z). Show in figure \ref{EC5} is a comparison of the reaction vertex of the electron events between the gaseous targets and the empty cell target at kinematic 4. The yield is normalized by the number of event in the histogram to remove any bias from the amount of time of beam on target. The empty target  results in figure \ref{EC5}, demonstrate the form of scattering off of the aluminum windows of our target cell. Using the reconstructed vertex location of the scattering origin, the vast majority of the events from the windows can be removed. This vertex cut is shown by the two vertical blue lines. Only events that lie within these two lines are considered good electrons from our chosen target. 
 
 
 \begin{figure}[]
 	\centering
-	\textbf{Scattering vertex along the beam axis. }\par\medskip
+
 	\includegraphics[width=15cm]{endcap_kin4.pdf}
+
 	\caption{Comparison of the scattering vertex along the z axis for the empty target(EM) and the gas targets at kin. 4. }
 	\label{EC5}
 \end{figure}
@@ -261,8 +265,9 @@ ECC = 1- \big(\frac{Yield_{EC}}{(Yield_{Gas} + Yield_{EC})}\big) \equiv \frac{Yi
 
 \begin{figure}[t]
 	\centering
-	\textbf{$^3$H positron contamination. }\par\medskip
+
 	\includegraphics[width=15.0cm]{../images/positron_H3_bane.pdf}
+	
 	\caption{The ratio of positron events to electrons for $^3$H \cite{tongsu}. }
 	\label{PC}
 \end{figure}
@@ -283,8 +288,9 @@ As time passes the amount of $^3He$ increases, the contamination becomes a non-n
 
 \begin{figure}[t]
 	\centering
-	\textbf{$^3$He Fraction from $^3$H Cell. }\par\medskip
+
 	\includegraphics[width=13cm]{cont_Hfrac.pdf}
+	
 	\caption{The amount of $^3$He in the $^3$H cell in reference to the total amount of material in the cell as a function of time. Included are bands of time for different sections of the $^3$H run group's plan \cite{Beta}.}
 	\label{Hfract}
 \end{figure}
@@ -312,11 +318,12 @@ The beta decay correction is applied on kinematic basis. The charge weighted ave
 	\mathscr{L}_{Run} =  \left(\frac{Q_e \cdot T_{thick} \cdot \rho_c \cdot N_a}{AtomicMass} \right) \qquad
 	\mathscr{L}_{kin} = \sum_i^{Runs} \mathscr{L}_{i}
 \end{equation}
-The calculation of the $\mathscr{L}$ requires data from the BCMs to determine the total charge sent to the target during a run. This is converted to number of electrons to produce $Q_e$. The targets density thickness (T$_{thick}$) was provided by the JLab's target group as part of their target report \cite{HATT_eng}. Avogadro's number and the atomic mass of the target makes the luminosity have units of electrons per cm$^2$. Then applying a conversion for cm to nb gives the luminosity units commonly used for cross section extractions.
+The calculation of the $\mathscr{L}$ requires data from the BCMs to determine the total charge sent to the target during a run. This is converted to number of electrons to produce $Q_e$. The targets density thickness (T$_{thick}$) was provided by the JLab's target group as part of their target report \cite{HATT_eng}. Table \ref{tgt_table} list the target thickness and uncertainty in the target thickness measurements.  Avogadro's number and the atomic mass of the target makes the luminosity have units of electrons per cm$^2$. Then applying a conversion for cm to nb gives the luminosity units commonly used for cross section extractions.
 \begin{table}[]
 	\caption{Table of gas target density thickness and uncertainty \cite{HATT_eng}. \label{tgt_table}}
 	\centering
 	\begin{tabular}{lcc}
+	\hline
 	Target &Thickness(mg/cm$^2$) & Uncertainty(mg/cm$^2$)   \\
 	\hline
 	$^3$H & 85.1 & 0.8 \\
@@ -325,14 +332,18 @@ The calculation of the $\mathscr{L}$ requires data from the BCMs to determine th
 	\hline
 	\end{tabular}
 \end{table}
-\paragraph{}  Due to the fluid nature of the gas targets, a target's density will fluctuate with temperature. A temperature control system uses cryogenic gas and heaters to control the temperature of the target. Power supplied to the target from the indecent beam heats the gas causing temperature fluctuations and local density variations in the target gas. A dedicated density change study was performed by S.N. Santiesteban and S. Alsalmi \cite{denscor}. Their study showed a quadric dependence on the density of the gas targets with respect to the current applied. The equation used to determine the correction applied to the target's density for a given current is shown in equation \ref{eq:dc}. Where p$_i$ are the parameters for the quadric fit, and I is the current. This correction is applied to the luminosity calculation each run by using the average current for the corresponding run. 
+\paragraph{}  Due to the fluid nature of the gas targets, a target's density will fluctuate with temperature. A temperature control system uses cryogenic gas and heaters to control the temperature of the target. Power supplied to the target from the indecent beam heats the gas causing temperature fluctuations and local density variations in the target gas. A dedicated density change study was performed by S.N. Santiesteban and S. Alsalmi \cite{denscor}.
 \begin{equation}
 \rho_c = p_0 + p_1 \cdot I + p_2 \cdot I^2 \label{eq:dc}
 \end{equation}
+ \paragraph{}Their study showed a quadric dependence on the density of the gas targets with respect to the current applied. The equation used to determine the correction applied to the target's density for a given current is shown in equation \ref{eq:dc}. Where p$_i$ are the parameters for the quadric fit, and I is the current. The correction parameters for each target are listed in table \ref{denct}.  This correction is applied to the luminosity calculation each run by using the average current for the corresponding run. 
+
 \begin{table}[]
 	\caption{Table of density correction parameters \cite{denscor}.}
+	\label{denct}
 	\centering
 	\begin{tabular}{lccc}
+			\hline
 		Target & p$_0$ & p$_1$ & p$_2$  \\
 		\hline
 		$^3$H & 1. $\pm$ 0.003 & (-6.8 $\pm$ 0.89) $\times 10^{-3}$ & (1.06 $\pm$ 0.36) $\times 10^{-3}$\\
@@ -407,6 +418,7 @@ This section will discuss the Monte Carlo simulation and compare the yield of Mo
 \paragraph{}The MC simulation generates events in the target frame to travel from the point of interaction to the spectrometer's focal plane. The events are generated to have a uniform distribution in $\delta$, $\theta$, and $\phi$. A generated event drifts from the randomized point of interaction to the entrance of the spectrometer. Along this drift, the simulation calculates the chances of multiple scattering events using the radiation length of the intervening material. Simulated electrons pass through the remaining target length, aluminum endcap, vacuum, aluminum wall of the scattering chamber, air, and kapton film at the entrance of the spectrometer's vacuum. Once entering the spectrometer, the simulated event will use differential algebra based COSY model to pass through the magnetic field of the spectrometer's dipole and quadrupoles. The code checks a particle's trajectory through the spectrometer ensuring no collision with the magnetic apertures.  Events that have successfully traveled to the VDC will receive a smearing effect to account for the finite resolution of the VDCs in the HRS \cite{HallA}. The event's focal plane coordinates are used to transform back to the target coordinates to calculate the scattered energy and scattered angle.\\ 
 \subsubsection{Event Weighting}
 \paragraph{}An accepted Monte Carlo event is weighted to best match physical conditions. The comparison of simulation with actual data requires the event to be weighted with the born cross section of that event and corrected for radiative effects. The subroutine used for this analysis uses a 2 dimensional interpolation (scattered energy and momentum) to determine the born cross section and radiative correction factor for the exact event. The 2D interpolation is completed by finding 4 locations on the cross section table. For the following description of the table locations, $_{evt} =$ event and $_{cst} =$ cross section table. The cross section value is pulled from the table for a row that meets the criteria. For example, $\sigma[1]$ is the born cross section for the row where the angle is closest but lower than the event and the momentum is closest but lower than the event. 
+
 \begin{align}
  	\sigma[1] &=\sigma[\theta_<][P_<]\rightarrow\,(P^{\prime}_{cst}\, <=\, P^{\prime}_{evt}\; \&\& \;\theta_{cst}\, <=\, \theta_{evt}) \nonumber\\
 	\sigma[2] &=\sigma[\theta_<][P_>]\rightarrow\,(P^{\prime}_{cst}\, >=\, P^{\prime}_{evt}\; \&\& \;\theta_{cst}\, <=\, \theta_{evt}) \nonumber\\
