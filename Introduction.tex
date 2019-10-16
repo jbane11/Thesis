@@ -65,12 +65,12 @@ The modification to the Mott scattering cross section equation to include a spin
 \end{figure}
 
 \paragraph{}The interaction described in the Mott cross section equation is mediated by a single photon and is electromagnetic in nature. For an electromagnetic interaction conducted at a low resolution, there is an agreement between the measured cross section and the theoretical Mott cross section. This agreement is maximized when in the limit of $|\boldsymbol{q}| \rightarrow  0$ for scattering events of electrons off of a target nuclei. As $|\boldsymbol{q}|$ climbs furtherer from zero and the resolution of probe grows, the experimentally measured cross sections will begin to differ from the Mott cross section, systematically decreasing \cite{PnN}. The comparison of the Mott calculated cross section to experimentally measured cross section for a $Q^2$ of 2.5 GeV$^2$/c$^2$ is shown in figure \ref{mott_exp}. Increasing the $|\boldsymbol{q}|$ of an interaction reduces the size of the wavelength of the virtual photon that mediates the electromagnetic interaction between the electron and target nuclei and therefore increases the resolution of the probe. The wavelength of this virtual photon is inversely proportional to $|\boldsymbol{q}|$, and can be described by the following: $\lambda = \ \frac{\hbar}{|\boldsymbol{q}|}$ \cite{PnN}. Increasing the amount of momentum transferred in an electromagnetic reaction allows one to study deeper into the nucleus. The act of probing deeper into the nucleus or nucleon allows for the study of the substructure of the target. 
-\paragraph{} Studying the internal structure of a nucleus with the electromagnetic interaction requires increasing the momentum transferred. Pushing $|\boldsymbol{q}|$ to be comparable with the mass of a nucleon adds more complexity to the details of the scattering interaction. At the appropriate levels of $|\boldsymbol{q}|$ to study the nucleons in the nucleus, the Mott cross section equation requires modifications to include additional factors that incorporate information about the target. The Rosenbluth formula is based on the Mott cross section and embraces target recoil, magnetic moment, and charge and current distributions. Povh writes the Rosenbluth formula as:
+\paragraph{} Studying the internal structure of a nucleus with the electromagnetic interaction requires increasing the momentum transferred. Pushing $|\boldsymbol{q}|$ to be comparable with the mass of a nucleon adds more complexity to the details of the scattering interaction. At the appropriate levels of $|\boldsymbol{q}|$ to study the nucleons in the nucleus, the Mott cross section equation requires modifications to include additional factors that incorporate information about the target. The Rosenbluth formula is based on the Mott cross section and embraces target recoil, magnetic moment, and charge and current distributions. Povh \cite{PnN} writes the Rosenbluth formula as:
 \begin{equation}
 \label{rosen}
 \bigg(\frac{d\sigma}{d\Omega}\bigg)=\bigg(\frac{d\sigma}{d\Omega}\bigg)_{Mott} *\bigg\lbrack \frac{G^2_E(Q^2) +\tau G^2_M(Q^2)}{1+\tau} + 2\tau G^2_M(Q^2)tan^2\frac{\theta}{2} \bigg\rbrack.
 \end{equation}
-Equation \ref{rosen} contains $G^2_E(Q^2)$ and $G^2_M(Q^2)$, the electric and magnetic form factors. These form factors depend on $Q^2$, and this measured dependence provides information on the radial charge distributions and magnetic moments of the scattering participants. For the instance of $Q^2 \rightarrow 0$, the values of  $G^2_E(0)$ and $G^2_M(0)$ are physically important.
+Equation \ref{rosen} contains $G^2_E(Q^2)$ and $G^2_M(Q^2)$, the electric and magnetic form factors. These form factors depend on $Q^2$, and this measured Q$^2$ dependence provides information on the radial charge distributions and magnetic moments of the scattering participants \cite{PnN}. For the instance of $Q^2 \rightarrow 0$, the values of  $G^2_E(0)$ and $G^2_M(0)$ are physically important.
 \begin{align}
 	\begin{split}
 		&G^P_E(Q^2=0) = 1 \\
@@ -94,13 +94,7 @@ The $G^2_E(0)$ corresponds to the electric charge of the target. $G^2_M(0)$ is s
 	\label{wspect}
 \end{figure}
 \paragraph{} Figure \ref{wspect} contains the invariant mass spectrum for an electron scattering from a proton target for an incident energy of 4.9 GeV and an angle of 10$^\circ$ \cite{deltaIsobar}. These results are from an experiment at Deutsches Elektronen-Synchrotron (DESY) published in 1968. The elastic scattering peak is scaled down by a factor of 15 to provide an appropriate scaling of the complete spectrum. As $\nu$ increases or the scattered electron energy decreases relative to the incident energy, the invariant mass of the scattering interaction increases. As $W$ rises, the resonance begins to convolute together. This behavior is indicative of reaching a new threshold. For scattering interactions with $W \gtrapprox 2.0 GeV/c^2$, observations are made that result in the discovery of the production of many strongly interacting particles. 
-\begin{figure}[]
-	%	\hspace*{-20pt}
-	\centering
-	\includegraphics[width=14cm]{SLAC_F2.png} 
-	\caption{ Measurements of the proton structure function $F_2(x, Q^2)$ for different $x$ settings\cite{ref:rev_pp} .}
-	\label{F2_fig}
-\end{figure} 
+ 
 \paragraph{}Inelastic scattering events contain the possibility of conceiving additional resultants causing an increase in the complexity of a scattering interaction. In order to create an inelastic event, the wavelength of the virtual photon has to be comparable to the radius of the struck nucleon. Increasing the amount of transferred momentum so that $Q^2R^2 \gtrsim 1$, will increase the resolution of the probe to a level that allows for the interaction to be with the charge constituents within the nucleon. When the scattering event probes the fundamental elements of a nucleon, the scattering process is titled deep inelastic scattering(DIS). Due to the increase in complexity, an additional degree of freedom has to be introduced into the scattering cross section formalism. Modifying the Rosenbluth formula to include the inelastic scattering structure functions $F_1(Q^2,\nu)$ and $F_2(Q^2,\nu)$ evolves the Rosenbluth formula to contain the needed complexity of an inelastic event. These modifications are shown in equation \ref{ISCS}. The $F_1$ and $F_2$ structure functions provide the details for describing the internal composition of the nucleon \cite{PnN}. For elastic scattering events $2M\nu - Q^2 = 0$, this forces only one kinematic parameter to vary freely. However for inelastic scattering events $2M\nu - Q^2 > 0$, this creates an additional free parameter and is the reason for the  $F_1$ and $F_2$ structure functions being functions of both $Q^2$ and $\nu$.
 \begin{equation}
 \label{ISCS}
@@ -108,8 +102,15 @@ The $G^2_E(0)$ corresponds to the electric charge of the target. $G^2_M(0)$ is s
 \end{equation}  
 
 \subsection{Scaling}
-\paragraph{}The Bjorken scaling variable, $x_B$ or $x$, is a dimensionless quantity that measures the in-elasticity of a scattering process and is defined as $x \equiv \frac{Q^2}{2M\nu}$. Measurements from the Standford Linear Accelerator(SLAC) and others for the DIS $F_2$ structure function are displayed in figure \ref{F2_fig}. This plot displays results of $F_2$ as a function of $x$ and $Q^2$. The $x$ dependence of $F_2$ is strong and shows that $F_2$ will decrease as $x$ increases. However, at a constant value of $x$, the dependence of $Q^2$ on $F_2$ is weak for moderate values of $x$. This phenomenon of a solo dependence on $x$ was known as scaling. This scaling was observed to be present for scattering interactions with $Q^2 > 2 \: GeV^2$  and $\nu > 2.5 GeV$ \cite{Atwood}. In the Bjorken limit, $\nu$ $\rightarrow \infty$ and $Q^2 \rightarrow \infty$, the deep inelastic structure functions can be described as functions of only $x$ instead of $Q^2$ and $\nu$.
+\paragraph{}The Bjorken scaling variable, $x_B$ or $x$, is a dimensionless quantity that measures the in-elasticity of a scattering process and is defined as $x \equiv \frac{Q^2}{2M\nu}$. Measurements for the DIS $F_2$ structure function are displayed in figure \ref{F2_fig}. This plot displays results of $F_2$ as a function of $x$ and $Q^2$. The $x$ dependence of $F_2$ is strong and shows that $F_2$ will decrease as $x$ increases. However, at a constant value of $x$, the dependence of $Q^2$ on $F_2$ is weak for moderate values of $x$. This phenomenon of a solo dependence on $x$ was known as scaling. This scaling was observed to be present for scattering interactions with $Q^2 > 2 \: GeV^2$  and $\nu > 2.5 GeV$ \cite{Atwood}. In the Bjorken limit, $\nu$ $\rightarrow \infty$ and $Q^2 \rightarrow \infty$, the deep inelastic structure functions can be described as functions of only $x$ instead of $Q^2$ and $\nu$ \cite{Briskin_thesis}.
 
+\begin{figure}[]
+	%	\hspace*{-20pt}
+	\centering
+	\includegraphics[width=14cm]{SLAC_F2.png} 
+	\caption{ Measurements of the proton structure function $F_2(x, Q^2)$ for different $x$ settings\cite{ref:rev_pp} .}
+	\label{F2_fig}
+\end{figure}
 
 \subsection{Quark Parton Model}
 \paragraph{}In the case of DIS off of a proton, the electron probe is used to explore the exclusive internal structure of the proton, it's constituents. In 1969, Feynman assumed the internal make up of the proton was that of point-like partons \cite{Briskin_thesis,DISproton}, the basis of the parton model. As part of this model, the impulse approximation makes an assumption that the duration of the interaction between the mediating photon and parton is relatively short, allowing for the interaction between individual partons to be neglected. Thus in a DIS interaction, the partons can be described as quasi-free, with minimal internal interactions. Under this understanding, an electron-nucleon DIS interaction would characterize the properties and motions of the partons that form the struck nucleon\cite{DISproton}.
@@ -135,7 +136,7 @@ The $G^2_E(0)$ corresponds to the electric charge of the target. $G^2_M(0)$ is s
 	%	\hspace*{-20pt}
 	\centering
 	\includegraphics[width=8cm]{3slacexp.pdf} 
-	\caption{ Structure function results measured from three  lepton-nucleon scattering experiments \cite{Atwood}.}
+	\caption{ Structure function results measured from three lepton-nucleon scattering experiments \cite{Atwood}.}
 	\label{3leps}
 \end{figure}
 \paragraph{}The electromagnetic interaction that occurs during a scattering event happens between two charged bodies. The electron carries a charge of $- e$ and the proton carries a charge of $+e$. The partons that makeup the proton or neutron must carry a total charge equal to the charge of the proton or neutron. Using DIS scattering from electron, neutrino, and muon beams, the amount of charge carried by the partons was determined by using the equation \ref{F2quarks} \cite{PnN,DISquark,callan}. 
