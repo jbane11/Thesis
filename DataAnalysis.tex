@@ -10,9 +10,9 @@ The number of counted electrons (N) have to be corrected for any background even
 \begin{itemize}
 	\item \textbf{Hall Coordinate System(HCS):} The intersection of the electron beam and the vertical symmetry axis of the target system defines the origin of the HCS. This allows for $\hat{z}$ to point along the beam line towards the beam dump and $\hat{y}$ is up. 
 	\item \textbf{Target Coordinate System (TCS):} The TCS is unique to the individual HRS. The $\hat{z}$ axis of the TCS is defined by a line perpendicular to the surface of the spectrometers sieve slit aligned with the midpoint of the center hole. $z_{tg}$ points away from the target towards the spectrometer. Nilange Liyanage states in reference \cite{optics}, "In the ideal case where the spectrometer is pointing directly at the hall center and the sieve slit is perfectly centered on the spectrometer, the z$_{tg}$ axis passes through the hall center." Using the idea case, the origin of the TCS is defined by a set distance from the sieve surface. For the Left HRS, the TCS origin is 1.181m from the sieve, and for the Right HRS it is 1.178m. In the ideal case, the TCS origin is the HCS origin. Figure \ref{fig:TCS} shows the TCS with a an electron scattering event from a foil.  
-	\begin{figure}[]
+	\begin{figure}[t]
 		\centering
-		\includegraphics[width=11cm]{TCS.pdf}
+		\includegraphics[width=10cm]{TCS.pdf}
 		\caption{The TCS for an electron scattering event as seen from above. The event happens at $z_{react}$ distance from the Hall center. \textbf{L} is the distance from the Hall center to the sieve plane. \textbf{D} is the horizontal displacement of the spectrometer axis from the ideal position. $\Theta$ is the spectrometer's central angle \cite{optics}. }
 		\label{fig:TCS}
 	\end{figure}
@@ -78,6 +78,14 @@ $\Gamma$ is a set of spectrometer constants calculated to an accuracy of $4\time
 \subsection{Acceptance Cuts}
 \paragraph{} The HRS was designed to accept particles within a range of $\delta$, $y_{tg}$, $\theta_{tg}$, $\phi_{tg}$, and the vertex location along the beam line. The acceptance of the spectrometer is well known near the central ray. Due to the geometry of the spectrometer's magnets, the distribution of accepted electrons at the edge of the acceptance is not well understood. This is shown in figure \ref{phi_comp}. Applying cuts in the target variables creates an area of acceptance that is well understood. The acceptance cuts used for this analysis are:
 
+\begin{figure}[t]
+	\centering
+	{\hspace*{-20pt}
+	\includegraphics[width=17cm]{Phi_tg_comp_1.pdf}}
+	\caption{Simulation of events to demonstrate the acceptance of the spectrometer. Black events have been generated with no acceptance effects, Red points include a cut to only allow events that transverse the entire spectrometer. The Blue lines are example locations of cuts used in event selection to exclude the edge of the acceptance. }
+	\label{phi_comp}
+\end{figure}
+
 \begin{tabular}{@{$\bullet$ }lll}
 -0.035 &$ >=$ &$\delta_{tg} <=$ -0.035\\
 -0.04 rad &$>=$  &$\theta_{tg} <=$ -0.04 rad\\
@@ -96,15 +104,7 @@ $\Gamma$ is a set of spectrometer constants calculated to an accuracy of $4\time
 	Number of tracks == 1
 \end{tabular}
 
-\begin{figure}[]
-	\centering
 
-	\vspace*{-5pt}
-	\includegraphics[width=15cm]{Phi_tg_comp_1.pdf}
-
-	\caption{Simulation of events to demonstrate the acceptance of the spectrometer. Black events have been generated with no acceptance effects, Red points include a cut to only allow events that transverse the entire spectrometer. The Blue lines are example locations of cuts used in event selection to exclude the edge of the acceptance. }
-	\label{phi_comp}
-\end{figure}
 
 
 \subsection{Identification Cuts}
@@ -122,11 +122,9 @@ $\Gamma$ is a set of spectrometer constants calculated to an accuracy of $4\time
 	Calo. Layer 2 Energy &$>$ & 0.6 GeV
 \end{tabular}
 
-\begin{figure}[]
+\begin{figure}[t]
 	\centering
-
 	\includegraphics[width=15cm]{PID_3layer_plot.pdf}
-	
 	\caption{ A scan of the PID efficiency for a cut in each layer of the calorimeters.}
 	\label{cal_pidscan}
 \end{figure}
@@ -168,7 +166,7 @@ GE_{pass} & = \textrm{$GE_{sample}$ and pass identification cut} \\
 Electron_{eff}  & = \frac{ GE_{pass} } { GE_{sample} } 
 \end{split}
 \end{equation}
-\begin{figure}[]
+\begin{figure}[t]
 	\centering
 
 	\includegraphics[width=13cm]{PID_2d}
@@ -176,23 +174,21 @@ Electron_{eff}  & = \frac{ GE_{pass} } { GE_{sample} }
 	\label{elesample}
 \end{figure}
 
-\begin{figure}[t!]%
-
-	\centering
-	\subfloat[]{\includegraphics[width=0.5\textwidth,height=4.cm]{Lprl1}\label{samA}}%
-	\subfloat[]{\includegraphics[width=0.5\textwidth,height=4.cm]{Lprl2}\label{samB}}\\
-	\subfloat[]{\includegraphics[width=0.95\textwidth,height=3.65cm]{Lcerasum}\label{samC}}\\%
-			\caption{Electrons and other back ground particles identified via cuts in the total calorimeter and the gas Cherenkov shown in the individual layers of the calorimeters and the Cherenkov. Sampling cuts for Electrons in teal and Non-Electrons in red.}%
+\begin{figure}[t]%
+	{\centering
+	\hspace*{2cm}
+	\includegraphics[height=2.85in]{pidpics1.png}}
+			\caption{Electrons and other back ground particles identified via cuts in the total calorimeter and the gas Cherenkov shown in the individual layers of the calorimeters(top) and the Cherenkov(bottom). Sampling cuts for Electrons in teal and Non-Electrons in red.}%
 	\label{sampling}%
 \end{figure}
 
 
-\paragraph{}The efficiencies of the spectrometer's particle identification(PID) detectors were determined by using the first calorimeter layer, the second calorimeter layer, and the Cherenkov to provide samples of good electrons and other particles. The PID efficiency of the individual detectors was determined using equation \ref{effequ}. The good electron sample for calculating the efficiency of the single detector was defined by sampling through the other two detectors. Sampling through the two layers of the calorimeter is shown in figure \ref{samA} for the first layer of the calorimeter and \ref{samB} for the second layer. The Cherenkov good electron sample is shown in figure \ref{samC}. The electron sample from the Cherenkov is contaminated by delta rays and a combination of unknown particles. These unidentified background particles are known to be relativistic due to the amount of light seen in the Cherenkov. However, the events do not deposit enough energy into the calorimeter system to be considered as a good electron that scatter from our target through the detector. Using sampling in one layer of the calorimeter and the Cherenkov, these unwanted low energy particles are rejected from sampling for efficiency calculations. The electron selection PID efficiency for the three PID detectors was determined at each kinematic setting to be approximately 98$\%$ . The efficiency was determined to be independent of the kinematic setting. Only small fluctuations were seen during the study, these small changes are due to decrease in statics, and all of the results fall within statical uncertainty of being independent of kinematic setting. Figure \ref{PID_eff} displays the efficiency for the Cherenkov and both layers of the calorimeter at different kinematics for different targets. The non-electron suppression efficiency was determined as part of this PID efficiency study to ascertain how many back ground particles leak into our sample of good electrons after cuts our made. The suppression efficiency of the Cherenkov suffered due to the contamination of the relativistic low energy particles. Combining the two calorimeter detectors with the Cherenkov increased the overall suppression efficiency for the spectrometer to 99.9$\%$ over the entire kinematic range of the MARATHON experiment. 
+\paragraph{}The efficiencies of the spectrometer's particle identification(PID) detectors were determined by using the first calorimeter layer, the second calorimeter layer, and the Cherenkov to provide samples of good electrons and other particles. The PID efficiency of the individual detectors was determined using equation \ref{effequ}. The good electron sample for calculating the efficiency of the single detector was defined by sampling through the other two detectors. Sampling through the two layers of the calorimeter is shown the top left plot of figure \ref{sampling} for the first layer of the calorimeter and top right for the second layer. The Cherenkov good electron sample is shown in the bottom plot of figure \ref{sampling}. The electron sample from the Cherenkov is contaminated by delta rays and a combination of unknown particles. These unidentified background particles are known to be relativistic due to the amount of light seen in the Cherenkov. However, the events do not deposit enough energy into the calorimeter system to be considered as a good electron that scatter from our target through the detector. Using sampling in one layer of the calorimeter and the Cherenkov, these unwanted low energy particles are rejected from sampling for efficiency calculations. The electron selection PID efficiency for the three PID detectors was determined at each kinematic setting to be approximately 98$\%$ . The efficiency was determined to be independent of the kinematic setting. Only small fluctuations were seen during the study, these small changes are due to decrease in statics, and all of the results fall within statical uncertainty of being independent of kinematic setting. Figure \ref{PID_eff} displays the efficiency for the Cherenkov and both layers of the calorimeter at different kinematics for different targets. The non-electron suppression efficiency was determined as part of this PID efficiency study to ascertain how many back ground particles leak into our sample of good electrons after cuts our made. The suppression efficiency of the Cherenkov suffered due to the contamination of the relativistic low energy particles. Combining the two calorimeter detectors with the Cherenkov increased the overall suppression efficiency for the spectrometer to 99.9$\%$ over the entire kinematic range of the MARATHON experiment. 
 
-\begin{figure}[t!]
+\begin{figure}[t]
 
 	\centering
-	\includegraphics[width=15cm]{PID_allkin_alltgt}
+	\includegraphics[width=13.5cm]{PID_allkin_alltgt}
 	
 	\caption{The PID efficiency for the Cherenkov and both layers of the calorimeter,including the overall total PID efficiency for each of the gas targets at all of the kinematics.\label{PID_eff}}
 \end{figure}
@@ -289,7 +285,7 @@ As time passes the amount of $^3He$ increases, the contamination becomes a non-n
 \begin{figure}[t]
 	\centering
 
-	\includegraphics[width=13cm]{cont_Hfrac.pdf}
+	\includegraphics[width=12.cm]{cont_Hfrac.pdf}
 	
 	\caption{The amount of $^3$He in the $^3$H cell in reference to the total amount of material in the cell as a function of time. Included are bands of time for different sections of the $^3$H run group's plan \cite{Beta}.}
 	\label{Hfract}
@@ -363,8 +359,9 @@ The yield for a kinematic is combined on a run by run basis so that the run depe
 \begin{equation}
 Yield(bin) = \frac{\left( Yield_{kin}(bin)\cdot N_e^{kin}(bin)+ Yield_{kin+1}(bin)\cdot N_e^{kin+1}(bin) \right)}{N_e^{kin}(bin)+N_e^{kin+1}(bin)} \label{comb_w}
 \end{equation}
-\begin{figure}
-	\includegraphics[width=15cm]{Yield_new.pdf}
+\begin{figure}[t]
+	\centering
+	\includegraphics[width=13cm]{Yield_new.pdf}
 		\caption{Luminosity normalized corrected yield for $^2$D. The yield for each kinematic is shown as a different color and marker, with the combined yield as a gray 'x'.  \label{kinYield}}
 \end{figure}
 \section{Acceptance } 
@@ -396,12 +393,12 @@ This section will discuss the Monte Carlo simulation and compare the yield of Mo
 \subsubsection{Cross Section Table}
 \vspace{-10pt}\paragraph{} A cross section model is used to weight the Monte Carlo events to make a comparison between a Monte Carlo yield and a yield from data. The Born cross section is calculated via a DIS model with an EMC model correction. An Arie Bodek model \cite{DISmodel} is used to determine the nuclear structure function in the DIS regime. This same model uses a smearing technique to include any effects from the elastic and quasi-elastic tail. The kinematics closest to the resonance region experiences an almost negligible quasi-elastic contribution. A correction calculated from SLAC EMC data is applied to correct for the building of the nuclear structure function from free nucleon structure functions. The resulting born cross section is used to weigh events in the Monte Carlo simulation. Figure \ref{MCS} shows the born cross section for $^3$H at kinematic one for scattered angle along the x-axis and scattered momentum along the z-axis associated with color.  
 
-\begin{figure}[t!]
+\begin{figure}[t]
 	\includegraphics[width=15.5cm]{cs_m_T1.pdf}
 		\caption{Model cross section for $^3$H at kinematic 1 for scattered angle and momentum. \label{MCS}}
 \end{figure}
 \paragraph{} The scattered event that is measured through the experiment does not only experience the Born process (the one photon exchange approximation) shown in figure \ref{fig:radcors} but a combination of all the other processes shown. In order to produce a comparable result with data, these higher order contributions have to be addressed.
-\begin{figure}[]
+\begin{figure}[t]
 	\centering
 	\includegraphics[width=10cm]{radcors.png}
 	\caption{Lowest order Feynman diagrams for inclusive lepton-nucleon scattering \cite{Ajth}.}
@@ -438,8 +435,8 @@ The 2D interpolation is completed both for the born cross section and the radiat
 \subsection{Monte Carlo Comparison}
 \paragraph{}The weighted Monte Carlo events are binned into the target and focal planes for comparison to data. The comparison is used to determine the quality of the simulation. Figure \ref{tcomp} and \ref{fcomp} show the comparison for target plane variables and focal plane variables respectively. The important target variables to study are $\delta_{tg}$, y$_{tg}$, out of plane angle($\theta_{tg}$), and the in plane angle($\phi_{tg}$). 
 \begin{figure}[t]
-	\includegraphics[height=7.75cm,width=7.25cm]{dp_ytar_1207.eps}
-	\includegraphics[height=7.75cm,width=7.25cm]{xp_yp_tar_1207.eps}
+	\includegraphics[height=7.25cm,width=7.25cm]{dp_ytar_1207.eps}
+	\includegraphics[height=7.25cm,width=7.25cm]{xp_yp_tar_1207.eps}
 	\caption{Monte Carlo to Data comparison for target plane variables, top left $\delta$ ,bottom left y, top right $\theta$, bottom right $\phi$. Run 1207, kinematic 1 on carbon foil.\label{tcomp}}
 
 \end{figure}
@@ -455,4 +452,4 @@ The yield dependence in $\phi_{tg}$ and $\delta_{tg}$ are expected due to the de
 	\includegraphics[width=15cm]{Ratio_all.pdf}
 		\caption{The ratio of data to Monte Carlo yield in bins of $x$ for three gas targets.\label{D_MC_COMP}}
 \end{figure}
-I show the comparison between data and Monte Carlo in bins of $x$ for cross section extraction in figure \ref{D_MC_COMP}.
+I show the comparison between data and Monte Carlo in bins of $x$ for cross section extraction in figure \ref{D_MC_COMP}. This ratio factor will be applied to the model cross section to extract the measured cross section. I will discuss the cross section results and their uncertainties in the next section. 

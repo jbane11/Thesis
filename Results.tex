@@ -2,25 +2,29 @@
 \chapter{Results}
 \paragraph{}The culminating part of this nuclear physics analysis begins with the extraction of the experimentally measured DIS cross sections for three targets. Then using those cross sections to study the per nucleon scaled A/D ratio. I will also use these A/D ratios to study the EMC effect for both $^3$He and $^3$H. In this chapter, I will present my results for the DIS cross sections and EMC effect. I will also discuss an error analysis for both the cross section measurements and the EMC effect results. 
 \section{DIS Cross Section}
-\paragraph{}Using the Monte Carlo ratio method, I extracted the experimental measured cross section for $^3$He, $^3$H, and D. These DIS cross section extraction ranges from 0.18 to 0.82 in $x$, from 2.2 to 11.8 GeV$^2$ in $Q^2$, and has W$^2$ $>3.5$ GeV$^2$. The central momentum setting of the spectrometer was 3.1 GeV/c and the spectrometer was moved from 17.5 to 33.5 degrees.
+\paragraph{}Using the Monte Carlo ratio method, I extracted the experimental measured cross section for $^3$He, $^3$H, and D. These DIS cross section extraction ranges from 0.18 to 0.82 in $x$, from 2.2 to 11.8 GeV$^2$ in $Q^2$, and has W$^2$ $>3.5$ GeV$^2$. The central momentum setting of the spectrometer was 3.1 GeV/c and the spectrometer was moved from 17.5 to 33.5 degrees. Normalization uncertainty due to target thickness uncertainty for $^3$H= 0.97\%, $^3$He = 1.12\%, and D = 0.56\%.
 
 
 \begin{equation}
 \sigma_{Data} = \sigma_{model} \cdot \frac{Y_{Data}}{Y_{MC}}. \nonumber
 \end{equation}
 
-%\iffalse
+%\pagebreak
+%\thispagestyle{lscape}
+%\newgeometry{   left = 1.5in,right = 1.0in,top = 1.0in,bottom = 1.375in}
+%\pagestyle{lscape}
 %\begin{landscape}
-%\begin{sidewaysfigure}
-\begin{figure}[t!]
-	\hspace{-20pt}
-	\includegraphics[width=17cm]{../images/total_xs.pdf}
-	\caption{Experimentally measured cross section using the Monte Carlo ratio method for $^3$H, $^3$He, and D. Normalization uncertainty due to target thickness uncertainty for $^3$H= 0.97\%, $^3$He = 1.12\%, and D = 0.56\%.}
+\begin{figure}[t]
+%	\vspace*{-2.75cm}
+	\centering
+	\includegraphics[width=13.5cm]{../images/total_xs.pdf}
+	\caption{Experimentally measured cross section using the Monte Carlo ratio method for $^3$H, $^3$He, and D. }
     \label{CCplot}
 \end{figure}
 %\end{sidewaysfigure}
 %\end{landscape}
-%\fi
+%\restoregeometry
+%\pagestyle{plain}
 
 \iffalse
 \begin{landscape}
@@ -119,19 +123,16 @@ The model dependence of the DIS cross section and the radiative corrections are 
 
 \section{EMC Ratios}
 \paragraph{}In this section, I will present the A/D cross section ratios for $^3$He and $^3$H. The ratios are normalized by the number of nucleons in each target. Included in figure \ref{ADplot} are results from E03103. These results have different invariant mass but are considered DIS until 0.65 in $x$. Above this threshold, the invariant mass begins to drop lower then the DIS criteria used for my analysis. 
-%\begin{landscape}
-%\begin{sidewaysfigure}
-%\thispagestyle{empty}
-%\raisebox{-14.5cm}{\makebox[\linewidth]{\thepage}}
-\begin{figure}
+
+
+\begin{figure}[t]
 	\centering
-	\includegraphics[width=15.cm]{../images/A_D_ratios.pdf}
+	\includegraphics[width=13.5cm]{../images/A_D_ratios.pdf}
 	\caption{The A/D ratio for $^3$He and $^3$H from my analysis. Also included, EMC analysis from E03103\cite{seeley} and the EMC ratios from a DIS scattering model from Arie Bodek model \cite{DISmodel}.}
 	\label{ADplot}
 \end{figure}
 
-%\end{sidewaysfigure}
-%\end{landscape}
+
 
 \subsection{Isoscalar Correction}
 	\paragraph{}The definition of an EMC effect ratio is the ratio of the per nucleon cross section ratio of a target nucleus with D. Also,  this comparison is of a target with equal number of protons and neutrons, an isoscalar nuclei. When looking at the EMC ratio of a target with not an equal number of nucleons, an isoscalar correction needs to be applied. This correction is used to correct for the difference in cross section between the neutron and proton. The per nucleon nuclear F$_2^A $ of an unsymmetrical nucleon can be written as:
@@ -151,7 +152,7 @@ The model dependence of the DIS cross section and the radiative corrections are 
 	\end{equation}
 	\paragraph{}The isoscalar correction for a nuclear target depends on A,Z, and the F$_2$ ratio. There exist no data on the free neutron, so the $F^n_2/F^p_n$ is a model dependent extraction. The  F$_2$ ratio has been extracted from the ratio of $^3$H to $^3$He from the MARATHON experiment and D to hydrogen ratios from previous experiments from SLAC and the NMC. I have used the $F^n_2/F^p_n$ from MARATHON to calculate my iscscalar correction for both $^3$He and $^3$H. I have estimated the error of this model dependent correction by comparing the isoscalar correction from the MARATHON extraction with the isoscalar correction using three other $F^n_2/F^p_n$ models Kulagin, S. A. and Petti, R. \cite{kpmodel}, J. Arrington \cite{JA_FR}, and NMC \cite{NMC_ratio}. The relative variance of this calculation ranges from $\pm$ 0.1\% to $\pm$ 3.8\% for $^3$H EMC ratio. These 4 models and the error band from this study is shown in figure \ref{isofuncs} for the isoscalar correction on $^3$H and figure \ref{isofuncsHe3} for the isoscalar correction on $^3$He.
 
-	\begin{figure}[!]
+	\begin{figure}[]
 		\includegraphics[width=15cm]{ISOfacsH3.pdf}
 		\caption{Isoscalar correction factor for the $^3$H EMC ratio from four different models discussed in this section.}
 		\label{isofuncs}
@@ -177,7 +178,8 @@ The model dependence of the DIS cross section and the radiative corrections are 
 \subsection{Ratio of EMC Effects}
 \paragraph{} If figure \ref{ISORatio}, I display the results of the ratio of the two A=3 mirror nuclei EMC effects. The errors associated with the extraction of this ratio are the errors for extracted both cross sections and the errors for the ratio of the isoscalar correction. For the errors on the isoscalar correction, I looked at the ratio of isoscalar correction for the different models and extracted the standard deviation from the model dependence on the ratio. The error bars in figure \ref{ISORatio} are all error contributions added in quadrature. 
 
-\begin{figure}
+\begin{figure}[t]
+	\centering
 	\includegraphics[width=15cm]{Iso_H_He.pdf}
 	\caption{Ratio of the isoscalar corrected  $^3$H EMC Effect and $^3$He EMC Effect. The error bar is statistical error only, while the band includes statical and systematic errors. }\label{ISORatio}
 \end{figure}
