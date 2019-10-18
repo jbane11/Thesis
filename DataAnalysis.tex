@@ -196,28 +196,26 @@ Electron_{eff}  & = \frac{ GE_{pass} } { GE_{sample} }
 \subsection{Trigger Efficiency}
 \paragraph{}  Due to inefficiencies of the electronics, logic, and detectors an event can produce a false trigger or a high quality electron may not fire the main trigger.
 A low threshold in the Cherenkov signal allows for an inclusive trigger limiting the overall number of quality electrons missed, but allows for a large quantity of none-electron triggers. Software PID cuts prevent the contamination of non-electrons in the yield calculation. The tight PID software cuts removes the false positive inefficiency from the trigger design and is then considered in the PID efficiencies. The trigger inefficiency caused by missed high quality electrons was then calculated by sampling the high quality electrons in trigger 1, $(S_o \& S_2)$. This ties the efficiency of trigger 2 with the performance of the scintillators. The efficiency of the two scintillating planes in conjunction is calculated by using sampling in trigger 3, $(S_o | S_2) \& GC$ with strict PID cuts in both layers of the calorimeters and requiring a hit in the Cherenkov. The two scintillator planes in conjunction have an efficiency greater than $99.7 \% $ for all kinematics. Combining the trigger efficiency of the main trigger shown in figure \ref{trigeff} with the performance of the scintillators give an over all efficiency for the trigger of the MARATHON experiment of greater than $99.6\%$.
-\begin{figure}[]
+\begin{figure}[t]
 	\centering
-
-	\includegraphics[width=15cm]{Trigger_Eff.eps}
-	
+	\includegraphics[width=12cm]{Trigger_Eff.eps}
 	\caption{Trigger efficiency of trigger 2 for different targets at all kinematics calculated via sampling from trigger 1. }
 	\label{trigeff}
 \end{figure}
 \subsection{Tracking Efficiency}\label{eff_track}
-\begin{figure}[]
-	\centering
 
-	\includegraphics[width=15cm]{Tracking_Eff_allkin.eps}
-	
-	\caption{Tracking efficiency of the VDCs for different targets at all kinematics. }
-	\label{trackeff}
-\end{figure}
 \paragraph{}Particles that travel through our detector could originated from sources wanted or unwanted. In order to control the source of the scattered electrons, we use a particle's track to identify its source. The signals received via the VDC is used to produce a particles track from the target to end of the spectrometer. The largest source of inefficiency for the VDCs are incorrectly identified tracks. High quality electrons that transverse the spectrometer should only have one good track, calculated via the tracking package in the analysis software. The capability of the VDCs to determine a good electron event's one good track is known as the one track efficiency for the VDCs. Quantitatively the one track efficiency ($\epsilon_{VDC}$) can be obtained via:
 \begin{equation}
 \epsilon_{VDC} \equiv \frac{N_{1 track} }{N_{all}}
 \end{equation}
 Where the number of good electron events that have one good track is defined as $N_{1 track}$, and $N_{all}$ are all of the electrons rather they have a good track or not. The good electron selection is made via PID cuts in the calorimeter and Cherenkov, and cuts in the ADC and TDC of the scintillators. Direct cuts in the signal of the scintillators were made to include the nominal acceptance cuts, which our produced through tracking software. The tracking efficiency of HRSs during the MARATHON experiment is shown in figure \ref{trackeff} for the three gas targets during all kinematic ranges. The efficiency of the VDCs is not relative to the angle of the spectrometer. So the uniform tracking efficiency across all kinematics is expected and helps eliminate any concerns of the performance of the VDCs during the experiment. 
+\begin{figure}[t]
+	\centering
+	\includegraphics[width=12cm]{Tracking_Eff_allkin.eps}
+	\caption{Tracking efficiency of the VDCs for different targets at all kinematics. }
+	\label{trackeff}
+\end{figure}
+
 
 \section{Background Subtraction}\label{sec:BG}
 \paragraph{} The purpose of this analysis is to study the DIS cross sections of $^2$D, $^3$He, and $^3$H. The sample of scattered events used to determine the cross section of a given nuclear target then needs to be cleaned of any contamination produced from other targets and processes. The electrons detected by the spectrometers can be electrons that scattered from our chosen target, scattered from a source other than our target, or produced through process other than DIS scattering. The two sources of contamination for the MARATHON experiment are events scattered from the aluminum end caps of the target cell and pair produced electrons via photon interaction. The $^3$H gas will experience beta decay, that produces $^3$He. This $^3$He that contaminates the $^3$H cell will also be addressed in this section.
@@ -412,7 +410,7 @@ This section will discuss the Monte Carlo simulation and compare the yield of Mo
 \end{figure}
 
 \subsubsection{Generation}
-\paragraph{}The MC simulation generates events in the target frame to travel from the point of interaction to the spectrometer's focal plane. The events are generated to have a uniform distribution in $\delta$, $\theta$, and $\phi$. A generated event drifts from the randomized point of interaction to the entrance of the spectrometer. Along this drift, the simulation calculates the chances of multiple scattering events using the radiation length of the intervening material. Simulated electrons pass through the remaining target length, aluminum endcap, vacuum, aluminum wall of the scattering chamber, air, and kapton film at the entrance of the spectrometer's vacuum. Once entering the spectrometer, the simulated event will use differential algebra based COSY model to pass through the magnetic field of the spectrometer's dipole and quadrupoles. The code checks a particle's trajectory through the spectrometer ensuring no collision with the magnetic apertures.  Events that have successfully traveled to the VDC will receive a smearing effect to account for the finite resolution of the VDCs in the HRS \cite{HallA}. The event's focal plane coordinates are used to transform back to the target coordinates to calculate the scattered energy and scattered angle.\\ 
+\paragraph{}The MC simulation generates events in the target frame to travel from the point of interaction to the spectrometer's focal plane. The events are generated to have a uniform distribution in $\delta$, $\theta$, and $\phi$. A generated event drifts from the randomized point of interaction to the entrance of the spectrometer. Along this drift, the simulation calculates the chances of multiple scattering events using the radiation length of the intervening material. Simulated electrons pass through the remaining target length, aluminum end cap, vacuum, aluminum wall of the scattering chamber, air, and kapton film at the entrance of the spectrometer's vacuum. Once entering the spectrometer, the simulated event will use differential algebra based COSY model to pass through the magnetic field of the spectrometer's dipole and quadrupoles. The code checks a particle's trajectory through the spectrometer ensuring no collision with the magnetic apertures.  Events that have successfully traveled to the VDC will receive a smearing effect to account for the finite resolution of the VDCs in the HRS \cite{HallA}. The event's focal plane coordinates are used to transform back to the target coordinates to calculate the scattered energy and scattered angle.\\ 
 \subsubsection{Event Weighting}
 \paragraph{}An accepted Monte Carlo event is weighted to best match physical conditions. The comparison of simulation with actual data requires the event to be weighted with the born cross section of that event and corrected for radiative effects. The subroutine used for this analysis uses a 2 dimensional interpolation (scattered energy and momentum) to determine the born cross section and radiative correction factor for the exact event. The 2D interpolation is completed by finding 4 locations on the cross section table. For the following description of the table locations, $_{evt} =$ event and $_{cst} =$ cross section table. The cross section value is pulled from the table for a row that meets the criteria. For example, $\sigma[1]$ is the born cross section for the row where the angle is closest but lower than the event and the momentum is closest but lower than the event. 
 
@@ -452,4 +450,4 @@ The yield dependence in $\phi_{tg}$ and $\delta_{tg}$ are expected due to the de
 	\includegraphics[width=15cm]{Ratio_all.pdf}
 		\caption{The ratio of data to Monte Carlo yield in bins of $x$ for three gas targets.\label{D_MC_COMP}}
 \end{figure}
-I show the comparison between data and Monte Carlo in bins of $x$ for cross section extraction in figure \ref{D_MC_COMP}. This ratio factor will be applied to the model cross section to extract the measured cross section. I will discuss the cross section results and their uncertainties in the next section. 
+I show the comparison between data and Monte Carlo in bins of $x$ for cross section extraction in figure \ref{D_MC_COMP}. This ratio factor will be applied to the model cross section to extract the measured cross section. I will discuss the cross section results and their uncertainties in the next section. In appendix \ref{A:EMCsim}, I discuss the beginning stages of a simulation I created to study the dependence of nucleon momentum on the EMC effect. 

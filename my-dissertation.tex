@@ -99,8 +99,8 @@
 	
     \pagenumbering{alph} % this is needed to clear certain issues with the hyperref package
     %
- 	\makeApprovalPage % make the approval page - this is the page that needs to be signed & returned to the thesis/dissertation consultant
-	\makeETDApprovalPage % make the Electronic Thesis & Dissertation page - this page is kept with the electronic copy
+ 	%\makeApprovalPage % make the approval page - this is the page that needs to be signed & returned to the thesis/dissertation consultant
+	%\makeETDApprovalPage % make the Electronic Thesis & Dissertation page - this page is kept with the electronic copy
     %
     \addToPDFBookmarks{0}{Front Matter}{rootNode} % create a root node named "Front Matter" in the pdf bookmarks
     \addToPDFBookmarks{1}{Title}{a} % add a pdf bookmark to the title page
@@ -111,14 +111,14 @@
     %
     \makeCopyrightPage % make the copyright page
     %
-    \addToPDFBookmarks{1}{Dedication}{b} % add a pdf bookmark to the dedication page
-    \include{front-matter/dedication} % include the dedication
+    %\addToPDFBookmarks{1}{Dedication}{b} % add a pdf bookmark to the dedication page
+    %\include{front-matter/dedication} % include the dedication
     %
     \addToPDFBookmarks{1}{Acknowledgements}{c} % add a pdf bookmark to the acknowledgements page
     \include{front-matter/acknowledgements} % include the acknowledgements
     %
-    \addToPDFBookmarks{1}{Quote}{d} % add a pdf bookmark to the quotation page
-    \include{front-matter/quote} % include a quote
+    %\addToPDFBookmarks{1}{Quote}{d} % add a pdf bookmark to the quotation page
+    %\include{front-matter/quote} % include a quote
     %
     \addToPDFBookmarks{1}{Abstract}{e} % add a pdf bookmark to the abstract page
     \include{front-matter/abstract} % your abstract
@@ -132,9 +132,9 @@
     \addToTOC{List of Figures} % this will add the list of figures to the Table of Contents (TOC)
     \listoffigures % generate a list of figures
     %
-    \makenomenclature % OPTIONAL
-    \addToPDFBookmarks{0}{Nomenclature}{g} % OPTIONAL
-    \printnomenclature[1.25in] % OPTIONAL
+   % \makenomenclature % OPTIONAL
+   % \addToPDFBookmarks{0}{Nomenclature}{g} % OPTIONAL
+   % \printnomenclature[1.25in] % OPTIONAL
     %
     \newpage
     \pagenumbering{arabic}

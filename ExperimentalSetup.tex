@@ -9,14 +9,17 @@
 	\paragraph{}The Continuous Electron Beam Accelerator Facility (CEBAF) was recently upgraded to a 12 GeV accelerator. The upgrade allows the accelerator to deliver a 11 GeV beam of continuous electrons of up to 200 $\mu$A of current to three experimental halls (A,B,C) and 12 GeV to the recently constructed hall D. 
 \subsection{Injector}
 	\paragraph{} CEBAF uses a micro-pulsed structure from the photo-electron gun to produce electrons in an efficient manner. This micro-pulsed structure is used to prolong the lifetime of the photocathode. The delivery of unique current and energy to all four halls requires the micro-pulses to have a 250 MHz or 500MHz structure and four individually tuned lasers. Frequencies of 250 MHz and 500MHz are chosen because these are sub-harmonics of the fundamental accelerator operating frequency of 1500 MHz \cite{CEBAF}. 
-	\begin{figure}[t]
-	\centering
-	\includegraphics[width=15cm]{injector1.pdf} 
-		\caption{Drawing of the Injector layout. }
-	\label{fig:inj}
-	\end{figure} 
+
 	\paragraph{}Electrons are produce when laser light shines on a gallium arsenide photocathode. A laser pulse excites electrons from the photocathode via the photoelectric effect. These exited electrons form from the gallium arsenide wafer when the electrons are excited out of the valence band into the conduction band. Gallium arsenide was chosen because the energy level of the conduction band for this photocathode sits above the energy of an electron vacuum. Electrons in the conduction band escape from the material and accelerate away from the wafer due to high negative potential on the photocathode wafer \cite{sane}. 
 	\paragraph{}Electrons that escape the photocathode wafer accelerate into the injector beam line due do the electron gun. A drawing of the injector beam line is shown in figure \ref{fig:inj}. Slits in the rotating chopper allow for regulation of the currents sent to the four experimental halls by reducing the number of electrons allowed through the chopper. Testing and calibration of the four beams are done throughout the injector beam lines via the Faraday cups and spectrometers located at different spots in the beam line. The polarized gun can supply electrons with up to 80$\%$ polarization and the polarization direction can be controlled by a wien filter. The level of polarization is ensured through measurements from a 5 MeV Mott polarimeter\cite{HallA}. The injector accelerates the electrons up to 123 MeV before allowing them into the north linear accelerator (LINAC) \cite{ref:4beams,CEBAF,ref:photogun}.
+		\begin{figure}[t]
+		\centering
+		\includegraphics[width=15cm]{injector1.pdf} 
+		\caption{Drawing of the Injector layout. }
+		\label{fig:inj}
+	\end{figure} 
+	
+	
 \subsection{Accelerator}
 	\paragraph{} Electrons travel through two LINACs and two bending arcs per complete pass of the accelerator. The two LINACs are approximately a quarter-mile long and are thirty feet underground. The beam lines are kept under vacuum between $10^{-6}$ and $10^{-11}$ torr to provided an efficient medium for transfer.  Electrons traveling to Halls A, B, and C complete a maximum of four and a half revolutions around the accelerator. These particles receive approximately 2.2 GeV in energy for each cycle through the accelerator. 
 	\begin{figure}[t]
@@ -56,22 +59,21 @@
  \begin{equation}
  	u = \frac{u_+ - u_-}{u_+ + u_-}.
  \end{equation} 
-  	\begin{figure}[t!]
+  	\begin{figure}[]
  	\centering
  	\includegraphics[width=11cm]{BPM.png} 
  	\caption{BPM design diagram, from JLab instrumentation	group. Beam direction is from left to right \cite{BPM2}. }
  	\label{BPMimg}
- \end{figure}
- 	  	\begin{figure}[t!]
-%	\vspace{1.5cm}
+% \end{figure}
+% 	  	\begin{figure}[t]
+	\vspace{1.5cm}
 	\centering
- 	\includegraphics[width=10cm]{BPM_4.png}  	
+ 	\includegraphics[width=11cm]{BPM_4.png}  	
  	\caption{BPM design diagram, looking down the beam line\cite{BPM2}. }
  	\label{BPM_4}
  \end{figure} 
   
- 
- The beam position in the frame of the u and v antennas are calculated by the taking the difference over the sum of the two wires in the u and v directions. The accuracy of the BPMs requires an absolute measurement of the electron beam's position to calibrate the BPMs\cite{BPM,BPM2}.
+The beam position in the frame of the u and v antennas are calculated by the taking the difference over the sum of the two wires in the u and v directions. The accuracy of the BPMs requires an absolute measurement of the electron beam's position to calibrate the BPMs\cite{BPM,BPM2}.
 
 \paragraph{} Figure \ref{harp} shows an image of the harps used for BPM calibration. Each harp is located immediately after the BPM on the beam line. The harp forks are aligned perpendicular to the beam line to allow the harps to move in and out of the beam line. A wire that traverse between the fork tines at three different angles in respect to the harp detects electrons passing through the beam line. The two sloped sections of the wire are angled at 45$^{\circ}$ relative to the harp frame. As the harp fork moves into the beam, the wires receive a signal as the beam interacts with the wires. The signal strength from the harp wire represents how close the wire is to the beam. A peak in the signal demonstrates the location of the beam in respect with the corresponding wire. The two sloped wires are used together to determine the vertical position of the beam. The vertical wire is used to determine the horizontal position of the beam \cite{BPM,BPM2}. The harps are not used during production phases due to their intrusive nature caused by the interaction of the beam with the harp wire.
 		\begin{figure}[t]
@@ -120,18 +122,21 @@
 	 \subsection{Raster}
 	
 	 \paragraph{}Damage to a target system from intense beam can cause extreme fluctuations in the target's temperature and density. A raster was used to counteract the damage caused by a focused beam. A raster uses two magnetic fields produced by two dipoles to spread the electron beam out. This produces a large rectangle interaction area on the front face of the target container. A triangle wave of 25 kHz controls the coils of the dipole magnets. The raster system begins $\approx$17 meters before the target chamber \cite{BPM2}.The raster system's relative position can be seen in figure \ref{BeamLine}. Safety constraints administrated by the target group at JLab limited the minimum size of the raster spot for the MARATHON experiment to two millimeters by two millimeters. The 2x2mm minimum limit for the raster size was installed as a preventative safety measure to eliminate concerns of the $^3$H gas breaking containment through damage to the target cell entrance window. 
+
 	 
-	\begin{figure}[t]
+	 \paragraph{} The Hall A raster system consists of four dipoles. Two dipoles produce magnetic fields in the horizontal direction of the lab frame and two in the vertical. The upstream raster and downstream raster include one vertical and one horizontal dipole. The relative change in position of the incoming electrons are controlled by the current supplied to the dipoles. This current that drives the dipoles is recorded by an ADC. In order to obtain the change in beam position due to the raster, a calibration between the raster current and measured beam position were obtained.  
+
+	 \paragraph{}
+	 The raster calibration is done by creating a line that maps the raster current measured by ADC channels to a position. This calibration process is done to extract beam positions at the locations of both BPMs and the target center along the beam line. Calibrating the raster requires two calibration procedures. The first process was to determine the size of the rastered beam spread. In order to accurately determine the width and height of the beam spread due to the raster, a carbon foil with a hole of a diameter of 2mm was used. Events will only scatter from outside of the hole. Plotting the x and y raster current of the rastered beam will show the hole through a vacancy of events. The fit of the carbon hole gives the width of the raster, the slope of the linear mapping term. In figure \ref{fig:raster}, the raster current in x and y directions are fitted using this radial sigmoid. Once the slope of the linear calibration is determined, the offsets can be found. This is discovered by using the calibrated BPM mean positions for a phase of rastered beam. The mean positions for both BPMA and BPMB produce a track from the BPMs to the target. This projection provides a mean location of the beam at the target.  Using equation \ref{eq:raster}, the offsets also know as the intercepts are solved for using the slope ($m_x,m_y$), the raster mean current value ($R_x,R_y$), and the mean BPM position($x,y$) \cite{Trast}.
+	 	 
+	 \begin{figure}[t]
 	 	\centering
 	 	\includegraphics[width=6cm]{raster.pdf} 
 	 	\caption{The X and Y current of the raster with a carbon hole. The size of the carbon hole is fit with a radial sigmoid\cite{Trast}.}
 	 	\label{fig:raster}
 	 \end{figure} 
 	 
-	 \paragraph{} The Hall A raster system consists of four dipoles. Two dipoles produce magnetic fields in the horizontal direction of the lab frame and two in the vertical. The upstream raster and downstream raster include one vertical and one horizontal dipole. The relative change in position of the incoming electrons are controlled by the current supplied to the dipoles. This current that drives the dipoles is recorded by an ADC. In order to obtain the change in beam position due to the raster, a calibration between the raster current and measured beam position were obtained.  
-
-	 \paragraph{}
-	 The raster calibration is done by creating a line that maps the raster current measured by ADC channels to a position. This calibration process is done to extract beam positions at the locations of both BPMs and the target center along the beam line. Calibrating the raster requires two calibration procedures. The first process was to determine the size of the rastered beam spread. In order to accurately determine the width and height of the beam spread due to the raster, a carbon foil with a hole of a diameter of 2mm was used. Events will only scatter from outside of the hole. Plotting the x and y raster current of the rastered beam will show the hole through a vacancy of events. The fit of the carbon hole gives the width of the raster, the slope of the linear mapping term. In figure \ref{fig:raster}, the raster current in x and y directions are fitted using this radial sigmoid. Once the slope of the linear calibration is determined, the offsets can be found. This is discovered by using the calibrated BPM mean positions for a phase of rastered beam. The mean positions for both BPMA and BPMB produce a track from the BPMs to the target. This projection provides a mean location of the beam at the target.  Using equation \ref{eq:raster}, the offsets also know as the intercepts are solved for using the slope ($m_x,m_y$), the raster mean current value ($R_x,R_y$), and the mean BPM position($x,y$) \cite{Trast}.
+	 
 	 \begin{equation}
 	 	\begin{pmatrix}
 		 	x\\
