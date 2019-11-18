@@ -16,7 +16,7 @@
    id="svg831"
    inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
    sodipodi:docname="elastic_scatt_draw.svg"
-   inkscape:export-filename="/home/jbane/latex_shows/images/elast_draw.png"
+   inkscape:export-filename="/home/jbane/latex_shows/images/elast_draw1.png"
    inkscape:export-xdpi="100"
    inkscape:export-ydpi="100">
   <defs
@@ -73,9 +73,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.7"
-     inkscape:cx="180.17718"
-     inkscape:cy="594.29169"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="29.536496"
+     inkscape:cy="732.97472"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -92,7 +92,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -101,113 +101,158 @@
      inkscape:groupmode="layer"
      id="layer1">
     <ellipse
-       style="opacity:0.669;fill:#0000ff;fill-opacity:0.87843138;stroke:#ff5321;stroke-width:0.26458332;stroke-miterlimit:4;stroke-dasharray:0.26458333, 0.26458333000000001;stroke-dashoffset:0;stroke-opacity:1"
-       id="path1376"
-       cx="13.229166"
-       cy="123.13095"
-       rx="9.4494047"
-       ry="10.583333"
-       inkscape:export-xdpi="100"
-       inkscape:export-ydpi="100" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:1.04;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow2Send)"
-       d="m 12.270326,124.48482 26.229642,0.92491"
-       id="path1378"
-       inkscape:connector-curvature="0"
-       inkscape:export-xdpi="100"
-       inkscape:export-ydpi="100" />
-    <ellipse
        style="opacity:0.669;fill:#ff0000;fill-opacity:0.87843137;stroke:#ff0000;stroke-width:0.76375449;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="path1818"
-       cx="54.428574"
-       cy="125.96578"
+       cx="54.050598"
+       cy="125.20983"
        rx="15.25717"
        ry="12.044373"
        inkscape:export-xdpi="100"
-       inkscape:export-ydpi="100" />
+       inkscape:export-ydpi="100"
+       inkscape:export-filename="/home/jbane/latex_shows/images/dis_draw1.png" />
     <path
        style="fill:none;stroke:#000000;stroke-width:1.03999996;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow2Send-6)"
        d="M 62.745176,115.62088 86.025348,103.50134"
        id="path1378-9"
        inkscape:connector-curvature="0"
        inkscape:export-xdpi="100"
-       inkscape:export-ydpi="100" />
+       inkscape:export-ydpi="100"
+       inkscape:export-filename="/home/jbane/latex_shows/images/dis_draw1.png" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:1.03999996;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow2Send-0)"
-       d="m 60.367546,137.7106 20.630758,16.2241"
+       style="fill:none;stroke:#000000;stroke-width:0.76674312;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow2Send-0)"
+       d="m 60.265446,137.61624 16.114886,11.28968"
        id="path1378-3"
        inkscape:connector-curvature="0"
        inkscape:export-xdpi="100"
-       inkscape:export-ydpi="100" />
+       inkscape:export-ydpi="100"
+       inkscape:export-filename="/home/jbane/latex_shows/images/dis_draw1.png" />
     <ellipse
        style="opacity:0.669;fill:#ff0000;fill-opacity:0.87843137;stroke:#ff0000;stroke-width:0.76375455;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="path1818-1"
-       cx="92.226181"
-       cy="164.33035"
+       cx="89.20237"
+       cy="157.1488"
        rx="15.25717"
        ry="12.044373"
        inkscape:export-xdpi="100"
-       inkscape:export-ydpi="100" />
+       inkscape:export-ydpi="100"
+       inkscape:export-filename="/home/jbane/latex_shows/images/dis_draw1.png" />
     <ellipse
        style="opacity:0.669;fill:#0000ff;fill-opacity:0.87843137;stroke:#ff5321;stroke-width:0.26458332;stroke-miterlimit:4;stroke-dasharray:0.26458333, 0.26458333;stroke-dashoffset:0;stroke-opacity:1"
        id="path1376-7"
-       cx="98.273811"
-       cy="99.318459"
+       cx="96.383934"
+       cy="98.940483"
        rx="9.4494047"
        ry="10.583333"
        inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100"
+       inkscape:export-filename="/home/jbane/latex_shows/images/dis_draw1.png" />
+    <ellipse
+       style="opacity:0.669;fill:#0000ff;fill-opacity:0.87843137;stroke:#ff5321;stroke-width:0.26458332;stroke-miterlimit:4;stroke-dasharray:0.26458333, 0.26458333;stroke-dashoffset:0;stroke-opacity:1"
+       id="path1376"
+       cx="15.497024"
+       cy="124.26488"
+       rx="9.4494047"
+       ry="10.583333"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100"
+       inkscape:export-filename="/home/jbane/latex_shows/images/dis_draw1.png" />
+    <path
+       style="opacity:0.669;fill:#35f8f2;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path3834"
+       sodipodi:type="arc"
+       sodipodi:cx="57.817711"
+       sodipodi:cy="129.42294"
+       sodipodi:rx="4.1577382"
+       sodipodi:ry="3.5907736"
+       sodipodi:start="1.7555045"
+       sodipodi:end="1.7440883"
+       sodipodi:open="true"
+       d="m 57.054102,132.95264 a 4.1577382,3.5907736 0 0 1 -3.325568,-4.1791 4.1577382,3.5907736 0 0 1 4.829444,-2.884 4.1577382,3.5907736 0 0 1 3.353136,4.16264 4.1577382,3.5907736 0 0 1 -4.810305,2.90776"
+       inkscape:export-filename="/home/jbane/latex_shows/images/dis_draw1.png"
+       inkscape:export-xdpi="100"
        inkscape:export-ydpi="100" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="4.1577377"
-       y="122.75297"
-       id="text2837"
+    <path
+       style="opacity:0.669;fill:#35f8f2;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path3834-1"
+       sodipodi:type="arc"
+       sodipodi:cx="55.940456"
+       sodipodi:cy="118.21729"
+       sodipodi:rx="4.1577382"
+       sodipodi:ry="3.5907738"
+       sodipodi:start="1.7555045"
+       sodipodi:end="1.7440883"
+       sodipodi:open="true"
+       d="m 55.176848,121.74699 a 4.1577382,3.5907738 0 0 1 -3.325569,-4.1791 4.1577382,3.5907738 0 0 1 4.829445,-2.884 4.1577382,3.5907738 0 0 1 3.353135,4.16264 4.1577382,3.5907738 0 0 1 -4.810305,2.90776"
+       inkscape:export-filename="/home/jbane/latex_shows/images/dis_draw1.png"
        inkscape:export-xdpi="100"
-       inkscape:export-ydpi="100"><tspan
-         sodipodi:role="line"
-         id="tspan2835"
-         x="4.1577377"
-         y="122.75297"
-         style="font-size:4.23333311px;stroke-width:0.26458332">electron</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="45.463005"
-       y="126.22106"
-       id="text2837-9"
+       inkscape:export-ydpi="100" />
+    <path
+       style="opacity:0.669;fill:#fff32e;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path3834-6"
+       sodipodi:type="arc"
+       sodipodi:cx="49.030106"
+       sodipodi:cy="124.79943"
+       sodipodi:rx="4.1577382"
+       sodipodi:ry="3.5907738"
+       sodipodi:start="1.7555045"
+       sodipodi:end="1.7440883"
+       sodipodi:open="true"
+       d="m 48.266497,128.32913 a 4.1577382,3.5907738 0 0 1 -3.325569,-4.1791 4.1577382,3.5907738 0 0 1 4.829445,-2.884 4.1577382,3.5907738 0 0 1 3.353135,4.16264 4.1577382,3.5907738 0 0 1 -4.810304,2.90775"
+       inkscape:export-filename="/home/jbane/latex_shows/images/dis_draw1.png"
        inkscape:export-xdpi="100"
-       inkscape:export-ydpi="100"><tspan
-         sodipodi:role="line"
-         id="tspan2835-1"
-         x="45.463005"
-         y="126.22106"
-         style="font-size:4.23333311px;stroke-width:0.26458332">nucleus</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="76.729164"
-       y="165.0863"
-       id="text2859"
+       inkscape:export-ydpi="100" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.2527802;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow2Send)"
+       d="m 24.519539,125.81673 23.285244,-0.28932"
+       id="path1378"
+       inkscape:connector-curvature="0"
        inkscape:export-xdpi="100"
-       inkscape:export-ydpi="100"><tspan
-         sodipodi:role="line"
-         id="tspan2857"
-         x="76.729164"
-         y="165.0863"
-         style="font-size:4.23333311px;stroke-width:0.26458332">recoil nucleus</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="78.800507"
-       y="99.006767"
-       id="text2837-8"
+       inkscape:export-ydpi="100"
+       inkscape:export-filename="/home/jbane/latex_shows/images/dis_draw1.png" />
+    <path
+       style="opacity:0.669;fill:#0cff08;fill-opacity:1;fill-rule:nonzero;stroke:#0fd900;stroke-width:0.40000001;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path4537"
+       sodipodi:type="arc"
+       sodipodi:cx="50.979542"
+       sodipodi:cy="123.65066"
+       sodipodi:rx="0.8976934"
+       sodipodi:ry="0.8976934"
+       sodipodi:start="1.7555045"
+       sodipodi:end="1.7440883"
+       sodipodi:open="true"
+       d="m 50.814672,124.53308 a 0.8976934,0.8976934 0 0 1 -0.718021,-1.04477 0.8976934,0.8976934 0 0 1 1.042721,-0.721 0.8976934,0.8976934 0 0 1 0.723973,1.04066 0.8976934,0.8976934 0 0 1 -1.038589,0.72694"
+       inkscape:export-filename="/home/jbane/latex_shows/images/dis_draw1.png"
        inkscape:export-xdpi="100"
-       inkscape:export-ydpi="100"><tspan
-         sodipodi:role="line"
-         id="tspan2835-5"
-         x="78.800507"
-         y="99.006767"
-         style="font-size:4.23333311px;stroke-width:0.26458332">scattered electron</tspan></text>
+       inkscape:export-ydpi="100" />
+    <path
+       style="opacity:0.669;fill:#0cff08;fill-opacity:1;fill-rule:nonzero;stroke:#0fd900;stroke-width:0.40000001;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path4537-1"
+       sodipodi:type="arc"
+       sodipodi:cx="47.959568"
+       sodipodi:cy="123.28243"
+       sodipodi:rx="0.89769346"
+       sodipodi:ry="0.89769346"
+       sodipodi:start="1.7555045"
+       sodipodi:end="1.7440883"
+       sodipodi:open="true"
+       d="m 47.794698,124.16486 a 0.89769346,0.89769346 0 0 1 -0.718021,-1.04478 0.89769346,0.89769346 0 0 1 1.042721,-0.721 0.89769346,0.89769346 0 0 1 0.723973,1.04066 0.89769346,0.89769346 0 0 1 -1.038589,0.72694"
+       inkscape:export-filename="/home/jbane/latex_shows/images/dis_draw1.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100" />
+    <path
+       style="opacity:0.669;fill:#ff14f8;fill-opacity:1;fill-rule:nonzero;stroke:#d000d9;stroke-width:0.40000001;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path4537-1-7"
+       sodipodi:type="arc"
+       sodipodi:cx="49.526325"
+       sodipodi:cy="125.86467"
+       sodipodi:rx="0.89769346"
+       sodipodi:ry="0.89769346"
+       sodipodi:start="1.7555045"
+       sodipodi:end="1.7440883"
+       sodipodi:open="true"
+       d="m 49.361455,126.74709 a 0.89769346,0.89769346 0 0 1 -0.71802,-1.04477 0.89769346,0.89769346 0 0 1 1.042721,-0.721 0.89769346,0.89769346 0 0 1 0.723972,1.04066 0.89769346,0.89769346 0 0 1 -1.038588,0.72694"
+       inkscape:export-filename="/home/jbane/latex_shows/images/dis_draw1.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100" />
   </g>
 </svg>

@@ -24,24 +24,24 @@
 % TO DO: FILL IN YOUR INFORMATION BELOW - READ THIS SECTION CAREFULLY
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{The EMC Effect in A=3 Nuclei}	       % title of thesis/dissertation
-\author{Jason Bane}                % author's name
+\author{Jason Earl Bane}                % author's name
 \copyrightYear{2019}            % copyright year of your thesis/dissertation
 \graduationMonth{December}           % month of graduation of your thesis/dissertation
-\majorProfessor{Nadia Fomin}	    % advisor's name
-\keywords{EMC, Nuclear Structure, Electron scatterning}	% keywords (optional) separated by commas - these are used in the PDF file properties
-\viceProvost{Carolyn R. Hodges} % vice provost name
-\major{Nuclear Physics}	% major: Mechanical Engineering, Aerospace Engineering, Mathematics...
+%\majorProfessor{Nadia Fomin}	    % advisor's name
+%\keywords{EMC, Nuclear Structure, Electron scatterning}	% keywords (optional) separated by commas - these are used in the PDF file properties
+%\viceProvost{Carolyn R. Hodges} % vice provost name
+%\major{Nuclear Physics}	% major: Mechanical Engineering, Aerospace Engineering, Mathematics...
 \degree{Doctor of Philosophy}	    % degree: Doctor of Philosophy, Master of Science, Master of Engineering...
-\college{Arts and Sciences}           % college
-\dept{Physics and Astronomy}	% department
+%\college{Arts and Sciences}           % college
+%\dept{Physics and Astronomy}	% department
 \university{The University  of Tennessee, Knoxville}	% school name
 % THIS TEMPLATE ACCOMMODATES UP TO 5 COMMITTEE MEMBERS - ENTER ONLY THE NAMES OF THE MEMBERS ON YOUR COMMITTEE
-\numberOfCommitteeMembers{4} % enter the number of committee members
-\committeeMemberA {Jamie Coble}	% name of first committee member
-\committeeMemberB {Kate Jones}	% name of second committee member
-\committeeMemberC {Thomas Papenbrock}	% ... you get the trend!
-\committeeMemberD {Soren Sorensen}	% if your committee has less than 4 members, you do not need to edit the
-\committeeMemberE {Committee Member 5}  % rest of committee names
+%\numberOfCommitteeMembers{4} % enter the number of committee members
+%\committeeMemberA {Jamie Coble}	% name of first committee member
+%\committeeMemberB {Kate Jones}	% name of second committee member
+%\committeeMemberC {Thomas Papenbrock}	% ... you get the trend!
+%\committeeMemberD {Soren Sorensen}	% if your committee has less than 4 members, you do not need to edit the
+%\committeeMemberE {Committee Member 5}  % rest of committee names
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % LOAD SOME USEFUL PACKAGES
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -64,16 +64,16 @@
 %\usepackage{floatrow}
 \usepackage[outdir=./images/]{epstopdf}
 %%/lin\usepackage{csvsimple}
-
-
+\usepackage{relsize}                    % font sizing hierarchy
+\usepackage[titletoc]{appendix}			% format appendix correctly
 \usepackage[absolute]{textpos}
 \usepackage{fancyhdr}
-
+\usepackage[titletoc]{appendix}			% format appendix correctly
 \usepackage{lineno}
 %\linenumbers
 \usepackage{mathrsfs}                   % additional math scripts
 %%% PACKAGES THAT ARE PRELOADED WITH THE CLASS ARE: amsmath,amsthm,amssymb,setspace,geometry,hyperref,and color
-
+\usepackage{chngcntr}
 \usepackage{lscape}
 
 \fancypagestyle{lscape}{% 
@@ -95,78 +95,78 @@
 	\renewcommand{\topfraction}{0.45}
 	\renewcommand{\textfraction}{0.5}
 	\setlength{\textfloatsep}{0.45in} 
-	
-	
     \pagenumbering{alph} % this is needed to clear certain issues with the hyperref package
-    %
- 	%\makeApprovalPage % make the approval page - this is the page that needs to be signed & returned to the thesis/dissertation consultant
-	%\makeETDApprovalPage % make the Electronic Thesis & Dissertation page - this page is kept with the electronic copy
-    %
-    \addToPDFBookmarks{0}{Front Matter}{rootNode} % create a root node named "Front Matter" in the pdf bookmarks
-    \addToPDFBookmarks{1}{Title}{a} % add a pdf bookmark to the title page
-    \makeTitlePage % make the title page. Make sure you properly set the \docType
-    %
-    \pagenumbering{roman}
-    \setcounter{page}{2}
-    %
-    \makeCopyrightPage % make the copyright page
-    %
-    %\addToPDFBookmarks{1}{Dedication}{b} % add a pdf bookmark to the dedication page
-    %\include{front-matter/dedication} % include the dedication
-    %
-    \addToPDFBookmarks{1}{Acknowledgements}{c} % add a pdf bookmark to the acknowledgements page
-    \include{front-matter/acknowledgements} % include the acknowledgements
-    %
-    %\addToPDFBookmarks{1}{Quote}{d} % add a pdf bookmark to the quotation page
-    %\include{front-matter/quote} % include a quote
-    %
-    \addToPDFBookmarks{1}{Abstract}{e} % add a pdf bookmark to the abstract page
-    \include{front-matter/abstract} % your abstract
-    %
-    \addToPDFBookmarks{0}{Table of Contents}{f}
-    \tableofcontents % generate a table of contents
-    %
-    \addToTOC{List of Tables} % this will add the list of tables to the Table of Contents (TOC)
-    \listoftables % generate a list of tables
-    %
-    \addToTOC{List of Figures} % this will add the list of figures to the Table of Contents (TOC)
-    \listoffigures % generate a list of figures
-    %
-   % \makenomenclature % OPTIONAL
-   % \addToPDFBookmarks{0}{Nomenclature}{g} % OPTIONAL
-   % \printnomenclature[1.25in] % OPTIONAL
-    %
-    \newpage
-    \pagenumbering{arabic}
-    \setcounter{page}{1}
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    % INCLUDE THE CHAPTERS STARTING WITH THE NOMENCLATURE IF PRESENT
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\addToPDFBookmarks{0}{Front Matter}{rootNode} % create a root node named "Front Matter" in the pdf bookmarks
+\addToPDFBookmarks{1}{Title}{a} % add a pdf bookmark to the title page
+\makeTitlePage % make the title page.
+%
+\pagenumbering{roman}
+\setcounter{page}{2}
+%
+\makeCopyrightPage % make the copyright page
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%The dedication and acknowledgments are optional. If you wish not to include them, simply comment out both the "\addToPDF..." line and the "\include{...}" line for each.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\addToPDFBookmarks{1}{Dedication}{b} % add a pdf bookmark to the dedication page
+\include{front-matter/dedication} % include the dedication
+
+\addToPDFBookmarks{1}{Acknowledgments}{c} % add a pdf bookmark to the acknowledgments page
+\include{front-matter/acknowledgements} % include the acknowledgments
+
+\addToPDFBookmarks{1}{Abstract}{e} % add a pdf bookmark to the abstract page
+\include{front-matter/abstract} % your abstract
+
+\addToPDFBookmarks{0}{Table of Contents}{f}
+\tableofcontents % generate a table of contents
+\listoftables % generate a list of tables
+\listoffigures % generate a list of figures
+
+\newpage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% INCLUDE THE CHAPTERS STARTING WITH THE NOMENCLATURE IF PRESENT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 						
      	\include{Introduction}
     	\include{EMC}
     	\include{ExperimentalSetup}
-   		%\include{DetectorCalibration}
     	\include{DataAnalysis}
     	\include{Results}
-%    	\include{Simulation}
     	\include{Conclusion}
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     % BIBLIOGRAPHY
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \makeBibliographyPage % make the bibliography title page - can be edited in ut-thesis-template.tex
-    \bibliographystyle{plain} % bibliography style - recommend using apalike-doi as it hyperlinks DOIs
-   \bibliography{references/references-dissertation} % references.bib included in the references directory
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    % APPENDIX - OPTIONAL - COMMENT IF NOT NEEDED
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \makeAppendixPage   % make the appendix title page - can be edited in ut-thesis-template.tex
-    \appendix
-    \include{back-matter/appendix-1}
-    \include{back-matter/appendix-2}
-    %%%%%0%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    % A VITA IS REQUIRED
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \addToTOC{Vita}
-    \include{back-matter/vita}
+    \makeBibliographyPage % make the bibliography title page
+\newpage
+
+% To make the bibliography, use \utbiblio{#1}{}{} command. Always use "#1" for the first entry. The second entry is your bibliography style, and the third entry is the name of your bibliography file (.bib file extension) 
+% bibliography style - recommend using apalike-doi as it hyperlinks DOIs
+% Be sure to run BibTeX in order to generate the bibliography correctly.
+
+%\utbiblio{#1}{apalike}{references/references-dissertation}
+
+
+%\makeBibliographyPage % make the bibliography title page - can be edited in ut-thesis-template.tex
+\begingroup
+\def\chapter*#1{}
+\bibliographystyle{plain} %plain bibliography style - recommend using apalike-doi as it hyperlinks DOIs
+\bibliography{references/references-dissertation} % references.bib included in the references directory
+\endgroup
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% APPENDIX - OPTIONAL - COMMENT OUT IF NOT NEEDED
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\makeAppendixPage{2}   % Input the number of appendices
+\appendix    
+\include{back-matter/appendix-1}
+\include{back-matter/appendix-2}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% A VITA IS REQUIRED
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\addToTOC{Vita}
+\include{back-matter/vita}
 \end{document}
+
